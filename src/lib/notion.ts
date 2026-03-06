@@ -73,15 +73,35 @@ export async function fetchDealsFromNotion(): Promise<Deal[]> {
   const pages: NotionPage[] = [];
   let cursor: string | undefined;
 
+  // Use POST to /databases/{id}/query via fetch (SDK missing query method)
   do {
-    const response = await notion.databases.query({
-      database_id: databaseId,
-      start_cursor: cursor,
+    const body: Record<string, any> = {
       sorts: [{ property: "Name", direction: "ascending" }],
-    });
+      page_size: 100,
+    };
+    if (cursor) body.start_cursor = cursor;
 
-    pages.push(...(response.results as NotionPage[]));
-    cursor = response.has_more ? response.next_cursor ?? undefined : undefined;
+    const res = await fetch(
+      `https://api.notion.com/v1/databases/${databaseId}/query`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${process.env.NOTION_TOKEN}`,
+          "Notion-Version": "2022-06-28",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+        next: { revalidate: 300 },
+      }
+    );
+
+    if (!res.ok) {
+      throw new Error(`Notion API error: ${res.status} ${await res.text()}`);
+    }
+
+    const data = await res.json();
+    pages.push(...(data.results as NotionPage[]));
+    cursor = data.has_more ? data.next_cursor : undefined;
   } while (cursor);
 
   return pages.map(pageToDeal);
