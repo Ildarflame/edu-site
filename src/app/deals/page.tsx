@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Metadata } from "next";
 import { getDeals } from "@/lib/deals";
 import DealsGrid from "@/components/DealsGrid";
@@ -23,7 +24,9 @@ export default async function DealsPage() {
           {deals.length} free tools and perks
         </p>
       </div>
-      <DealsGrid deals={deals} />
+      <Suspense fallback={null}>
+        <DealsGrid deals={deals} />
+      </Suspense>
     </main>
   );
 }
