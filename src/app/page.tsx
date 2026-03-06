@@ -5,6 +5,7 @@ import RotatingWord from "@/components/RotatingWord";
 import CursorGlow from "@/components/CursorGlow";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import LogoMarquee from "@/components/LogoMarquee";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const revalidate = 300; // revalidate every 5 min
 
@@ -108,6 +109,7 @@ export default async function Home() {
       <LogoMarquee />
 
       {/* ═══ FEATURED — BENTO GRID ═══ */}
+      <ScrollReveal>
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="flex items-center justify-between mb-8">
           <div>
@@ -148,11 +150,13 @@ export default async function Home() {
           </Link>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* Divider */}
       <div className="line-fade mx-auto max-w-5xl" />
 
       {/* ═══ AUDIENCES ═══ */}
+      <ScrollReveal>
       <section className="max-w-7xl mx-auto px-6 py-20">
         <p className="section-label mb-2 text-center">For you</p>
         <h2 className="text-2xl md:text-3xl font-bold text-zinc-100 text-center mb-10">
@@ -191,11 +195,13 @@ export default async function Home() {
           ))}
         </div>
       </section>
+      </ScrollReveal>
 
       {/* Divider */}
       <div className="line-fade mx-auto max-w-5xl" />
 
       {/* ═══ CATEGORIES ═══ */}
+      <ScrollReveal>
       <section className="max-w-7xl mx-auto px-6 py-20">
         <p className="section-label mb-2 text-center">Explore</p>
         <h2 className="text-2xl md:text-3xl font-bold text-zinc-100 text-center mb-10">
@@ -224,8 +230,10 @@ export default async function Home() {
           )}
         </div>
       </section>
+      </ScrollReveal>
 
       {/* ═══ STATS BANNER ═══ */}
+      <ScrollReveal>
       <section className="border-y border-white/[0.04] bg-white/[0.01]">
         <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-3 divide-x divide-white/[0.04]">
           <div className="text-center px-4">
@@ -248,6 +256,7 @@ export default async function Home() {
           </div>
         </div>
       </section>
+      </ScrollReveal>
     </main>
   );
 }

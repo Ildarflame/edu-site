@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://edudeals.vercel.app"),
   title: "EduDeals — Free Perks for Students, Startups & Open Source",
   description:
     "Discover free tools, services, and discounts available for students, startups, and open source projects.",
