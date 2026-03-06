@@ -2,29 +2,32 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { deals, getDealBySlug, getDealsByCategory, CATEGORY_CONFIG } from "@/data/deals";
+import { getDeals, getDealBySlug, getDealsByCategory, CATEGORY_CONFIG } from "@/lib/deals";
 import CategoryBadge from "@/components/CategoryBadge";
 import AudienceBadge from "@/components/AudienceBadge";
 import DealCard from "@/components/DealCard";
 
-export function generateStaticParams() {
+export const revalidate = 300;
+
+export async function generateStaticParams() {
+  const deals = await getDeals();
   return deals.map((deal) => ({ slug: deal.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const deal = getDealBySlug(slug);
+  const deal = await getDealBySlug(slug);
   if (!deal) return { title: "Deal Not Found" };
   return { title: `${deal.name} — ${deal.tagline} | EduDeals`, description: deal.description };
 }
 
 export default async function DealPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const deal = getDealBySlug(slug);
+  const deal = await getDealBySlug(slug);
   if (!deal) notFound();
 
   const catConfig = CATEGORY_CONFIG[deal.category];
-  const related = getDealsByCategory(deal.category).filter((d) => d.slug !== deal.slug).slice(0, 3);
+  const related = (await getDealsByCategory(deal.category)).filter((d) => d.slug !== deal.slug).slice(0, 3);
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">

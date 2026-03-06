@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@notionhq/client": "^5.11.1",
     "gray-matter": "^4.0.3",
     "next": "16.1.6",
     "next-mdx-remote": "^6.0.0",
@@ -22,6 +23,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "simple-icons": "^16.10.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

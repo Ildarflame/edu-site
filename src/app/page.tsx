@@ -1,43 +1,46 @@
 import Link from "next/link";
-import { deals, getFeaturedDeals, CATEGORY_CONFIG, Category } from "@/data/deals";
+import { getDeals, getFeaturedDeals, CATEGORY_CONFIG, type Category } from "@/lib/deals";
 import DealCard from "@/components/DealCard";
 import RotatingWord from "@/components/RotatingWord";
 import CursorGlow from "@/components/CursorGlow";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import LogoMarquee from "@/components/LogoMarquee";
 
-const audiences = [
-  {
-    title: "Students",
-    desc: "Free pro plans with your .edu email",
-    icon: "🎓",
-    href: "/deals?audience=students",
-    count: deals.filter(d => d.audiences.includes("students")).length,
-    color: "from-blue-500/20 via-blue-500/5 to-transparent",
-    borderHover: "hover:border-blue-500/20",
-  },
-  {
-    title: "Startups",
-    desc: "Cloud credits & SaaS tools",
-    icon: "🚀",
-    href: "/deals?audience=startups",
-    count: deals.filter(d => d.audiences.includes("startups")).length,
-    color: "from-orange-500/20 via-orange-500/5 to-transparent",
-    borderHover: "hover:border-orange-500/20",
-  },
-  {
-    title: "Open Source",
-    desc: "Free CI/CD, hosting & dev tools",
-    icon: "💻",
-    href: "/deals?audience=opensource",
-    count: deals.filter(d => d.audiences.includes("opensource")).length,
-    color: "from-emerald-500/20 via-emerald-500/5 to-transparent",
-    borderHover: "hover:border-emerald-500/20",
-  },
-];
+export const revalidate = 300; // revalidate every 5 min
 
-export default function Home() {
-  const featured = getFeaturedDeals();
+export default async function Home() {
+  const deals = await getDeals();
+  const featured = await getFeaturedDeals();
+
+  const audiences = [
+    {
+      title: "Students",
+      desc: "Free pro plans with your .edu email",
+      icon: "🎓",
+      href: "/deals?audience=students",
+      count: deals.filter(d => d.audiences.includes("students")).length,
+      color: "from-blue-500/20 via-blue-500/5 to-transparent",
+      borderHover: "hover:border-blue-500/20",
+    },
+    {
+      title: "Startups",
+      desc: "Cloud credits & SaaS tools",
+      icon: "🚀",
+      href: "/deals?audience=startups",
+      count: deals.filter(d => d.audiences.includes("startups")).length,
+      color: "from-orange-500/20 via-orange-500/5 to-transparent",
+      borderHover: "hover:border-orange-500/20",
+    },
+    {
+      title: "Open Source",
+      desc: "Free CI/CD, hosting & dev tools",
+      icon: "💻",
+      href: "/deals?audience=opensource",
+      count: deals.filter(d => d.audiences.includes("opensource")).length,
+      color: "from-emerald-500/20 via-emerald-500/5 to-transparent",
+      borderHover: "hover:border-emerald-500/20",
+    },
+  ];
 
   return (
     <main>

@@ -1,13 +1,17 @@
 import { Metadata } from "next";
-import { deals } from "@/data/deals";
+import { getDeals } from "@/lib/deals";
 import DealsGrid from "@/components/DealsGrid";
+
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "All Deals — EduDeals",
   description: "Browse all free tools and perks for students, startups, and open source projects.",
 };
 
-export default function DealsPage() {
+export default async function DealsPage() {
+  const deals = await getDeals();
+
   return (
     <main className="max-w-7xl mx-auto px-6 py-12">
       <div className="mb-8">
