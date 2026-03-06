@@ -9,13 +9,14 @@ export const metadata: Metadata = {
 
 export default function DealsPage() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-12">
-      <div className="mb-10">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-white">
+    <main className="max-w-7xl mx-auto px-6 py-12">
+      <div className="mb-8">
+        <p className="section-label mb-2">Browse</p>
+        <h1 className="text-2xl md:text-3xl font-bold text-zinc-100">
           All Deals
         </h1>
-        <p className="mt-2 text-zinc-500">
-          Find the perfect perk for your project
+        <p className="mt-1.5 text-[14px] text-zinc-600">
+          {deals.length} free tools and perks
         </p>
       </div>
       <DealsGrid deals={deals} />

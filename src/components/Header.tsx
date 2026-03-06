@@ -13,57 +13,58 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#09090b]/80 backdrop-blur-xl border-b border-white/[0.06]">
-      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500 to-amber-400 flex items-center justify-center">
-            <span className="text-sm font-black text-black">E</span>
+    <header className="sticky top-0 z-50 border-b border-white/[0.04]" style={{ background: "rgba(5, 5, 7, 0.85)", backdropFilter: "blur(20px) saturate(1.8)" }}>
+      <nav className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-2">
+          <div className="w-7 h-7 rounded-md bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/20">
+            <span className="text-[11px] font-black text-white leading-none">E</span>
           </div>
-          <span className="text-lg font-bold text-white tracking-tight">
+          <span className="text-[15px] font-semibold text-zinc-100 tracking-tight">
             EduDeals
           </span>
         </Link>
 
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden md:flex items-center gap-0.5">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="px-4 py-2 text-sm font-medium text-zinc-400 hover:text-white rounded-lg hover:bg-white/[0.05] transition-all duration-200"
+              className="px-3.5 py-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-200 rounded-md hover:bg-white/[0.04] transition-all duration-150"
             >
               {link.label}
             </Link>
           ))}
+          <div className="w-px h-4 bg-white/[0.06] mx-3" />
           <Link
             href="/deals"
-            className="ml-3 px-5 py-2 text-sm font-semibold text-black rounded-lg bg-gradient-to-r from-orange-500 to-amber-400 hover:from-orange-400 hover:to-amber-300 transition-all duration-200 shadow-lg shadow-orange-500/20"
+            className="btn-primary px-4 py-1.5 text-[13px]"
           >
-            Browse Deals
+            Get Deals
           </Link>
         </div>
 
         <button
-          className="md:hidden p-2 text-zinc-400 hover:text-white transition-colors"
+          className="md:hidden p-1.5 text-zinc-500 hover:text-zinc-200 transition-colors rounded-md hover:bg-white/[0.04]"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
             {mobileOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
             )}
           </svg>
         </button>
       </nav>
 
       {mobileOpen && (
-        <div className="md:hidden border-t border-white/[0.06] bg-[#09090b]/95 backdrop-blur-xl px-6 py-4 space-y-1">
+        <div className="md:hidden border-t border-white/[0.04] px-6 py-3 space-y-0.5" style={{ background: "rgba(5, 5, 7, 0.95)" }}>
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="block px-4 py-2.5 text-sm font-medium text-zinc-400 hover:text-white rounded-lg hover:bg-white/[0.05] transition-all"
+              className="block px-3 py-2 text-[13px] font-medium text-zinc-400 hover:text-zinc-100 rounded-md hover:bg-white/[0.04] transition-all"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}

@@ -3,36 +3,42 @@ import { Deal, CATEGORY_CONFIG } from "@/data/deals";
 import CategoryBadge from "./CategoryBadge";
 import AudienceBadge from "./AudienceBadge";
 
-export default function DealCard({ deal }: { deal: Deal }) {
+const accentMap: Record<string, string> = {
+  blue: "card-accent-blue",
+  purple: "card-accent-purple",
+  pink: "card-accent-pink",
+  amber: "card-accent-amber",
+  sky: "card-accent-sky",
+  emerald: "card-accent-emerald",
+  red: "card-accent-red",
+};
+
+export default function DealCard({ deal, featured = false }: { deal: Deal; featured?: boolean }) {
   const catConfig = CATEGORY_CONFIG[deal.category];
+  const accent = accentMap[catConfig.color] ?? "";
 
   return (
     <Link
       href={`/deals/${deal.slug}`}
-      className="card-glow group block bg-[#111113] rounded-xl border border-white/[0.06] p-6 relative overflow-hidden"
+      className={`card ${accent} group block p-5 relative overflow-hidden ${featured ? "md:p-7" : ""}`}
     >
-      {/* Subtle top accent line */}
-      <div
-        className={`absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r ${catConfig.gradient} opacity-0 group-hover:opacity-50 transition-opacity duration-300`}
-      />
-
-      <div className="flex items-start justify-between mb-4">
-        <div className="w-11 h-11 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-xl">
+      <div className="flex items-start justify-between mb-3">
+        <div className="w-10 h-10 rounded-[10px] bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-lg">
           {catConfig.icon}
         </div>
-        <span className="text-xs font-bold text-emerald-400 bg-emerald-400/10 px-3 py-1.5 rounded-md border border-emerald-400/20">
+        <span className="value-pill text-[11px] font-bold px-2.5 py-1 rounded-md">
           {deal.value}
         </span>
       </div>
 
-      <h3 className="font-bold text-base text-white group-hover:text-orange-400 transition-colors duration-200">
+      <h3 className={`font-semibold text-zinc-100 group-hover:text-orange-400 transition-colors duration-200 ${featured ? "text-lg" : "text-[15px]"}`}>
         {deal.name}
       </h3>
-      <p className="mt-1.5 text-sm text-zinc-500 line-clamp-2 leading-relaxed">
+      <p className={`mt-1 text-zinc-600 line-clamp-2 leading-relaxed ${featured ? "text-sm" : "text-[13px]"}`}>
         {deal.tagline}
       </p>
 
-      <div className="mt-4 flex flex-wrap gap-1.5">
+      <div className="mt-3.5 flex flex-wrap gap-1.5">
         <CategoryBadge category={deal.category} />
         {deal.audiences.map((a) => (
           <AudienceBadge key={a} audience={a} />

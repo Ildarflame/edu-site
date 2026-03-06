@@ -6,77 +6,177 @@
 }
 
 body {
-  background: #09090b;
-  color: #e4e4e7;
+  background: #050507;
+  color: #a1a1aa;
   font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Mesh gradient hero background */
+.mesh-gradient {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(249, 115, 22, 0.15), transparent),
+    radial-gradient(ellipse 60% 40% at 70% 10%, rgba(168, 85, 247, 0.08), transparent),
+    radial-gradient(ellipse 50% 50% at 30% 20%, rgba(59, 130, 246, 0.06), transparent);
 }
 
 /* Dot grid pattern */
 .dot-grid {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 20px 20px;
 }
 
-/* Glow card hover effect */
-.card-glow {
-  position: relative;
-  transition: all 0.3s ease;
+/* Horizontal line decoration */
+.line-fade {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent);
+  height: 1px;
 }
 
-.card-glow::before {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0), rgba(249, 115, 22, 0));
-  transition: background 0.3s ease;
-  z-index: -1;
+/* Card base */
+.card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-glow:hover::before {
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.3), rgba(251, 146, 60, 0.1), rgba(249, 115, 22, 0));
+.card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.5);
 }
 
-.card-glow:hover {
-  border-color: rgba(249, 115, 22, 0.3);
-  transform: translateY(-2px);
-}
+/* Card with colored top border on hover */
+.card-accent-blue:hover { border-top-color: rgba(59, 130, 246, 0.5); }
+.card-accent-purple:hover { border-top-color: rgba(168, 85, 247, 0.5); }
+.card-accent-pink:hover { border-top-color: rgba(236, 72, 153, 0.5); }
+.card-accent-amber:hover { border-top-color: rgba(245, 158, 11, 0.5); }
+.card-accent-sky:hover { border-top-color: rgba(14, 165, 233, 0.5); }
+.card-accent-emerald:hover { border-top-color: rgba(16, 185, 129, 0.5); }
+.card-accent-red:hover { border-top-color: rgba(239, 68, 68, 0.5); }
 
 /* Gradient text */
-.text-gradient {
-  background: linear-gradient(135deg, #f97316, #fbbf24, #f97316);
+.text-gradient-warm {
+  background: linear-gradient(135deg, #f97316 0%, #fbbf24 50%, #f97316 100%);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: shimmer 3s ease-in-out infinite;
 }
 
-/* Fade in up animation */
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes shimmer {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 200% center; }
 }
 
-.animate-fade-in-up {
-  animation: fade-in-up 0.6s ease forwards;
+/* Value pill glow */
+.value-pill {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  text-shadow: 0 0 12px rgba(16, 185, 129, 0.3);
 }
 
-/* Stagger children */
-.stagger > * {
+/* CTA button */
+.btn-primary {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: #000;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 30px rgba(249, 115, 22, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  color: #d4d4d8;
+  transition: all 0.2s ease;
+}
+
+.btn-ghost:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* Fade in up */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.1s; opacity: 0; }
+.delay-2 { animation-delay: 0.2s; opacity: 0; }
+.delay-3 { animation-delay: 0.3s; opacity: 0; }
+.delay-4 { animation-delay: 0.4s; opacity: 0; }
+
+/* Stagger grid children */
+.stagger-grid > * {
   opacity: 0;
-  animation: fade-in-up 0.5s ease forwards;
+  animation: fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
-.stagger > *:nth-child(1) { animation-delay: 0.05s; }
-.stagger > *:nth-child(2) { animation-delay: 0.1s; }
-.stagger > *:nth-child(3) { animation-delay: 0.15s; }
-.stagger > *:nth-child(4) { animation-delay: 0.2s; }
-.stagger > *:nth-child(5) { animation-delay: 0.25s; }
-.stagger > *:nth-child(6) { animation-delay: 0.3s; }
-.stagger > *:nth-child(7) { animation-delay: 0.35s; }
-.stagger > *:nth-child(8) { animation-delay: 0.4s; }
-.stagger > *:nth-child(9) { animation-delay: 0.45s; }
+.stagger-grid > *:nth-child(1) { animation-delay: 0.05s; }
+.stagger-grid > *:nth-child(2) { animation-delay: 0.1s; }
+.stagger-grid > *:nth-child(3) { animation-delay: 0.15s; }
+.stagger-grid > *:nth-child(4) { animation-delay: 0.2s; }
+.stagger-grid > *:nth-child(5) { animation-delay: 0.25s; }
+.stagger-grid > *:nth-child(6) { animation-delay: 0.3s; }
+.stagger-grid > *:nth-child(7) { animation-delay: 0.35s; }
+.stagger-grid > *:nth-child(8) { animation-delay: 0.4s; }
+.stagger-grid > *:nth-child(9) { animation-delay: 0.45s; }
+
+/* Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Section label */
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #52525b;
+}
+
+/* Prose dark theme */
+.prose-dark {
+  color: #a1a1aa;
+}
+.prose-dark h1, .prose-dark h2, .prose-dark h3 {
+  color: #fafafa;
+}
+.prose-dark a {
+  color: #f97316;
+}
+.prose-dark a:hover {
+  color: #fb923c;
+}
+.prose-dark strong {
+  color: #e4e4e7;
+}
+.prose-dark code {
+  color: #fb923c;
+  background: rgba(255,255,255,0.04);
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.prose-dark li {
+  color: #a1a1aa;
+}

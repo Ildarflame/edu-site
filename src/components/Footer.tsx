@@ -2,54 +2,59 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/[0.06] bg-[#09090b]">
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500 to-amber-400 flex items-center justify-center">
-                <span className="text-sm font-black text-black">E</span>
+    <footer className="border-t border-white/[0.04]">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-8">
+          <div className="max-w-xs">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-6 h-6 rounded-md bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
+                <span className="text-[9px] font-black text-white">E</span>
               </div>
-              <span className="text-lg font-bold text-white tracking-tight">EduDeals</span>
+              <span className="text-[14px] font-semibold text-zinc-300">EduDeals</span>
             </div>
-            <p className="text-sm text-zinc-500 leading-relaxed max-w-xs">
-              The best free tools, credits, and perks — curated for students, startups, and open source builders.
+            <p className="text-[13px] text-zinc-600 leading-relaxed">
+              Free tools, credits, and pro plans for students, startups, and open source.
             </p>
           </div>
-          <div>
-            <h4 className="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-4">Navigate</h4>
-            <div className="space-y-3">
-              {[
-                { href: "/deals", label: "All Deals" },
-                { href: "/blog", label: "Blog" },
-                { href: "/about", label: "About" },
-              ].map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="block text-sm text-zinc-400 hover:text-orange-400 transition-colors duration-200"
-                >
-                  {link.label}
-                </Link>
-              ))}
+
+          <div className="flex gap-16">
+            <div>
+              <p className="section-label mb-3">Pages</p>
+              <div className="space-y-2">
+                {[
+                  { href: "/deals", label: "Deals" },
+                  { href: "/blog", label: "Blog" },
+                  { href: "/about", label: "About" },
+                ].map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block text-[13px] text-zinc-600 hover:text-zinc-300 transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
-          <div>
-            <h4 className="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-4">Categories</h4>
-            <div className="flex flex-wrap gap-2">
-              {["Dev", "AI", "SaaS", "Learning", "Cloud", "Design"].map((cat) => (
-                <span
-                  key={cat}
-                  className="text-xs px-2.5 py-1 rounded-md bg-white/[0.04] text-zinc-500 border border-white/[0.06]"
-                >
-                  {cat}
-                </span>
-              ))}
+            <div>
+              <p className="section-label mb-3">Categories</p>
+              <div className="space-y-2">
+                {["Dev", "AI", "Cloud", "Design"].map((cat) => (
+                  <Link
+                    key={cat}
+                    href={`/deals?category=${cat}`}
+                    className="block text-[13px] text-zinc-600 hover:text-zinc-300 transition-colors"
+                  >
+                    {cat}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-white/[0.06] text-center text-xs text-zinc-600">
-          &copy; {new Date().getFullYear()} EduDeals. Built for builders.
+
+        <div className="mt-10 pt-6 border-t border-white/[0.04] text-[12px] text-zinc-700">
+          &copy; {new Date().getFullYear()} EduDeals
         </div>
       </div>
     </footer>
