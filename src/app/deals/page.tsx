@@ -8,6 +8,7 @@ export const revalidate = 300;
 export const metadata: Metadata = {
   title: "All Deals — StudentPerks",
   description: "Browse all free tools and perks for students, startups, and open source projects.",
+  alternates: { canonical: "https://studentperks.dev/deals" },
 };
 
 export default async function DealsPage() {
@@ -27,6 +28,19 @@ export default async function DealsPage() {
       <Suspense fallback={null}>
         <DealsGrid deals={deals} />
       </Suspense>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "All Deals",
+            description: "Browse all free tools and perks for students, startups, and open source projects.",
+            url: "https://studentperks.dev/deals",
+            numberOfItems: deals.length,
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
     </main>
   );
 }

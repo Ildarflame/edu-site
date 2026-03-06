@@ -20,7 +20,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!deal) return { title: "Deal Not Found" };
   const title = `${deal.name} — ${deal.tagline} | StudentPerks`.slice(0, 60);
   const description = deal.description.length > 155 ? deal.description.slice(0, 152) + "..." : deal.description;
-  return { title, description };
+  return {
+    title,
+    description,
+    alternates: { canonical: `https://studentperks.dev/deals/${slug}` },
+  };
 }
 
 export default async function DealPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -120,6 +124,20 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
               priceCurrency: "USD",
               availability: "https://schema.org/InStock",
             },
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
+              { "@type": "ListItem", position: 2, name: "Deals", item: "https://studentperks.dev/deals" },
+              { "@type": "ListItem", position: 3, name: deal.name },
+            ],
           }).replace(/</g, "\\u003c"),
         }}
       />
