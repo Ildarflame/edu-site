@@ -34,16 +34,16 @@ export default function LogoMarquee() {
         {allBrands.map((brand, i) => (
           <div
             key={`${brand.name}-${i}`}
-            className="flex items-center gap-2.5 opacity-40 hover:opacity-80 transition-opacity duration-300"
+            className="flex items-center gap-3 opacity-60 hover:opacity-100 transition-opacity duration-300"
           >
             <Image
               src={brand.logo}
               alt={brand.name}
-              width={20}
-              height={20}
-              className="brightness-0 invert"
+              width={24}
+              height={24}
+              className="opacity-70"
             />
-            <span className="text-[13px] font-medium text-zinc-500 tracking-wide select-none">
+            <span className="text-[14px] font-medium text-zinc-400 tracking-wide select-none">
               {brand.name}
             </span>
           </div>
