@@ -262,7 +262,7 @@ export default async function Home() {
           </div>
           <div className="text-center px-4">
             <div className="text-2xl md:text-3xl font-bold text-zinc-100">
-              $<AnimatedCounter target={10} suffix="K+" />
+              $<AnimatedCounter target={500} suffix="K+" />
             </div>
             <div className="text-[12px] text-zinc-600 mt-1 font-medium">Potential savings</div>
           </div>

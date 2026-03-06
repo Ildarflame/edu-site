@@ -28,11 +28,11 @@ export default function AboutPage() {
 
         <div className="grid grid-cols-3 gap-3 text-center">
           <div className="card p-5">
-            <p className="text-2xl font-bold text-orange-400">25+</p>
+            <p className="text-2xl font-bold text-orange-400">150+</p>
             <p className="text-[12px] text-zinc-600 mt-1">Verified deals</p>
           </div>
           <div className="card p-5">
-            <p className="text-2xl font-bold text-orange-400">$200K+</p>
+            <p className="text-2xl font-bold text-orange-400">$500K+</p>
             <p className="text-[12px] text-zinc-600 mt-1">Total value</p>
           </div>
           <div className="card p-5">
