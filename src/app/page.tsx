@@ -2,6 +2,9 @@ import Link from "next/link";
 import { deals, getFeaturedDeals, CATEGORY_CONFIG, Category } from "@/data/deals";
 import DealCard from "@/components/DealCard";
 import RotatingWord from "@/components/RotatingWord";
+import CursorGlow from "@/components/CursorGlow";
+import AnimatedCounter from "@/components/AnimatedCounter";
+import LogoMarquee from "@/components/LogoMarquee";
 
 const audiences = [
   {
@@ -42,6 +45,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 mesh-gradient" />
         <div className="absolute inset-0 dot-grid" />
+        <CursorGlow />
 
         <div className="relative max-w-7xl mx-auto px-6 pt-20 pb-24 md:pt-28 md:pb-32">
           {/* Status pill */}
@@ -97,8 +101,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="line-fade mx-auto max-w-5xl" />
+      {/* ═══ LOGO MARQUEE ═══ */}
+      <LogoMarquee />
 
       {/* ═══ FEATURED — BENTO GRID ═══ */}
       <section className="max-w-7xl mx-auto px-6 py-20">
@@ -221,16 +225,24 @@ export default function Home() {
       {/* ═══ STATS BANNER ═══ */}
       <section className="border-y border-white/[0.04] bg-white/[0.01]">
         <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-3 divide-x divide-white/[0.04]">
-          {[
-            { value: `${deals.length}+`, label: "Free deals" },
-            { value: "$10K+", label: "Potential savings" },
-            { value: "100%", label: "Free to access" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center px-4">
-              <div className="text-2xl md:text-3xl font-bold text-zinc-100">{stat.value}</div>
-              <div className="text-[12px] text-zinc-600 mt-1 font-medium">{stat.label}</div>
+          <div className="text-center px-4">
+            <div className="text-2xl md:text-3xl font-bold text-zinc-100">
+              <AnimatedCounter target={deals.length} suffix="+" />
             </div>
-          ))}
+            <div className="text-[12px] text-zinc-600 mt-1 font-medium">Free deals</div>
+          </div>
+          <div className="text-center px-4">
+            <div className="text-2xl md:text-3xl font-bold text-zinc-100">
+              $<AnimatedCounter target={10} suffix="K+" />
+            </div>
+            <div className="text-[12px] text-zinc-600 mt-1 font-medium">Potential savings</div>
+          </div>
+          <div className="text-center px-4">
+            <div className="text-2xl md:text-3xl font-bold text-zinc-100">
+              <AnimatedCounter target={100} suffix="%" />
+            </div>
+            <div className="text-[12px] text-zinc-600 mt-1 font-medium">Free to access</div>
+          </div>
         </div>
       </section>
     </main>

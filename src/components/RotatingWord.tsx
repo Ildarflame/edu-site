@@ -2,34 +2,43 @@
 
 import { useState, useEffect } from "react";
 
-const words = ["builders.", "students.", "startups.", "devs.", "creators."];
+const words = [
+  { text: "builders.", color: "#f97316" },
+  { text: "students.", color: "#3b82f6" },
+  { text: "startups.", color: "#a855f7" },
+  { text: "devs.", color: "#10b981" },
+  { text: "creators.", color: "#f43f5e" },
+];
 
 export default function RotatingWord() {
   const [index, setIndex] = useState(0);
-  const [isExiting, setIsExiting] = useState(false);
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsExiting(true);
+      setShow(false);
       setTimeout(() => {
         setIndex((i) => (i + 1) % words.length);
-        setIsExiting(false);
-      }, 300);
+        setShow(true);
+      }, 350);
     }, 2500);
     return () => clearInterval(interval);
   }, []);
 
+  const word = words[index];
+
   return (
-    <span className="inline-block relative overflow-hidden align-bottom">
-      <span
-        className={`inline-block text-gradient-warm transition-all duration-300 ease-out ${
-          isExiting
-            ? "translate-y-[110%] opacity-0"
-            : "translate-y-0 opacity-100"
-        }`}
-      >
-        {words[index]}
-      </span>
+    <span
+      className="inline-block transition-all duration-350 ease-out"
+      style={{
+        color: word.color,
+        textShadow: `0 0 40px ${word.color}40, 0 0 80px ${word.color}20`,
+        opacity: show ? 1 : 0,
+        transform: show ? "translateY(0)" : "translateY(30px)",
+        filter: show ? "blur(0px)" : "blur(4px)",
+      }}
+    >
+      {word.text}
     </span>
   );
 }
