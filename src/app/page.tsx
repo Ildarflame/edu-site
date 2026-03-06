@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { deals, getFeaturedDeals, CATEGORY_CONFIG, Category } from "@/data/deals";
 import DealCard from "@/components/DealCard";
+import RotatingWord from "@/components/RotatingWord";
 
 const audiences = [
   {
@@ -59,7 +60,8 @@ export default function Home() {
             <h1 className="text-5xl sm:text-6xl md:text-[80px] lg:text-[96px] font-extrabold tracking-[-0.03em] leading-[0.9]">
               <span className="text-zinc-100">Free tools</span>
               <br />
-              <span className="text-gradient-warm">for builders.</span>
+              <span className="text-zinc-100">for </span>
+              <RotatingWord />
             </h1>
           </div>
 
