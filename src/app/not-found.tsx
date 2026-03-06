@@ -10,10 +10,10 @@ export default function NotFound() {
       </p>
       <div className="flex gap-3 justify-center">
         <Link href="/" className="btn-primary px-6 py-2.5 text-[14px]">
-          Go home
+          Back to home
         </Link>
         <Link href="/deals" className="btn-ghost px-6 py-2.5 text-[14px]">
-          Browse deals
+          Explore deals
         </Link>
       </div>
     </main>

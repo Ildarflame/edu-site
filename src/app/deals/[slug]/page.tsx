@@ -89,7 +89,7 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
         rel="noopener noreferrer"
         className="btn-primary inline-flex items-center gap-2 px-7 py-2.5 text-[14px]"
       >
-        Get this deal
+        Claim this perk
         <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
         </svg>

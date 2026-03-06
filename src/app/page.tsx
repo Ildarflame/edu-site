@@ -82,7 +82,7 @@ export default async function Home() {
           {/* CTAs */}
           <div className="mt-8 flex gap-3 justify-center animate-in delay-3">
             <Link href="/deals" className="btn-primary px-7 py-2.5 text-[14px]">
-              Browse deals
+              Claim Your Free Tools
             </Link>
             <Link href="/about" className="btn-ghost px-7 py-2.5 text-[14px]">
               How it works

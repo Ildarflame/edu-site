@@ -427,6 +427,96 @@ export const deals: Deal[] = [
     url: "https://sentry.io/for/open-source/",
     featured: false,
   },
+  {
+    slug: "adobe-creative-cloud",
+    name: "Adobe Creative Cloud",
+    logo: "/logos/adobe.svg",
+    category: "Design",
+    audiences: ["students"],
+    tagline: "60%+ discount on all Creative Cloud apps",
+    description:
+      "Adobe offers students and teachers access to the entire Creative Cloud suite — Photoshop, Illustrator, Premiere Pro, After Effects, and 20+ more apps — at over 60% off the regular price.",
+    value: "$360/year savings",
+    steps: [
+      "Go to adobe.com/creativecloud/buy/students.html",
+      "Verify your student or teacher status via SheerID",
+      "Subscribe to the full Creative Cloud plan at the discounted rate",
+    ],
+    url: "https://www.adobe.com/creativecloud/buy/students.html",
+    featured: false,
+  },
+  {
+    slug: "azure-students",
+    name: "Microsoft Azure",
+    logo: "/logos/azure.svg",
+    category: "Cloud",
+    audiences: ["students", "startups"],
+    tagline: "Free $100 credit + services for students",
+    description:
+      "Azure for Students gives verified students $100 in cloud credits with no credit card required, plus free access to 25+ Azure services including App Service, Functions, and Cosmos DB. Startups can apply to Microsoft for Startups Founders Hub for up to $150K in credits.",
+    value: "$100–$150,000",
+    steps: [
+      "Go to azure.microsoft.com/en-us/free/students",
+      "Sign in with your school email to verify student status",
+      "Claim $100 in credits and start deploying services",
+    ],
+    url: "https://azure.microsoft.com/en-us/free/students/",
+    featured: true,
+  },
+  {
+    slug: "youtube-premium-student",
+    name: "YouTube Premium",
+    logo: "/logos/youtube.svg",
+    category: "Entertainment",
+    audiences: ["students"],
+    tagline: "Premium at student discount — ad-free videos & music",
+    description:
+      "YouTube Premium Student plan gives you ad-free videos, background play, offline downloads, and YouTube Music Premium at a reduced monthly price. Verify once and enjoy for up to 4 years.",
+    value: "$72/year savings",
+    steps: [
+      "Go to youtube.com/premium/student",
+      "Verify your enrollment via SheerID",
+      "Start your discounted Premium subscription",
+    ],
+    url: "https://www.youtube.com/premium/student",
+    featured: false,
+  },
+  {
+    slug: "amazon-prime-student",
+    name: "Amazon Prime Student",
+    logo: "/logos/amazon.svg",
+    category: "Entertainment",
+    audiences: ["students"],
+    tagline: "6-month free trial + 50% off Prime",
+    description:
+      "Amazon Prime Student includes a 6-month free trial followed by 50% off the regular Prime price. Get free two-day shipping, Prime Video, Prime Music, and exclusive student deals.",
+    value: "$75/year savings",
+    steps: [
+      "Go to amazon.com/joinstudent",
+      "Sign up with your .edu email",
+      "Enjoy 6 months free, then 50% off Prime",
+    ],
+    url: "https://www.amazon.com/amazonprime?planOptimizationId=WLPStudentMonthlyElig498",
+    featured: false,
+  },
+  {
+    slug: "apple-developer-student",
+    name: "Apple Developer Program",
+    logo: "/logos/apple.svg",
+    category: "Dev",
+    audiences: ["students"],
+    tagline: "Free membership via Apple Developer Academy",
+    description:
+      "Students can access Apple's development tools, beta software, and TestFlight for free. Those accepted into Apple Developer Academies get a full membership at no cost, including App Store distribution.",
+    value: "$99/year",
+    steps: [
+      "Download Xcode and create a free Apple ID",
+      "Apply to an Apple Developer Academy or use the free tier",
+      "Access developer resources, betas, and TestFlight",
+    ],
+    url: "https://developer.apple.com/programs/",
+    featured: false,
+  },
 ];
 
 export function getDealBySlug(slug: string): Deal | undefined {
