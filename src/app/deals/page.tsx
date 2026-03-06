@@ -9,15 +9,12 @@ export const metadata: Metadata = {
 
 export default function DealsPage() {
   return (
-    <main className="max-w-6xl mx-auto px-4 py-12">
-      <div className="mb-8">
-        <h1 className="text-3xl md:text-4xl font-extrabold">
-          All{" "}
-          <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-            Deals
-          </span>
+    <main className="max-w-6xl mx-auto px-6 py-12">
+      <div className="mb-10">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-white">
+          All Deals
         </h1>
-        <p className="mt-2 text-gray-500">
+        <p className="mt-2 text-zinc-500">
           Find the perfect perk for your project
         </p>
       </div>

@@ -50,10 +50,10 @@ export default function DealsGrid({
             <button
               key={opt.label}
               onClick={() => setAudience(opt.value)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+              className={`px-4 py-2 rounded-lg text-xs font-medium transition-all duration-200 ${
                 audience === opt.value
-                  ? "bg-gradient-to-r from-purple-600 to-pink-500 text-white shadow-md"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  ? "bg-orange-500/15 text-orange-400 border border-orange-500/30"
+                  : "bg-white/[0.03] text-zinc-500 border border-white/[0.06] hover:text-zinc-300 hover:border-white/[0.12]"
               }`}
             >
               {opt.label}
@@ -63,14 +63,17 @@ export default function DealsGrid({
       </div>
 
       {filtered.length === 0 ? (
-        <div className="text-center py-20 text-gray-400">
-          <p className="text-lg">No deals found</p>
-          <p className="text-sm mt-2">Try adjusting your filters</p>
+        <div className="text-center py-20">
+          <div className="text-4xl mb-3">🔍</div>
+          <p className="text-zinc-400 font-medium">No deals found</p>
+          <p className="text-sm text-zinc-600 mt-1">Try adjusting your filters</p>
         </div>
       ) : (
         <>
-          <p className="text-sm text-gray-500 mb-4">{filtered.length} deal{filtered.length !== 1 ? "s" : ""} found</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <p className="text-xs text-zinc-600 mb-4 font-medium">
+            {filtered.length} deal{filtered.length !== 1 ? "s" : ""} found
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 stagger">
             {filtered.map((deal) => (
               <DealCard key={deal.slug} deal={deal} />
             ))}

@@ -8,50 +8,54 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-12">
-      <h1 className="text-3xl md:text-4xl font-extrabold mb-6">
-        About{" "}
-        <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-          EduDeals
-        </span>
+    <main className="max-w-3xl mx-auto px-6 py-12">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-8">
+        About <span className="text-gradient">EduDeals</span>
       </h1>
 
-      <div className="prose prose-gray max-w-none">
-        <p className="text-lg text-gray-600 leading-relaxed">
+      <div className="space-y-6 text-zinc-400 leading-relaxed">
+        <p className="text-lg">
           EduDeals is a curated directory of free tools, services, and perks available for
           students, startups, and open source projects. We aggregate the best deals so you
           don&apos;t have to hunt for them.
         </p>
 
-        <h2 className="text-xl font-bold mt-8 mb-4">Our Mission</h2>
-        <p className="text-gray-600 leading-relaxed">
-          Many amazing companies offer free or heavily discounted plans for students,
-          early-stage startups, and open source maintainers. But these offers are scattered
-          across hundreds of websites. We bring them all together in one place.
-        </p>
+        <div className="bg-[#111113] rounded-xl border border-white/[0.06] p-8 my-10">
+          <h2 className="text-xl font-bold text-white mb-4">Our Mission</h2>
+          <p>
+            Many amazing companies offer free or heavily discounted plans for students,
+            early-stage startups, and open source maintainers. But these offers are scattered
+            across hundreds of websites. We bring them all together in one place.
+          </p>
+        </div>
 
-        <h2 className="text-xl font-bold mt-8 mb-4">Want to suggest a deal?</h2>
-        <p className="text-gray-600 leading-relaxed">
-          Know of a service that offers free perks? We&apos;d love to hear about it!
-          Open an issue on our{" "}
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-purple-600 hover:text-purple-700 font-medium"
-          >
-            GitHub repository
-          </a>{" "}
-          or reach out to us directly.
-        </p>
+        <div className="bg-[#111113] rounded-xl border border-white/[0.06] p-8">
+          <h2 className="text-xl font-bold text-white mb-4">Want to suggest a deal?</h2>
+          <p>
+            Know of a service that offers free perks? We&apos;d love to hear about it!
+            Open an issue on our{" "}
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange-400 hover:text-orange-300 font-medium transition-colors"
+            >
+              GitHub repository
+            </a>{" "}
+            or reach out to us directly.
+          </p>
+        </div>
       </div>
 
       <div className="mt-12">
         <Link
           href="/deals"
-          className="inline-flex items-center gap-2 px-8 py-3 text-base font-semibold text-white rounded-full bg-gradient-to-r from-purple-600 to-pink-500 hover:shadow-xl hover:shadow-purple-200 transition-all"
+          className="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-semibold text-black rounded-lg bg-gradient-to-r from-orange-500 to-amber-400 hover:from-orange-400 hover:to-amber-300 transition-all duration-200 shadow-lg shadow-orange-500/20"
         >
-          Browse Deals &rarr;
+          Browse Deals
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
         </Link>
       </div>
     </main>

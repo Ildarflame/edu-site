@@ -1,0 +1,272 @@
+[   87873ms] [ERROR] ./src/app/globals.css:1023:8
+Parsing CSS source code failed
+  1021 |   }
+  1022 | }
+> 1023 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1024 | * {
+  1025 |   scrollbar-width: thin;
+  1026 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[   87940ms] [ERROR] ./src/app/globals.css:1023:8
+Parsing CSS source code failed
+  1021 |   }
+  1022 | }
+> 1023 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1024 | * {
+  1025 |   scrollbar-width: thin;
+  1026 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[   99066ms] [ERROR] ./src/app/globals.css:1036:8
+Parsing CSS source code failed
+  1034 |   }
+  1035 | }
+> 1036 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1037 | * {
+  1038 |   scrollbar-width: thin;
+  1039 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  108514ms] [ERROR] ./src/app/globals.css:1147:8
+Parsing CSS source code failed
+  1145 |   }
+  1146 | }
+> 1147 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1148 | * {
+  1149 |   scrollbar-width: thin;
+  1150 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  116583ms] [ERROR] ./src/app/globals.css:1200:8
+Parsing CSS source code failed
+  1198 |   }
+  1199 | }
+> 1200 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1201 | * {
+  1202 |   scrollbar-width: thin;
+  1203 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  123937ms] [ERROR] ./src/app/globals.css:1313:8
+Parsing CSS source code failed
+  1311 |   }
+  1312 | }
+> 1313 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1314 | * {
+  1315 |   scrollbar-width: thin;
+  1316 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  125693ms] [ERROR] ./src/app/globals.css:1313:8
+Parsing CSS source code failed
+  1311 |   }
+  1312 | }
+> 1313 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1314 | * {
+  1315 |   scrollbar-width: thin;
+  1316 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  132378ms] [ERROR] ./src/app/globals.css:1371:8
+Parsing CSS source code failed
+  1369 |   }
+  1370 | }
+> 1371 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1372 | * {
+  1373 |   scrollbar-width: thin;
+  1374 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  169950ms] [ERROR] ./src/app/globals.css:1656:8
+Parsing CSS source code failed
+  1654 |   }
+  1655 | }
+> 1656 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1657 | * {
+  1658 |   scrollbar-width: thin;
+  1659 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  177161ms] [ERROR] ./src/app/globals.css:1686:8
+Parsing CSS source code failed
+  1684 |   }
+  1685 | }
+> 1686 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1687 | * {
+  1688 |   scrollbar-width: thin;
+  1689 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  181851ms] [ERROR] ./src/app/globals.css:1721:8
+Parsing CSS source code failed
+  1719 |   }
+  1720 | }
+> 1721 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1722 | * {
+  1723 |   scrollbar-width: thin;
+  1724 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  190592ms] [ERROR] ./src/app/globals.css:1721:8
+Parsing CSS source code failed
+  1719 |   }
+  1720 | }
+> 1721 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1722 | * {
+  1723 |   scrollbar-width: thin;
+  1724 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  196812ms] [ERROR] ./src/app/globals.css:1721:8
+Parsing CSS source code failed
+  1719 |   }
+  1720 | }
+> 1721 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1722 | * {
+  1723 |   scrollbar-width: thin;
+  1724 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  213558ms] [ERROR] ./src/app/globals.css:1758:8
+Parsing CSS source code failed
+  1756 |   }
+  1757 | }
+> 1758 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1759 | * {
+  1760 |   scrollbar-width: thin;
+  1761 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  222168ms] [ERROR] ./src/app/globals.css:1769:8
+Parsing CSS source code failed
+  1767 |   }
+  1768 | }
+> 1769 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1770 | * {
+  1771 |   scrollbar-width: thin;
+  1772 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  228888ms] [ERROR] ./src/app/globals.css:1769:8
+Parsing CSS source code failed
+  1767 |   }
+  1768 | }
+> 1769 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1770 | * {
+  1771 |   scrollbar-width: thin;
+  1772 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  238576ms] [ERROR] ./src/app/globals.css:1769:8
+Parsing CSS source code failed
+  1767 |   }
+  1768 | }
+> 1769 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1770 | * {
+  1771 |   scrollbar-width: thin;
+  1772 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127

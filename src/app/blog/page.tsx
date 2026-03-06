@@ -11,36 +11,34 @@ export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl md:text-4xl font-extrabold mb-2">
-        <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-          Blog
-        </span>
+    <main className="max-w-4xl mx-auto px-6 py-12">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-2">
+        Blog
       </h1>
-      <p className="text-gray-500 mb-10">Guides and tips for getting the best deals</p>
+      <p className="text-zinc-500 mb-10">Guides and tips for getting the best deals</p>
 
       {posts.length === 0 ? (
-        <p className="text-gray-400">No posts yet. Check back soon!</p>
+        <p className="text-zinc-600">No posts yet. Check back soon!</p>
       ) : (
-        <div className="space-y-6">
+        <div className="space-y-4 stagger">
           {posts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="block group bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-xl hover:shadow-purple-100/50 hover:border-purple-200 transition-all"
+              className="card-glow block group bg-[#111113] rounded-xl border border-white/[0.06] p-6"
             >
-              <div className="flex items-center gap-3 text-xs text-gray-400 mb-2">
-                <time>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</time>
+              <div className="flex items-center gap-3 text-xs text-zinc-600 mb-3">
+                <time className="font-medium">{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</time>
                 <div className="flex gap-2">
                   {post.tags.map((tag) => (
-                    <span key={tag} className="px-2 py-0.5 bg-gray-100 rounded-full">{tag}</span>
+                    <span key={tag} className="px-2 py-0.5 bg-white/[0.04] border border-white/[0.06] rounded-md">{tag}</span>
                   ))}
                 </div>
               </div>
-              <h2 className="text-xl font-bold group-hover:text-purple-600 transition-colors">
+              <h2 className="text-lg font-bold text-white group-hover:text-orange-400 transition-colors duration-200">
                 {post.title}
               </h2>
-              <p className="mt-2 text-sm text-gray-500">{post.description}</p>
+              <p className="mt-2 text-sm text-zinc-500 leading-relaxed">{post.description}</p>
             </Link>
           ))}
         </div>

@@ -1,29 +1,38 @@
 import Link from "next/link";
-import { Deal } from "@/data/deals";
+import { Deal, CATEGORY_CONFIG } from "@/data/deals";
 import CategoryBadge from "./CategoryBadge";
 import AudienceBadge from "./AudienceBadge";
 
 export default function DealCard({ deal }: { deal: Deal }) {
+  const catConfig = CATEGORY_CONFIG[deal.category];
+
   return (
     <Link
       href={`/deals/${deal.slug}`}
-      className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-xl hover:shadow-purple-100/50 hover:border-purple-200 transition-all duration-300"
+      className="card-glow group block bg-[#111113] rounded-xl border border-white/[0.06] p-6 relative overflow-hidden"
     >
+      {/* Subtle top accent line */}
+      <div
+        className={`absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r ${catConfig.gradient} opacity-0 group-hover:opacity-50 transition-opacity duration-300`}
+      />
+
       <div className="flex items-start justify-between mb-4">
-        <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center text-2xl overflow-hidden">
-          <span className="font-bold text-gray-400">{deal.name[0]}</span>
+        <div className="w-11 h-11 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-xl">
+          {catConfig.icon}
         </div>
-        <span className="text-sm font-bold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
+        <span className="text-xs font-bold text-emerald-400 bg-emerald-400/10 px-3 py-1.5 rounded-md border border-emerald-400/20">
           {deal.value}
         </span>
       </div>
 
-      <h3 className="font-bold text-lg text-gray-900 group-hover:text-purple-600 transition-colors">
+      <h3 className="font-bold text-base text-white group-hover:text-orange-400 transition-colors duration-200">
         {deal.name}
       </h3>
-      <p className="mt-1 text-sm text-gray-500 line-clamp-2">{deal.tagline}</p>
+      <p className="mt-1.5 text-sm text-zinc-500 line-clamp-2 leading-relaxed">
+        {deal.tagline}
+      </p>
 
-      <div className="mt-4 flex flex-wrap gap-2">
+      <div className="mt-4 flex flex-wrap gap-1.5">
         <CategoryBadge category={deal.category} />
         {deal.audiences.map((a) => (
           <AudienceBadge key={a} audience={a} />

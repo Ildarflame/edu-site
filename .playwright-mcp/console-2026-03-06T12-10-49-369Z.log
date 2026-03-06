@@ -1,0 +1,4394 @@
+[      92ms] [ERROR] ./src/app/globals.css:1769:8
+Parsing CSS source code failed
+  1767 |   }
+  1768 | }
+> 1769 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1770 | * {
+  1771 |   scrollbar-width: thin;
+  1772 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[     356ms] [ERROR] ./src/app/globals.css:1769:8
+Parsing CSS source code failed
+  1767 |   }
+  1768 | }
+> 1769 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1770 | * {
+  1771 |   scrollbar-width: thin;
+  1772 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[     491ms] [ERROR] ./src/app/globals.css:1769:8
+Parsing CSS source code failed
+  1767 |   }
+  1768 | }
+> 1769 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1770 | * {
+  1771 |   scrollbar-width: thin;
+  1772 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[     492ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[     569ms] Error: ./src/app/globals.css:1769:8
+Parsing CSS source code failed
+  1767 |   }
+  1768 | }
+> 1769 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1770 | * {
+  1771 |   scrollbar-width: thin;
+  1772 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/app/globals.css:1769:8)
+    at Object.getCompilationErrors (file:///Users/ildarflame/Desktop/edu-site/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:1008:59)
+    at DevBundlerService.getCompilationError (file:///Users/ildarflame/Desktop/edu-site/node_modules/next/dist/server/lib/dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file:///Users/ildarflame/Desktop/edu-site/node_modules/next/dist/server/dev/next-dev-server.js:706:42)
+    at DevServer.findPageComponents (file:///Users/ildarflame/Desktop/edu-site/node_modules/next/dist/server/dev/next-dev-server.js:676:43)
+    at async DevServer.renderErrorToResponseImpl (file:///Users/ildarflame/Desktop/edu-site/node_modules/next/dist/server/base-server.js:1733:26)
+[     618ms] [ERROR] ./src/app/globals.css:1769:8
+Parsing CSS source code failed
+  1767 |   }
+  1768 | }
+> 1769 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1770 | * {
+  1771 |   scrollbar-width: thin;
+  1772 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[     619ms] [ERROR] ./src/app/globals.css:1769:8
+Parsing CSS source code failed
+  1767 |   }
+  1768 | }
+> 1769 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1770 | * {
+  1771 |   scrollbar-width: thin;
+  1772 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[     619ms] [ERROR] ./src/app/globals.css:1769:8
+Parsing CSS source code failed
+  1767 |   }
+  1768 | }
+> 1769 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1770 | * {
+  1771 |   scrollbar-width: thin;
+  1772 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[     619ms] [ERROR] ./src/app/globals.css:1769:8
+Parsing CSS source code failed
+  1767 |   }
+  1768 | }
+> 1769 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1770 | * {
+  1771 |   scrollbar-width: thin;
+  1772 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[     619ms] [ERROR] ./src/app/globals.css:1769:8
+Parsing CSS source code failed
+  1767 |   }
+  1768 | }
+> 1769 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1770 | * {
+  1771 |   scrollbar-width: thin;
+  1772 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[     672ms] [ERROR] ./src/app/globals.css:1769:8
+Parsing CSS source code failed
+  1767 |   }
+  1768 | }
+> 1769 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1770 | * {
+  1771 |   scrollbar-width: thin;
+  1772 |   scrollbar-color: #27272a #09090b;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    5445ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    5497ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    5550ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    5604ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    5649ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    5700ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    5756ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    5811ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    5864ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    5920ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    5976ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6028ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6083ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6138ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6193ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6249ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6306ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6363ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6418ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6474ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6529ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6584ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6640ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6695ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6750ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6806ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6851ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6908ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    6964ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7013ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7070ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7126ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7182ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7238ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7293ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7350ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7407ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7454ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7509ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7567ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7623ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7679ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7737ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7793ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7851ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7908ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    7964ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8022ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8079ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8136ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8194ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8252ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8306ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8361ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8419ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8472ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8528ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8584ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8642ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8698ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8754ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8811ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8868ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8924ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    8974ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9030ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9085ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9143ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9201ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9259ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9315ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9370ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9425ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9482ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9538ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9596ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9653ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9710ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9767ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9827ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9882ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9938ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[    9995ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10052ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10104ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10160ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10217ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10268ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10310ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10362ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10408ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10457ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10506ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10556ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10613ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10669ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10725ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10782ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10836ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10893ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   10950ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11005ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11060ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11116ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11174ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11226ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11273ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11318ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11377ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11432ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11481ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11533ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11587ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11645ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11703ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11761ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11818ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11874ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11929ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   11987ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12047ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12090ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12147ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12205ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12260ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12316ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12359ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12415ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12469ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12525ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12579ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12633ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12687ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12742ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12800ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12859ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12915ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   12967ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13024ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13081ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13139ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13196ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13252ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13309ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13363ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13421ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13481ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13535ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13592ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13649ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13705ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13749ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13806ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13862ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13918ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   13973ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14029ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14083ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14138ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14191ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14247ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14303ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14358ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14414ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14469ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14524ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14577ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14633ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14689ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14746ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14803ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14859ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14915ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   14971ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15027ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15073ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15128ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15183ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15237ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15293ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15350ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15405ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15462ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15518ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15573ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15628ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15683ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15740ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15788ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15846ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15902ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   15957ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16013ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16068ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16123ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16179ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16235ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16291ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16348ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16405ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16460ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16516ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16572ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16620ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16675ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16732ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16789ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16845ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16900ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   16955ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17013ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17070ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17129ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17186ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17244ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17300ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17355ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17412ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17459ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17513ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17570ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17627ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17683ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17740ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17796ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17857ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17902ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   17958ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18015ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18067ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18124ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18181ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18238ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18294ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18351ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18409ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18466ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18523ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18581ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18639ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18696ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18755ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18814ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18869ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18926ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   18982ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19039ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19087ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19137ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19195ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19251ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19307ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19364ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19418ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19474ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19529ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19584ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19638ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19695ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19750ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19803ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19859ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19914ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19967ms] [ERROR] ./src/app/globals.css:1771:8
+Parsing CSS source code failed
+  1769 |   }
+  1770 | }
+> 1771 | @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap");
+       |        ^
+  1772 | @property --tw-translate-x {
+  1773 |   syntax: "*";
+  1774 |   inherits: false;
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[   19993ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1206
