@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const deal = await getDealBySlug(slug);
   if (!deal) return { title: "Deal Not Found" };
-  return { title: `${deal.name} — ${deal.tagline} | EduDeals`, description: deal.description };
+  return { title: `${deal.name} — ${deal.tagline} | StudentPerks`, description: deal.description };
 }
 
 export default async function DealPage({ params }: { params: Promise<{ slug: string }> }) {

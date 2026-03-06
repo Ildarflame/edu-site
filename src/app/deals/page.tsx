@@ -6,7 +6,7 @@ import DealsGrid from "@/components/DealsGrid";
 export const revalidate = 300;
 
 export const metadata: Metadata = {
-  title: "All Deals — EduDeals",
+  title: "All Deals — StudentPerks",
   description: "Browse all free tools and perks for students, startups, and open source projects.",
 };
 

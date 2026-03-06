@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return { title: "Post Not Found" };
-  return { title: `${post.title} | EduDeals Blog`, description: post.description };
+  return { title: `${post.title} | StudentPerks Blog`, description: post.description };
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {

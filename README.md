@@ -1,4 +1,4 @@
-# EduDeals
+# StudentPerks
 
 Curated directory of free tools, services, and perks for students, startups, and open source projects.
 

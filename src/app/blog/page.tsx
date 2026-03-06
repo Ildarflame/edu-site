@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog — EduDeals",
+  title: "Blog — StudentPerks",
   description: "Guides and tips for student and startup perks.",
 };
 

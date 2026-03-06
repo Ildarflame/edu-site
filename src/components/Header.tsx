@@ -17,10 +17,10 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-md bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/20">
-            <span className="text-[11px] font-black text-white leading-none">E</span>
+            <span className="text-[11px] font-black text-white leading-none">S</span>
           </div>
           <span className="text-[15px] font-semibold text-zinc-100 tracking-tight">
-            EduDeals
+            StudentPerks
           </span>
         </Link>
 

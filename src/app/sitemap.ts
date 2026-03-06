@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { getDeals } from "@/lib/deals";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://edudeals.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://studentperks.dev";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const deals = await getDeals();

@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About — EduDeals",
-  description: "Learn about EduDeals and our mission.",
+  title: "About — StudentPerks",
+  description: "Learn about StudentPerks and our mission.",
 };
 
 export default function AboutPage() {
@@ -11,7 +11,7 @@ export default function AboutPage() {
     <main className="max-w-2xl mx-auto px-6 py-12">
       <p className="section-label mb-2">About</p>
       <h1 className="text-2xl md:text-3xl font-bold text-zinc-100 mb-6">
-        What is <span className="text-gradient-warm">EduDeals</span>?
+        What is <span className="text-gradient-warm">StudentPerks</span>?
       </h1>
 
       <div className="space-y-5 text-[14px] text-zinc-500 leading-relaxed">

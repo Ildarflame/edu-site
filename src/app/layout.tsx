@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://edudeals.vercel.app"),
-  title: "EduDeals — Free Perks for Students, Startups & Open Source",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://studentperks.dev"),
+  title: "StudentPerks — Free Tools & Perks for Students",
   description:
     "Discover free tools, services, and discounts available for students, startups, and open source projects.",
 };
@@ -24,8 +24,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "EduDeals",
-              url: "https://edudeals.vercel.app",
+              name: "StudentPerks",
+              url: "https://studentperks.dev",
               description: "Discover free tools, services, and discounts for students, startups, and open source projects.",
             }),
           }}

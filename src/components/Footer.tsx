@@ -9,9 +9,9 @@ export default function Footer() {
           <div className="max-w-xs">
             <div className="flex items-center gap-2 mb-3">
               <div className="w-6 h-6 rounded-md bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
-                <span className="text-[9px] font-black text-white">E</span>
+                <span className="text-[9px] font-black text-white">S</span>
               </div>
-              <span className="text-[14px] font-semibold text-zinc-300">EduDeals</span>
+              <span className="text-[14px] font-semibold text-zinc-300">StudentPerks</span>
             </div>
             <p className="text-[13px] text-zinc-600 leading-relaxed">
               Free tools, credits, and pro plans for students, startups, and open source.
@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-6 border-t border-white/[0.04] text-[12px] text-zinc-700">
-          &copy; {new Date().getFullYear()} EduDeals
+          &copy; {new Date().getFullYear()} StudentPerks
         </div>
       </div>
     </footer>

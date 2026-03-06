@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { getDealBySlug, CATEGORY_CONFIG } from "@/lib/deals";
 
-export const alt = "Deal on EduDeals";
+export const alt = "Deal on StudentPerks";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -91,7 +91,7 @@ export default async function OGImage({ params }: { params: Promise<{ slug: stri
             color: "#3f3f46",
           }}
         >
-          EduDeals
+          StudentPerks
         </div>
       </div>
     ),

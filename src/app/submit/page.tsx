@@ -21,7 +21,7 @@ export default function SubmitPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const body = `Deal Name: ${name}\nURL: ${url}\nCategory: ${category}\nAudiences: ${audiences.join(", ")}\n\nDescription:\n${description}`;
-    window.location.href = `mailto:deals@edudeals.com?subject=${encodeURIComponent(`New Deal: ${name}`)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:deals@studentperks.dev?subject=${encodeURIComponent(`New Deal: ${name}`)}&body=${encodeURIComponent(body)}`;
   };
 
   const inputClass = "w-full bg-white/[0.03] border border-white/[0.06] rounded-lg px-4 py-2.5 text-[14px] text-zinc-200 placeholder-zinc-700 focus:outline-none focus:border-orange-500/30 transition-colors";
