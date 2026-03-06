@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NewsletterForm from "./NewsletterForm";
 
 export default function Footer() {
   return (
@@ -25,6 +26,7 @@ export default function Footer() {
                   { href: "/deals", label: "Deals" },
                   { href: "/blog", label: "Blog" },
                   { href: "/about", label: "About" },
+                  { href: "/submit", label: "Submit a Deal" },
                 ].map((link) => (
                   <Link
                     key={link.href}
@@ -53,7 +55,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-white/[0.04] text-[12px] text-zinc-700">
+        <div className="mt-10 pt-6 border-t border-white/[0.04]">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+            <p className="text-[13px] text-zinc-500 font-medium">Get deal alerts</p>
+            <NewsletterForm compact />
+          </div>
+        </div>
+
+        <div className="pt-6 border-t border-white/[0.04] text-[12px] text-zinc-700">
           &copy; {new Date().getFullYear()} EduDeals
         </div>
       </div>

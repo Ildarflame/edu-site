@@ -6,6 +6,7 @@ import CursorGlow from "@/components/CursorGlow";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import LogoMarquee from "@/components/LogoMarquee";
 import ScrollReveal from "@/components/ScrollReveal";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export const revalidate = 300; // revalidate every 5 min
 
@@ -231,6 +232,23 @@ export default async function Home() {
         </div>
       </section>
       </ScrollReveal>
+
+      {/* ═══ NEWSLETTER ═══ */}
+      <ScrollReveal>
+      <section className="max-w-7xl mx-auto px-6 py-20 text-center">
+        <p className="section-label mb-2">Stay updated</p>
+        <h2 className="text-2xl md:text-3xl font-bold text-zinc-100 mb-2">Never miss a deal</h2>
+        <p className="text-[14px] text-zinc-600 mb-6 max-w-md mx-auto">
+          Get the best new deals delivered to your inbox. No spam, unsubscribe anytime.
+        </p>
+        <div className="flex justify-center">
+          <NewsletterForm />
+        </div>
+      </section>
+      </ScrollReveal>
+
+      {/* Divider */}
+      <div className="line-fade mx-auto max-w-5xl" />
 
       {/* ═══ STATS BANNER ═══ */}
       <ScrollReveal>

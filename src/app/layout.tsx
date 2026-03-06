@@ -18,6 +18,18 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "EduDeals",
+              url: "https://edudeals.vercel.app",
+              description: "Discover free tools, services, and discounts for students, startups, and open source projects.",
+            }),
+          }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link

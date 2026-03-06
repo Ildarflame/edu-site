@@ -103,6 +103,24 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
           </div>
         </section>
       )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: deal.name,
+            description: deal.description,
+            url: deal.url,
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+              availability: "https://schema.org/InStock",
+            },
+          }),
+        }}
+      />
     </main>
   );
 }
