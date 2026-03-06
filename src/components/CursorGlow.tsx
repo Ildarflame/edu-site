@@ -16,7 +16,7 @@ export default function CursorGlow() {
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
       el.style.opacity = "1";
-      el.style.transform = `translate(${x - 200}px, ${y - 200}px)`;
+      el.style.transform = `translate(${x - 300}px, ${y - 300}px)`;
     };
 
     const leave = () => {
@@ -34,9 +34,9 @@ export default function CursorGlow() {
   return (
     <div
       ref={ref}
-      className="pointer-events-none absolute w-[400px] h-[400px] rounded-full opacity-0 transition-opacity duration-500"
+      className="pointer-events-none absolute w-[600px] h-[600px] rounded-full opacity-0 transition-opacity duration-500"
       style={{
-        background: "radial-gradient(circle, rgba(249,115,22,0.07) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(249,115,22,0.2) 0%, rgba(249,115,22,0.08) 40%, transparent 70%)",
       }}
     />
   );
