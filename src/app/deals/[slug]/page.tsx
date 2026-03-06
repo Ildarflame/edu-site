@@ -40,8 +40,8 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
 
       {/* Header */}
       <div className="flex items-start gap-4 mb-8">
-        <div className="w-12 h-12 rounded-xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center shrink-0">
-          <Image src={deal.logo} alt={deal.name} width={24} height={24} />
+        <div className="w-14 h-14 rounded-xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center shrink-0">
+          <Image src={deal.logo} alt={deal.name} width={36} height={36} />
         </div>
         <div>
           <h1 className="text-2xl md:text-3xl font-bold text-zinc-100">{deal.name}</h1>

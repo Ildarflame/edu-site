@@ -24,8 +24,8 @@ export default function DealCard({ deal, featured = false }: { deal: Deal; featu
       className={`card ${accent} group block p-5 relative overflow-hidden ${featured ? "md:p-7" : ""}`}
     >
       <div className="flex items-start justify-between mb-3">
-        <div className="w-10 h-10 rounded-[10px] bg-white/[0.03] border border-white/[0.06] flex items-center justify-center">
-          <Image src={deal.logo} alt={deal.name} width={20} height={20} />
+        <div className="w-11 h-11 rounded-[10px] bg-white/[0.03] border border-white/[0.06] flex items-center justify-center">
+          <Image src={deal.logo} alt={deal.name} width={32} height={32} />
         </div>
         <span className="value-pill text-[11px] font-bold px-2.5 py-1 rounded-md">
           {deal.value}
