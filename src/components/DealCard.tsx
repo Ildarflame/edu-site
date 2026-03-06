@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Deal, CATEGORY_CONFIG } from "@/data/deals";
 import CategoryBadge from "./CategoryBadge";
 import AudienceBadge from "./AudienceBadge";
@@ -23,8 +24,8 @@ export default function DealCard({ deal, featured = false }: { deal: Deal; featu
       className={`card ${accent} group block p-5 relative overflow-hidden ${featured ? "md:p-7" : ""}`}
     >
       <div className="flex items-start justify-between mb-3">
-        <div className="w-10 h-10 rounded-[10px] bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-lg">
-          {catConfig.icon}
+        <div className="w-10 h-10 rounded-[10px] bg-white/[0.03] border border-white/[0.06] flex items-center justify-center">
+          <Image src={deal.logo} alt={deal.name} width={20} height={20} />
         </div>
         <span className="value-pill text-[11px] font-bold px-2.5 py-1 rounded-md">
           {deal.value}
