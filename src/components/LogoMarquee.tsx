@@ -1,27 +1,52 @@
 "use client";
 
+import Image from "next/image";
+
 const brands = [
-  "GitHub", "Notion", "Figma", "JetBrains", "Vercel",
-  "AWS", "Copilot", "Spotify", "Coursera", "OpenAI",
-  "GitHub", "Notion", "Figma", "JetBrains", "Vercel",
-  "AWS", "Copilot", "Spotify", "Coursera", "OpenAI",
+  { name: "GitHub", logo: "/logos/github.svg" },
+  { name: "Notion", logo: "/logos/notion.svg" },
+  { name: "Figma", logo: "/logos/figma.svg" },
+  { name: "JetBrains", logo: "/logos/jetbrains.svg" },
+  { name: "Vercel", logo: "/logos/vercel.svg" },
+  { name: "AWS", logo: "/logos/aws.svg" },
+  { name: "Copilot", logo: "/logos/copilot.svg" },
+  { name: "Spotify", logo: "/logos/spotify.svg" },
+  { name: "Coursera", logo: "/logos/coursera.svg" },
+  { name: "OpenAI", logo: "/logos/openai.svg" },
+  { name: "Stripe", logo: "/logos/stripe.svg" },
+  { name: "Docker", logo: "/logos/docker.svg" },
+  { name: "Supabase", logo: "/logos/supabase.svg" },
+  { name: "Sentry", logo: "/logos/sentry.svg" },
+  { name: "MongoDB", logo: "/logos/mongodb.svg" },
 ];
+
+// Duplicate for seamless loop
+const allBrands = [...brands, ...brands];
 
 export default function LogoMarquee() {
   return (
-    <div className="relative overflow-hidden py-6 border-y border-white/[0.04] bg-white/[0.01]">
+    <div className="relative overflow-hidden py-8 border-y border-white/[0.04] bg-white/[0.01]">
       {/* Fade edges */}
       <div className="absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-[#050507] to-transparent" />
       <div className="absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-[#050507] to-transparent" />
 
-      <div className="marquee flex items-center gap-12 whitespace-nowrap">
-        {brands.map((brand, i) => (
-          <span
-            key={`${brand}-${i}`}
-            className="text-[13px] font-medium text-zinc-700 tracking-wide select-none"
+      <div className="marquee flex items-center gap-16 whitespace-nowrap">
+        {allBrands.map((brand, i) => (
+          <div
+            key={`${brand.name}-${i}`}
+            className="flex items-center gap-2.5 opacity-40 hover:opacity-80 transition-opacity duration-300"
           >
-            {brand}
-          </span>
+            <Image
+              src={brand.logo}
+              alt={brand.name}
+              width={20}
+              height={20}
+              className="brightness-0 invert"
+            />
+            <span className="text-[13px] font-medium text-zinc-500 tracking-wide select-none">
+              {brand.name}
+            </span>
+          </div>
         ))}
       </div>
     </div>
