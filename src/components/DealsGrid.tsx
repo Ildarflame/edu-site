@@ -7,23 +7,59 @@ import DealCard from "./DealCard";
 import DealCardSkeleton from "./DealCardSkeleton";
 import CategoryFilter from "./CategoryFilter";
 import SearchBar from "./SearchBar";
+import CompareBar from "./CompareBar";
 
 const DEALS_PER_PAGE = 12;
 
 const audienceOptions: { value: Audience | null; label: string }[] = [
   { value: null, label: "Everyone" },
-  { value: "students", label: "🎓 Students" },
-  { value: "startups", label: "🚀 Startups" },
-  { value: "opensource", label: "💻 Open Source" },
+  { value: "students", label: "Students" },
+  { value: "startups", label: "Startups" },
+  { value: "opensource", label: "Open Source" },
 ];
 
-type SortOption = "name-asc" | "name-desc" | "featured";
+export type ValueFilter = "all" | "free" | "credits" | "discount" | "pro";
+
+const valueFilterOptions: { value: ValueFilter; label: string }[] = [
+  { value: "all", label: "Any value" },
+  { value: "free", label: "Free" },
+  { value: "credits", label: "Credits" },
+  { value: "discount", label: "Discount" },
+  { value: "pro", label: "Pro Plan" },
+];
+
+function matchesValueFilter(deal: Deal, filter: ValueFilter): boolean {
+  if (filter === "all") return true;
+  const v = deal.value.toLowerCase();
+  switch (filter) {
+    case "free":
+      return v.includes("free");
+    case "credits":
+      return v.includes("credit");
+    case "discount":
+      return v.includes("discount") || v.includes("saving") || v.includes("off");
+    case "pro":
+      return v.includes("plan") || v.includes("/year") || v.includes("/month");
+    default:
+      return true;
+  }
+}
+
+type SortOption = "newest" | "value" | "az";
 
 const sortOptions: { value: SortOption; label: string }[] = [
-  { value: "featured", label: "Featured first" },
-  { value: "name-asc", label: "Name A-Z" },
-  { value: "name-desc", label: "Name Z-A" },
+  { value: "newest", label: "Newest first" },
+  { value: "value", label: "Most valuable" },
+  { value: "az", label: "A-Z" },
 ];
+
+function parseDollarValue(v: string): number {
+  const cleaned = v.replace(/,/g, "");
+  const match = cleaned.match(/\$([0-9]+(?:\.[0-9]+)?)/);
+  if (match) return parseFloat(match[1]);
+  if (v.toLowerCase().includes("free")) return 0;
+  return 0;
+}
 
 export default function DealsGrid({
   deals,
@@ -46,59 +82,85 @@ export default function DealsGrid({
   const [audience, setAudience] = useState<Audience | null>(
     (searchParams.get("audience") as Audience) || initialAudience || null
   );
+  const [valueFilter, setValueFilter] = useState<ValueFilter>(
+    (searchParams.get("value") as ValueFilter) || "all"
+  );
   const [sort, setSort] = useState<SortOption>(
-    (searchParams.get("sort") as SortOption) || "featured"
+    (searchParams.get("sort") as SortOption) || "newest"
   );
   const [page, setPage] = useState(() => {
     const p = parseInt(searchParams.get("page") ?? "1", 10);
     return p > 0 ? p : 1;
   });
+  const [compareIds, setCompareIds] = useState<string[]>([]);
+
+  const hasActiveFilters = !!(search || category || audience || valueFilter !== "all");
+
+  const clearAllFilters = useCallback(() => {
+    setSearch("");
+    setCategory(null);
+    setAudience(null);
+    setValueFilter("all");
+    setPage(1);
+  }, []);
 
   const syncUrl = useCallback(() => {
     const params = new URLSearchParams();
     if (search) params.set("q", search);
     if (category) params.set("category", category);
     if (audience) params.set("audience", audience);
-    if (sort && sort !== "featured") params.set("sort", sort);
+    if (valueFilter !== "all") params.set("value", valueFilter);
+    if (sort && sort !== "newest") params.set("sort", sort);
     if (page > 1) params.set("page", String(page));
     const qs = params.toString();
     router.replace(`/deals${qs ? `?${qs}` : ""}`, { scroll: false });
-  }, [search, category, audience, sort, page, router]);
+  }, [search, category, audience, valueFilter, sort, page, router]);
 
   useEffect(() => {
     syncUrl();
   }, [syncUrl]);
 
-  // Reset page to 1 when filters change
   const resetPage = useCallback(() => setPage(1), []);
 
   const handleSearch = useCallback((v: string) => { setSearch(v); resetPage(); }, [resetPage]);
   const handleCategory = useCallback((v: Category | null) => { setCategory(v); resetPage(); }, [resetPage]);
   const handleAudience = useCallback((v: Audience | null) => { setAudience(v); resetPage(); }, [resetPage]);
+  const handleValueFilter = useCallback((v: ValueFilter) => { setValueFilter(v); resetPage(); }, [resetPage]);
   const handleSort = useCallback((v: SortOption) => { setSort(v); resetPage(); }, [resetPage]);
+
+  const toggleCompare = useCallback((slug: string) => {
+    setCompareIds((prev) =>
+      prev.includes(slug) ? prev.filter((s) => s !== slug) : prev.length < 3 ? [...prev, slug] : prev
+    );
+  }, []);
 
   const filtered = useMemo(() => {
     let result = deals.filter((deal) => {
       if (category && deal.category !== category) return false;
       if (audience && !deal.audiences.includes(audience)) return false;
-      if (search && !deal.name.toLowerCase().includes(search.toLowerCase()) && !deal.tagline.toLowerCase().includes(search.toLowerCase())) return false;
+      if (!matchesValueFilter(deal, valueFilter)) return false;
+      if (search) {
+        const q = search.toLowerCase();
+        if (!deal.name.toLowerCase().includes(q) && !deal.tagline.toLowerCase().includes(q) && !deal.description.toLowerCase().includes(q)) return false;
+      }
       return true;
     });
 
     switch (sort) {
-      case "name-asc":
+      case "az":
         result = [...result].sort((a, b) => a.name.localeCompare(b.name));
         break;
-      case "name-desc":
-        result = [...result].sort((a, b) => b.name.localeCompare(a.name));
+      case "value":
+        result = [...result].sort((a, b) => parseDollarValue(b.value) - parseDollarValue(a.value));
         break;
-      case "featured":
+      case "newest":
+      default:
         result = [...result].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
         break;
     }
 
     return result;
-  }, [deals, category, audience, search, sort]);
+  }, [deals, category, audience, valueFilter, search, sort]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / DEALS_PER_PAGE));
   const safePage = Math.min(page, totalPages);
@@ -119,7 +181,6 @@ export default function DealsGrid({
   const pageBtnInactive = "bg-white/[0.02] text-zinc-500 border-white/[0.06] hover:text-zinc-300 hover:border-white/[0.1]";
   const pageBtnDisabled = "bg-white/[0.01] text-zinc-800 border-white/[0.03] cursor-not-allowed";
 
-  // Generate visible page numbers
   const getPageNumbers = () => {
     const pages: (number | "...")[] = [];
     if (totalPages <= 7) {
@@ -135,6 +196,8 @@ export default function DealsGrid({
     }
     return pages;
   };
+
+  const compareDeals = deals.filter((d) => compareIds.includes(d.slug));
 
   return (
     <div>
@@ -152,6 +215,25 @@ export default function DealsGrid({
             </button>
           ))}
         </div>
+        <div className="flex flex-wrap gap-1.5">
+          {valueFilterOptions.map((opt) => (
+            <button
+              key={opt.value}
+              onClick={() => handleValueFilter(opt.value)}
+              className={`${base} ${valueFilter === opt.value ? active : inactive}`}
+            >
+              {opt.label}
+            </button>
+          ))}
+        </div>
+        {hasActiveFilters && (
+          <button
+            onClick={clearAllFilters}
+            className="text-[12px] text-zinc-500 hover:text-orange-400 transition-colors underline underline-offset-2"
+          >
+            Clear all filters
+          </button>
+        )}
       </div>
 
       <div className="flex items-center justify-between mb-3">
@@ -188,7 +270,13 @@ export default function DealsGrid({
         <>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 stagger-grid">
             {paginatedDeals.map((deal) => (
-              <DealCard key={deal.slug} deal={deal} />
+              <DealCard
+                key={deal.slug}
+                deal={deal}
+                compareMode
+                isComparing={compareIds.includes(deal.slug)}
+                onToggleCompare={toggleCompare}
+              />
             ))}
           </div>
 
@@ -224,6 +312,10 @@ export default function DealsGrid({
             </div>
           )}
         </>
+      )}
+
+      {compareIds.length > 0 && (
+        <CompareBar deals={compareDeals} onRemove={toggleCompare} onClear={() => setCompareIds([])} />
       )}
     </div>
   );

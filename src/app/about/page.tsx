@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About StudentPerks — Free Tools for Students & Startups",
-  description: "StudentPerks is a curated directory of free tools, cloud credits, and pro plans for students, startups, and open source projects.",
+  title: "About StudentPerks — Free Developer Tools for Students & Startups 2026",
+  description: "Save $500K+ on developer tools, cloud credits, and pro plans. StudentPerks helps students, startups, and OSS projects claim free perks in 2026.",
 };
 
 export default function AboutPage() {

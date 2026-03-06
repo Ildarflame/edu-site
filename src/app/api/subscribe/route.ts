@@ -24,14 +24,14 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Too many requests" }, { status: 429 });
   }
 
-  let body: { email?: string };
+  let body: { email?: string; frequency?: string; interests?: string[] };
   try {
     body = await req.json();
   } catch {
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  const { email } = body;
+  const { email, frequency, interests } = body;
   if (!email || typeof email !== "string" || email.length > 254 || !EMAIL_RE.test(email)) {
     return NextResponse.json({ error: "Invalid email" }, { status: 400 });
   }
@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
   const dbId = process.env.NOTION_SUBSCRIBERS_DATABASE_ID;
 
   if (!token || !dbId) {
-    console.log("Newsletter signup:", email);
+    console.log("Newsletter signup:", email, "frequency:", frequency, "interests:", interests);
     return NextResponse.json({ ok: true });
   }
 
@@ -56,6 +56,10 @@ export async function POST(req: NextRequest) {
       properties: {
         Email: { title: [{ text: { content: email } }] },
         "Subscribed At": { date: { start: new Date().toISOString() } },
+        ...(frequency ? { Frequency: { select: { name: frequency } } } : {}),
+        ...(interests && interests.length > 0
+          ? { Interests: { multi_select: interests.map((i) => ({ name: i })) } }
+          : {}),
       },
     }),
   });

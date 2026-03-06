@@ -12,7 +12,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return { title: "Post Not Found" };
-  return { title: `${post.title} | StudentPerks Blog`, description: post.description };
+  return {
+    title: `${post.title} | StudentPerks 2026`,
+    description: post.description,
+    alternates: { canonical: `https://studentperks.dev/blog/${slug}` },
+  };
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -45,6 +49,24 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <MDXRemote source={post.content} />
         </div>
       </article>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline: post.title,
+            description: post.description,
+            datePublished: post.date,
+            dateModified: post.date,
+            author: { "@type": "Organization", name: "StudentPerks" },
+            publisher: { "@type": "Organization", name: "StudentPerks", url: "https://studentperks.dev" },
+            mainEntityOfPage: `https://studentperks.dev/blog/${slug}`,
+            keywords: post.tags,
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
 
       <div className="mt-10 pt-6 border-t border-white/[0.04]">
         <Link href="/blog" className="inline-flex items-center gap-1.5 text-[13px] font-medium text-zinc-600 hover:text-orange-400 transition-colors">
