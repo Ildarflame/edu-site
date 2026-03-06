@@ -118,7 +118,7 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
               priceCurrency: "USD",
               availability: "https://schema.org/InStock",
             },
-          }),
+          }).replace(/</g, "\\u003c"),
         }}
       />
     </main>

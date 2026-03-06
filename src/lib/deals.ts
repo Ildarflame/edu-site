@@ -1,22 +1,17 @@
 import { deals as hardcodedDeals, type Deal, type Category, type Audience } from "@/data/deals";
 import { fetchDealsFromNotion, isNotionConfigured } from "./notion";
 
-let cachedDeals: Deal[] | null = null;
-
 export async function getDeals(): Promise<Deal[]> {
-  if (cachedDeals) return cachedDeals;
-
   if (isNotionConfigured()) {
     try {
-      cachedDeals = await fetchDealsFromNotion();
-      if (cachedDeals.length > 0) return cachedDeals;
+      const notionDeals = await fetchDealsFromNotion();
+      if (notionDeals.length > 0) return notionDeals;
     } catch (e) {
       console.error("Failed to fetch from Notion, using fallback:", e);
     }
   }
 
-  cachedDeals = hardcodedDeals;
-  return cachedDeals;
+  return hardcodedDeals;
 }
 
 export async function getDealBySlug(slug: string): Promise<Deal | undefined> {

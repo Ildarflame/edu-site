@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getDeals, getFeaturedDeals, CATEGORY_CONFIG, type Category } from "@/lib/deals";
+import { getDeals, CATEGORY_CONFIG, type Category } from "@/lib/deals";
 import DealCard from "@/components/DealCard";
 import RotatingWord from "@/components/RotatingWord";
 import CursorGlow from "@/components/CursorGlow";
@@ -12,7 +12,7 @@ export const revalidate = 300; // revalidate every 5 min
 
 export default async function Home() {
   const deals = await getDeals();
-  const featured = await getFeaturedDeals();
+  const featured = deals.filter((d) => d.featured);
 
   const audiences = [
     {
