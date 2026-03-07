@@ -6,6 +6,7 @@ export const metadata = {
   title: "Discover Deals — StudentPerks",
   description:
     "Describe your situation and find the best free tools, credits, and perks matched to your needs.",
+  robots: { index: false, follow: true },
 };
 
 export const revalidate = 300;

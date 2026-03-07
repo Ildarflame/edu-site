@@ -1,11 +1,9 @@
 import { MetadataRoute } from "next";
 import { getDeals } from "@/lib/deals";
 import { getAllPosts } from "@/lib/blog";
+import { CATEGORY_SEO, AUDIENCE_SEO, ALTERNATIVES_SEO } from "@/data/seo-content";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://studentperks.dev";
-
-const categories = ["Dev", "AI", "SaaS", "Learning", "Cloud", "Design", "Entertainment"];
-const audiences = ["students", "startups", "opensource"];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const deals = await getDeals();
@@ -25,18 +23,41 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  const categoryUrls: MetadataRoute.Sitemap = categories.map((cat) => ({
-    url: `${baseUrl}/deals?category=${cat}`,
+  const categoryUrls: MetadataRoute.Sitemap = CATEGORY_SEO.map((cat) => ({
+    url: `${baseUrl}/category/${cat.slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
-    priority: 0.6,
+    priority: 0.8,
   }));
 
-  const audienceUrls: MetadataRoute.Sitemap = audiences.map((aud) => ({
-    url: `${baseUrl}/deals?audience=${aud}`,
+  const audienceUrls: MetadataRoute.Sitemap = AUDIENCE_SEO.map((aud) => ({
+    url: `${baseUrl}/for/${aud.slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
-    priority: 0.6,
+    priority: 0.8,
+  }));
+
+  const crossFilterUrls: MetadataRoute.Sitemap = AUDIENCE_SEO.flatMap((aud) =>
+    CATEGORY_SEO.map((cat) => ({
+      url: `${baseUrl}/for/${aud.slug}/${cat.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    })),
+  );
+
+  const topUrls: MetadataRoute.Sitemap = CATEGORY_SEO.map((cat) => ({
+    url: `${baseUrl}/top/${cat.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  const alternativesUrls: MetadataRoute.Sitemap = ALTERNATIVES_SEO.map((alt) => ({
+    url: `${baseUrl}/alternatives/${alt.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.7,
   }));
 
   return [
@@ -47,6 +68,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/submit`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.3 },
     ...categoryUrls,
     ...audienceUrls,
+    ...crossFilterUrls,
+    ...topUrls,
+    ...alternativesUrls,
     ...dealUrls,
     ...blogUrls,
   ];

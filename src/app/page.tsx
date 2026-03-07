@@ -19,7 +19,7 @@ export default async function Home() {
       title: "Students",
       desc: "Free pro plans with your .edu email",
       icon: "🎓",
-      href: "/deals?audience=students",
+      href: "/for/students",
       count: deals.filter(d => d.audiences.includes("students")).length,
       color: "from-blue-500/20 via-blue-500/5 to-transparent",
       borderHover: "hover:border-blue-500/20",
@@ -28,7 +28,7 @@ export default async function Home() {
       title: "Startups",
       desc: "Cloud credits & SaaS tools",
       icon: "🚀",
-      href: "/deals?audience=startups",
+      href: "/for/startups",
       count: deals.filter(d => d.audiences.includes("startups")).length,
       color: "from-orange-500/20 via-orange-500/5 to-transparent",
       borderHover: "hover:border-orange-500/20",
@@ -37,7 +37,7 @@ export default async function Home() {
       title: "Open Source",
       desc: "Free CI/CD, hosting & dev tools",
       icon: "💻",
-      href: "/deals?audience=opensource",
+      href: "/for/opensource",
       count: deals.filter(d => d.audiences.includes("opensource")).length,
       color: "from-emerald-500/20 via-emerald-500/5 to-transparent",
       borderHover: "hover:border-emerald-500/20",
@@ -71,6 +71,7 @@ export default async function Home() {
               <br />
               <span className="text-zinc-100">for </span>
               <RotatingWord />
+              <noscript><span className="text-orange-500">developers.</span></noscript>
             </h1>
           </div>
 
@@ -215,7 +216,7 @@ export default async function Home() {
               return (
                 <Link
                   key={cat}
-                  href={`/deals?category=${cat}`}
+                  href={`/category/${cat.toLowerCase()}`}
                   className="card group flex items-center gap-3 px-4 py-3.5"
                 >
                   <span className="text-lg">{config.icon}</span>

@@ -6,6 +6,7 @@ export const metadata = {
   title: "Build Your Stack — StudentPerks",
   description:
     "Select your tech stack and discover all the free tools, credits, and perks available for your technologies.",
+  robots: { index: false, follow: true },
 };
 
 export const revalidate = 300;

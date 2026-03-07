@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { getDeals, getDealBySlug, getDealsByCategory, CATEGORY_CONFIG } from "@/lib/deals";
+import { getDeals, getDealBySlug, getDealsByCategory } from "@/lib/deals";
 import CategoryBadge from "@/components/CategoryBadge";
 import AudienceBadge from "@/components/AudienceBadge";
 import DealCard from "@/components/DealCard";
@@ -34,7 +34,6 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
   const deal = await getDealBySlug(slug);
   if (!deal) notFound();
 
-  const catConfig = CATEGORY_CONFIG[deal.category];
   const related = (await getDealsByCategory(deal.category)).filter((d) => d.slug !== deal.slug).slice(0, 3);
 
   return (
@@ -42,6 +41,8 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
       {/* Breadcrumb */}
       <nav className="text-[13px] text-zinc-700 mb-8 font-medium">
         <Link href="/deals" className="hover:text-orange-400 transition-colors">Deals</Link>
+        <span className="mx-2 text-zinc-800">/</span>
+        <Link href={`/category/${deal.category.toLowerCase()}`} className="hover:text-orange-400 transition-colors">{deal.category}</Link>
         <span className="mx-2 text-zinc-800">/</span>
         <span className="text-zinc-400">{deal.name}</span>
       </nav>
@@ -55,8 +56,14 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
           <h1 className="text-2xl md:text-3xl font-bold text-zinc-100">{deal.name}</h1>
           <p className="mt-1.5 text-[15px] text-zinc-500">{deal.tagline}</p>
           <div className="mt-3 flex flex-wrap gap-1.5">
-            <CategoryBadge category={deal.category} />
-            {deal.audiences.map((a) => <AudienceBadge key={a} audience={a} />)}
+            <Link href={`/category/${deal.category.toLowerCase()}`}>
+              <CategoryBadge category={deal.category} />
+            </Link>
+            {deal.audiences.map((a) => (
+              <Link key={a} href={`/for/${a}`}>
+                <AudienceBadge audience={a} />
+              </Link>
+            ))}
           </div>
         </div>
       </div>
@@ -117,6 +124,14 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {related.map((d) => <DealCard key={d.slug} deal={d} />)}
           </div>
+          <div className="mt-6 text-center">
+            <Link
+              href={`/top/${deal.category.toLowerCase()}`}
+              className="text-[14px] font-medium text-orange-400 hover:text-orange-300 transition-colors"
+            >
+              Top {deal.category} deals &rarr;
+            </Link>
+          </div>
         </section>
       )}
       <script
@@ -146,7 +161,8 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
               { "@type": "ListItem", position: 2, name: "Deals", item: "https://studentperks.dev/deals" },
-              { "@type": "ListItem", position: 3, name: deal.name },
+              { "@type": "ListItem", position: 3, name: deal.category, item: `https://studentperks.dev/category/${deal.category.toLowerCase()}` },
+              { "@type": "ListItem", position: 4, name: deal.name },
             ],
           }).replace(/</g, "\\u003c"),
         }}

@@ -24,6 +24,9 @@ export default async function DealsPage() {
         <p className="mt-1.5 text-[14px] text-zinc-600">
           {deals.length} free tools and perks
         </p>
+        <p className="mt-3 text-[14px] text-zinc-500 leading-relaxed max-w-2xl">
+          Browse our complete collection of free developer tools, cloud credits, and pro plans for students, startups, and open source projects. Every deal is verified with step-by-step claim instructions.
+        </p>
       </div>
       <Suspense fallback={null}>
         <DealsGrid deals={deals} />
