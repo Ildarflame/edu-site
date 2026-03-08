@@ -1,8 +1,24 @@
-import { Client } from "@notionhq/client";
+import { z } from "zod";
 import type { Deal, Category, Audience } from "@/data/deals";
 
-const notion = new Client({ auth: process.env.NOTION_TOKEN });
 const databaseId = process.env.NOTION_DEALS_DATABASE_ID!;
+
+const CATEGORIES: Category[] = ["Dev", "AI", "SaaS", "Learning", "Cloud", "Design", "Entertainment"];
+const AUDIENCES: Audience[] = ["students", "startups", "opensource"];
+
+const dealSchema = z.object({
+  slug: z.string().min(1),
+  name: z.string().min(1),
+  logo: z.string(),
+  category: z.enum(CATEGORIES as [Category, ...Category[]]),
+  audiences: z.array(z.enum(AUDIENCES as [Audience, ...Audience[]])).min(1),
+  tagline: z.string(),
+  description: z.string(),
+  value: z.string(),
+  steps: z.array(z.string()),
+  url: z.string(),
+  featured: z.boolean(),
+});
 
 type NotionRichText = { plain_text: string }[];
 type NotionPage = {
@@ -37,22 +53,18 @@ function getUrl(prop: any): string {
   return prop?.url ?? "";
 }
 
-function getNumber(prop: any): number {
-  return prop?.number ?? 0;
-}
-
 function pageToSlug(page: NotionPage): string {
   return getRichText(page.properties["Slug"]) || page.id;
 }
 
-function pageToDeal(page: NotionPage): Deal {
+function pageToDeal(page: NotionPage): Deal | null {
   const p = page.properties;
   const stepsRaw = getRichText(p["Steps"]);
   const steps = stepsRaw
     ? stepsRaw.split("\n").filter((s) => s.trim())
     : [];
 
-  return {
+  const raw = {
     slug: pageToSlug(page),
     name: getTitle(p["Name"]),
     logo: getRichText(p["Logo"]) || `/logos/${pageToSlug(page)}.svg`,
@@ -67,13 +79,19 @@ function pageToDeal(page: NotionPage): Deal {
     url: getUrl(p["URL"]),
     featured: getCheckbox(p["Featured"]),
   };
+
+  const result = dealSchema.safeParse(raw);
+  if (!result.success) {
+    console.warn(`Invalid deal "${raw.name || raw.slug}":`, result.error.issues);
+    return null;
+  }
+  return result.data;
 }
 
 export async function fetchDealsFromNotion(): Promise<Deal[]> {
   const pages: NotionPage[] = [];
   let cursor: string | undefined;
 
-  // Use POST to /databases/{id}/query via fetch (SDK missing query method)
   do {
     const body: Record<string, any> = {
       sorts: [{ property: "Name", direction: "ascending" }],
@@ -104,7 +122,7 @@ export async function fetchDealsFromNotion(): Promise<Deal[]> {
     cursor = data.has_more ? data.next_cursor : undefined;
   } while (cursor);
 
-  return pages.map(pageToDeal);
+  return pages.map(pageToDeal).filter((d): d is Deal => d !== null);
 }
 
 export function isNotionConfigured(): boolean {
