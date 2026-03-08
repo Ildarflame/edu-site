@@ -8,6 +8,7 @@ import AudienceBadge from "@/components/AudienceBadge";
 import DealCard from "@/components/DealCard";
 import DealRating from "@/components/DealRating";
 import ShareButtons from "@/components/ShareButtons";
+import DealCTA from "@/components/DealCTA";
 
 export const revalidate = 300;
 
@@ -108,17 +109,7 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
 
       {/* CTA + Share */}
       <div className="flex items-center justify-between flex-wrap gap-4 mb-8">
-        <a
-          href={deal.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-primary inline-flex items-center gap-2 px-7 py-2.5 text-[14px]"
-        >
-          Claim this perk
-          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-          </svg>
-        </a>
+        <DealCTA url={deal.url} slug={deal.slug} category={deal.category} audiences={deal.audiences} />
         <ShareButtons title={deal.name} slug={deal.slug} />
       </div>
 
