@@ -56,7 +56,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased min-h-screen flex flex-col">
         <Header />
-        <div className="flex-1">
+        <div className="flex-1" id="main-content">
           <ErrorBoundary>{children}</ErrorBoundary>
         </div>
         <Footer />
