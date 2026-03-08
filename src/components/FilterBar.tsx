@@ -4,6 +4,7 @@ import { memo } from "react";
 import { Deal, Category, Audience } from "@/data/deals";
 import CategoryFilter from "./CategoryFilter";
 import SearchBar from "./SearchBar";
+import MobileFilterDrawer from "./MobileFilterDrawer";
 
 export type ValueFilter = "all" | "free" | "credits" | "discount" | "pro";
 export type SortOption = "newest" | "value" | "az";
@@ -71,44 +72,48 @@ export default memo(function FilterBar({
   totalCount, startItem, endItem, hasActiveFilters, filteredDeals,
   onSearch, onCategory, onAudience, onValueFilter, onSort, onClearAll,
 }: Props) {
+  const activeCount = [category, audience, valueFilter !== "all" ? valueFilter : null, search || null].filter(Boolean).length;
+
   return (
     <>
-      <div className="space-y-3 mb-8">
-        <SearchBar value={search} onChange={onSearch} />
-        <CategoryFilter selected={category} onChange={onCategory} />
-        <div className="flex flex-wrap gap-1.5" role="group" aria-label="Filter by audience">
-          {audienceOptions.map((opt) => (
+      <MobileFilterDrawer activeCount={activeCount}>
+        <div className="space-y-3 mb-8 md:mb-0">
+          <SearchBar value={search} onChange={onSearch} />
+          <CategoryFilter selected={category} onChange={onCategory} />
+          <div className="flex flex-wrap gap-1.5" role="group" aria-label="Filter by audience">
+            {audienceOptions.map((opt) => (
+              <button
+                key={opt.label}
+                onClick={() => onAudience(opt.value)}
+                className={`${base} ${audience === opt.value ? active : inactive}`}
+                aria-pressed={audience === opt.value}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-1.5" role="group" aria-label="Filter by value type">
+            {valueFilterOptions.map((opt) => (
+              <button
+                key={opt.value}
+                onClick={() => onValueFilter(opt.value)}
+                className={`${base} ${valueFilter === opt.value ? active : inactive}`}
+                aria-pressed={valueFilter === opt.value}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+          {hasActiveFilters && (
             <button
-              key={opt.label}
-              onClick={() => onAudience(opt.value)}
-              className={`${base} ${audience === opt.value ? active : inactive}`}
-              aria-pressed={audience === opt.value}
+              onClick={onClearAll}
+              className="text-[12px] text-zinc-500 hover:text-orange-400 transition-colors underline underline-offset-2"
             >
-              {opt.label}
+              Clear all filters
             </button>
-          ))}
+          )}
         </div>
-        <div className="flex flex-wrap gap-1.5" role="group" aria-label="Filter by value type">
-          {valueFilterOptions.map((opt) => (
-            <button
-              key={opt.value}
-              onClick={() => onValueFilter(opt.value)}
-              className={`${base} ${valueFilter === opt.value ? active : inactive}`}
-              aria-pressed={valueFilter === opt.value}
-            >
-              {opt.label}
-            </button>
-          ))}
-        </div>
-        {hasActiveFilters && (
-          <button
-            onClick={onClearAll}
-            className="text-[12px] text-zinc-500 hover:text-orange-400 transition-colors underline underline-offset-2"
-          >
-            Clear all filters
-          </button>
-        )}
-      </div>
+      </MobileFilterDrawer>
 
       <div className="flex items-center justify-between mb-3">
         <p className="text-[12px] text-zinc-700 font-medium">
