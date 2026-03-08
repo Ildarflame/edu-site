@@ -9,6 +9,7 @@ import DealCard from "@/components/DealCard";
 import DealRating from "@/components/DealRating";
 import ShareButtons from "@/components/ShareButtons";
 import DealCTA from "@/components/DealCTA";
+import CategoryTracker from "@/components/CategoryTracker";
 
 export const revalidate = 300;
 
@@ -50,6 +51,7 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">
+      <CategoryTracker category={deal.category} />
       {/* Breadcrumb */}
       <nav className="text-[13px] text-zinc-700 mb-8 font-medium">
         <Link href="/deals" className="hover:text-orange-400 transition-colors">Deals</Link>
