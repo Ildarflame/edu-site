@@ -24,6 +24,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Too many requests" }, { status: 429 });
   }
 
+  // Origin check
+  const origin = req.headers.get("origin");
+  if (origin && !origin.includes("studentperks.dev") && !origin.includes("localhost")) {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
+
   let body: { email?: string; frequency?: string; interests?: string[] };
   try {
     body = await req.json();
