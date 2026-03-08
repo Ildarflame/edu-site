@@ -13,14 +13,28 @@ const FREQUENCIES = [
   { id: "monthly", label: "Monthly" },
 ] as const;
 
+const CATEGORIES = [
+  { id: "Dev", label: "Dev Tools" },
+  { id: "AI", label: "AI" },
+  { id: "Cloud", label: "Cloud" },
+  { id: "SaaS", label: "SaaS" },
+  { id: "Learning", label: "Learning" },
+  { id: "Design", label: "Design" },
+] as const;
+
 export default function NewsletterForm({ compact = false }: { compact?: boolean }) {
   const [email, setEmail] = useState("");
   const [frequency, setFrequency] = useState<string>("weekly");
   const [interests, setInterests] = useState<string[]>([]);
+  const [categories, setCategories] = useState<string[]>([]);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const toggleInterest = (id: string) => {
     setInterests((prev) => (prev.includes(id) ? prev.filter((i) => i !== id) : [...prev, id]));
+  };
+
+  const toggleCategory = (id: string) => {
+    setCategories((prev) => (prev.includes(id) ? prev.filter((i) => i !== id) : [...prev, id]));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -30,7 +44,7 @@ export default function NewsletterForm({ compact = false }: { compact?: boolean 
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, frequency, interests }),
+        body: JSON.stringify({ email, frequency, interests, categories }),
       });
       if (res.ok) {
         setStatus("success");
@@ -128,6 +142,27 @@ export default function NewsletterForm({ compact = false }: { compact?: boolean 
                     }`}
                   >
                     {item.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Categories */}
+            <div className="flex items-center gap-3 flex-wrap">
+              <span className="text-[12px] text-zinc-500 font-medium">Categories:</span>
+              <div className="flex gap-1.5 flex-wrap">
+                {CATEGORIES.map((cat) => (
+                  <button
+                    key={cat.id}
+                    type="button"
+                    onClick={() => toggleCategory(cat.id)}
+                    className={`px-3 py-1 rounded-md text-[11px] font-medium transition-colors ${
+                      categories.includes(cat.id)
+                        ? "bg-orange-500/15 text-orange-400 border border-orange-500/20"
+                        : "bg-white/[0.03] text-zinc-500 border border-white/[0.06] hover:text-zinc-300"
+                    }`}
+                  >
+                    {cat.label}
                   </button>
                 ))}
               </div>
