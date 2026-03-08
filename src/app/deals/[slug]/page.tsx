@@ -26,6 +26,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description,
     alternates: { canonical: `https://studentperks.dev/deals/${slug}` },
+    openGraph: {
+      title,
+      description,
+      images: [{ url: `/api/og?slug=${slug}`, width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [`/api/og?slug=${slug}`],
+    },
   };
 }
 
