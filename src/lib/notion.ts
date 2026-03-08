@@ -21,35 +21,39 @@ const dealSchema = z.object({
 });
 
 type NotionRichText = { plain_text: string }[];
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type NotionProperty = any;
+
 type NotionPage = {
   id: string;
-  properties: Record<string, any>;
+  properties: Record<string, NotionProperty>;
 };
 
-function getRichText(prop: any): string {
+function getRichText(prop: NotionProperty): string {
   if (!prop?.rich_text) return "";
   return (prop.rich_text as NotionRichText).map((t) => t.plain_text).join("");
 }
 
-function getTitle(prop: any): string {
+function getTitle(prop: NotionProperty): string {
   if (!prop?.title) return "";
   return (prop.title as NotionRichText).map((t) => t.plain_text).join("");
 }
 
-function getSelect(prop: any): string {
+function getSelect(prop: NotionProperty): string {
   return prop?.select?.name ?? "";
 }
 
-function getMultiSelect(prop: any): string[] {
+function getMultiSelect(prop: NotionProperty): string[] {
   if (!prop?.multi_select) return [];
-  return prop.multi_select.map((s: any) => s.name);
+  return prop.multi_select.map((s: { name: string }) => s.name);
 }
 
-function getCheckbox(prop: any): boolean {
+function getCheckbox(prop: NotionProperty): boolean {
   return prop?.checkbox ?? false;
 }
 
-function getUrl(prop: any): string {
+function getUrl(prop: NotionProperty): string {
   return prop?.url ?? "";
 }
 
@@ -93,7 +97,7 @@ export async function fetchDealsFromNotion(): Promise<Deal[]> {
   let cursor: string | undefined;
 
   do {
-    const body: Record<string, any> = {
+    const body: Record<string, unknown> = {
       sorts: [{ property: "Name", direction: "ascending" }],
       page_size: 100,
     };

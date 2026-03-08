@@ -25,6 +25,8 @@ export function trackCategory(category: Category) {
 export default function RecommendedDeals({ deals }: { deals: Deal[] }) {
   const [prefs, setPrefs] = useState<Category[]>([]);
 
+  // Reading from cookies (external system) on mount — legitimate sync pattern
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => { setPrefs(getPrefs()); }, []);
 
   const recommended = useMemo(() => {
