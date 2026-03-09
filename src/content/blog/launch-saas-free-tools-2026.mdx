@@ -1,0 +1,144 @@
+---
+title: "How to Launch a SaaS for $0: Complete Free Tools Stack 2026"
+date: "2026-03-14"
+description: "Launch your SaaS startup without spending a dollar. Complete free tools stack covering hosting, database, auth, payments, monitoring and more."
+tags: ["startup", "saas", "free-tools", "launch", "guide", "2026"]
+---
+
+Here's a claim that would have been absurd five years ago: you can build, launch, and scale a SaaS product in 2026 without spending a single dollar on infrastructure. Not a prototype. Not a toy. A real product with authentication, a database, payments, monitoring, and a custom domain.
+
+The free tiers have gotten that good.
+
+I've been tracking every free tool and startup program available, and the combined value is staggering. Here's the complete $0 SaaS stack.
+
+## The $0 SaaS Stack Is Real in 2026
+
+Let's be upfront: "free" doesn't mean "free forever at any scale." These free tiers are designed for early-stage products — exactly the stage where you shouldn't be spending money on infrastructure. You should be spending your limited time and energy on finding product-market fit, not optimizing AWS bills.
+
+The strategy: use free tiers to build and launch. Once you have paying customers, use that revenue to upgrade to paid plans. If you never get paying customers, you spent $0 learning what doesn't work.
+
+Here's the stack.
+
+## Frontend & Hosting
+
+**Primary: Next.js + [Vercel](/deals/vercel-pro)**
+
+Vercel's Pro plan is free for students and open source projects. For a SaaS landing page, dashboard, and API routes, it's hard to beat:
+- Automatic deployments from Git
+- Preview URLs for every pull request
+- Edge functions for API routes
+- Image optimization built in
+- Analytics included
+
+**Alternative: [Railway](/deals/railway-oss)**
+
+If you need persistent servers (WebSockets, background jobs, cron tasks), Railway is better suited. The $5/month free credit covers a small app with a database.
+
+For a detailed comparison, see [Vercel vs Railway](/compare/vercel-vs-railway).
+
+## Database & Backend
+
+**Primary: [Supabase](/deals/supabase-startups)**
+
+Supabase gives you PostgreSQL + auth + storage + realtime in one platform. The free tier is genuinely generous:
+- 500 MB PostgreSQL database
+- 50,000 monthly active users (auth)
+- 1 GB file storage
+- Realtime subscriptions
+- Edge functions
+- Auto-generated REST and GraphQL APIs
+
+For most early-stage SaaS products, this covers everything. You don't need a separate auth service, file storage service, or API layer — Supabase includes it all.
+
+**Alternative: [MongoDB Atlas](/deals/mongodb-students)**
+
+If you prefer NoSQL or your data model is document-oriented, MongoDB Atlas offers a free M0 cluster (512 MB) plus $200 in student credits.
+
+For a deeper database comparison, see [Best Free Databases for Side Projects](/best/best-free-databases-for-side-projects).
+
+## Authentication
+
+Authentication is the first thing every SaaS needs and the first thing every founder wants to avoid building from scratch. Good news: you don't have to.
+
+**Option 1: Supabase Auth (included free)**
+
+If you're using Supabase for your database, auth is already included. Email/password, OAuth (Google, GitHub, Discord), magic links, phone OTP — all built in. For most projects, this is the obvious choice.
+
+**Option 2: Clerk (free up to 10,000 MAU)**
+
+Clerk is a modern auth service with beautiful pre-built components. Drop in a `<SignIn />` component and you have a complete auth flow with social login, MFA, and user management. Free for up to 10,000 monthly active users.
+
+**Option 3: NextAuth.js / Auth.js (open source)**
+
+If you want full control, Auth.js is the open source standard for Next.js authentication. It supports dozens of providers, database adapters, and JWT/session strategies. No limits, no vendor lock-in.
+
+## Payments
+
+You don't pay for payment processing until you make money — both options below charge per transaction, not monthly.
+
+**Option 1: [Stripe](/deals/stripe-atlas)**
+
+Stripe is the developer's payment platform. 2.9% + 30¢ per transaction, no monthly fee. The API is beautifully designed, documentation is industry-leading, and the ecosystem (Stripe Checkout, Billing, Customer Portal) handles subscriptions effortlessly.
+
+If you're incorporating a company, [Stripe Atlas](/deals/stripe-atlas) handles Delaware C-Corp formation and automatically connects you to startup programs for AWS, Notion, and other tools.
+
+**Option 2: LemonSqueezy**
+
+LemonSqueezy is a "merchant of record" — they handle sales tax, VAT, and compliance for you. The fee is higher (5% + 50¢), but for solo founders selling digital products, the time saved on tax compliance is worth it.
+
+For a detailed comparison, see [Stripe vs LemonSqueezy](/compare/stripe-vs-lemonsqueezy).
+
+## Monitoring & Analytics
+
+You need to know when things break and how users behave. Both are free.
+
+**Error tracking: [Sentry](/deals/sentry-oss)**
+
+[Sentry](/deals/sentry-oss) catches errors in production and gives you stack traces, breadcrumbs, and user context. The free tier includes 5,000 events/month. For open source projects, Sentry provides unlimited events.
+
+**Analytics: Vercel Analytics**
+
+Included with Vercel Pro (free for students). Track page views, web vitals, and user behavior without third-party scripts slowing down your site.
+
+**Uptime: Better Uptime**
+
+Better Uptime monitors your endpoints and alerts you when something goes down. Free tier includes 10 monitors with 3-minute check intervals.
+
+For a comprehensive guide, see [Best Free Monitoring for Startups](/best/best-free-monitoring-for-startups).
+
+## Domain & Email
+
+**Domain: [Cloudflare](/deals/cloudflare-startups)**
+
+Register your domain through Cloudflare Registrar (at-cost pricing, no markup) and get free DNS, CDN, DDoS protection, and SSL. Their startup program provides additional credits and features.
+
+**Transactional email: Resend**
+
+Resend offers 3,000 emails/month free. For transactional emails (password resets, welcome emails, receipts), this covers most early-stage products. The API is clean and it integrates with React Email for beautiful templates.
+
+## The Complete Stack Diagram
+
+| Layer | Tool | Free Tier | Monthly Cost |
+|-------|------|-----------|-------------|
+| Frontend | Next.js + [Vercel](/deals/vercel-pro) | Pro plan (students/OSS) | $0 |
+| Database | [Supabase](/deals/supabase-startups) | 500 MB + auth + storage | $0 |
+| Auth | Supabase Auth or Clerk | Included / 10K MAU | $0 |
+| Payments | [Stripe](/deals/stripe-atlas) | Per-transaction only | $0* |
+| Error tracking | [Sentry](/deals/sentry-oss) | 5K events/month | $0 |
+| Analytics | Vercel Analytics | Included | $0 |
+| DNS + CDN | [Cloudflare](/deals/cloudflare-startups) | Free plan | $0 |
+| Email | Resend | 3K emails/month | $0 |
+| Uptime | Better Uptime | 10 monitors | $0 |
+| **Total** | | | **$0/month** |
+
+*Stripe charges per transaction — you only pay when you make money.
+
+## Related Articles
+
+- [Best Free Monitoring & Analytics for Startups](/blog/best-free-monitoring-analytics-startups)
+- [Stripe vs LemonSqueezy for Indie Hackers](/blog/stripe-vs-lemonsqueezy-indie-hackers)
+
+**Browse more deals:**
+
+- [Build Your Stack](/stack)
+- [All Startup Deals](/for/startups)
