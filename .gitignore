@@ -44,3 +44,4 @@ next-env.d.ts
 *.png
 .playwright-mcp/
 .env.local
+.worktrees/
