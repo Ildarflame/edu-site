@@ -40,6 +40,25 @@ export default function Footer() {
               </div>
             </div>
             <div>
+              <p className="section-label mb-3">Tools</p>
+              <div className="space-y-2">
+                {[
+                  { href: "/student-freebies-finder", label: "Freebies Finder" },
+                  { href: "/free-tools-for-students", label: "100+ Free Tools" },
+                  { href: "/discover", label: "AI Deal Finder" },
+                  { href: "/stack", label: "Stack Builder" },
+                ].map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block text-[13px] text-zinc-600 hover:text-zinc-300 transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div>
               <p className="section-label mb-3">Categories</p>
               <div className="space-y-2">
                 {["Dev", "AI", "Cloud", "Design"].map((cat) => (
