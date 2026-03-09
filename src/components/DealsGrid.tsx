@@ -111,6 +111,17 @@ export default function DealsGrid({
 
   useEffect(() => { syncUrl(); }, [syncUrl]);
 
+  // Search analytics logging
+  useEffect(() => {
+    if (debouncedSearch.length >= 2) {
+      fetch("/api/search-log", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query: debouncedSearch, resultsCount: filtered.length }),
+      }).catch(() => {});
+    }
+  }, [debouncedSearch]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const resetPage = useCallback(() => setPage(1), []);
   const handleSearch = useCallback((v: string) => { setSearch(v); resetPage(); }, [resetPage]);
   const handleCategory = useCallback((v: Category | null) => { setCategory(v); resetPage(); }, [resetPage]);
