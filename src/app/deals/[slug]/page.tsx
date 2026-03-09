@@ -120,6 +120,27 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
         <DealRating slug={deal.slug} />
       </div>
 
+      {/* Cross-links */}
+      <div className="mt-8 flex flex-wrap items-center gap-2">
+        <span className="text-[13px] text-zinc-600">Also popular with:</span>
+        {deal.audiences.map((aud) => (
+          <Link
+            key={aud}
+            href={`/for/${aud}`}
+            className="text-[13px] text-orange-400 hover:text-orange-300 transition-colors"
+          >
+            {aud === "students" ? "Students" : aud === "startups" ? "Startups" : "Open Source"}
+          </Link>
+        ))}
+        <span className="text-zinc-800 mx-1">·</span>
+        <Link
+          href={`/category/${deal.category.toLowerCase()}`}
+          className="text-[13px] text-zinc-500 hover:text-orange-400 transition-colors"
+        >
+          Browse all {deal.category} deals →
+        </Link>
+      </div>
+
       {/* Related */}
       {related.length > 0 && (
         <section className="mt-16 pt-8 border-t border-white/[0.04]">
