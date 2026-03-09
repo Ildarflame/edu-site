@@ -1,7 +1,10 @@
 import { MetadataRoute } from "next";
 import { getDeals } from "@/lib/deals";
 import { getAllPosts } from "@/lib/blog";
-import { CATEGORY_SEO, AUDIENCE_SEO, ALTERNATIVES_SEO } from "@/data/seo-content";
+import {
+  CATEGORY_SEO, AUDIENCE_SEO, ALTERNATIVES_SEO,
+  COMPARISON_SEO, USE_CASE_SEO, GUIDE_SEO, TAG_SEO,
+} from "@/data/seo-content";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://studentperks.dev";
 
@@ -60,6 +63,34 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
+  const comparisonUrls: MetadataRoute.Sitemap = COMPARISON_SEO.map((c) => ({
+    url: `${baseUrl}/compare/${c.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  const useCaseUrls: MetadataRoute.Sitemap = USE_CASE_SEO.map((u) => ({
+    url: `${baseUrl}/best/${u.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  const guideUrls: MetadataRoute.Sitemap = GUIDE_SEO.map((g) => ({
+    url: `${baseUrl}/guides/${g.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  const tagUrls: MetadataRoute.Sitemap = TAG_SEO.map((t) => ({
+    url: `${baseUrl}/tag/${t.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.6,
+  }));
+
   return [
     { url: baseUrl, lastModified: new Date(), changeFrequency: "daily", priority: 1.0 },
     { url: `${baseUrl}/deals`, lastModified: new Date(), changeFrequency: "daily", priority: 0.9 },
@@ -71,6 +102,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...crossFilterUrls,
     ...topUrls,
     ...alternativesUrls,
+    ...comparisonUrls,
+    ...useCaseUrls,
+    ...guideUrls,
+    ...tagUrls,
     ...dealUrls,
     ...blogUrls,
   ];
