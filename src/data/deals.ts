@@ -245,7 +245,7 @@ export const deals: Deal[] = [
       "Get approved for credits and support",
     ],
     url: "https://openai.com/",
-    featured: false,
+    featured: true,
   },
   {
     slug: "linear-startups",
