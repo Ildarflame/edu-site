@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ErrorBoundary from "@/components/ErrorBoundary";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -55,7 +56,9 @@ export default function RootLayout({
       </head>
       <body className="antialiased min-h-screen flex flex-col">
         <Header />
-        <div className="flex-1">{children}</div>
+        <div className="flex-1" id="main-content">
+          <ErrorBoundary>{children}</ErrorBoundary>
+        </div>
         <Footer />
         <Analytics />
         <SpeedInsights />

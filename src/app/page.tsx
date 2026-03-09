@@ -7,6 +7,7 @@ import AnimatedCounter from "@/components/AnimatedCounter";
 import LogoMarquee from "@/components/LogoMarquee";
 import ScrollReveal from "@/components/ScrollReveal";
 import NewsletterForm from "@/components/NewsletterForm";
+import RecommendedDeals from "@/components/RecommendedDeals";
 
 export const revalidate = 300; // revalidate every 5 min
 
@@ -153,6 +154,9 @@ export default async function Home() {
         </div>
       </section>
       </ScrollReveal>
+
+      {/* ═══ RECOMMENDED ═══ */}
+      <RecommendedDeals deals={deals} />
 
       {/* Divider */}
       <div className="line-fade mx-auto max-w-5xl" />

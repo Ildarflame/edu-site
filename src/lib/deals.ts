@@ -1,7 +1,9 @@
+import { cache } from "react";
+import { unstable_cache } from "next/cache";
 import { deals as hardcodedDeals, type Deal, type Category, type Audience } from "@/data/deals";
 import { fetchDealsFromNotion, isNotionConfigured } from "./notion";
 
-export async function getDeals(): Promise<Deal[]> {
+async function fetchDeals(): Promise<Deal[]> {
   if (isNotionConfigured()) {
     try {
       const notionDeals = await fetchDealsFromNotion();
@@ -10,9 +12,15 @@ export async function getDeals(): Promise<Deal[]> {
       console.error("Failed to fetch from Notion, using fallback:", e);
     }
   }
-
   return hardcodedDeals;
 }
+
+const getCachedDeals = unstable_cache(fetchDeals, ["deals"], {
+  revalidate: 300,
+  tags: ["deals"],
+});
+
+export const getDeals = cache(getCachedDeals);
 
 export async function getDealBySlug(slug: string): Promise<Deal | undefined> {
   const deals = await getDeals();

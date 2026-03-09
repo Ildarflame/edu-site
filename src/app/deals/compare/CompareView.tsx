@@ -21,7 +21,12 @@ export default function CompareView({ allDeals }: { allDeals: Deal[] }) {
     );
   }
 
-  const rows: { label: string; render: (deal: Deal) => React.ReactNode }[] = [
+  function valuesAreDifferent(ds: Deal[], getter: (d: Deal) => string): boolean {
+    const values = ds.map(getter);
+    return new Set(values).size > 1;
+  }
+
+  const rows: { label: string; render: (deal: Deal) => React.ReactNode; isDifferent?: (ds: Deal[]) => boolean }[] = [
     {
       label: "Logo",
       render: (deal) => (
@@ -45,12 +50,14 @@ export default function CompareView({ allDeals }: { allDeals: Deal[] }) {
           {CATEGORY_CONFIG[deal.category].icon} {deal.category}
         </span>
       ),
+      isDifferent: (ds) => valuesAreDifferent(ds, (d) => d.category),
     },
     {
       label: "Value",
       render: (deal) => (
         <span className="text-[13px] font-bold text-orange-400">{deal.value}</span>
       ),
+      isDifferent: (ds) => valuesAreDifferent(ds, (d) => d.value),
     },
     {
       label: "Audiences",
@@ -63,6 +70,7 @@ export default function CompareView({ allDeals }: { allDeals: Deal[] }) {
           ))}
         </div>
       ),
+      isDifferent: (ds) => valuesAreDifferent(ds, (d) => d.audiences.sort().join(",")),
     },
     {
       label: "Description",
@@ -90,7 +98,10 @@ export default function CompareView({ allDeals }: { allDeals: Deal[] }) {
             <tr key={row.label} className="border-t border-white/[0.04]">
               <td className="text-[12px] font-medium text-zinc-600 py-4 px-4 align-middle">{row.label}</td>
               {deals.map((deal) => (
-                <td key={deal.slug} className="text-center py-4 px-4 align-middle">
+                <td
+                  key={deal.slug}
+                  className={`text-center py-4 px-4 align-middle ${row.isDifferent?.(deals) ? "bg-orange-500/[0.03]" : ""}`}
+                >
                   {row.render(deal)}
                 </td>
               ))}

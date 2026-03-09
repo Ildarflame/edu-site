@@ -16,6 +16,12 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/[0.04]" style={{ background: "rgba(5, 5, 7, 0.85)", backdropFilter: "blur(20px) saturate(1.8)" }}>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-orange-500 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-[13px] focus:font-medium"
+      >
+        Skip to main content
+      </a>
       <nav className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-md bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/20">

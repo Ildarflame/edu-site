@@ -24,7 +24,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Too many requests" }, { status: 429 });
   }
 
-  let body: { email?: string; frequency?: string; interests?: string[] };
+  // Origin check
+  const origin = req.headers.get("origin");
+  if (origin && !origin.includes("studentperks.dev") && !origin.includes("localhost")) {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
+
+  let body: { email?: string; frequency?: string; interests?: string[]; categories?: string[] };
   try {
     body = await req.json();
   } catch {
@@ -59,6 +65,9 @@ export async function POST(req: NextRequest) {
         ...(frequency ? { Frequency: { select: { name: frequency } } } : {}),
         ...(interests && interests.length > 0
           ? { Interests: { multi_select: interests.map((i) => ({ name: i })) } }
+          : {}),
+        ...(body.categories && body.categories.length > 0
+          ? { Categories: { multi_select: body.categories.map((c) => ({ name: c })) } }
           : {}),
       },
     }),
