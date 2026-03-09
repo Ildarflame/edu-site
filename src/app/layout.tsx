@@ -47,6 +47,9 @@ export default function RootLayout({
             }).replace(/</g, "\\u003c"),
           }}
         />
+        <link rel="dns-prefetch" href="https://api.notion.com" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://va.vercel-scripts.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
