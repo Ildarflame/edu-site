@@ -1,0 +1,170 @@
+---
+title: "How to Get Docker Desktop Free as a Student"
+date: "2026-03-16"
+description: "Get Docker Desktop Pro free with your student email. Step-by-step guide to Docker student license, setup, and why containers matter."
+tags: ["docker", "students", "guide", "how-to", "dev", "free"]
+---
+
+Docker Desktop normally costs $9/month for professional use. For students, it's free — and understanding containers is one of the most valuable skills you can learn before entering the job market.
+
+Every tech company uses Docker. Every DevOps job listing mentions it. And with the student license, you get the full Pro experience to learn on. Here's how to get it and why it matters.
+
+## What Is Docker?
+
+Docker packages your application and all its dependencies into a container — a lightweight, portable unit that runs the same way everywhere. Your laptop, your teammate's laptop, a CI server, a production server in the cloud — same container, same behavior.
+
+The infamous "but it works on my machine" problem? Docker eliminates it entirely.
+
+## What Students Get Free
+
+[Docker](/deals/docker-students) offers Docker Desktop Pro free for students through their education program.
+
+**Docker Desktop Pro includes:**
+- Docker Desktop for Mac, Windows, and Linux
+- Docker Scout (vulnerability scanning)
+- Unlimited public repositories on Docker Hub
+- Docker Build Cloud (limited credits)
+- Docker Debug for container troubleshooting
+- Commercial use rights (important for internships)
+
+**Regular price:** $9/month ($108/year). **Student price:** $0.
+
+## Eligibility
+
+Docker's student program is available to:
+- Students enrolled at accredited educational institutions
+- Need a valid `.edu` email or enrollment verification
+- Available globally (not limited to US institutions)
+
+## Step-by-Step Setup
+
+### Step 1 — Create a Docker Account
+
+Go to [hub.docker.com](https://hub.docker.com) and create a free account. Use your personal email — you'll verify student status separately.
+
+### Step 2 — Apply for Student License
+
+Visit Docker's education program page and apply with your student credentials. You'll need to verify through your `.edu` email or upload enrollment documentation.
+
+### Step 3 — Download Docker Desktop
+
+Once approved, download Docker Desktop from [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/). Install it — the installer handles everything.
+
+### Step 4 — Sign In
+
+Open Docker Desktop and sign in with your Docker Hub account. The Pro license activates automatically.
+
+### Step 5 — Verify Installation
+
+Open your terminal and run:
+
+```bash
+docker --version
+docker run hello-world
+```
+
+If you see "Hello from Docker!" — you're set.
+
+For the quick reference version, see our [Docker student guide](/guides/how-to-get-docker-free).
+
+## Why Docker Matters for Students
+
+### For Classes
+
+Many CS courses now require Docker for consistent assignment environments. Instead of debugging Python version mismatches or missing libraries, professors ship a Dockerfile that gives every student the exact same setup.
+
+### For Side Projects
+
+Docker Compose lets you run complex multi-service setups with one command:
+
+```yaml
+# docker-compose.yml
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: secret
+  redis:
+    image: redis:7
+```
+
+Run `docker compose up` and you have a web app, PostgreSQL database, and Redis cache running locally. No installation, no version conflicts.
+
+### For Internships & Jobs
+
+Docker knowledge is expected for most backend and full-stack roles. Being comfortable with containers, Dockerfiles, and Docker Compose puts you ahead of candidates who only know `npm start`.
+
+### For CI/CD
+
+Docker is the foundation of modern CI/CD. GitHub Actions, [Railway](/deals/railway-oss), and most deployment platforms use Docker under the hood. Understanding containers means understanding how your code gets from your laptop to production.
+
+## Essential Docker Commands
+
+```bash
+# Build an image from a Dockerfile
+docker build -t my-app .
+
+# Run a container
+docker run -p 3000:3000 my-app
+
+# Run in background
+docker run -d -p 3000:3000 my-app
+
+# List running containers
+docker ps
+
+# Stop a container
+docker stop <container-id>
+
+# Docker Compose — start all services
+docker compose up
+
+# Docker Compose — start in background
+docker compose up -d
+
+# Docker Compose — stop everything
+docker compose down
+```
+
+## Writing Your First Dockerfile
+
+Here's a practical Dockerfile for a Node.js app:
+
+```dockerfile
+FROM node:20-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --production
+COPY . .
+EXPOSE 3000
+CMD ["node", "server.js"]
+```
+
+And for a Python app:
+
+```dockerfile
+FROM python:3.12-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+EXPOSE 8000
+CMD ["python", "app.py"]
+```
+
+**Pro tip:** Use `.dockerignore` (like `.gitignore` but for Docker) to exclude `node_modules`, `.git`, and other files your container doesn't need. This makes builds faster and images smaller.
+
+## Related Articles
+
+- [Free CI/CD Tools for Developers](/blog/free-ci-cd-tools-developers)
+- [Best Free IDEs for Students](/blog/best-free-ides-students-2026)
+- [Vercel vs Railway vs Render](/blog/vercel-vs-railway-vs-render)
+
+**Browse more deals:**
+
+- [Dev Tools](/category/dev)
+- [All Student Deals](/for/students)
