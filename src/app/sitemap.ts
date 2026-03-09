@@ -14,7 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const dealUrls: MetadataRoute.Sitemap = deals.map((deal) => ({
     url: `${baseUrl}/deals/${deal.slug}`,
-    lastModified: new Date(),
+    lastModified: deal.updatedAt ? new Date(deal.updatedAt) : new Date(),
     changeFrequency: "weekly",
     priority: 0.7,
   }));
