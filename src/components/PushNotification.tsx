@@ -1,32 +1,28 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useSyncExternalStore } from "react";
+
+function getSupported() {
+  return "Notification" in window && "serviceWorker" in navigator;
+}
+
+function getPermission() {
+  if (!("Notification" in window)) return "denied" as NotificationPermission;
+  return Notification.permission;
+}
+
+const noop = () => () => {};
 
 export default function PushNotification() {
-  const [supported, setSupported] = useState(false);
-  const [permission, setPermission] = useState<NotificationPermission>("default");
+  const supported = useSyncExternalStore(noop, getSupported, () => false);
+  const permission = useSyncExternalStore(noop, getPermission, () => "denied" as NotificationPermission);
   const [subscribed, setSubscribed] = useState(false);
-
-  useEffect(() => {
-    if ("Notification" in window && "serviceWorker" in navigator) {
-      setSupported(true);
-      setPermission(Notification.permission);
-      if (Notification.permission === "granted") {
-        navigator.serviceWorker.ready.then((reg) => {
-          reg.pushManager.getSubscription().then((sub) => {
-            if (sub) setSubscribed(true);
-          });
-        });
-      }
-    }
-  }, []);
 
   if (!supported || permission === "denied" || subscribed) return null;
 
   const handleSubscribe = async () => {
     try {
       const perm = await Notification.requestPermission();
-      setPermission(perm);
       if (perm !== "granted") return;
 
       const reg = await navigator.serviceWorker.ready;

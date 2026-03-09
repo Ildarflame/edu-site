@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 function extractVideoId(url: string): string | null {
   const patterns = [
@@ -42,11 +43,13 @@ export default function YouTubeEmbed({ url, title }: { url: string; title: strin
       className="relative w-full aspect-video rounded-xl overflow-hidden group cursor-pointer"
       aria-label={`Play video: ${title}`}
     >
-      <img
+      <Image
         src={thumbnailUrl}
         alt={`Video thumbnail: ${title}`}
-        className="w-full h-full object-cover"
-        loading="lazy"
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, 672px"
+        unoptimized
       />
       <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
         <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">

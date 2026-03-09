@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect, useCallback } from "react";
+import { useState, useMemo, useEffect, useCallback, useSyncExternalStore } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Deal, Category, Audience } from "@/data/deals";
 import { useDebounce } from "@/lib/hooks";
@@ -80,12 +80,14 @@ export default function DealsGrid({
   });
   const [compareIds, setCompareIds] = useState<string[]>([]);
   const [showSavedOnly, setShowSavedOnly] = useState(false);
+  const detectedRegion = useSyncExternalStore(
+    () => () => {},
+    detectRegion,
+    () => null
+  );
   const [region, setRegion] = useState<Region | null>(null);
+  const activeRegion = region ?? detectedRegion;
   const { isSaved, toggle: toggleSaved, count: savedCount } = useSavedDeals();
-
-  useEffect(() => {
-    setRegion(detectRegion());
-  }, []);
 
   const hasActiveFilters = !!(debouncedSearch || category || audience || valueFilter !== "all");
 
@@ -111,17 +113,6 @@ export default function DealsGrid({
 
   useEffect(() => { syncUrl(); }, [syncUrl]);
 
-  // Search analytics logging
-  useEffect(() => {
-    if (debouncedSearch.length >= 2) {
-      fetch("/api/search-log", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: debouncedSearch, resultsCount: filtered.length }),
-      }).catch(() => {});
-    }
-  }, [debouncedSearch]); // eslint-disable-line react-hooks/exhaustive-deps
-
   const resetPage = useCallback(() => setPage(1), []);
   const handleSearch = useCallback((v: string) => { setSearch(v); resetPage(); }, [resetPage]);
   const handleCategory = useCallback((v: Category | null) => { setCategory(v); resetPage(); }, [resetPage]);
@@ -138,7 +129,7 @@ export default function DealsGrid({
   const filtered = useMemo(() => {
     let result = deals.filter((deal) => {
       if (showSavedOnly && !isSaved(deal.slug)) return false;
-      if (region && deal.regions && deal.regions.length > 0 && !deal.regions.includes(region)) return false;
+      if (activeRegion && deal.regions && deal.regions.length > 0 && !deal.regions.includes(activeRegion)) return false;
       if (category && deal.category !== category) return false;
       if (audience && !deal.audiences.includes(audience)) return false;
       if (!matchesValueFilter(deal, valueFilter)) return false;
@@ -165,7 +156,18 @@ export default function DealsGrid({
         break;
     }
     return result;
-  }, [deals, category, audience, valueFilter, debouncedSearch, sort, showSavedOnly, isSaved, region]);
+  }, [deals, category, audience, valueFilter, debouncedSearch, sort, showSavedOnly, isSaved, activeRegion]);
+
+  // Search analytics logging
+  useEffect(() => {
+    if (debouncedSearch.length >= 2) {
+      fetch("/api/search-log", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query: debouncedSearch, resultsCount: filtered.length }),
+      }).catch(() => {});
+    }
+  }, [debouncedSearch, filtered.length]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / DEALS_PER_PAGE));
   const safePage = Math.min(page, totalPages);
@@ -217,7 +219,7 @@ export default function DealsGrid({
           <button
             onClick={() => { setRegion(null); resetPage(); }}
             className={`px-2 py-1 rounded-md text-[11px] font-medium transition-all ${
-              region === null
+              activeRegion === null
                 ? "bg-orange-500/10 text-orange-400 border border-orange-500/20"
                 : "bg-white/[0.03] text-zinc-600 border border-white/[0.06] hover:text-zinc-400"
             }`}
@@ -229,7 +231,7 @@ export default function DealsGrid({
               key={r}
               onClick={() => { setRegion(r); resetPage(); }}
               className={`px-2 py-1 rounded-md text-[11px] font-medium transition-all ${
-                region === r
+                activeRegion === r
                   ? "bg-orange-500/10 text-orange-400 border border-orange-500/20"
                   : "bg-white/[0.03] text-zinc-600 border border-white/[0.06] hover:text-zinc-400"
               }`}

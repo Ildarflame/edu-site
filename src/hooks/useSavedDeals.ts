@@ -1,11 +1,10 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useCallback, useSyncExternalStore } from "react";
 
 const STORAGE_KEY = "saved-deals";
 
-function getStored(): string[] {
-  if (typeof window === "undefined") return [];
+function getSnapshot(): string[] {
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
   } catch {
@@ -13,21 +12,29 @@ function getStored(): string[] {
   }
 }
 
-export function useSavedDeals() {
-  const [savedSlugs, setSavedSlugs] = useState<string[]>([]);
+const serverSnapshot: string[] = [];
 
-  useEffect(() => {
-    setSavedSlugs(getStored());
-  }, []);
+let listeners: (() => void)[] = [];
+function subscribe(listener: () => void) {
+  listeners = [...listeners, listener];
+  return () => {
+    listeners = listeners.filter((l) => l !== listener);
+  };
+}
+function emitChange() {
+  listeners.forEach((l) => l());
+}
+
+export function useSavedDeals() {
+  const savedSlugs = useSyncExternalStore(subscribe, getSnapshot, () => serverSnapshot);
 
   const toggle = useCallback((slug: string) => {
-    setSavedSlugs((prev) => {
-      const next = prev.includes(slug)
-        ? prev.filter((s) => s !== slug)
-        : [...prev, slug];
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-      return next;
-    });
+    const current = getSnapshot();
+    const next = current.includes(slug)
+      ? current.filter((s) => s !== slug)
+      : [...current, slug];
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+    emitChange();
   }, []);
 
   const isSaved = useCallback(

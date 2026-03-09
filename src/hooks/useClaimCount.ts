@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useCallback, useSyncExternalStore } from "react";
 
 const STORAGE_KEY = "claim-counts";
 
@@ -18,7 +18,6 @@ function getBaseCount(slug: string): number {
 }
 
 function getStored(): Record<string, number> {
-  if (typeof window === "undefined") return {};
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
   } catch {
@@ -26,24 +25,33 @@ function getStored(): Record<string, number> {
   }
 }
 
-export function useClaimCount(slug: string) {
-  const [count, setCount] = useState(0);
-  const [claimed, setClaimed] = useState(false);
+let listeners: (() => void)[] = [];
+function subscribe(listener: () => void) {
+  listeners = [...listeners, listener];
+  return () => {
+    listeners = listeners.filter((l) => l !== listener);
+  };
+}
+function emitChange() {
+  listeners.forEach((l) => l());
+}
 
-  useEffect(() => {
-    const stored = getStored();
-    const increment = stored[slug] || 0;
-    setCount(getBaseCount(slug) + increment);
-    setClaimed(increment > 0);
-  }, [slug]);
+export function useClaimCount(slug: string) {
+  const stored = useSyncExternalStore(
+    subscribe,
+    () => getStored()[slug] || 0,
+    () => 0
+  );
+
+  const count = getBaseCount(slug) + stored;
+  const claimed = stored > 0;
 
   const increment = useCallback(() => {
-    const stored = getStored();
-    if (stored[slug]) return;
-    stored[slug] = 1;
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
-    setCount((prev) => prev + 1);
-    setClaimed(true);
+    const all = getStored();
+    if (all[slug]) return;
+    all[slug] = 1;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(all));
+    emitChange();
   }, [slug]);
 
   return { count, increment, claimed };
