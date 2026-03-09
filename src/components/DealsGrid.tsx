@@ -39,6 +39,8 @@ function matchesValueFilter(deal: Deal, filter: ValueFilter): boolean {
   }
 }
 
+const noopSubscribe = () => () => {};
+
 function parseDollarValue(v: string): number {
   const cleaned = v.replace(/,/g, "");
   const match = cleaned.match(/\$([0-9]+(?:\.[0-9]+)?)/);
@@ -81,7 +83,7 @@ export default function DealsGrid({
   const [compareIds, setCompareIds] = useState<string[]>([]);
   const [showSavedOnly, setShowSavedOnly] = useState(false);
   const detectedRegion = useSyncExternalStore(
-    () => () => {},
+    noopSubscribe,
     detectRegion,
     () => null
   );

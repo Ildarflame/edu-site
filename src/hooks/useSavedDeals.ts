@@ -4,12 +4,20 @@ import { useCallback, useSyncExternalStore } from "react";
 
 const STORAGE_KEY = "saved-deals";
 
+let cachedSnapshot: string[] = [];
+let cachedRaw: string | null = null;
+
 function getSnapshot(): string[] {
-  try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
-  } catch {
-    return [];
+  const raw = localStorage.getItem(STORAGE_KEY) || "[]";
+  if (raw !== cachedRaw) {
+    cachedRaw = raw;
+    try {
+      cachedSnapshot = JSON.parse(raw);
+    } catch {
+      cachedSnapshot = [];
+    }
   }
+  return cachedSnapshot;
 }
 
 const serverSnapshot: string[] = [];
@@ -34,6 +42,7 @@ export function useSavedDeals() {
       ? current.filter((s) => s !== slug)
       : [...current, slug];
     localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+    cachedRaw = null; // invalidate cache
     emitChange();
   }, []);
 
