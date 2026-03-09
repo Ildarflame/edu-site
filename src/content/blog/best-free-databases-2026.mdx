@@ -1,0 +1,186 @@
+---
+title: "Best Free Databases in 2026: MongoDB, Supabase, PlanetScale & More"
+date: "2026-03-11"
+description: "Compare the best free database hosting options in 2026. MongoDB Atlas, Supabase, PlanetScale, Neon and more — with student discounts."
+tags: ["database", "free", "hosting", "supabase", "mongodb", "comparison"]
+---
+
+Every project needs a database, and in 2026 the free tier options are better than ever. You can get a managed Postgres instance, a document store, an edge-compatible database, or an entire backend-as-a-service platform — all without entering a credit card.
+
+But "free" varies wildly across providers. Some free tiers are generous enough to run a production SaaS. Others are barely sufficient for a todo app. Some sleep after inactivity. Some delete your data after 90 days. The details matter.
+
+I've used all of the databases below in real projects. Here's what's actually worth your time.
+
+---
+
+## Choosing a Database in 2026
+
+Before comparing specific providers, three decisions shape your choice:
+
+**SQL vs NoSQL vs NewSQL.** SQL databases (Postgres, MySQL) give you structured schemas, strong consistency, and joins. NoSQL databases (MongoDB, Firebase) give you flexible schemas and horizontal scaling. NewSQL databases (PlanetScale, CockroachDB) try to give you both. For most side projects and student work, **SQL with Postgres is the default recommendation** — it's the most versatile and the most widely supported.
+
+**Managed vs Self-hosted.** In 2026, there's almost no reason to self-host a database for a side project. Managed databases handle backups, security patches, connection pooling, and failover. The free tiers are generous enough that you'd spend more on a VPS to host Postgres yourself.
+
+**Client library and DX.** The best database is the one that's easiest to work with in your stack. If you're using Next.js, Supabase has first-class support. If you're building a mobile app, Firebase or MongoDB have excellent SDKs. Developer experience matters more than benchmarks at this scale.
+
+---
+
+## Best Free SQL Databases
+
+### Supabase — The Full Backend, Free
+
+[Supabase](/deals/supabase-startups) is not just a database — it's an entire backend platform built on Postgres. But the database alone is reason enough to use it.
+
+**Free tier includes:**
+- **500 MB** Postgres database
+- **Unlimited** API requests (auto-generated REST and GraphQL APIs)
+- **50,000** monthly active users for authentication
+- **1 GB** file storage with image transformations
+- **Realtime** subscriptions over WebSockets
+- **Edge Functions** (serverless Deno runtime)
+- **2 free projects**
+
+**Why it's special:** Supabase generates a complete REST API from your database schema automatically. Create a table, and you immediately have CRUD endpoints with filtering, pagination, and row-level security. For a typical Next.js or React app, you can build the entire backend with just Supabase — no separate API server needed.
+
+**Limitations:** The free tier pauses your project after 1 week of inactivity (you can unpause instantly, but it's a friction point for projects you don't visit often). The 500 MB storage limit sounds small, but it's sufficient for most side projects — text data is compact, and you can store files in Supabase Storage separately.
+
+**Student/startup deal:** Supabase offers startup credits through partner programs. Check our [Supabase deal page](/deals/supabase-startups) for current offers.
+
+### PlanetScale — MySQL at Massive Scale, Free
+
+PlanetScale is a serverless MySQL platform built on Vitess (the technology that powers YouTube's database). Their free tier is designed for production use:
+
+**Free tier includes:**
+- **5 GB** storage
+- **1 billion** row reads per month
+- **10 million** row writes per month
+- **1 production branch** and **1 development branch**
+
+**Why it's special:** PlanetScale's branching model is revolutionary. You create a development branch of your database (like a Git branch), make schema changes there, and merge them into production with a deploy request. No more writing migration scripts by hand. No more `ALTER TABLE` in production at 2 AM.
+
+**Limitations:** PlanetScale removed foreign key support in favor of application-level constraints. If your project relies heavily on cascading deletes or foreign key references, this is a dealbreaker. Also, it's MySQL — which means some Postgres-specific features (JSONB, array columns, advanced full-text search) aren't available.
+
+### Neon — Serverless Postgres with Branching
+
+Neon is the newest contender, offering serverless Postgres with a unique auto-suspend feature:
+
+**Free tier includes:**
+- **0.5 GB** storage
+- **Compute auto-suspends** after 5 minutes of inactivity (scales to zero)
+- **Database branching** (like PlanetScale, but for Postgres)
+- **Point-in-time restore**
+
+**Why it's special:** Neon separates compute from storage, which means your database can scale to zero when nobody is using it. You only pay for what you use — and on the free tier, "what you use" can be surprisingly little. It's the most efficient free Postgres option for intermittent workloads.
+
+**Limitations:** The 0.5 GB storage limit is tight. Cold starts after auto-suspend add 1-3 seconds to the first query, which can affect user experience if your app doesn't handle it gracefully.
+
+---
+
+## Best Free NoSQL Databases
+
+### MongoDB Atlas — The Document Database Standard
+
+[MongoDB Atlas](/deals/mongodb-students) is the most popular NoSQL database in the world, and its free tier is permanent:
+
+**Free tier (M0 cluster):**
+- **512 MB** storage
+- Shared cluster on **AWS, GCP, or Azure** (your choice)
+- Full MongoDB features: aggregation pipeline, Atlas Search, change streams
+- **No expiration** — your free cluster runs forever
+
+**Student deal:** Through the MongoDB for Academia program, students get an additional **$200 in credits** for upgrading to dedicated clusters. That's enough for a small M10 cluster ($57/month) for about 3.5 months, or to add Atlas Search and Charts to your project.
+
+**Why it's special:** MongoDB's document model is the most natural fit for applications with flexible or evolving schemas. User profiles, product catalogs, content management, event logging — all cases where you don't want to define every column upfront. The aggregation pipeline is also remarkably powerful for analytics queries that would require complex JOINs in SQL.
+
+**Limitations:** 512 MB fills up faster than you'd think if you're storing large documents. No transactions on shared clusters (M0). And MongoDB's query language has a learning curve if you're coming from SQL — though the documentation is excellent.
+
+### Firebase — Google's Mobile Backend
+
+Firebase (Firestore + Realtime Database) is Google's backend-as-a-service, optimized for mobile and web apps:
+
+**Free tier (Spark plan):**
+- **1 GB** stored data (Firestore)
+- **50,000** reads, **20,000** writes, **20,000** deletes per day
+- **10 GB** bandwidth per month
+- Authentication, Cloud Functions, Hosting included
+
+**Why it's special:** Firebase's real-time synchronization is unmatched. Data changes propagate to all connected clients instantly — no polling, no WebSocket code, no infrastructure to manage. For chat apps, collaborative tools, and real-time dashboards, Firebase is the fastest path from idea to working product.
+
+**Limitations:** Firebase's pricing model is notoriously hard to predict at scale. The free tier daily limits can be hit surprisingly fast with inefficient queries. And vendor lock-in is real — migrating away from Firestore is significantly harder than migrating from Postgres or MongoDB.
+
+---
+
+## Best for Edge / Serverless
+
+### Cloudflare D1 — SQL at the Edge
+
+[Cloudflare](/deals/cloudflare-startups) D1 is a SQLite-based database that runs on Cloudflare's edge network:
+
+**Free tier includes:**
+- **5 GB** storage
+- **5 million** rows read per day
+- **100,000** rows written per day
+- Runs in **250+ locations** worldwide
+
+**Why it's special:** D1 runs where your users are. Every read query executes at the nearest Cloudflare edge location, which means single-digit millisecond latency for read-heavy workloads. If you're building on Cloudflare Workers, D1 is the natural database choice — no network hop between your function and your data.
+
+**Best for:** Read-heavy applications, content sites, APIs that serve global traffic. D1 is still maturing as of early 2026, but it's stable enough for side projects and increasingly used in production.
+
+### Vercel KV & Postgres — Integrated with Your Frontend
+
+[Vercel](/deals/vercel-pro) offers database products tightly integrated with its deployment platform:
+
+- **Vercel KV:** Redis-compatible key-value store (powered by Upstash). Free tier: 3,000 requests/day.
+- **Vercel Postgres:** Serverless Postgres (powered by Neon). Free tier: 256 MB storage.
+- **Vercel Blob:** File storage. Free tier: 250 MB.
+
+**Why it's special:** Zero configuration if you're already deploying to Vercel. Environment variables are auto-configured, and the client libraries are designed for serverless environments. Create a database in the Vercel dashboard and start querying from your Next.js API routes immediately.
+
+**Best for:** Next.js projects already on Vercel that need a small, simple database without managing a separate service.
+
+---
+
+## Comparison Table
+
+| Database | Type | Free Tier | Student Deal | Best For |
+|----------|------|-----------|--------------|----------|
+| [Supabase](/deals/supabase-startups) | Postgres + BaaS | 500 MB, auth, storage, realtime | Startup credits | Full-stack web apps |
+| PlanetScale | MySQL (Vitess) | 5 GB, 1B reads | — | Schema-heavy apps |
+| Neon | Serverless Postgres | 0.5 GB, auto-suspend | — | Intermittent workloads |
+| [MongoDB Atlas](/deals/mongodb-students) | Document (NoSQL) | 512 MB forever | $200 student credit | Flexible schemas, mobile |
+| Firebase | Document + Realtime | 1 GB, daily limits | — | Mobile apps, real-time |
+| [Cloudflare D1](/deals/cloudflare-startups) | SQLite (Edge) | 5 GB, 5M reads/day | Startup program | Edge/global apps |
+| [Vercel Postgres](/deals/vercel-pro) | Serverless Postgres | 256 MB | Pro free for students | Next.js projects |
+
+For a detailed side-by-side analysis, check our [Supabase vs MongoDB comparison](/compare/supabase-vs-mongodb).
+
+---
+
+## Which One Should You Pick?
+
+Decision fatigue is real. Here are concrete recommendations:
+
+**Side project or student assignment → Supabase.** The free tier gives you a database, auth, file storage, and real-time subscriptions — everything you need for a typical web app. The auto-generated API means you write less backend code. Start here unless you have a specific reason not to.
+
+**Mobile app → Firebase or MongoDB Atlas.** Firebase wins on real-time sync and Google integration. MongoDB wins on flexibility, query power, and not being locked into Google's ecosystem. If you're using React Native, either works well.
+
+**Edge-first or globally distributed → Cloudflare D1.** If you're already building on Cloudflare Workers, D1 is the obvious choice. The edge latency advantage is meaningful for user-facing queries.
+
+**Already on Vercel → Vercel Postgres for simple needs.** If your project only needs a small Postgres instance and you're already deploying to Vercel, the integrated database is the lowest-friction option. For anything beyond basic CRUD, switch to Supabase or Neon.
+
+**Learning SQL → Supabase or Neon.** Both are standard Postgres, which means everything you learn transfers to any Postgres deployment. This is the most portable skill you can build as a developer.
+
+For more database-related deals, see our curated list of [best free databases for side projects](/best/best-free-databases-for-side-projects).
+
+---
+
+## Related Articles
+
+- [Free Hosting for Students: Deploy Your Projects for $0](/blog/free-hosting-students-2026)
+- [Vercel vs Railway vs Render: Best Free Hosting for Side Projects](/blog/vercel-vs-railway-vs-render)
+- [How to Get $10,000+ in Free AWS Credits for Your Startup](/blog/free-aws-credits-startup-guide)
+- [All database deals](/tag/database)
+
+---
+
+**Need more than a database?** Browse our [full catalog of 150+ developer deals](/deals) to find free tools for every part of your stack — from hosting to design to AI.

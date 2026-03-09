@@ -1,0 +1,168 @@
+---
+title: "Vercel vs Railway vs Render: Best Free Hosting for Side Projects"
+date: "2026-03-11"
+description: "Vercel vs Railway vs Render compared for side projects. Pricing, performance, free tiers, and which platform fits your stack."
+tags: ["hosting", "comparison", "vercel", "railway", "cloud"]
+---
+
+Every developer building side projects in 2026 faces the same question: where do I deploy this thing? The old answer was Heroku, but since their free tier disappeared in 2022, three platforms have emerged as the go-to options: Vercel, Railway, and Render.
+
+All three offer free tiers. All three support Git-based deployments. But they're built on fundamentally different architectures with different trade-offs. I've deployed projects on all three over the past two years, and the right choice depends entirely on what you're building.
+
+Here's the honest comparison.
+
+---
+
+## Three Platforms, Three Philosophies
+
+These platforms look similar on the surface, but they're built on fundamentally different ideas about how applications should run.
+
+**Vercel** is frontend-first. Built by the creators of Next.js, it's optimized for static sites, server-side rendered React apps, and serverless API routes. The core idea: your frontend is the product, and the backend is a set of serverless functions that run on demand. Everything deploys to a global edge network, so users get fast responses regardless of location.
+
+**Railway** is full-stack and container-based. It treats every deployment as a containerized service — whether that's a Node.js API, a Python script, a Postgres database, or a Redis cache. The core idea: give developers the simplicity of Heroku with the power of Docker. It's what Heroku should have evolved into if they hadn't been left to stagnate inside Salesforce.
+
+**Render** is the spiritual successor to Heroku. It offers web services, background workers, cron jobs, and managed databases in a traditional PaaS model. The core idea: a modern Heroku that actually works, with better pricing and fewer surprises. It's straightforward, reliable, and well-documented.
+
+Each philosophy shapes everything from pricing to performance to developer experience.
+
+---
+
+## Feature Comparison Table
+
+| Feature | [Vercel](/deals/vercel-pro) | [Railway](/deals/railway-oss) | Render |
+|---------|--------|---------|--------|
+| **Deployment model** | Serverless + Edge | Containers | Containers |
+| **Git integration** | GitHub, GitLab, Bitbucket | GitHub | GitHub, GitLab |
+| **Custom domains** | Yes (free) | Yes (free) | Yes (free) |
+| **SSL/HTTPS** | Automatic | Automatic | Automatic |
+| **Preview deployments** | Every PR | Every PR | Manual |
+| **Databases** | Vercel Postgres, KV, Blob | Postgres, MySQL, Redis, MongoDB | Postgres, Redis |
+| **Cron jobs** | Via Vercel Cron | Native | Native |
+| **Docker support** | No | Yes | Yes |
+| **Monorepo support** | Excellent | Good | Limited |
+| **Regions** | Edge (global) | US, EU, Asia | US, EU |
+| **Auto-scaling** | Yes (serverless) | Manual | Manual / Auto |
+| **Free SSL** | Yes | Yes | Yes |
+
+---
+
+## Free Tier Breakdown
+
+This is where the decision gets real for students and side-project builders.
+
+### Vercel — Generous Hobby + Free Pro for Students
+
+[Vercel's](/deals/vercel-pro) Hobby plan includes:
+- **100 GB bandwidth** per month
+- **Unlimited** static sites and serverless functions
+- **Preview deployments** for every pull request
+- **Analytics** (basic)
+- **Edge Middleware** and ISR (Incremental Static Regeneration)
+
+But here's the thing students miss: **Vercel Pro is free through the GitHub Student Developer Pack.** That upgrades you to 1 TB bandwidth, team collaboration, password-protected previews, and advanced analytics — a $240/year value for $0.
+
+The catch: Vercel's free tier is designed for frontend. If you need a persistent backend process, a WebSocket server, or a long-running task, Vercel isn't the right tool. Serverless functions have a 10-second timeout on Hobby, and there's no way to maintain in-memory state between requests.
+
+### Railway — $5/Month Free + More for OSS
+
+[Railway](/deals/railway-oss) gives every user $5 in monthly credits on a usage-based model. That's enough for:
+- A small Node.js or Python service running 24/7
+- A Postgres database with moderate usage
+- Or several services that run intermittently
+
+For open source projects, Railway offers additional credits through their OSS program. If your project has a public GitHub repo with real users, apply — approvals are usually fast.
+
+**The usage-based model matters.** Unlike Vercel's request-based pricing or Render's instance-based pricing, Railway charges per minute of compute and per GB of memory. This means idle services still cost (a little), but burst traffic doesn't surprise you with a huge bill. A small app with a PostgreSQL database and a Node.js server costs roughly $3-4/month, leaving room within your $5 credit.
+
+### Render — Free Tier That Sleeps
+
+Render's free tier includes:
+- Free web services that **spin down after 15 minutes of inactivity**
+- Free static sites with unlimited bandwidth
+- Free Postgres database (90 days, then deleted)
+- Free Redis (30 days, then deleted)
+
+The sleep behavior is the critical difference. When someone visits your sleeping Render service, they wait **30-50 seconds** for a cold start. That's fine for a personal project you're showing at an interview (you can wake it up beforehand), but it's not acceptable for anything with real users.
+
+Render's paid plans ($7/month for the cheapest always-on service) are competitive, but on the free tier, the sleep penalty and the 90-day database expiration make it hard to recommend for anything you want to keep running.
+
+---
+
+## Best For...
+
+### Next.js / React / Frontend Projects → Vercel
+
+This isn't even close. Vercel is built for Next.js. Server components, streaming, ISR, image optimization, edge middleware — everything works out of the box with zero configuration. If you're building a Next.js app, deploy to Vercel unless you have a specific reason not to.
+
+For other frontend frameworks (Astro, SvelteKit, Nuxt), Vercel is still excellent but the advantage is smaller. Cloudflare Pages is a strong alternative here, especially with its unlimited free bandwidth.
+
+For React SPAs, Vite apps, or any static site, Vercel is also the right call. The global CDN ensures fast load times everywhere.
+
+### Full-Stack Apps with Database → Railway
+
+If your project has a Node.js/Python/Go backend that talks to Postgres or Redis, Railway is the right choice. You can deploy your API and your database in the same project, manage environment variables that automatically connect them, and scale each service independently.
+
+The developer experience is smooth: `railway up` deploys from your terminal, or just push to GitHub and it auto-deploys. Adding a database is one click — Railway provisions it, creates the connection string, and injects it as an environment variable. The visual dashboard shows all your services and how they connect.
+
+Railway's template marketplace also lets you deploy common stacks (Next.js + PostgreSQL, Django + Postgres, FastAPI + Redis) in seconds.
+
+### Traditional Web Apps / Heroku Replacement → Render
+
+If you're building a Django app, a Rails project, or anything that follows the traditional web application model (server process + database + maybe a worker), Render is the most natural fit. Its dashboard and workflow feel familiar if you've used Heroku, but without the aggressive pricing.
+
+Render is also the best choice if you need background workers, cron jobs, or private services that talk to each other within an internal network. Railway can do this too, but Render's implementation is more mature for traditional architectures.
+
+---
+
+## Performance & Cold Starts
+
+Performance differences matter more than most comparisons acknowledge.
+
+**Vercel (serverless / edge):** Functions cold-start in 100-500ms on the standard runtime, or near-zero on Edge Runtime. Once warm, response times are excellent because functions run close to users on a global edge network. But serverless has a fundamental limit: each request gets its own invocation, which means you can't maintain WebSocket connections or in-memory state.
+
+**Railway (containers):** Your service runs 24/7 in a container. No cold starts, consistent performance, and you can maintain persistent connections. The trade-off is that you're paying for compute even when nobody is making requests. For side projects with bursty traffic, this is slightly wasteful but operationally simpler.
+
+**Render (containers, free tier sleeps):** Paid tier performance is comparable to Railway — no cold starts, consistent response times. But on the free tier, expect **30-50 second cold starts** after 15 minutes of inactivity. This is the dealbreaker for most people. Your portfolio site can't take 40 seconds to load when a recruiter clicks the link.
+
+Here's a rough comparison for a typical API request:
+
+| Metric | Vercel (Edge) | Vercel (Node) | Railway | Render (Paid) | Render (Free) |
+|--------|--------------|---------------|---------|---------------|---------------|
+| Cold start | ~5ms | 100-500ms | None | None | 30-50s |
+| Warm response | 10-30ms | 30-80ms | 20-60ms | 20-60ms | 20-60ms |
+| WebSockets | No | No | Yes | Yes | Yes |
+| Persistent state | No | No | Yes | Yes | Yes |
+
+---
+
+## Verdict
+
+There's no single winner — it depends on your project and your situation.
+
+### For Students
+
+**Use [Vercel](/deals/vercel-pro) for your frontend + [Railway](/deals/railway-oss) for your backend.** This gives you the best of both worlds: Vercel's edge network and perfect Next.js integration for what users see, and Railway's container platform for your API and database. With the student Pro plan on Vercel and Railway's $5/month free credit, you can run a complete full-stack application for $0.
+
+This is the stack I recommend for portfolio projects, capstone assignments, and hackathon submissions. See our [Vercel vs Railway comparison page](/compare/vercel-vs-railway) for more details.
+
+### For Startups / Real Products
+
+**Railway or Render paid tier.** Once you have real users and need reliability, the free tier game stops. Railway's usage-based pricing is better for unpredictable traffic, while Render's fixed-price instances are easier to budget. Both are significantly cheaper than AWS for small-to-medium workloads.
+
+### For Open Source Projects
+
+**Railway's OSS program** is the best deal here. Free hosting for legitimate open source projects, with enough resources to run production services. Vercel's OSS program is also excellent, especially if your project is a frontend tool or documentation site.
+
+---
+
+## Related Articles
+
+- [Free Hosting for Students: Deploy Your Projects for $0](/blog/free-hosting-students-2026)
+- [How to Get $10,000+ in Free AWS Credits for Your Startup](/blog/free-aws-credits-startup-guide)
+- [Best Free Databases in 2026](/blog/best-free-databases-2026)
+- [Browse all hosting deals](/tag/hosting)
+- [Deals for students](/for/students)
+
+---
+
+**Want to compare specific deals?** Use our [deal comparison tool](/deals/compare) to see platforms side by side, or browse the [full catalog](/deals) to find the right fit for your project.
