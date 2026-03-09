@@ -13,6 +13,20 @@ import CompareBar from "./CompareBar";
 
 const DEALS_PER_PAGE = 12;
 
+const REGIONS = ["US", "EU", "UK", "Asia"] as const;
+type Region = (typeof REGIONS)[number];
+
+function detectRegion(): Region | null {
+  try {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    if (tz.startsWith("America/")) return "US";
+    if (tz.startsWith("Europe/London") || tz.startsWith("Europe/Belfast")) return "UK";
+    if (tz.startsWith("Europe/")) return "EU";
+    if (tz.startsWith("Asia/") || tz.startsWith("Australia/")) return "Asia";
+  } catch {}
+  return null;
+}
+
 function matchesValueFilter(deal: Deal, filter: ValueFilter): boolean {
   if (filter === "all") return true;
   const v = deal.value.toLowerCase();
@@ -66,7 +80,12 @@ export default function DealsGrid({
   });
   const [compareIds, setCompareIds] = useState<string[]>([]);
   const [showSavedOnly, setShowSavedOnly] = useState(false);
+  const [region, setRegion] = useState<Region | null>(null);
   const { isSaved, toggle: toggleSaved, count: savedCount } = useSavedDeals();
+
+  useEffect(() => {
+    setRegion(detectRegion());
+  }, []);
 
   const hasActiveFilters = !!(debouncedSearch || category || audience || valueFilter !== "all");
 
@@ -108,6 +127,7 @@ export default function DealsGrid({
   const filtered = useMemo(() => {
     let result = deals.filter((deal) => {
       if (showSavedOnly && !isSaved(deal.slug)) return false;
+      if (region && deal.regions && deal.regions.length > 0 && !deal.regions.includes(region)) return false;
       if (category && deal.category !== category) return false;
       if (audience && !deal.audiences.includes(audience)) return false;
       if (!matchesValueFilter(deal, valueFilter)) return false;
@@ -134,7 +154,7 @@ export default function DealsGrid({
         break;
     }
     return result;
-  }, [deals, category, audience, valueFilter, debouncedSearch, sort, showSavedOnly, isSaved]);
+  }, [deals, category, audience, valueFilter, debouncedSearch, sort, showSavedOnly, isSaved, region]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / DEALS_PER_PAGE));
   const safePage = Math.min(page, totalPages);
@@ -164,8 +184,8 @@ export default function DealsGrid({
         onClearAll={clearAllFilters}
       />
 
-      {savedCount > 0 && (
-        <div className="mb-4 flex items-center gap-2">
+      <div className="mb-4 flex items-center gap-2 flex-wrap">
+        {savedCount > 0 && (
           <button
             onClick={() => { setShowSavedOnly(!showSavedOnly); resetPage(); }}
             className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[13px] font-medium transition-all ${
@@ -179,8 +199,35 @@ export default function DealsGrid({
             </svg>
             Saved ({savedCount})
           </button>
+        )}
+
+        <div className="flex items-center gap-1">
+          <span className="text-[11px] text-zinc-700 mr-1">Region:</span>
+          <button
+            onClick={() => { setRegion(null); resetPage(); }}
+            className={`px-2 py-1 rounded-md text-[11px] font-medium transition-all ${
+              region === null
+                ? "bg-orange-500/10 text-orange-400 border border-orange-500/20"
+                : "bg-white/[0.03] text-zinc-600 border border-white/[0.06] hover:text-zinc-400"
+            }`}
+          >
+            All
+          </button>
+          {REGIONS.map((r) => (
+            <button
+              key={r}
+              onClick={() => { setRegion(r); resetPage(); }}
+              className={`px-2 py-1 rounded-md text-[11px] font-medium transition-all ${
+                region === r
+                  ? "bg-orange-500/10 text-orange-400 border border-orange-500/20"
+                  : "bg-white/[0.03] text-zinc-600 border border-white/[0.06] hover:text-zinc-400"
+              }`}
+            >
+              {r}
+            </button>
+          ))}
         </div>
-      )}
+      </div>
 
       {isLoading ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">

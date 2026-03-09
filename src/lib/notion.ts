@@ -20,6 +20,7 @@ const dealSchema = z.object({
   featured: z.boolean(),
   updatedAt: z.string().optional(),
   status: z.enum(["verified", "expired"]).optional(),
+  regions: z.array(z.string()).optional(),
 });
 
 type NotionRichText = { plain_text: string }[];
@@ -87,6 +88,7 @@ function pageToDeal(page: NotionPage): Deal | null {
     featured: getCheckbox(p["Featured"]),
     updatedAt: page.last_edited_time,
     status: (getSelect(p["Status"]).toLowerCase() || undefined) as "verified" | "expired" | undefined,
+    regions: getMultiSelect(p["Regions"]).length > 0 ? getMultiSelect(p["Regions"]) : undefined,
   };
 
   const result = dealSchema.safeParse(raw);

@@ -23,6 +23,7 @@ export type Deal = {
   featured: boolean;
   updatedAt?: string;
   status?: "verified" | "expired";
+  regions?: string[];
 };
 
 export const CATEGORY_CONFIG: Record<
