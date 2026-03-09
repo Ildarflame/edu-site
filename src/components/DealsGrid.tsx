@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect, useCallback } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Deal, Category, Audience } from "@/data/deals";
 import { useDebounce } from "@/lib/hooks";
+import { useSavedDeals } from "@/hooks/useSavedDeals";
 import DealCard from "./DealCard";
 import DealCardSkeleton from "./DealCardSkeleton";
 import FilterBar, { ValueFilter, SortOption } from "./FilterBar";
@@ -64,6 +65,8 @@ export default function DealsGrid({
     return p > 0 ? p : 1;
   });
   const [compareIds, setCompareIds] = useState<string[]>([]);
+  const [showSavedOnly, setShowSavedOnly] = useState(false);
+  const { isSaved, toggle: toggleSaved, count: savedCount } = useSavedDeals();
 
   const hasActiveFilters = !!(debouncedSearch || category || audience || valueFilter !== "all");
 
@@ -104,6 +107,7 @@ export default function DealsGrid({
 
   const filtered = useMemo(() => {
     let result = deals.filter((deal) => {
+      if (showSavedOnly && !isSaved(deal.slug)) return false;
       if (category && deal.category !== category) return false;
       if (audience && !deal.audiences.includes(audience)) return false;
       if (!matchesValueFilter(deal, valueFilter)) return false;
@@ -130,7 +134,7 @@ export default function DealsGrid({
         break;
     }
     return result;
-  }, [deals, category, audience, valueFilter, debouncedSearch, sort]);
+  }, [deals, category, audience, valueFilter, debouncedSearch, sort, showSavedOnly, isSaved]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / DEALS_PER_PAGE));
   const safePage = Math.min(page, totalPages);
@@ -159,6 +163,24 @@ export default function DealsGrid({
         onSort={handleSort}
         onClearAll={clearAllFilters}
       />
+
+      {savedCount > 0 && (
+        <div className="mb-4 flex items-center gap-2">
+          <button
+            onClick={() => { setShowSavedOnly(!showSavedOnly); resetPage(); }}
+            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[13px] font-medium transition-all ${
+              showSavedOnly
+                ? "bg-red-500/10 text-red-400 border border-red-500/20"
+                : "bg-white/[0.03] text-zinc-500 border border-white/[0.06] hover:border-white/[0.12] hover:text-zinc-300"
+            }`}
+          >
+            <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill={showSavedOnly ? "currentColor" : "none"} stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+            </svg>
+            Saved ({savedCount})
+          </button>
+        </div>
+      )}
 
       {isLoading ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -192,6 +214,8 @@ export default function DealsGrid({
                 compareMode
                 isComparing={compareIds.includes(deal.slug)}
                 onToggleCompare={toggleCompare}
+                isSaved={isSaved(deal.slug)}
+                onSave={toggleSaved}
               />
             ))}
           </div>

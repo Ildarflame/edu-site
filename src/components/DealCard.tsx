@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Deal, CATEGORY_CONFIG } from "@/data/deals";
 import CategoryBadge from "./CategoryBadge";
 import AudienceBadge from "./AudienceBadge";
+import SaveButton from "./SaveButton";
 
 const accentMap: Record<string, string> = {
   blue: "card-accent-blue",
@@ -20,12 +21,16 @@ export default function DealCard({
   compareMode = false,
   isComparing = false,
   onToggleCompare,
+  isSaved,
+  onSave,
 }: {
   deal: Deal;
   featured?: boolean;
   compareMode?: boolean;
   isComparing?: boolean;
   onToggleCompare?: (slug: string) => void;
+  isSaved?: boolean;
+  onSave?: (slug: string) => void;
 }) {
   const catConfig = CATEGORY_CONFIG[deal.category];
   const accent = accentMap[catConfig.color] ?? "";
@@ -65,9 +70,14 @@ export default function DealCard({
           <div className="w-11 h-11 rounded-[10px] bg-white/[0.03] border border-white/[0.06] flex items-center justify-center">
             <Image src={deal.logo} alt={deal.name} width={32} height={32} loading={featured ? undefined : "lazy"} />
           </div>
-          <span className="value-pill text-[11px] font-bold px-2.5 py-1 rounded-md">
-            {deal.value}
-          </span>
+          <div className="flex items-center gap-1.5">
+            {onSave && (
+              <SaveButton saved={!!isSaved} onToggle={() => onSave(deal.slug)} />
+            )}
+            <span className="value-pill text-[11px] font-bold px-2.5 py-1 rounded-md">
+              {deal.value}
+            </span>
+          </div>
         </div>
 
         <h3 className={`font-semibold text-zinc-100 group-hover:text-orange-400 transition-colors duration-200 ${featured ? "text-lg" : "text-[15px]"}`}>
