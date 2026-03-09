@@ -10,6 +10,7 @@ import DealRating from "@/components/DealRating";
 import ShareButtons from "@/components/ShareButtons";
 import DealCTA from "@/components/DealCTA";
 import DealStatusBadge from "@/components/DealStatusBadge";
+import PushNotification from "@/components/PushNotification";
 import CategoryTracker from "@/components/CategoryTracker";
 
 export const revalidate = 300;
@@ -126,7 +127,10 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
       {/* CTA + Share */}
       <div className="flex items-center justify-between flex-wrap gap-4 mb-8">
         <DealCTA url={deal.url} slug={deal.slug} category={deal.category} audiences={deal.audiences} />
-        <ShareButtons title={deal.name} slug={deal.slug} />
+        <div className="flex items-center gap-2">
+          <ShareButtons title={deal.name} slug={deal.slug} />
+          <PushNotification />
+        </div>
       </div>
 
       {/* Rating */}
