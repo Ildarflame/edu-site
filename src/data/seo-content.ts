@@ -548,6 +548,145 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
   },
 ];
 
+export type UseCaseSEO = {
+  slug: string;
+  title: string;
+  metaDescription: string;
+  heading: string;
+  intro: string;
+  filterCategory?: Category;
+  filterKeywords: string[];
+  faqs: FAQ[];
+};
+
+export const USE_CASE_SEO: UseCaseSEO[] = [
+  {
+    slug: "best-free-databases-for-side-projects",
+    title: "Best Free Databases for Side Projects 2026 | StudentPerks",
+    metaDescription: "Find the best free databases for your side projects. Supabase, MongoDB Atlas, PlanetScale, and more with generous free tiers.",
+    heading: "Best Free Databases for Side Projects",
+    intro: "Building a side project? You don't need to pay for a database. These free-tier databases give you production-ready storage for hobby and side projects.",
+    filterKeywords: ["database", "supabase", "mongodb", "postgres", "sql"],
+    faqs: [
+      { question: "What's the best free database for a beginner?", answer: "Supabase is great for beginners — it's PostgreSQL with a dashboard, auth, and real-time built in. MongoDB Atlas is also beginner-friendly if you prefer NoSQL." },
+      { question: "Are free database tiers reliable for production?", answer: "Yes, for small to medium traffic. Most free tiers include automatic backups and 99.9% uptime SLAs. Upgrade when you outgrow the free limits." },
+    ],
+  },
+  {
+    slug: "best-free-hosting-for-students",
+    title: "Best Free Hosting for Students 2026 | StudentPerks",
+    metaDescription: "Free hosting platforms for student developers. Deploy your projects on Vercel, Railway, Render, and more with zero cost.",
+    heading: "Best Free Hosting for Students",
+    intro: "Deploy your projects for free. These hosting platforms offer generous free tiers perfect for student portfolios, class projects, and side projects.",
+    filterCategory: "Cloud",
+    filterKeywords: ["hosting", "deploy", "vercel", "railway", "render", "cloud"],
+    faqs: [
+      { question: "Can I host a full-stack app for free?", answer: "Yes! Railway and Render both support full-stack apps with databases on their free tiers. Vercel is best for frontend and serverless." },
+      { question: "Will my free hosting handle traffic?", answer: "Free tiers handle moderate traffic well. For student projects and portfolios, you'll rarely hit limits. Most platforms allow easy scaling when needed." },
+    ],
+  },
+  {
+    slug: "best-free-design-tools-for-prototyping",
+    title: "Best Free Design Tools for Prototyping 2026 | StudentPerks",
+    metaDescription: "Free design and prototyping tools for students and startups. Figma, Framer, Canva, and more with free plans.",
+    heading: "Best Free Design Tools for Prototyping",
+    intro: "Create professional designs and prototypes without spending a dime. These design tools offer powerful free tiers for UI/UX design, prototyping, and graphics.",
+    filterCategory: "Design",
+    filterKeywords: ["design", "figma", "framer", "canva", "prototype", "ui"],
+    faqs: [
+      { question: "Is Figma still free for students?", answer: "Yes, Figma offers a free plan with up to 3 projects and unlimited personal files. Students can also apply for Figma for Education for additional features." },
+      { question: "What's the best free tool for interactive prototypes?", answer: "Figma for standard prototyping, Framer for code-powered interactions and animations. Both have generous free tiers." },
+    ],
+  },
+  {
+    slug: "best-free-cicd-for-open-source",
+    title: "Best Free CI/CD for Open Source 2026 | StudentPerks",
+    metaDescription: "Free CI/CD pipelines for open source projects. GitHub Actions, GitLab CI, and more with unlimited builds for public repos.",
+    heading: "Best Free CI/CD for Open Source Projects",
+    intro: "Open source projects get the best CI/CD deals. Most platforms offer unlimited build minutes for public repositories, making automated testing and deployment completely free.",
+    filterKeywords: ["ci", "cd", "pipeline", "github-actions", "gitlab", "build", "deploy"],
+    faqs: [
+      { question: "Is GitHub Actions free for open source?", answer: "Yes, GitHub Actions provides unlimited minutes for public repositories. It's the most popular choice for open source CI/CD." },
+      { question: "What's the easiest CI/CD to set up?", answer: "GitHub Actions if you're already on GitHub — just add a YAML file. Vercel has zero-config deployments for frontend projects." },
+    ],
+  },
+  {
+    slug: "best-free-ai-tools-for-developers",
+    title: "Best Free AI Tools for Developers 2026 | StudentPerks",
+    metaDescription: "Free AI tools for developers. GitHub Copilot, OpenAI API credits, Cursor, and more AI-powered coding tools with free access.",
+    heading: "Best Free AI Tools for Developers",
+    intro: "AI is transforming development. Access the best AI coding tools for free through student programs, startup credits, and open source sponsorships.",
+    filterCategory: "AI",
+    filterKeywords: ["ai", "copilot", "openai", "cursor", "machine-learning", "gpt"],
+    faqs: [
+      { question: "Is GitHub Copilot free for students?", answer: "Yes, GitHub Copilot is completely free for verified students through the GitHub Student Developer Pack." },
+      { question: "Can I get free OpenAI API credits?", answer: "Yes, OpenAI offers startup credits through their programs. Students can also access free tiers with limited usage." },
+    ],
+  },
+  {
+    slug: "best-free-monitoring-for-startups",
+    title: "Best Free Monitoring Tools for Startups 2026 | StudentPerks",
+    metaDescription: "Free monitoring and observability tools for startups. Sentry, Datadog, New Relic, and more with free startup credits.",
+    heading: "Best Free Monitoring Tools for Startups",
+    intro: "Don't fly blind. These monitoring tools offer free tiers and startup credits to help you track errors, performance, and infrastructure from day one.",
+    filterKeywords: ["monitoring", "sentry", "datadog", "observability", "error", "apm"],
+    faqs: [
+      { question: "What monitoring should a startup set up first?", answer: "Start with error tracking (Sentry) and uptime monitoring. Add APM and infrastructure monitoring as you scale." },
+      { question: "Are free monitoring tiers enough for early-stage?", answer: "Absolutely. Sentry's free tier handles 5K errors/month, which is plenty for pre-launch and early traction." },
+    ],
+  },
+  {
+    slug: "best-free-learning-platforms",
+    title: "Best Free Learning Platforms for Developers 2026 | StudentPerks",
+    metaDescription: "Free learning platforms for developers. Coursera, freeCodeCamp, and more with certificates and courses at no cost.",
+    heading: "Best Free Learning Platforms for Developers",
+    intro: "Level up your skills for free. These learning platforms offer free courses, certifications, and hands-on projects for developer education.",
+    filterCategory: "Learning",
+    filterKeywords: ["learning", "course", "education", "tutorial", "certification"],
+    faqs: [
+      { question: "Can I get free certificates?", answer: "Yes. freeCodeCamp offers free certificates. Coursera offers financial aid for certificates, and many platforms have free certificate tracks for students." },
+      { question: "What's the best free platform for web development?", answer: "freeCodeCamp for structured curriculum, Coursera for university-level courses, and The Odin Project for project-based learning." },
+    ],
+  },
+  {
+    slug: "best-free-tools-for-hackathons",
+    title: "Best Free Tools for Hackathons 2026 | StudentPerks",
+    metaDescription: "Essential free tools for hackathons. Deploy fast with Vercel, build with Supabase, design with Figma — all free.",
+    heading: "Best Free Tools for Hackathons",
+    intro: "Win your next hackathon with the right free tools. Fast deployment, instant databases, collaborative design, and AI assistance — all at zero cost.",
+    filterKeywords: ["hackathon", "deploy", "fast", "prototype", "team"],
+    faqs: [
+      { question: "What's the fastest way to deploy at a hackathon?", answer: "Vercel for frontend (zero-config deploys from Git), Railway for full-stack with databases. Both deploy in under a minute." },
+      { question: "What backend should I use for a hackathon?", answer: "Supabase gives you a PostgreSQL database with auth and real-time in minutes. Perfect for hackathon speed." },
+    ],
+  },
+  {
+    slug: "best-free-saas-tools-for-mvp",
+    title: "Best Free SaaS Tools to Build Your MVP 2026 | StudentPerks",
+    metaDescription: "Free SaaS tools to build and launch your MVP. Authentication, payments, email, analytics, and more without spending money.",
+    heading: "Best Free SaaS Tools to Build Your MVP",
+    intro: "Build your MVP without a budget. These SaaS tools offer free tiers that cover everything from auth to payments to analytics.",
+    filterCategory: "SaaS",
+    filterKeywords: ["saas", "mvp", "auth", "payment", "email", "analytics"],
+    faqs: [
+      { question: "How much does it cost to build an MVP?", answer: "With free tools from StudentPerks, you can build and launch an MVP for $0. Hosting, database, auth, payments — all have free tiers." },
+      { question: "What tools do I need for an MVP?", answer: "At minimum: hosting (Vercel/Railway), database (Supabase), auth (built into Supabase), and analytics (Vercel Analytics). All free." },
+    ],
+  },
+  {
+    slug: "best-free-tools-for-portfolio-websites",
+    title: "Best Free Tools for Portfolio Websites 2026 | StudentPerks",
+    metaDescription: "Build a stunning portfolio website for free. Hosting, domains, design tools, and deployment platforms at zero cost for students.",
+    heading: "Best Free Tools for Portfolio Websites",
+    intro: "Your portfolio is your first impression. Build and host a professional portfolio website for free using these developer tools and hosting platforms.",
+    filterKeywords: ["portfolio", "website", "hosting", "domain", "design", "deploy"],
+    faqs: [
+      { question: "Can I get a free custom domain for my portfolio?", answer: "Yes! GitHub Student Developer Pack includes free .me and .tech domains. Namecheap also offers free .me domains for students." },
+      { question: "What's the best free hosting for a portfolio?", answer: "Vercel or Netlify for static/Next.js sites. Both offer free HTTPS, global CDN, and custom domain support." },
+    ],
+  },
+];
+
 export function getCrossFilterMeta(
   audience: Audience,
   category: Category,
