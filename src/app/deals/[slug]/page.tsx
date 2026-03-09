@@ -11,6 +11,7 @@ import ShareButtons from "@/components/ShareButtons";
 import DealCTA from "@/components/DealCTA";
 import DealStatusBadge from "@/components/DealStatusBadge";
 import PushNotification from "@/components/PushNotification";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 import CategoryTracker from "@/components/CategoryTracker";
 
 export const revalidate = 300;
@@ -123,6 +124,14 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
           ))}
         </div>
       </div>
+
+      {/* Video guide */}
+      {deal.video && (
+        <div className="mb-10">
+          <h2 className="text-[15px] font-semibold text-zinc-200 mb-4">Video Guide</h2>
+          <YouTubeEmbed url={deal.video} title={`${deal.name} — How to get it`} />
+        </div>
+      )}
 
       {/* CTA + Share */}
       <div className="flex items-center justify-between flex-wrap gap-4 mb-8">

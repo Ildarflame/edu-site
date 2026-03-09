@@ -21,6 +21,7 @@ const dealSchema = z.object({
   updatedAt: z.string().optional(),
   status: z.enum(["verified", "expired"]).optional(),
   regions: z.array(z.string()).optional(),
+  video: z.string().optional(),
 });
 
 type NotionRichText = { plain_text: string }[];
@@ -89,6 +90,7 @@ function pageToDeal(page: NotionPage): Deal | null {
     updatedAt: page.last_edited_time,
     status: (getSelect(p["Status"]).toLowerCase() || undefined) as "verified" | "expired" | undefined,
     regions: getMultiSelect(p["Regions"]).length > 0 ? getMultiSelect(p["Regions"]) : undefined,
+    video: getUrl(p["Video"]) || undefined,
   };
 
   const result = dealSchema.safeParse(raw);
