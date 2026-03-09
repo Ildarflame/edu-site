@@ -31,6 +31,7 @@ export type AlternativeSEO = {
   name: string;
   category: Category;
   intro: string;
+  faqs: FAQ[];
 };
 
 export const CATEGORY_SEO: CategorySEO[] = [
@@ -344,6 +345,11 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "Cloud",
     intro:
       "Looking for free alternatives to Amazon Web Services? These cloud platforms offer free credits, hosting, and infrastructure for students, startups, and open source projects.",
+    faqs: [
+      { question: "Can students get free AWS credits?", answer: "Yes, through AWS Educate and the GitHub Student Developer Pack, students can access free AWS credits and learning resources." },
+      { question: "What are the best free alternatives to AWS for students?", answer: "Google Cloud, DigitalOcean, Railway, and Vercel all offer generous free tiers or student credits for cloud hosting and compute." },
+      { question: "How much free cloud credit can startups get?", answer: "Startups can get up to $100K through AWS Activate, $200K via Google Cloud for Startups, and various amounts from DigitalOcean, Azure, and other providers." },
+    ],
   },
   {
     slug: "vercel",
@@ -351,6 +357,10 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "Cloud",
     intro:
       "Explore free alternatives to Vercel for deploying your web applications. These platforms offer hosting, CI/CD, and edge functions with generous free tiers.",
+    faqs: [
+      { question: "Is Vercel free for students?", answer: "Vercel's Hobby plan is free for everyone. Open source projects and startups can apply for the Pro plan at no cost through Vercel's sponsorship programs." },
+      { question: "What are the best free alternatives to Vercel?", answer: "Netlify, Railway, Cloudflare Pages, and Render all offer free hosting tiers with CI/CD and edge deployments for frontend and full-stack apps." },
+    ],
   },
   {
     slug: "github-copilot",
@@ -358,6 +368,11 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "AI",
     intro:
       "Discover free alternatives to GitHub Copilot for AI-powered coding assistance. These tools offer code completion, generation, and intelligent suggestions.",
+    faqs: [
+      { question: "Is GitHub Copilot free for students?", answer: "Yes, GitHub Copilot is completely free for verified students through the GitHub Student Developer Pack and for maintainers of popular open source projects." },
+      { question: "What are free alternatives to GitHub Copilot?", answer: "Codeium, Tabnine, and Amazon CodeWhisperer all offer free tiers with AI code completion. Cursor IDE also provides free AI-assisted coding." },
+      { question: "Do I need a paid subscription for AI coding tools?", answer: "No. Several AI coding assistants offer generous free plans, and students can get GitHub Copilot for free through education verification." },
+    ],
   },
   {
     slug: "figma",
@@ -365,6 +380,10 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "Design",
     intro:
       "Find free alternatives to Figma for UI/UX design. These design tools offer collaborative features, prototyping, and professional design capabilities.",
+    faqs: [
+      { question: "Is Figma free for students?", answer: "Yes, Figma offers its Professional plan completely free for verified students and educators. Apply at figma.com/education with your .edu email." },
+      { question: "What are the best free alternatives to Figma?", answer: "Penpot (open source), Framer, and Canva all offer free design and prototyping capabilities. Adobe XD also has a free starter plan." },
+    ],
   },
   {
     slug: "jetbrains",
@@ -372,6 +391,11 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "Dev",
     intro:
       "Explore free alternatives to JetBrains IDEs for software development. These developer tools offer intelligent code editing, debugging, and project management.",
+    faqs: [
+      { question: "Can students get JetBrains IDEs for free?", answer: "Yes, JetBrains provides all their IDEs free for students and educators. Apply with your .edu email or ISIC card at jetbrains.com/student." },
+      { question: "What are free alternatives to JetBrains?", answer: "VS Code with extensions, Cursor, and Zed are excellent free alternatives. Eclipse and IntelliJ Community Edition are also free for Java development." },
+      { question: "How long does the JetBrains student license last?", answer: "The student license is valid for one year and can be renewed annually as long as you remain a student. It includes access to all JetBrains professional IDEs." },
+    ],
   },
   {
     slug: "notion",
@@ -379,6 +403,10 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "SaaS",
     intro:
       "Discover free alternatives to Notion for team collaboration and project management. These tools offer notes, databases, wikis, and task management features.",
+    faqs: [
+      { question: "Is Notion free for students?", answer: "Yes, Notion offers its Plus plan completely free for students and educators. Sign up with your .edu email and activate the education plan in Settings." },
+      { question: "What are the best free alternatives to Notion?", answer: "Obsidian, Logseq, and Coda offer free personal plans. Linear is free for small teams, and Slite offers a generous free tier for startups." },
+    ],
   },
   {
     slug: "slack",
@@ -386,6 +414,10 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "SaaS",
     intro:
       "Find free alternatives to Slack for team communication. These platforms offer messaging, channels, integrations, and collaboration features.",
+    faqs: [
+      { question: "Can startups get Slack Pro for free?", answer: "Yes, Slack offers Pro plan credits to startups through accelerator and VC partner programs. Check if your investor or accelerator is a Slack partner." },
+      { question: "What are free alternatives to Slack?", answer: "Discord, Microsoft Teams (free tier), and Mattermost (open source) are popular free alternatives for team communication and collaboration." },
+    ],
   },
   {
     slug: "docker",
@@ -393,6 +425,10 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "Dev",
     intro:
       "Explore free alternatives to Docker for containerization and deployment. These tools help you build, ship, and run applications in isolated environments.",
+    faqs: [
+      { question: "Is Docker free for students?", answer: "Yes, Docker provides free Docker Pro subscriptions for verified students through GitHub Education and for open source maintainers." },
+      { question: "What are free alternatives to Docker?", answer: "Podman, containerd, and LXC are free and open source container runtimes. Podman is a popular drop-in replacement that doesn't require a daemon." },
+    ],
   },
   {
     slug: "mongodb",
@@ -400,6 +436,10 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "Dev",
     intro:
       "Discover free alternatives to MongoDB for database management. These platforms offer managed databases, storage, and backend-as-a-service features.",
+    faqs: [
+      { question: "Is MongoDB Atlas free?", answer: "Yes, MongoDB Atlas offers a free M0 cluster with 512 MB storage that never expires. Students can get additional credits through the MongoDB for Academia program." },
+      { question: "What are the best free database alternatives to MongoDB?", answer: "Supabase (managed Postgres), PlanetScale (MySQL), Firebase Firestore, and CockroachDB all offer generous free tiers for developers." },
+    ],
   },
   {
     slug: "stripe",
@@ -407,6 +447,10 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "SaaS",
     intro:
       "Find free alternatives to Stripe for payment processing and startup incorporation. These tools offer billing, payments, and financial infrastructure.",
+    faqs: [
+      { question: "What does Stripe Atlas offer startups?", answer: "Stripe Atlas helps founders incorporate a US C-Corp with EIN filing, 83(b) election, and access to over $5,000 in partner credits from AWS, OpenAI, and more." },
+      { question: "What are free alternatives to Stripe for payments?", answer: "LemonSqueezy, Paddle, and PayPal offer payment processing with no monthly fees. Square and Braintree also provide free-to-start payment solutions." },
+    ],
   },
   {
     slug: "cloudflare",
@@ -414,6 +458,10 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "Cloud",
     intro:
       "Explore free alternatives to Cloudflare for CDN, security, and edge computing. These platforms offer DDoS protection, caching, and performance optimization.",
+    faqs: [
+      { question: "Is Cloudflare free for open source?", answer: "Yes, Cloudflare offers its Pro plan free for open source projects and provides startup program participants with Workers, R2 storage, and enhanced security." },
+      { question: "What are free alternatives to Cloudflare?", answer: "Fastly, AWS CloudFront (free tier), and Bunny CDN offer competitive free tiers. For DNS and security, Google Cloud DNS and Let's Encrypt are free." },
+    ],
   },
   {
     slug: "sentry",
@@ -421,6 +469,10 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "Dev",
     intro:
       "Discover free alternatives to Sentry for error tracking and performance monitoring. These tools help you find and fix bugs in your applications.",
+    faqs: [
+      { question: "Is Sentry free for open source?", answer: "Yes, Sentry offers its Business plan completely free for open source projects. Startups can also get discounted plans through partner programs." },
+      { question: "What are free alternatives to Sentry?", answer: "GlitchTip (open source Sentry alternative), Highlight.io, and LogRocket offer free tiers for error tracking. Bugsnag and Rollbar also have free starter plans." },
+    ],
   },
   {
     slug: "adobe",
@@ -428,6 +480,10 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "Design",
     intro:
       "Find free alternatives to Adobe Creative Cloud for graphic design, video editing, and creative work. These tools offer professional creative capabilities at no cost.",
+    faqs: [
+      { question: "Can students get Adobe Creative Cloud at a discount?", answer: "Yes, Adobe offers 60%+ off the full Creative Cloud suite for students and teachers. Verify via SheerID to get Photoshop, Illustrator, Premiere Pro, and 20+ apps." },
+      { question: "What are the best free alternatives to Adobe?", answer: "GIMP (Photoshop alternative), Inkscape (Illustrator), DaVinci Resolve (Premiere Pro), and Figma (XD) are all free and professional-grade." },
+    ],
   },
   {
     slug: "coursera",
@@ -435,6 +491,10 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "Learning",
     intro:
       "Explore free alternatives to Coursera for online learning. These platforms offer courses, certifications, and educational content from top institutions.",
+    faqs: [
+      { question: "Is Coursera free for students?", answer: "Coursera for Campus provides students with free access to 3,800+ courses if their university is a partner. Individual courses can be audited for free without certificates." },
+      { question: "What are free alternatives to Coursera?", answer: "freeCodeCamp, edX (free audit), Khan Academy, MIT OpenCourseWare, and The Odin Project all offer free, high-quality educational content." },
+    ],
   },
   {
     slug: "spotify",
@@ -442,6 +502,10 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
     category: "Entertainment",
     intro:
       "Discover free alternatives to Spotify for music streaming. These entertainment platforms offer student discounts and free tiers for media consumption.",
+    faqs: [
+      { question: "How much is Spotify Premium for students?", answer: "Spotify Premium Student costs $5.99/month (50% off regular price) and includes Hulu and SHOWTIME. Verify your student status via SheerID." },
+      { question: "What are free alternatives to Spotify?", answer: "YouTube Music (free tier), SoundCloud, and Apple Music (student discount) are popular alternatives. Amazon Music is included with Prime Student at half price." },
+    ],
   },
 ];
 

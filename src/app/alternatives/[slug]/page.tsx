@@ -45,6 +45,17 @@ export default async function AlternativesPage({
   const catSeo = CATEGORY_SEO.find((c) => c.category === alt.category);
   const otherAlternatives = ALTERNATIVES_SEO.filter((a) => a.slug !== slug);
 
+  // FAQ JSON-LD — controlled data from seo-content.ts
+  const faqLd = alt.faqs.length > 0 ? JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: alt.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  }).replace(/</g, "\\u003c") : null;
+
   // JSON-LD — all content is controlled/hardcoded, safe for inline script
   const itemListLd = JSON.stringify({
     "@context": "https://schema.org",
@@ -102,6 +113,21 @@ export default async function AlternativesPage({
         ))}
       </div>
 
+      {/* FAQ — content from controlled seo-content.ts data, not user input */}
+      {alt.faqs.length > 0 && (
+        <section className="mb-16">
+          <h2 className="text-xl font-bold text-zinc-100 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {alt.faqs.map((faq, i) => (
+              <div key={i} className="card p-5">
+                <h3 className="text-[15px] font-semibold text-zinc-200 mb-2">{faq.question}</h3>
+                <p className="text-[14px] text-zinc-500 leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Other alternatives */}
       <section>
         <h2 className="text-lg font-bold text-zinc-100 mb-4">More Alternatives</h2>
@@ -118,9 +144,10 @@ export default async function AlternativesPage({
         </div>
       </section>
 
-      {/* JSON-LD — controlled data, safe for inline script */}
+      {/* JSON-LD — all content from controlled seo-content.ts, not user input */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: itemListLd }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbLd }} />
+      {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqLd }} />}
     </main>
   );
 }
