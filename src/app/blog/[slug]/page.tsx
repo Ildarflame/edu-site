@@ -32,6 +32,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
+  const allPosts = getAllPosts();
+  const related = allPosts.filter((p) => p.slug !== slug).slice(0, 3);
+
   return (
     <main className="max-w-2xl mx-auto px-6 py-12">
       <nav className="text-[13px] text-zinc-700 mb-8 font-medium">
@@ -75,6 +78,20 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           }).replace(/</g, "\\u003c"),
         }}
       />
+
+      {related.length > 0 && (
+        <section className="mt-16 pt-8 border-t border-white/[0.06]">
+          <h2 className="text-lg font-bold text-zinc-100 mb-4">Related Articles</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {related.map((p) => (
+              <Link key={p.slug} href={`/blog/${p.slug}`} className="card p-4 hover:border-white/[0.12] transition-all">
+                <h3 className="text-sm font-semibold text-zinc-200 mb-1">{p.title}</h3>
+                <p className="text-xs text-zinc-500 line-clamp-2">{p.description}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <div className="mt-10 pt-6 border-t border-white/[0.04]">
         <Link href="/blog" className="inline-flex items-center gap-1.5 text-[13px] font-medium text-zinc-600 hover:text-orange-400 transition-colors">
