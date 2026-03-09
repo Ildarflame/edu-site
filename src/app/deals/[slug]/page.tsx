@@ -143,6 +143,24 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: deal.name,
+            applicationCategory: deal.category,
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+              description: deal.value,
+            },
+            description: deal.tagline,
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "Product",
             name: deal.name,
             description: deal.description,
