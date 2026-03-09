@@ -21,6 +21,7 @@ export type Deal = {
   steps: string[];
   url: string;
   featured: boolean;
+  updatedAt?: string;
 };
 
 export const CATEGORY_CONFIG: Record<

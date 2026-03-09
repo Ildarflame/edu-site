@@ -18,6 +18,7 @@ const dealSchema = z.object({
   steps: z.array(z.string()),
   url: z.string(),
   featured: z.boolean(),
+  updatedAt: z.string().optional(),
 });
 
 type NotionRichText = { plain_text: string }[];
@@ -27,6 +28,7 @@ type NotionProperty = any;
 
 type NotionPage = {
   id: string;
+  last_edited_time?: string;
   properties: Record<string, NotionProperty>;
 };
 
@@ -82,6 +84,7 @@ function pageToDeal(page: NotionPage): Deal | null {
     steps,
     url: getUrl(p["URL"]),
     featured: getCheckbox(p["Featured"]),
+    updatedAt: page.last_edited_time,
   };
 
   const result = dealSchema.safeParse(raw);
