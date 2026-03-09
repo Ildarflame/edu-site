@@ -4,7 +4,9 @@
 
 Getting started as a developer shouldn't cost a fortune. This list collects the best deals, free tiers, and credit programs available to students, early-stage startups, and open source contributors. Every entry has been verified and includes the approximate value you'll receive.
 
-For the complete, searchable collection of 153+ deals, visit **[StudentPerks.dev](https://studentperks.dev)**.
+**If this list saved you money, [give it a star](https://github.com/Ildarflame/awesome-student-developer-deals) — it helps other students find it too.**
+
+**[StudentPerks.dev](https://studentperks.dev)** — the full searchable database with 150+ deals, step-by-step claim guides, and a [personalized Freebies Finder](https://studentperks.dev/student-freebies-finder).
 
 ---
 
@@ -163,9 +165,19 @@ Please ensure:
 
 ## Full Database
 
-This list highlights 50+ of the best deals. For the complete searchable database of 153+ deals with eligibility filters, step-by-step claim instructions, and real-time updates, visit:
+This list highlights 50+ of the best deals. For the complete searchable database with filters, claim guides, and interactive tools, visit:
 
-**[StudentPerks.dev](https://studentperks.dev)** -- The complete directory of free developer perks.
+| Resource | Link |
+|----------|------|
+| All 150+ deals with filters | [studentperks.dev/deals](https://studentperks.dev/deals) |
+| Student Freebies Finder (personalized) | [studentperks.dev/student-freebies-finder](https://studentperks.dev/student-freebies-finder) |
+| 100+ Free Tools for Students | [studentperks.dev/free-tools-for-students](https://studentperks.dev/free-tools-for-students) |
+| Student Discounts index | [studentperks.dev/student-discount](https://studentperks.dev/student-discount) |
+| Step-by-step claim guides | [studentperks.dev/guides/...](https://studentperks.dev/guides/how-to-get-github-student-pack) |
+
+---
+
+**Found this useful? [Star the repo](https://github.com/Ildarflame/awesome-student-developer-deals) and share it with a friend who's still paying full price.**
 
 ---
 
