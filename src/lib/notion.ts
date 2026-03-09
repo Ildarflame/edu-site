@@ -19,6 +19,7 @@ const dealSchema = z.object({
   url: z.string(),
   featured: z.boolean(),
   updatedAt: z.string().optional(),
+  status: z.enum(["verified", "expired"]).optional(),
 });
 
 type NotionRichText = { plain_text: string }[];
@@ -85,6 +86,7 @@ function pageToDeal(page: NotionPage): Deal | null {
     url: getUrl(p["URL"]),
     featured: getCheckbox(p["Featured"]),
     updatedAt: page.last_edited_time,
+    status: (getSelect(p["Status"]).toLowerCase() || undefined) as "verified" | "expired" | undefined,
   };
 
   const result = dealSchema.safeParse(raw);

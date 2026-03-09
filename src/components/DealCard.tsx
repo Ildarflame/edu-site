@@ -4,6 +4,7 @@ import { Deal, CATEGORY_CONFIG } from "@/data/deals";
 import CategoryBadge from "./CategoryBadge";
 import AudienceBadge from "./AudienceBadge";
 import SaveButton from "./SaveButton";
+import DealStatusBadge from "./DealStatusBadge";
 
 const accentMap: Record<string, string> = {
   blue: "card-accent-blue",
@@ -92,6 +93,7 @@ export default function DealCard({
           {deal.audiences.map((a) => (
             <AudienceBadge key={a} audience={a} />
           ))}
+          {deal.status && <DealStatusBadge status={deal.status} />}
         </div>
       </Link>
     </div>
