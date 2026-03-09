@@ -461,7 +461,7 @@ export const deals: Deal[] = [
       "Claim $100 in credits and start deploying services",
     ],
     url: "https://azure.microsoft.com/en-us/free/students/",
-    featured: true,
+    featured: false,
   },
   {
     slug: "youtube-premium-student",
@@ -497,7 +497,7 @@ export const deals: Deal[] = [
       "Enjoy 6 months free, then 50% off Prime",
     ],
     url: "https://www.amazon.com/amazonprime?planOptimizationId=WLPStudentMonthlyElig498",
-    featured: false,
+    featured: true,
   },
   {
     slug: "apple-developer-student",
@@ -534,7 +534,7 @@ export const deals: Deal[] = [
       "Get free AirPods with Mac or iPad purchase (seasonal)",
     ],
     url: "https://www.apple.com/shop/education-pricing",
-    featured: false,
+    featured: true,
   },
 ];
 
