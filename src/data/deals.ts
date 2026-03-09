@@ -517,6 +517,25 @@ export const deals: Deal[] = [
     url: "https://developer.apple.com/programs/",
     featured: false,
   },
+  {
+    slug: "apple-education-store",
+    name: "Apple Education Pricing",
+    logo: "/logos/apple.svg",
+    category: "Entertainment",
+    audiences: ["students"],
+    tagline: "Save on Mac, iPad & more with student pricing",
+    description:
+      "Apple offers exclusive education pricing for current and newly accepted university students, parents buying for students, and faculty. Save up to $300 on Mac, up to $100 on iPad, and get free AirPods with qualifying purchases. AppleCare+ is also discounted 20%.",
+    value: "Up to $400 off",
+    steps: [
+      "Go to apple.com/shop/education-pricing",
+      "Browse Mac, iPad, and accessories at student prices",
+      "Verify student status at checkout (UNiDAYS or .edu email)",
+      "Get free AirPods with Mac or iPad purchase (seasonal)",
+    ],
+    url: "https://www.apple.com/shop/education-pricing",
+    featured: false,
+  },
 ];
 
 export function getDealBySlug(slug: string): Deal | undefined {
