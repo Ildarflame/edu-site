@@ -16,6 +16,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${post.title} | StudentPerks 2026`,
     description: post.description,
     alternates: { canonical: `https://studentperks.dev/blog/${slug}` },
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      type: "article",
+      publishedTime: post.date,
+      tags: post.tags,
+      url: `https://studentperks.dev/blog/${slug}`,
+    },
   };
 }
 
