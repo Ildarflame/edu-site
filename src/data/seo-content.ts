@@ -687,6 +687,178 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
 ];
 
+export type GuideSEO = {
+  slug: string;
+  dealSlug: string;
+  title: string;
+  metaDescription: string;
+  heading: string;
+  intro: string;
+  eligibility: string[];
+  faqs: FAQ[];
+};
+
+export const GUIDE_SEO: GuideSEO[] = [
+  {
+    slug: "how-to-get-jetbrains-free",
+    dealSlug: "jetbrains-students",
+    title: "How to Get JetBrains IDEs Free for Students 2026 | StudentPerks",
+    metaDescription: "Step-by-step guide to getting JetBrains IntelliJ, WebStorm, PyCharm, and all IDEs free with a student license in 2026.",
+    heading: "How to Get JetBrains IDEs Free",
+    intro: "JetBrains offers all their professional IDEs completely free for students. This includes IntelliJ IDEA Ultimate, WebStorm, PyCharm Professional, and 10+ other tools worth $699/year.",
+    eligibility: ["Active student with .edu email", "Enrolled in accredited institution", "Student ID or enrollment document", "ISIC card (international students)"],
+    faqs: [
+      { question: "How long does the JetBrains student license last?", answer: "One year, renewable annually while you're a student. After graduation, you get 25% off your first year of professional license." },
+      { question: "Which JetBrains IDEs are included?", answer: "All of them: IntelliJ IDEA Ultimate, WebStorm, PyCharm Professional, CLion, GoLand, DataGrip, Rider, RubyMine, and more." },
+    ],
+  },
+  {
+    slug: "how-to-get-github-copilot-free",
+    dealSlug: "copilot-students",
+    title: "How to Get GitHub Copilot Free for Students 2026 | StudentPerks",
+    metaDescription: "Step-by-step guide to activating GitHub Copilot for free as a student through the GitHub Student Developer Pack in 2026.",
+    heading: "How to Get GitHub Copilot Free",
+    intro: "GitHub Copilot is free for verified students. It provides AI-powered code suggestions directly in your editor, helping you write code faster and learn new patterns.",
+    eligibility: ["GitHub account", "Verified student status via GitHub Education", ".edu email or student ID", "Enrolled in degree-granting institution"],
+    faqs: [
+      { question: "Is GitHub Copilot really free for students?", answer: "Yes, 100% free. It's included in the GitHub Student Developer Pack at no cost." },
+      { question: "Does it work in VS Code and JetBrains?", answer: "Yes, GitHub Copilot has extensions for VS Code, JetBrains IDEs, Neovim, and Visual Studio." },
+    ],
+  },
+  {
+    slug: "how-to-get-aws-credits",
+    dealSlug: "aws-activate",
+    title: "How to Get AWS Credits Free in 2026 | StudentPerks",
+    metaDescription: "Complete guide to getting free AWS credits through AWS Activate, AWS Educate, and the GitHub Student Developer Pack.",
+    heading: "How to Get Free AWS Credits",
+    intro: "AWS offers multiple free credit programs. Startups can get up to $100,000 through AWS Activate. Students get credits through AWS Educate and the GitHub Student Developer Pack.",
+    eligibility: ["AWS account (any)", "For Activate: startup or side project", "For Educate: .edu email", "For Student Pack: GitHub Education verified"],
+    faqs: [
+      { question: "How much AWS credit can I get?", answer: "Students: $100+ through Educate/Student Pack. Startups: $1,000-$100,000 through AWS Activate depending on tier and accelerator." },
+      { question: "Do AWS credits expire?", answer: "Yes, typically within 1-2 years. Check your specific program terms for exact expiration dates." },
+    ],
+  },
+  {
+    slug: "how-to-get-vercel-pro-free",
+    dealSlug: "vercel-pro",
+    title: "How to Get Vercel Pro Free for Students & OSS 2026 | StudentPerks",
+    metaDescription: "Guide to getting Vercel Pro features free through their hobby plan, student programs, and open source sponsorship.",
+    heading: "How to Get Vercel Pro Free",
+    intro: "Vercel's free Hobby plan is already generous for personal projects. But students and open source maintainers can get Pro features free through Vercel's sponsorship programs.",
+    eligibility: ["Vercel account", "For student: GitHub Education verified", "For OSS: active open source project", "Hobby plan: anyone (free by default)"],
+    faqs: [
+      { question: "What's included in Vercel's free plan?", answer: "Unlimited deployments, 100GB bandwidth, serverless functions, edge functions, and preview deployments. Perfect for most student projects." },
+      { question: "Can I use a custom domain on free Vercel?", answer: "Yes, custom domains are supported on all plans including the free Hobby plan." },
+    ],
+  },
+  {
+    slug: "how-to-get-figma-free",
+    dealSlug: "figma-education",
+    title: "How to Get Figma Free for Students 2026 | StudentPerks",
+    metaDescription: "How to get Figma's free plan and education features. Create unlimited personal files and get team features through Figma for Education.",
+    heading: "How to Get Figma Free",
+    intro: "Figma offers a generous free plan for everyone, plus enhanced features through Figma for Education. Students get professional design tools at zero cost.",
+    eligibility: ["Email address (free plan)", "For Education: .edu email", "Student or educator at accredited institution", "Figma for Education application"],
+    faqs: [
+      { question: "What's free in Figma?", answer: "Unlimited personal files, 3 team projects, unlimited collaborators on personal files, and access to the community with thousands of free templates." },
+      { question: "Is Figma for Education different from the free plan?", answer: "Yes, it adds unlimited team projects, version history, and additional collaboration features — all free for verified students and educators." },
+    ],
+  },
+  {
+    slug: "how-to-get-notion-free",
+    dealSlug: "notion-education",
+    title: "How to Get Notion Free for Students 2026 | StudentPerks",
+    metaDescription: "Get Notion's Plus plan free as a student. Unlimited blocks, file uploads, and team features with .edu email verification.",
+    heading: "How to Get Notion Free for Students",
+    intro: "Notion's free plan is already capable, but students get the Plus plan free — unlimited blocks, file uploads, and 30-day page history. Just verify with your .edu email.",
+    eligibility: [".edu email address", "Active student enrollment", "Notion account"],
+    faqs: [
+      { question: "What extra do students get vs the free plan?", answer: "Students get the Plus plan free: unlimited blocks (free plan has a limit), unlimited file uploads, 30-day version history, and bulk export." },
+      { question: "Does it work with non-.edu student emails?", answer: "Contact Notion support with proof of enrollment if your school doesn't use .edu emails. They often accommodate international students." },
+    ],
+  },
+  {
+    slug: "how-to-get-docker-free",
+    dealSlug: "docker-students",
+    title: "How to Get Docker Desktop Free for Students & OSS 2026 | StudentPerks",
+    metaDescription: "Docker Desktop is free for students, education, and open source projects. Learn how to qualify and set up your free license.",
+    heading: "How to Get Docker Desktop Free",
+    intro: "Docker Desktop is free for personal use, education, small businesses, and open source projects. Students and open source contributors get full Docker Desktop features at no cost.",
+    eligibility: ["Personal/education use: anyone", "Open source: active OSS project", "Small business: <250 employees & <$10M revenue", "Student: enrolled in educational institution"],
+    faqs: [
+      { question: "Is Docker Desktop really free?", answer: "Yes, for personal use, education, small businesses (<250 employees), and open source. Only large enterprises need a paid subscription." },
+      { question: "What's the difference between Docker Desktop and Docker Engine?", answer: "Docker Engine (CLI) is always free on Linux. Docker Desktop adds a GUI, Docker Compose, Kubernetes, and Dev Environments for macOS/Windows." },
+    ],
+  },
+];
+
+export type TagSEO = {
+  slug: string;
+  label: string;
+  description: string;
+  metaDescription: string;
+  keywords: string[];
+};
+
+export const TAG_SEO: TagSEO[] = [
+  {
+    slug: "database",
+    label: "Database",
+    description: "Free database tools and services for developers. PostgreSQL, MongoDB, Redis, and more with generous free tiers.",
+    metaDescription: "Free database tools for developers. Supabase, MongoDB Atlas, PlanetScale, and more with production-ready free tiers.",
+    keywords: ["database", "sql", "postgres", "mongo", "redis", "supabase", "mongodb"],
+  },
+  {
+    slug: "hosting",
+    label: "Hosting",
+    description: "Free hosting platforms for web applications. Deploy frontend, full-stack, and API projects at zero cost.",
+    metaDescription: "Free hosting for developers. Vercel, Railway, Render, Netlify, and more with generous free tiers for web apps.",
+    keywords: ["hosting", "deploy", "vercel", "railway", "render", "netlify", "cloud"],
+  },
+  {
+    slug: "ide",
+    label: "IDE & Editors",
+    description: "Free IDEs and code editors for students and developers. Professional tools at zero cost.",
+    metaDescription: "Free IDEs for developers. JetBrains (free for students), VS Code, Cursor, and more professional code editors.",
+    keywords: ["ide", "editor", "jetbrains", "vscode", "cursor", "intellij", "webstorm"],
+  },
+  {
+    slug: "ci-cd",
+    label: "CI/CD",
+    description: "Free CI/CD pipelines and deployment automation. Build, test, and deploy your code automatically.",
+    metaDescription: "Free CI/CD tools for developers. GitHub Actions, GitLab CI, CircleCI, and more with free build minutes.",
+    keywords: ["ci", "cd", "pipeline", "github-actions", "gitlab", "build", "deploy", "automation"],
+  },
+  {
+    slug: "monitoring",
+    label: "Monitoring",
+    description: "Free monitoring and observability tools. Track errors, performance, and uptime for your applications.",
+    metaDescription: "Free monitoring tools for developers. Sentry, Datadog, New Relic, and more with free error tracking and APM.",
+    keywords: ["monitoring", "sentry", "datadog", "observability", "error", "apm", "logging"],
+  },
+  {
+    slug: "api",
+    label: "APIs & Backend",
+    description: "Free API tools and backend services. Authentication, storage, messaging, and more for your applications.",
+    metaDescription: "Free API and backend tools for developers. Auth, storage, queues, and more with generous free tiers.",
+    keywords: ["api", "backend", "auth", "storage", "messaging", "serverless", "function"],
+  },
+  {
+    slug: "design",
+    label: "Design",
+    description: "Free design tools for developers and designers. UI/UX design, prototyping, and graphics at zero cost.",
+    metaDescription: "Free design tools for developers. Figma, Framer, Canva, and more professional design tools with free plans.",
+    keywords: ["design", "figma", "framer", "canva", "ui", "ux", "prototype", "graphics"],
+  },
+  {
+    slug: "analytics",
+    label: "Analytics",
+    description: "Free analytics tools for web applications. Track visitors, events, and user behavior without paying.",
+    metaDescription: "Free analytics tools for developers. Privacy-friendly analytics, event tracking, and user insights at zero cost.",
+    keywords: ["analytics", "tracking", "visitors", "events", "metrics", "vercel-analytics"],
+  },
+];
+
 export function getCrossFilterMeta(
   audience: Audience,
   category: Category,
