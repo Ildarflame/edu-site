@@ -24,9 +24,15 @@ export default function Header() {
       </a>
       <nav className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-md bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/20">
-            <span className="text-[11px] font-black text-white leading-none">S</span>
-          </div>
+          <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-[0_0_6px_rgba(249,115,22,0.4)]">
+            <defs>
+              <linearGradient id="hdr-bolt" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stopColor="#f97316"/>
+                <stop offset="100%" stopColor="#f59e0b"/>
+              </linearGradient>
+            </defs>
+            <path d="M18.5 3L8 18h7l-2 11L25 14h-7l2-11z" fill="url(#hdr-bolt)" stroke="url(#hdr-bolt)" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
           <span className="text-[15px] font-semibold text-zinc-100 tracking-tight">
             StudentPerks
           </span>
