@@ -47,6 +47,7 @@ export default function RootLayout({
             }).replace(/</g, "\\u003c"),
           }}
         />
+        <link rel="alternate" type="application/rss+xml" title="StudentPerks Blog" href="/blog/feed.xml" />
         <link rel="dns-prefetch" href="https://api.notion.com" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://va.vercel-scripts.com" />
