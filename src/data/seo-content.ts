@@ -445,6 +445,109 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
   },
 ];
 
+export type ComparisonSEO = {
+  slug: string;
+  deal1Slug: string;
+  deal2Slug: string;
+  title: string;
+  metaDescription: string;
+  intro: string;
+  verdict: string;
+};
+
+export const COMPARISON_SEO: ComparisonSEO[] = [
+  {
+    slug: "vercel-vs-railway",
+    deal1Slug: "vercel-pro",
+    deal2Slug: "railway-oss",
+    title: "Vercel vs Railway: Free Hosting Comparison 2026 | StudentPerks",
+    metaDescription: "Compare Vercel and Railway free tiers for students and startups. Side-by-side features, pricing, and which is better for your project.",
+    intro: "Both Vercel and Railway offer generous free tiers for developers. Vercel excels at frontend and serverless deployment, while Railway provides full-stack hosting with databases included.",
+    verdict: "Choose Vercel for frontend/Next.js projects. Choose Railway for full-stack apps that need databases and background workers.",
+  },
+  {
+    slug: "supabase-vs-mongodb",
+    deal1Slug: "supabase-startups",
+    deal2Slug: "mongodb-students",
+    title: "Supabase vs MongoDB Atlas: Free Database Comparison 2026 | StudentPerks",
+    metaDescription: "Compare Supabase and MongoDB Atlas free tiers. PostgreSQL vs NoSQL, real-time vs aggregation, and which is better for students and startups.",
+    intro: "Supabase offers a free PostgreSQL database with real-time subscriptions and auth. MongoDB Atlas provides a free NoSQL cluster with flexible schema and powerful aggregation pipeline.",
+    verdict: "Choose Supabase for relational data with real-time needs. Choose MongoDB for flexible schemas and document-oriented workloads.",
+  },
+  {
+    slug: "github-copilot-vs-cursor",
+    deal1Slug: "copilot-students",
+    deal2Slug: "copilot-students",
+    title: "GitHub Copilot vs Cursor: Free AI Coding Tools 2026 | StudentPerks",
+    metaDescription: "Compare GitHub Copilot (free for students) and Cursor free tier. AI code completion, features, and which is better for student developers.",
+    intro: "GitHub Copilot is free for verified students and offers inline AI completions in VS Code. Cursor is an AI-first editor with a generous free tier that includes chat and code generation.",
+    verdict: "Students should start with Copilot (completely free). Try Cursor's free tier if you want an integrated AI-first editing experience.",
+  },
+  {
+    slug: "aws-vs-google-cloud",
+    deal1Slug: "aws-activate",
+    deal2Slug: "aws-activate",
+    title: "AWS Activate vs Google Cloud Credits: Free Cloud Comparison 2026 | StudentPerks",
+    metaDescription: "Compare AWS Activate and Google Cloud free credit programs for startups and students. Credits amount, eligibility, and which cloud to choose.",
+    intro: "AWS Activate offers up to $100,000 in credits for startups. Google Cloud for Startups provides up to $200,000. Both have student programs with smaller but still significant credits.",
+    verdict: "AWS has a larger ecosystem. Google Cloud offers more credits. Choose based on your tech stack and which services you need most.",
+  },
+  {
+    slug: "figma-vs-framer",
+    deal1Slug: "figma-education",
+    deal2Slug: "figma-education",
+    title: "Figma vs Framer: Free Design Tools 2026 | StudentPerks",
+    metaDescription: "Compare Figma and Framer free plans for students and startups. Design capabilities, prototyping, and which is better for your workflow.",
+    intro: "Figma is the industry-standard collaborative design tool with a generous free plan. Framer combines design with code-powered interactions and can publish directly to the web.",
+    verdict: "Use Figma for team-based UI/UX design. Use Framer when you want design-to-production website building with interactions.",
+  },
+  {
+    slug: "notion-vs-linear",
+    deal1Slug: "notion-education",
+    deal2Slug: "linear-startups",
+    title: "Notion vs Linear: Free Project Management 2026 | StudentPerks",
+    metaDescription: "Compare Notion and Linear free plans for startups. Flexible workspace vs focused issue tracking, and which suits your team better.",
+    intro: "Notion is an all-in-one workspace for docs, databases, and project management. Linear is a focused issue tracker built for speed and developer workflows.",
+    verdict: "Use Notion for docs and flexible project management. Use Linear for fast, developer-centric issue tracking and sprint planning.",
+  },
+  {
+    slug: "sentry-vs-datadog",
+    deal1Slug: "sentry-oss",
+    deal2Slug: "sentry-oss",
+    title: "Sentry vs Datadog: Free Monitoring Tools 2026 | StudentPerks",
+    metaDescription: "Compare Sentry and Datadog free tiers for error tracking and monitoring. Features, limits, and which is better for startups.",
+    intro: "Sentry specializes in error tracking and performance monitoring with a generous free tier. Datadog offers full-stack observability with infrastructure monitoring, APM, and log management.",
+    verdict: "Start with Sentry for error tracking. Add Datadog when you need infrastructure monitoring and APM at scale.",
+  },
+  {
+    slug: "stripe-vs-lemonsqueezy",
+    deal1Slug: "stripe-atlas",
+    deal2Slug: "stripe-atlas",
+    title: "Stripe vs Lemon Squeezy: Free Payment Processing 2026 | StudentPerks",
+    metaDescription: "Compare Stripe and Lemon Squeezy for startups. Payment processing features, pricing, and which is easier to set up.",
+    intro: "Stripe is the most popular payment platform with startup credits available. Lemon Squeezy is an all-in-one platform handling payments, taxes, and subscriptions with simpler setup.",
+    verdict: "Use Stripe for maximum flexibility and ecosystem. Use Lemon Squeezy for simplicity and built-in tax handling.",
+  },
+  {
+    slug: "docker-vs-podman",
+    deal1Slug: "docker-students",
+    deal2Slug: "docker-students",
+    title: "Docker vs Podman: Free Container Tools 2026 | StudentPerks",
+    metaDescription: "Compare Docker (free for students) and Podman (always free). Container features, security, and which to choose for development.",
+    intro: "Docker is the standard container platform with free access for students and open source. Podman is a daemonless, rootless container engine that's always free and compatible with Docker commands.",
+    verdict: "Use Docker for ecosystem compatibility and Docker Desktop features. Use Podman for rootless security and no daemon requirement.",
+  },
+  {
+    slug: "jetbrains-vs-vscode",
+    deal1Slug: "jetbrains-students",
+    deal2Slug: "jetbrains-students",
+    title: "JetBrains vs VS Code: Free IDE Comparison 2026 | StudentPerks",
+    metaDescription: "Compare JetBrains IDEs (free for students) and VS Code (always free). Features, performance, and which IDE is better for your workflow.",
+    intro: "JetBrains offers professional IDEs free for students — IntelliJ, WebStorm, PyCharm, and more. VS Code is a free, lightweight editor with a massive extension ecosystem.",
+    verdict: "Use JetBrains for deep language-specific features and refactoring. Use VS Code for lightweight editing and extension flexibility.",
+  },
+];
+
 export function getCrossFilterMeta(
   audience: Audience,
   category: Category,
