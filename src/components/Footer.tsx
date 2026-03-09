@@ -24,6 +24,7 @@ export default function Footer() {
               <div className="space-y-2">
                 {[
                   { href: "/deals", label: "Deals" },
+                  { href: "/student-discount", label: "Student Discounts" },
                   { href: "/blog", label: "Blog" },
                   { href: "/about", label: "About" },
                   { href: "/submit", label: "Submit a Deal" },

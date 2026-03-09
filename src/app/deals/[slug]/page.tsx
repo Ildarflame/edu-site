@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getDeals, getDealBySlug, getDealsByCategory } from "@/lib/deals";
+import { GUIDE_SEO } from "@/data/seo-content";
 import CategoryBadge from "@/components/CategoryBadge";
 import AudienceBadge from "@/components/AudienceBadge";
 import DealCard from "@/components/DealCard";
@@ -167,6 +168,25 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
           Browse all {deal.category} deals →
         </Link>
       </div>
+
+      {/* Related pages */}
+      <div className="mt-4 flex flex-wrap gap-2">
+        {deal.audiences.includes("students") && (
+          <Link
+            href={`/student-discount/${deal.slug}`}
+            className="inline-flex items-center px-3 py-1.5 rounded-full border border-white/[0.06] bg-white/[0.02] text-[12px] text-zinc-500 hover:border-white/[0.12] hover:text-zinc-300 transition-all"
+          >
+            Student Discount →
+          </Link>
+        )}
+        {GUIDE_SEO.find((g) => g.dealSlug === deal.slug) && (
+          <Link
+            href={`/guides/${GUIDE_SEO.find((g) => g.dealSlug === deal.slug)!.slug}`}
+            className="inline-flex items-center px-3 py-1.5 rounded-full border border-white/[0.06] bg-white/[0.02] text-[12px] text-zinc-500 hover:border-white/[0.12] hover:text-zinc-300 transition-all"
+          >
+            Step-by-Step Guide →
+          </Link>
+        )}</div>
 
       {/* Related */}
       {related.length > 0 && (
