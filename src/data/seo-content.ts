@@ -856,6 +856,60 @@ export const GUIDE_SEO: GuideSEO[] = [
   },
 ];
 
+export type SeasonalSEO = {
+  slug: string;
+  title: string;
+  metaDescription: string;
+  heading: string;
+  intro: string;
+  categories: Category[];
+  audiences: Audience[];
+  faqs: FAQ[];
+};
+
+export const SEASONAL_SEO: SeasonalSEO[] = [
+  {
+    slug: "back-to-school-2026",
+    title: "Back to School 2026 — Free Developer Tools for Students | StudentPerks",
+    metaDescription: "Get ready for the new semester with free developer tools, cloud credits, and pro plans. Verified student deals for 2026.",
+    heading: "Back to School 2026 — Free Tools for Students",
+    intro: "Starting a new semester? Grab these free developer tools, cloud credits, and professional software before classes begin. All verified and available for students with a .edu email.",
+    categories: ["Dev", "Cloud", "AI", "Design"],
+    audiences: ["students"],
+    faqs: [
+      { question: "What free tools should students get before the semester?", answer: "Start with the GitHub Student Developer Pack (100+ tools), JetBrains IDEs, Figma Pro, and cloud credits from AWS, Azure, or Google Cloud." },
+      { question: "Do I need a .edu email for student deals?", answer: "Most student programs require a .edu email or enrollment verification. Some use SheerID or ISIC cards as alternatives." },
+      { question: "Can I keep these tools after graduating?", answer: "Most student licenses expire after graduation, but some like GitHub Pro and Notion offer transition plans. Cloud credits and one-time deals remain in your account." },
+    ],
+  },
+  {
+    slug: "black-friday-2026",
+    title: "Black Friday 2026 — Best Developer Tool Deals | StudentPerks",
+    metaDescription: "Black Friday 2026 developer tool deals. Extra credits, extended trials, and exclusive discounts on dev tools, cloud, and SaaS.",
+    heading: "Black Friday 2026 — Developer Tool Deals",
+    intro: "The best Black Friday deals on developer tools, cloud platforms, and SaaS products. Many companies offer extended free tiers, bonus credits, and exclusive discounts during the holiday season.",
+    categories: ["Dev", "Cloud", "SaaS", "AI", "Design"],
+    audiences: ["students", "startups", "opensource"],
+    faqs: [
+      { question: "Do developer tools have Black Friday deals?", answer: "Yes! Many SaaS and cloud platforms offer extended trials, bonus credits, and discounts during Black Friday. Some deals are exclusive to the holiday period." },
+      { question: "When do Black Friday developer deals start?", answer: "Most developer tool deals start the week before Black Friday and run through Cyber Monday. Some extend through the entire month of November." },
+    ],
+  },
+  {
+    slug: "new-year-2027",
+    title: "New Year 2027 — Start Building with Free Developer Tools | StudentPerks",
+    metaDescription: "Kick off 2027 with free developer tools and cloud credits. The best deals for students, startups, and open source projects.",
+    heading: "New Year 2027 — Free Tools to Start Building",
+    intro: "New year, new projects. Start 2027 with the best free developer tools, cloud credits, and pro plans. Whether you're launching a startup, starting a new course, or contributing to open source, these deals will help you ship faster.",
+    categories: ["Dev", "Cloud", "SaaS", "AI"],
+    audiences: ["students", "startups", "opensource"],
+    faqs: [
+      { question: "What are the best free tools to start a new project in 2027?", answer: "Start with Vercel or Railway for hosting, Supabase for your database, GitHub Copilot for AI-assisted coding, and Figma for design. All have free tiers or student plans." },
+      { question: "How can startups get free tools in 2027?", answer: "Apply to programs like AWS Activate ($100K credits), Stripe Atlas ($5K+ partner credits), and individual startup programs from tools like Linear, Notion, and Slack." },
+    ],
+  },
+];
+
 export type TagSEO = {
   slug: string;
   label: string;

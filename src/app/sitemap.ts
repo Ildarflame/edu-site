@@ -3,7 +3,7 @@ import { getDeals } from "@/lib/deals";
 import { getAllPosts } from "@/lib/blog";
 import {
   CATEGORY_SEO, AUDIENCE_SEO, ALTERNATIVES_SEO,
-  COMPARISON_SEO, USE_CASE_SEO, GUIDE_SEO, TAG_SEO,
+  COMPARISON_SEO, USE_CASE_SEO, GUIDE_SEO, TAG_SEO, SEASONAL_SEO,
 } from "@/data/seo-content";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://studentperks.dev";
@@ -84,6 +84,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
+  const seasonalUrls: MetadataRoute.Sitemap = SEASONAL_SEO.map((s) => ({
+    url: `${baseUrl}/seasonal/${s.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
   const tagUrls: MetadataRoute.Sitemap = TAG_SEO.map((t) => ({
     url: `${baseUrl}/tag/${t.slug}`,
     lastModified: new Date(),
@@ -105,6 +112,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...comparisonUrls,
     ...useCaseUrls,
     ...guideUrls,
+    ...seasonalUrls,
     ...tagUrls,
     ...dealUrls,
     ...blogUrls,
