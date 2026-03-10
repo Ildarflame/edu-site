@@ -11,6 +11,8 @@ const navLinks = [
 const toolsDropdown = [
   { href: "/student-freebies-finder", label: "Freebies Finder", desc: "Personalized tool recommendations" },
   { href: "/free-tools-for-students", label: "100+ Free Tools", desc: "Complete student tools list" },
+  { href: "/savings-calculator", label: "Savings Calculator", desc: "See how much you save" },
+  { href: "/this-week", label: "This Week", desc: "Latest deals & updates" },
   { href: "/discover", label: "AI Deal Finder", desc: "Search deals by keyword" },
   { href: "/stack", label: "Stack Builder", desc: "Build your tech stack" },
 ];
@@ -25,6 +27,8 @@ const allMobileLinks = [
   { href: "/student-discount", label: "Student Discounts" },
   { href: "/student-freebies-finder", label: "Freebies Finder" },
   { href: "/free-tools-for-students", label: "100+ Free Tools" },
+  { href: "/savings-calculator", label: "Savings Calculator" },
+  { href: "/this-week", label: "This Week" },
   { href: "/discover", label: "AI Deal Finder" },
   { href: "/stack", label: "Stack Builder" },
   { href: "/blog", label: "Blog" },

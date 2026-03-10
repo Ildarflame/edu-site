@@ -45,6 +45,8 @@ export default function Footer() {
                 {[
                   { href: "/student-freebies-finder", label: "Freebies Finder" },
                   { href: "/free-tools-for-students", label: "100+ Free Tools" },
+                  { href: "/savings-calculator", label: "Savings Calculator" },
+                  { href: "/this-week", label: "This Week" },
                   { href: "/discover", label: "AI Deal Finder" },
                   { href: "/stack", label: "Stack Builder" },
                 ].map((link) => (
