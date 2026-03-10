@@ -1252,3 +1252,250 @@ export function getTopMeta(
     description: `Ranked list of the ${dealCount} best free ${category.toLowerCase()} tools for students, startups, and open source. Verified deals with real value.`,
   };
 }
+
+export type VsSEO = {
+  slug: string;
+  tool1: string;
+  tool2: string;
+  tool1Slug: string;
+  tool2Slug: string;
+  title: string;
+  metaDescription: string;
+  intro: string;
+  forStudents: string;
+  winner: string;
+  rows: { label: string; v1: string; v2: string }[];
+};
+
+export const VS_SEO: VsSEO[] = [
+  {
+    slug: "figma-vs-canva",
+    tool1: "Figma",
+    tool2: "Canva",
+    tool1Slug: "figma-education",
+    tool2Slug: "",
+    title: "Figma vs Canva for Students 2026 | StudentPerks",
+    metaDescription:
+      "Figma vs Canva — which design tool is better for students? Compare free plans, features, and student deals side by side.",
+    intro:
+      "Figma is a professional UI/UX design tool favored by product teams, while Canva is a beginner-friendly graphic design platform for presentations, social media, and quick visuals.",
+    forStudents:
+      "Students get Figma Professional free through Figma for Education. Canva offers a free plan with limited templates, plus Canva for Education through participating schools.",
+    winner:
+      "Choose Figma if you're studying design, CS, or product — it's the industry standard and completely free for students. Choose Canva for quick class presentations and social media graphics.",
+    rows: [
+      { label: "Student Deal", v1: "Free Professional plan", v2: "Free plan (Canva for Education via school)" },
+      { label: "Best For", v1: "UI/UX design, prototyping, dev handoff", v2: "Presentations, social media, posters" },
+      { label: "Collaboration", v1: "Real-time multiplayer editing", v2: "Share links and basic collaboration" },
+      { label: "Learning Curve", v1: "Moderate — worth the investment", v2: "Very easy — drag-and-drop" },
+      { label: "Export Formats", v1: "SVG, PNG, PDF, CSS code", v2: "PNG, JPG, PDF, MP4" },
+    ],
+  },
+  {
+    slug: "notion-vs-obsidian",
+    tool1: "Notion",
+    tool2: "Obsidian",
+    tool1Slug: "notion-education",
+    tool2Slug: "",
+    title: "Notion vs Obsidian for Students 2026 | StudentPerks",
+    metaDescription:
+      "Notion vs Obsidian — which note-taking app is better for students? Compare features, pricing, and student discounts.",
+    intro:
+      "Notion is an all-in-one workspace with databases, wikis, and project management. Obsidian is a local-first Markdown knowledge base with powerful linking and graph visualization.",
+    forStudents:
+      "Notion offers its Plus plan completely free for students with a .edu email. Obsidian is free for personal use — no student verification needed.",
+    winner:
+      "Use Notion if you want an all-in-one workspace for notes, tasks, and group projects. Use Obsidian if you prefer offline-first Markdown notes with deep linking for long-term knowledge building.",
+    rows: [
+      { label: "Student Price", v1: "Free Plus plan ($96/yr value)", v2: "Free for personal use" },
+      { label: "Data Storage", v1: "Cloud-based (Notion servers)", v2: "Local Markdown files (you own them)" },
+      { label: "Collaboration", v1: "Built-in real-time collaboration", v2: "Requires Obsidian Sync ($4/mo)" },
+      { label: "Offline Access", v1: "Limited (needs internet)", v2: "Full offline support" },
+      { label: "Best For", v1: "Group projects, databases, wikis", v2: "Personal knowledge base, research notes" },
+    ],
+  },
+  {
+    slug: "github-vs-gitlab",
+    tool1: "GitHub",
+    tool2: "GitLab",
+    tool1Slug: "github-education",
+    tool2Slug: "",
+    title: "GitHub vs GitLab for Students 2026 | StudentPerks",
+    metaDescription:
+      "GitHub vs GitLab — which platform is better for students? Compare student packs, CI/CD, and free features.",
+    intro:
+      "GitHub is the largest code hosting platform with the Student Developer Pack. GitLab is an all-in-one DevOps platform with built-in CI/CD and a generous free tier.",
+    forStudents:
+      "GitHub's Student Developer Pack includes Pro features, Copilot, and 100+ partner offers worth $200+/year. GitLab's free tier includes 400 CI/CD minutes/month and 5 GB storage.",
+    winner:
+      "GitHub is the clear winner for students — the Student Developer Pack alone is worth $200+/year and includes tools far beyond version control. Use GitLab if you need built-in CI/CD without any configuration.",
+    rows: [
+      { label: "Student Deal", v1: "Student Pack: Pro + 100+ tools", v2: "Free tier (no student-specific plan)" },
+      { label: "CI/CD", v1: "GitHub Actions (2,000 min/mo free)", v2: "Built-in CI/CD (400 min/mo free)" },
+      { label: "AI Coding", v1: "Copilot free for students", v2: "Duo Chat (limited free tier)" },
+      { label: "Community", v1: "Largest developer community", v2: "Smaller but active community" },
+      { label: "Private Repos", v1: "Unlimited (free)", v2: "Unlimited (free)" },
+    ],
+  },
+  {
+    slug: "aws-vs-azure",
+    tool1: "AWS",
+    tool2: "Microsoft Azure",
+    tool1Slug: "aws-activate",
+    tool2Slug: "azure-students",
+    title: "AWS vs Azure Cloud Credits for Students 2026 | StudentPerks",
+    metaDescription:
+      "AWS vs Azure for students — compare cloud credits, free tiers, and student programs. Which cloud platform should students choose?",
+    intro:
+      "AWS and Azure both offer generous student programs with free credits and always-free services. AWS dominates market share while Azure integrates seamlessly with Microsoft tools many students already use.",
+    forStudents:
+      "Azure for Students gives $100 in credits with no credit card required. AWS Educate provides hands-on labs and credits. Both offer 12-month free tiers on popular services.",
+    winner:
+      "Start with Azure for Students — $100 credits, no credit card required, and great integration with VS Code. Use AWS if your coursework specifically requires it or you're targeting AWS certifications.",
+    rows: [
+      { label: "Student Credits", v1: "$100+ via AWS Educate", v2: "$100 (no credit card needed)" },
+      { label: "Free Tier Duration", v1: "12 months + always-free tier", v2: "12 months + always-free tier" },
+      { label: "Services Count", v1: "200+ services", v2: "200+ services" },
+      { label: "Learning Resources", v1: "AWS Skill Builder, labs", v2: "Microsoft Learn, certifications" },
+      { label: "Market Share", v1: "#1 cloud provider (31%)", v2: "#2 cloud provider (25%)" },
+    ],
+  },
+  {
+    slug: "chatgpt-vs-claude",
+    tool1: "ChatGPT",
+    tool2: "Claude",
+    tool1Slug: "",
+    tool2Slug: "",
+    title: "ChatGPT vs Claude for Students 2026 | StudentPerks",
+    metaDescription:
+      "ChatGPT vs Claude — which AI assistant is better for students? Compare free tiers, features, and academic use cases.",
+    intro:
+      "ChatGPT by OpenAI and Claude by Anthropic are the two leading AI assistants. Both offer free tiers suitable for students, with different strengths in coding, writing, and analysis.",
+    forStudents:
+      "Both offer free tiers perfect for homework help, coding, and essay drafting. ChatGPT has GPT-4o free with limits; Claude offers the Sonnet model free with generous daily usage.",
+    winner:
+      "Use both — they're free. ChatGPT is better for quick answers and code generation with plugins. Claude excels at longer documents, nuanced analysis, and detailed coding explanations.",
+    rows: [
+      { label: "Free Tier", v1: "GPT-4o with daily limits", v2: "Claude Sonnet with daily limits" },
+      { label: "Coding Help", v1: "Excellent — Code Interpreter built in", v2: "Excellent — strong at debugging" },
+      { label: "Long Documents", v1: "Up to 128K tokens", v2: "Up to 200K tokens" },
+      { label: "Writing Quality", v1: "Good, tends to be verbose", v2: "Strong, more natural tone" },
+      { label: "Extras", v1: "DALL-E images, plugins, GPTs", v2: "Artifacts, projects, analysis" },
+    ],
+  },
+  {
+    slug: "vercel-vs-netlify",
+    tool1: "Vercel",
+    tool2: "Netlify",
+    tool1Slug: "vercel-pro",
+    tool2Slug: "",
+    title: "Vercel vs Netlify for Students 2026 | StudentPerks",
+    metaDescription:
+      "Vercel vs Netlify — which hosting platform is better for students? Compare free tiers, features, and deployment experience.",
+    intro:
+      "Vercel and Netlify are the two most popular frontend hosting platforms. Vercel is built by the Next.js team with best-in-class Next.js support, while Netlify pioneered JAMstack deployment.",
+    forStudents:
+      "Both have generous free tiers for personal projects. Vercel offers Pro sponsorship for open source contributors. Netlify's free tier includes 100 GB bandwidth and 300 build minutes.",
+    winner:
+      "Use Vercel if you're building with Next.js — the integration is unmatched. Use Netlify for static sites, Astro, or SvelteKit projects. Both free tiers are more than enough for student portfolios.",
+    rows: [
+      { label: "Free Tier", v1: "100 GB bandwidth, unlimited deploys", v2: "100 GB bandwidth, 300 build min/mo" },
+      { label: "Framework Support", v1: "Best for Next.js, good for others", v2: "Great for all frameworks equally" },
+      { label: "Serverless Functions", v1: "Edge + Serverless (Node, Go, etc.)", v2: "Netlify Functions (Node, Go, Deno)" },
+      { label: "Forms", v1: "No built-in form handling", v2: "Built-in form handling (100 submissions/mo)" },
+      { label: "Preview Deploys", v1: "Yes, per-commit previews", v2: "Yes, deploy previews with PR comments" },
+    ],
+  },
+  {
+    slug: "mongodb-vs-postgresql",
+    tool1: "MongoDB",
+    tool2: "PostgreSQL",
+    tool1Slug: "mongodb-students",
+    tool2Slug: "",
+    title: "MongoDB vs PostgreSQL for Students 2026 | StudentPerks",
+    metaDescription:
+      "MongoDB vs PostgreSQL for students — which database should you learn first? Compare features, free tiers, and career value.",
+    intro:
+      "MongoDB is a document database with flexible schemas and JSON-like storage. PostgreSQL is a powerful relational database with ACID compliance and advanced SQL features.",
+    forStudents:
+      "MongoDB Atlas offers a free M0 cluster forever, plus student credits through the Academia program. PostgreSQL is open source and free everywhere — Supabase, Railway, and Neon all offer free hosted Postgres.",
+    winner:
+      "Learn PostgreSQL first — SQL skills are foundational and more broadly applicable. Add MongoDB when you need flexible schemas for specific projects. Both are free to use as a student.",
+    rows: [
+      { label: "Free Hosting", v1: "Atlas M0 free forever (512 MB)", v2: "Supabase, Neon, Railway (free tiers)" },
+      { label: "Data Model", v1: "Document (JSON-like)", v2: "Relational (tables, SQL)" },
+      { label: "Schema", v1: "Flexible — no schema required", v2: "Strict schema with migrations" },
+      { label: "Best For", v1: "Rapid prototyping, flexible data", v2: "Complex queries, data integrity" },
+      { label: "Career Value", v1: "High (NoSQL skills in demand)", v2: "Very high (SQL is universal)" },
+    ],
+  },
+  {
+    slug: "docker-vs-kubernetes",
+    tool1: "Docker",
+    tool2: "Kubernetes",
+    tool1Slug: "docker-students",
+    tool2Slug: "",
+    title: "Docker vs Kubernetes for Students 2026 | StudentPerks",
+    metaDescription:
+      "Docker vs Kubernetes — what should students learn first? Compare use cases, complexity, and free access for students.",
+    intro:
+      "Docker packages applications into containers. Kubernetes orchestrates those containers at scale. They're complementary, not competitors — but knowing which to learn first matters.",
+    forStudents:
+      "Docker Desktop is free for students and education. Kubernetes is open source and free, but complex to set up — use Docker Desktop's built-in K8s or free managed options like kind and minikube.",
+    winner:
+      "Learn Docker first — it's simpler, immediately useful, and a prerequisite for Kubernetes. Only learn Kubernetes when you need to orchestrate multiple containers or your coursework requires it.",
+    rows: [
+      { label: "Student Access", v1: "Free Docker Pro for students", v2: "Open source (always free)" },
+      { label: "Learning Curve", v1: "Moderate — learn in a weekend", v2: "Steep — weeks to months" },
+      { label: "Use Case", v1: "Build & run single containers", v2: "Orchestrate many containers at scale" },
+      { label: "Prerequisite", v1: "None — start here", v2: "Docker knowledge required first" },
+      { label: "Student Projects", v1: "Essential for modern dev workflow", v2: "Overkill for most student projects" },
+    ],
+  },
+  {
+    slug: "jetbrains-vs-vscode",
+    tool1: "JetBrains",
+    tool2: "VS Code",
+    tool1Slug: "jetbrains-students",
+    tool2Slug: "",
+    title: "JetBrains vs VS Code for Students 2026 | StudentPerks",
+    metaDescription:
+      "JetBrains vs VS Code — which IDE is better for students? Compare student deals, features, and language support.",
+    intro:
+      "JetBrains offers language-specific IDEs (IntelliJ, PyCharm, WebStorm) with deep code intelligence. VS Code is a lightweight, extensible editor that supports every language through extensions.",
+    forStudents:
+      "JetBrains is completely free for students — all IDEs worth $649/year. VS Code is free for everyone. Students get the best of both worlds at zero cost.",
+    winner:
+      "Get both — they're free for students. Use JetBrains for Java/Kotlin (IntelliJ), Python (PyCharm), or when you want zero-config intelligence. Use VS Code for web dev, quick edits, and its massive extension ecosystem.",
+    rows: [
+      { label: "Student Price", v1: "Free (all IDEs, $649/yr value)", v2: "Free (for everyone)" },
+      { label: "Type", v1: "Full IDE per language", v2: "Lightweight editor + extensions" },
+      { label: "Code Intelligence", v1: "Deep, built-in, language-specific", v2: "Good with extensions (Copilot, Pylance)" },
+      { label: "Performance", v1: "Heavier — needs more RAM", v2: "Lightweight and fast" },
+      { label: "Best Languages", v1: "Java, Kotlin, Python, PHP, Ruby", v2: "JavaScript/TypeScript, Go, Rust, all" },
+    ],
+  },
+  {
+    slug: "copilot-vs-codeium",
+    tool1: "GitHub Copilot",
+    tool2: "Codeium",
+    tool1Slug: "copilot-students",
+    tool2Slug: "",
+    title: "GitHub Copilot vs Codeium for Students 2026 | StudentPerks",
+    metaDescription:
+      "GitHub Copilot vs Codeium — which AI coding assistant is better for students? Compare free access, features, and IDE support.",
+    intro:
+      "GitHub Copilot is the leading AI coding assistant, free for verified students. Codeium is a free-for-individuals alternative with similar autocomplete capabilities and broad IDE support.",
+    forStudents:
+      "Copilot is completely free for verified students through GitHub Education ($100/year value). Codeium is free for all individual developers — no verification needed.",
+    winner:
+      "Use GitHub Copilot if you're a verified student — it's the industry leader and completely free for you. Use Codeium if you can't verify student status or want a zero-friction alternative.",
+    rows: [
+      { label: "Student Price", v1: "Free (verified students)", v2: "Free (everyone)" },
+      { label: "AI Model", v1: "OpenAI Codex / GPT-4", v2: "Proprietary model" },
+      { label: "IDE Support", v1: "VS Code, JetBrains, Neovim", v2: "VS Code, JetBrains, 40+ editors" },
+      { label: "Chat Feature", v1: "Copilot Chat (inline + sidebar)", v2: "Codeium Chat (sidebar)" },
+      { label: "Code Context", v1: "Repo-wide context awareness", v2: "File and project context" },
+    ],
+  },
+];

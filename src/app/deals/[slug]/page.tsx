@@ -8,6 +8,7 @@ import CategoryBadge from "@/components/CategoryBadge";
 import AudienceBadge from "@/components/AudienceBadge";
 import DealCard from "@/components/DealCard";
 import DealRating from "@/components/DealRating";
+import DealVoting from "@/components/DealVoting";
 import ShareButtons from "@/components/ShareButtons";
 import DealCTA from "@/components/DealCTA";
 import DealStatusBadge from "@/components/DealStatusBadge";
@@ -141,6 +142,11 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
           <ShareButtons title={deal.name} slug={deal.slug} />
           <PushNotification />
         </div>
+      </div>
+
+      {/* Status Voting */}
+      <div className="mb-4">
+        <DealVoting slug={deal.slug} />
       </div>
 
       {/* Rating */}

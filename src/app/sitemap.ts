@@ -3,8 +3,9 @@ import { getDeals } from "@/lib/deals";
 import { getAllPosts } from "@/lib/blog";
 import {
   CATEGORY_SEO, AUDIENCE_SEO, ALTERNATIVES_SEO,
-  COMPARISON_SEO, USE_CASE_SEO, GUIDE_SEO, TAG_SEO, SEASONAL_SEO,
+  COMPARISON_SEO, USE_CASE_SEO, GUIDE_SEO, TAG_SEO, SEASONAL_SEO, VS_SEO,
 } from "@/data/seo-content";
+import { UNIVERSITIES } from "@/data/universities";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://studentperks.dev";
 
@@ -107,12 +108,28 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     }));
 
+  const vsUrls: MetadataRoute.Sitemap = VS_SEO.map((v) => ({
+    url: `${baseUrl}/vs/${v.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  const universityUrls: MetadataRoute.Sitemap = UNIVERSITIES.map((u) => ({
+    url: `${baseUrl}/university/${u.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
   return [
     { url: baseUrl, lastModified: new Date(), changeFrequency: "daily", priority: 1.0 },
     { url: `${baseUrl}/deals`, lastModified: new Date(), changeFrequency: "daily", priority: 0.9 },
     { url: `${baseUrl}/student-discount`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/free-tools-for-students`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/student-freebies-finder`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/savings-calculator`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/this-week`, lastModified: new Date(), changeFrequency: "daily", priority: 0.8 },
     { url: `${baseUrl}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
     { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.6 },
     { url: `${baseUrl}/submit`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.3 },
@@ -122,11 +139,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...topUrls,
     ...alternativesUrls,
     ...comparisonUrls,
+    ...vsUrls,
     ...useCaseUrls,
     ...guideUrls,
     ...seasonalUrls,
     ...tagUrls,
     ...studentDiscountUrls,
+    ...universityUrls,
     ...dealUrls,
     ...blogUrls,
   ];
