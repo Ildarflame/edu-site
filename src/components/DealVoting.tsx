@@ -43,14 +43,16 @@ export default function DealVoting({ slug }: { slug: string }) {
 
   const handleVote = useCallback((vote: "yes" | "no") => {
     if (userVote) return;
-    const newData = { ...data };
-    if (vote === "yes") newData.yes++;
-    else newData.no++;
-    setData(newData);
-    saveVoteData(slug, newData);
+    setData(prev => {
+      const newData = { ...prev };
+      if (vote === "yes") newData.yes++;
+      else newData.no++;
+      saveVoteData(slug, newData);
+      return newData;
+    });
     setUserVote(vote);
     saveUserVote(slug, vote);
-  }, [data, slug, userVote]);
+  }, [slug, userVote]);
 
   return (
     <div className="card p-5">

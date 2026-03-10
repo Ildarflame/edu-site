@@ -1,3 +1,4 @@
+import { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Deal, CATEGORY_CONFIG } from "@/data/deals";
@@ -16,7 +17,7 @@ const accentMap: Record<string, string> = {
   red: "card-accent-red",
 };
 
-export default function DealCard({
+function DealCard({
   deal,
   featured = false,
   compareMode = false,
@@ -50,7 +51,7 @@ export default function DealCard({
               ? "bg-orange-500 border-orange-500 text-white"
               : "bg-white/[0.03] border-white/[0.1] text-zinc-600 hover:border-orange-500/30 hover:text-orange-400"
           }`}
-          title={isComparing ? "Remove from compare" : "Add to compare"}
+          aria-label={isComparing ? "Remove from compare" : "Add to compare"}
         >
           {isComparing ? (
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
@@ -99,3 +100,5 @@ export default function DealCard({
     </div>
   );
 }
+
+export default memo(DealCard);

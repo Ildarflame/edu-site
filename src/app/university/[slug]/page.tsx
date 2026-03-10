@@ -26,6 +26,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical: `https://studentperks.dev/university/${slug}` },
+    openGraph: { title, description },
   };
 }
 
@@ -146,6 +147,26 @@ export default async function UniversityPage({
           </div>
         </section>
       )}
+
+      {/* JSON-LD — controlled data from universities.ts + deals, safe for inline script.
+          The .replace(/</g, "\\u003c") escapes closing script tags to prevent XSS. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: `Free Tools for ${uni.shortName} Students`,
+            numberOfItems: studentDeals.length,
+            itemListElement: studentDeals.slice(0, 10).map((deal, i) => ({
+              "@type": "ListItem",
+              position: i + 1,
+              name: deal.name,
+              url: `https://studentperks.dev/deals/${deal.slug}`,
+            })),
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
     </main>
   );
 }

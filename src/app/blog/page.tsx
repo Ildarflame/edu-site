@@ -3,8 +3,9 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog — Free Developer Tool Guides & Tips 2026 | StudentPerks",
+  title: "Blog — Developer Guides & Tips | StudentPerks",
   description: "Get step-by-step guides to claim free developer tools, cloud credits, and student discounts from GitHub, AWS, and more. Updated for 2026.",
+  alternates: { canonical: "https://studentperks.dev/blog" },
 };
 
 export default function BlogPage() {

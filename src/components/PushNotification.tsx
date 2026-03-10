@@ -13,11 +13,14 @@ function getPermission() {
 
 const noop = () => () => {};
 
+const VAPID_PUBLIC_KEY = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
+
 export default function PushNotification() {
   const supported = useSyncExternalStore(noop, getSupported, () => false);
   const permission = useSyncExternalStore(noop, getPermission, () => "denied" as NotificationPermission);
   const [subscribed, setSubscribed] = useState(false);
 
+  if (!VAPID_PUBLIC_KEY) return null;
   if (!supported || permission === "denied" || subscribed) return null;
 
   const handleSubscribe = async () => {
@@ -28,7 +31,7 @@ export default function PushNotification() {
       const reg = await navigator.serviceWorker.ready;
       const sub = await reg.pushManager.subscribe({
         userVisibleOnly: true,
-        applicationServerKey: undefined,
+        applicationServerKey: VAPID_PUBLIC_KEY,
       });
 
       fetch("/api/push-subscribe", {

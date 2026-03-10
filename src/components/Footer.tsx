@@ -25,6 +25,7 @@ export default function Footer() {
                 {[
                   { href: "/deals", label: "Deals" },
                   { href: "/student-discount", label: "Student Discounts" },
+                  { href: "/this-week", label: "This Week" },
                   { href: "/blog", label: "Blog" },
                   { href: "/about", label: "About" },
                   { href: "/submit", label: "Submit a Deal" },
@@ -63,13 +64,31 @@ export default function Footer() {
             <div>
               <p className="section-label mb-3">Categories</p>
               <div className="space-y-2">
-                {["Dev", "AI", "Cloud", "Design"].map((cat) => (
+                {["Dev", "AI", "SaaS", "Learning", "Cloud", "Design", "Entertainment"].map((cat) => (
                   <Link
                     key={cat}
                     href={`/deals?category=${cat}`}
                     className="block text-[13px] text-zinc-600 hover:text-zinc-300 transition-colors"
                   >
                     {cat}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="section-label mb-3">Audiences</p>
+              <div className="space-y-2">
+                {[
+                  { href: "/for/students", label: "Students" },
+                  { href: "/for/startups", label: "Startups" },
+                  { href: "/for/opensource", label: "Open Source" },
+                ].map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block text-[13px] text-zinc-600 hover:text-zinc-300 transition-colors"
+                  >
+                    {link.label}
                   </Link>
                 ))}
               </div>

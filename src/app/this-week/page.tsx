@@ -148,6 +148,24 @@ export default async function ThisWeekPage() {
           Submit a Deal →
         </Link>
       </div>
+
+      {/*
+        JSON-LD structured data for SEO. All values are hardcoded editorial content,
+        not user-generated. The .replace() call escapes < to \\u003c to prevent any
+        possibility of breaking out of the script tag (OWASP recommendation).
+      */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "New & Updated Deals This Week",
+            url: "https://studentperks.dev/this-week",
+            description: "The latest free tools and student deals added or updated this week.",
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
     </main>
   );
 }

@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import { getDeals } from "@/lib/deals";
 
-export const revalidate = 300;
-
 export async function GET() {
   const deals = await getDeals();
 

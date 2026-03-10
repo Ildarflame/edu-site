@@ -6,7 +6,7 @@ import DealsGrid from "@/components/DealsGrid";
 export const revalidate = 300;
 
 export const metadata: Metadata = {
-  title: "All Deals — Free Tools & Cloud Credits 2026 | StudentPerks",
+  title: "All Deals — Free Tools 2026 | StudentPerks",
   description: "Get 150+ verified free developer tools, cloud credits, and pro plans for students and startups. Claim deals worth $500K+ in 2026.",
   alternates: { canonical: "https://studentperks.dev/deals" },
 };

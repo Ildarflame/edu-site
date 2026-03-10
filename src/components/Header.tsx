@@ -22,18 +22,6 @@ const rightLinks = [
   { href: "/submit", label: "Submit" },
 ];
 
-const allMobileLinks = [
-  { href: "/deals", label: "Deals" },
-  { href: "/student-discount", label: "Student Discounts" },
-  { href: "/student-freebies-finder", label: "Freebies Finder" },
-  { href: "/free-tools-for-students", label: "100+ Free Tools" },
-  { href: "/savings-calculator", label: "Savings Calculator" },
-  { href: "/this-week", label: "This Week" },
-  { href: "/discover", label: "AI Deal Finder" },
-  { href: "/stack", label: "Stack Builder" },
-  { href: "/blog", label: "Blog" },
-  { href: "/submit", label: "Submit a Deal" },
-];
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -89,6 +77,8 @@ export default function Header() {
           <div ref={dropdownRef} className="relative">
             <button
               onClick={() => setToolsOpen(!toolsOpen)}
+              aria-expanded={toolsOpen}
+              aria-haspopup="true"
               className={`px-3.5 py-1.5 text-[13px] font-medium rounded-md transition-all duration-150 inline-flex items-center gap-1 ${
                 toolsOpen ? "text-zinc-200 bg-white/[0.04]" : "text-zinc-500 hover:text-zinc-200 hover:bg-white/[0.04]"
               }`}
@@ -100,11 +90,12 @@ export default function Header() {
             </button>
 
             {toolsOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 rounded-xl border border-white/[0.06] py-2 shadow-xl" style={{ background: "rgba(12, 12, 14, 0.98)", backdropFilter: "blur(20px)" }}>
+              <div role="menu" className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 rounded-xl border border-white/[0.06] py-2 shadow-xl" style={{ background: "rgba(12, 12, 14, 0.98)", backdropFilter: "blur(20px)" }}>
                 {toolsDropdown.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
+                    role="menuitem"
                     onClick={() => setToolsOpen(false)}
                     className="block px-4 py-2.5 hover:bg-white/[0.04] transition-colors"
                   >
@@ -151,8 +142,14 @@ export default function Header() {
       </nav>
 
       {mobileOpen && (
-        <div className="md:hidden border-t border-white/[0.04] px-6 py-3 space-y-0.5" style={{ background: "rgba(5, 5, 7, 0.95)" }}>
-          {allMobileLinks.map((link) => (
+        <div className="md:hidden border-t border-white/[0.04] px-6 py-3" style={{ background: "rgba(5, 5, 7, 0.95)" }}>
+          <p className="text-[10px] text-zinc-700 uppercase tracking-wider font-medium px-3 pt-2 pb-1">Browse</p>
+          {[
+            { href: "/deals", label: "Deals" },
+            { href: "/student-discount", label: "Student Discounts" },
+            { href: "/this-week", label: "This Week" },
+            { href: "/blog", label: "Blog" },
+          ].map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -162,6 +159,32 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <p className="text-[10px] text-zinc-700 uppercase tracking-wider font-medium px-3 pt-3 pb-1">Tools</p>
+          {[
+            { href: "/student-freebies-finder", label: "Freebies Finder" },
+            { href: "/free-tools-for-students", label: "100+ Free Tools" },
+            { href: "/savings-calculator", label: "Savings Calculator" },
+            { href: "/discover", label: "AI Deal Finder" },
+            { href: "/stack", label: "Stack Builder" },
+          ].map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="block px-3 py-2 text-[13px] font-medium text-zinc-400 hover:text-zinc-100 rounded-md hover:bg-white/[0.04] transition-all"
+              onClick={() => setMobileOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <div className="border-t border-white/[0.04] mt-2 pt-2">
+            <Link
+              href="/submit"
+              className="block px-3 py-2 text-[13px] font-medium text-orange-400 hover:text-orange-300 rounded-md hover:bg-white/[0.04] transition-all"
+              onClick={() => setMobileOpen(false)}
+            >
+              Submit a Deal
+            </Link>
+          </div>
         </div>
       )}
     </header>

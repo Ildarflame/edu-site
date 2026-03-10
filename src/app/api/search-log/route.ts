@@ -3,6 +3,9 @@ import { NextResponse } from "next/server";
 export async function POST(request: Request) {
   try {
     const { query, resultsCount } = await request.json();
+    if (typeof query === "string" && query.length > 200) {
+      return NextResponse.json({ error: "Query too long" }, { status: 400 });
+    }
     if (typeof query === "string" && query.length >= 2) {
       console.log(`[search] q="${query}" results=${resultsCount}`);
     }

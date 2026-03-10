@@ -58,27 +58,30 @@ export default function DealRating({ slug }: { slug: string }) {
 
   const handleHelpful = useCallback((isHelpful: boolean) => {
     if (userVote?.helpful !== undefined) return;
-    const newData = { ...data };
-    if (isHelpful) newData.helpful++;
-    else newData.notHelpful++;
-    setData(newData);
-    saveRatingData(slug, newData);
+    setData(prev => {
+      const newData = { ...prev };
+      if (isHelpful) newData.helpful++;
+      else newData.notHelpful++;
+      saveRatingData(slug, newData);
+      return newData;
+    });
     const vote = { ...userVote, helpful: isHelpful };
     setUserVote(vote);
     saveUserVote(slug, vote);
-  }, [data, slug, userVote]);
+  }, [slug, userVote]);
 
   const handleStar = useCallback((star: number) => {
     if (userVote?.star !== undefined) return;
-    const newData = { ...data };
-    newData.stars = [...newData.stars];
-    newData.stars[star - 1]++;
-    setData(newData);
-    saveRatingData(slug, newData);
+    setData(prev => {
+      const newData = { ...prev, stars: [...prev.stars] };
+      newData.stars[star - 1]++;
+      saveRatingData(slug, newData);
+      return newData;
+    });
     const vote = { ...userVote, star };
     setUserVote(vote);
     saveUserVote(slug, vote);
-  }, [data, slug, userVote]);
+  }, [slug, userVote]);
 
   return (
     <div className="card p-5 space-y-4">

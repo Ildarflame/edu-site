@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function SaveButton({
   saved,
@@ -11,6 +11,12 @@ export default function SaveButton({
 }) {
   const [animating, setAnimating] = useState(false);
 
+  useEffect(() => {
+    if (!animating) return;
+    const timer = setTimeout(() => setAnimating(false), 300);
+    return () => clearTimeout(timer);
+  }, [animating]);
+
   return (
     <button
       onClick={(e) => {
@@ -18,7 +24,6 @@ export default function SaveButton({
         e.stopPropagation();
         setAnimating(true);
         onToggle();
-        setTimeout(() => setAnimating(false), 300);
       }}
       className={`w-7 h-7 rounded-md flex items-center justify-center transition-all duration-150 ${
         saved

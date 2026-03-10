@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
-import { getDeals, CATEGORY_CONFIG } from "@/lib/deals";
+import { getDeals } from "@/lib/deals";
 import type { Category } from "@/data/deals";
+import StudentDiscountSearch from "./StudentDiscountSearch";
 
 export const revalidate = 300;
 
 export const metadata: Metadata = {
-  title: "Student Discounts 2026 — Free Software & Tools for Students | StudentPerks",
+  title: "Student Discounts 2026 — Free Software | StudentPerks",
   description:
     "Complete list of student discounts on developer tools, cloud platforms, design software, and more in 2026. Verified deals worth $500K+.",
   alternates: { canonical: "https://studentperks.dev/student-discount" },
@@ -28,8 +28,6 @@ export default async function StudentDiscountIndex() {
     acc[deal.category].push(deal);
     return acc;
   }, {} as Record<Category, typeof studentDeals>);
-
-  const categories = Object.keys(grouped) as Category[];
 
   // Structured data from controlled CMS — not user-generated content
   const itemListLd = JSON.stringify({
@@ -73,50 +71,7 @@ export default async function StudentDiscountIndex() {
         </p>
       </div>
 
-      {categories.map((cat) => {
-        const config = CATEGORY_CONFIG[cat];
-        const catDeals = grouped[cat];
-        return (
-          <section key={cat} className="mb-12">
-            <h2 className="text-lg font-bold text-zinc-100 mb-4 flex items-center gap-2">
-              <span>{config.icon}</span>
-              {cat} Student Discounts
-              <span className="text-xs text-zinc-600 font-normal">({catDeals.length})</span>
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 stagger-grid">
-              {catDeals.map((deal) => (
-                <Link
-                  key={deal.slug}
-                  href={`/student-discount/${deal.slug}`}
-                  className={`card card-accent-${config.color} p-4 group`}
-                >
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-8 h-8 rounded-lg bg-white/[0.03] border border-white/[0.06] flex items-center justify-center overflow-hidden">
-                      <Image
-                        src={deal.logo}
-                        alt={deal.name}
-                        width={24}
-                        height={24}
-                        className="object-contain"
-                      />
-                    </div>
-                    <span className="text-sm font-semibold text-zinc-200 group-hover:text-orange-400 transition-colors">
-                      {deal.name}
-                    </span>
-                    {deal.featured && (
-                      <span className="ml-auto text-[10px] font-bold uppercase tracking-wider text-orange-400/60">
-                        Featured
-                      </span>
-                    )}
-                  </div>
-                  <p className="text-xs text-zinc-500 line-clamp-2 mb-2">{deal.tagline}</p>
-                  <span className="value-pill text-xs">{deal.value}</span>
-                </Link>
-              ))}
-            </div>
-          </section>
-        );
-      })}
+      <StudentDiscountSearch grouped={grouped} />
 
       <section className="mt-16 card p-6">
         <h2 className="text-lg font-bold text-zinc-100 mb-2">How Student Discounts Work</h2>

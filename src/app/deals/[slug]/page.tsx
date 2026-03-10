@@ -212,6 +212,15 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
           </div>
         </section>
       )}
+
+      <div className="mt-10 card p-5 text-center">
+        <p className="text-[13px] text-zinc-400 mb-1">Want deals like this in your inbox?</p>
+        <p className="text-[11px] text-zinc-600 mb-3">Weekly picks, no spam.</p>
+        <Link href="/#newsletter" className="btn-primary text-[12px] px-4 py-1.5">
+          Subscribe for Free →
+        </Link>
+      </div>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

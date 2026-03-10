@@ -2,8 +2,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About StudentPerks — Free Developer Tools for Students & Startups 2026",
+  title: "About StudentPerks — Free Tools for Students 2026",
   description: "Save $500K+ on developer tools, cloud credits, and pro plans. StudentPerks helps students, startups, and OSS projects claim free perks in 2026.",
+  alternates: { canonical: "https://studentperks.dev/about" },
 };
 
 export default function AboutPage() {

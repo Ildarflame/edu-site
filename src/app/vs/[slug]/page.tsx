@@ -23,6 +23,10 @@ export async function generateMetadata({
     title: vs.title,
     description: vs.metaDescription,
     alternates: { canonical: `https://studentperks.dev/vs/${slug}` },
+    openGraph: {
+      title: vs.title,
+      description: vs.metaDescription,
+    },
   };
 }
 
