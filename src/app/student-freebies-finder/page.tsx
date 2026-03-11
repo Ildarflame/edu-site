@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     "free software for college students",
     "student deals finder",
   ],
-  alternates: { canonical: "https://studentperks.dev/student-freebies-finder" },
+  alternates: { canonical: "https://www.studentperks.dev/student-freebies-finder" },
   openGraph: {
     title: "Student Freebies Finder — What Free Tools Can You Get?",
     description:
       "Personalized tool that finds all free software, credits, and discounts based on your country, university, and major.",
-    url: "https://studentperks.dev/student-freebies-finder",
+    url: "https://www.studentperks.dev/student-freebies-finder",
   },
 };
 

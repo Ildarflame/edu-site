@@ -7,7 +7,7 @@ import {
 } from "@/data/seo-content";
 import { UNIVERSITIES } from "@/data/universities";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://studentperks.dev";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.studentperks.dev";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const deals = await getDeals();

@@ -7,8 +7,8 @@ export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "New & Updated Deals This Week | StudentPerks",
-  description: "The latest free tools and student deals added or updated this week. Fresh finds for students, startups, and open source.",
-  alternates: { canonical: "https://studentperks.dev/this-week" },
+  description: "The latest free tools and student deals added or updated this week. Fresh finds for students, startups, and open source. Bookmark for weekly check-ins.",
+  alternates: { canonical: "https://www.studentperks.dev/this-week" },
 };
 
 export default async function ThisWeekPage() {
@@ -161,7 +161,7 @@ export default async function ThisWeekPage() {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
             name: "New & Updated Deals This Week",
-            url: "https://studentperks.dev/this-week",
+            url: "https://www.studentperks.dev/this-week",
             description: "The latest free tools and student deals added or updated this week.",
           }).replace(/</g, "\\u003c"),
         }}

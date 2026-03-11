@@ -4,7 +4,7 @@ import { useState, useCallback } from "react";
 
 export default function ShareButtons({ title, slug }: { title: string; slug: string }) {
   const [copied, setCopied] = useState(false);
-  const url = `https://studentperks.dev/deals/${slug}`;
+  const url = `https://www.studentperks.dev/deals/${slug}`;
   const text = `Check out ${title} on StudentPerks — free tools for students!`;
 
   const handleCopy = useCallback(async () => {

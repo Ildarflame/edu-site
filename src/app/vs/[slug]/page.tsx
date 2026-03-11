@@ -22,7 +22,7 @@ export async function generateMetadata({
   return {
     title: vs.title,
     description: vs.metaDescription,
-    alternates: { canonical: `https://studentperks.dev/vs/${slug}` },
+    alternates: { canonical: `https://www.studentperks.dev/vs/${slug}` },
     openGraph: {
       title: vs.title,
       description: vs.metaDescription,
@@ -55,8 +55,8 @@ export default async function VsPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
-      { "@type": "ListItem", position: 2, name: "VS Comparisons", item: "https://studentperks.dev/vs" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
+      { "@type": "ListItem", position: 2, name: "VS Comparisons", item: "https://www.studentperks.dev/vs" },
       { "@type": "ListItem", position: 3, name: `${vs.tool1} vs ${vs.tool2}` },
     ],
   }).replace(/</g, "\\u003c");

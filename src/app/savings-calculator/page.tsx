@@ -7,9 +7,9 @@ export const revalidate = 300;
 export const metadata: Metadata = {
   title: "Student Savings Calculator 2026 | StudentPerks",
   description:
-    "Calculate how much you could save with student discounts. Select the tools you use and see your total savings instantly.",
+    "Calculate how much you could save with student discounts and free tools. Select the tools you use and see your total annual savings instantly. Worth $500K+.",
   keywords: ["student savings calculator", "student discount calculator", "how much students save", "free tools savings"],
-  alternates: { canonical: "https://studentperks.dev/savings-calculator" },
+  alternates: { canonical: "https://www.studentperks.dev/savings-calculator" },
 };
 
 export default async function SavingsCalculatorPage() {
@@ -29,7 +29,7 @@ export default async function SavingsCalculatorPage() {
             "@context": "https://schema.org",
             "@type": "WebApplication",
             name: "Student Savings Calculator",
-            url: "https://studentperks.dev/savings-calculator",
+            url: "https://www.studentperks.dev/savings-calculator",
             applicationCategory: "FinanceApplication",
             description: "Calculate how much you could save with student discounts.",
           }).replace(/</g, "\\u003c"),

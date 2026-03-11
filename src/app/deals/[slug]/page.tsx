@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title,
     description,
-    alternates: { canonical: `https://studentperks.dev/deals/${slug}` },
+    alternates: { canonical: `https://www.studentperks.dev/deals/${slug}` },
     openGraph: {
       title,
       description,
@@ -264,9 +264,9 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
-              { "@type": "ListItem", position: 2, name: "Deals", item: "https://studentperks.dev/deals" },
-              { "@type": "ListItem", position: 3, name: deal.category, item: `https://studentperks.dev/category/${deal.category.toLowerCase()}` },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
+              { "@type": "ListItem", position: 2, name: "Deals", item: "https://www.studentperks.dev/deals" },
+              { "@type": "ListItem", position: 3, name: deal.category, item: `https://www.studentperks.dev/category/${deal.category.toLowerCase()}` },
               { "@type": "ListItem", position: 4, name: deal.name },
             ],
           }).replace(/</g, "\\u003c"),

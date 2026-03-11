@@ -22,7 +22,7 @@ export async function generateMetadata({
   return {
     title: cmp.title,
     description: cmp.metaDescription,
-    alternates: { canonical: `https://studentperks.dev/compare/${slug}` },
+    alternates: { canonical: `https://www.studentperks.dev/compare/${slug}` },
   };
 }
 
@@ -54,7 +54,7 @@ export default async function ComparePage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
       { "@type": "ListItem", position: 2, name: "Compare" },
       { "@type": "ListItem", position: 3, name: `${deal1.name} vs ${deal2.name}` },
     ],

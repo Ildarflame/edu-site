@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/_next/"],
     },
-    sitemap: "https://studentperks.dev/sitemap.xml",
+    sitemap: "https://www.studentperks.dev/sitemap.xml",
   };
 }

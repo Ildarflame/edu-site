@@ -5,7 +5,7 @@ import CompareView from "./CompareView";
 
 export const metadata: Metadata = {
   title: "Compare Deals — StudentPerks",
-  description: "Compare student and startup deals side by side.",
+  description: "Compare student and startup deals side by side. See features, value, and eligibility for up to 3 tools at once on StudentPerks.",
 };
 
 export default async function ComparePage() {

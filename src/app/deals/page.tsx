@@ -8,7 +8,7 @@ export const revalidate = 300;
 export const metadata: Metadata = {
   title: "All Deals — Free Tools 2026 | StudentPerks",
   description: "Get 150+ verified free developer tools, cloud credits, and pro plans for students and startups. Claim deals worth $500K+ in 2026.",
-  alternates: { canonical: "https://studentperks.dev/deals" },
+  alternates: { canonical: "https://www.studentperks.dev/deals" },
 };
 
 export default async function DealsPage() {
@@ -39,7 +39,7 @@ export default async function DealsPage() {
             "@type": "CollectionPage",
             name: "All Deals",
             description: "Browse all free tools and perks for students, startups, and open source projects.",
-            url: "https://studentperks.dev/deals",
+            url: "https://www.studentperks.dev/deals",
             numberOfItems: deals.length,
           }).replace(/</g, "\\u003c"),
         }}

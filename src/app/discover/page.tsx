@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata = {
   title: "Discover Deals — StudentPerks",
   description:
-    "Describe your situation and find the best free tools, credits, and perks matched to your needs.",
+    "Describe what you're building and find the best free tools, credits, and student perks matched to your needs. AI-powered deal recommendations.",
   robots: { index: false, follow: true },
 };
 
@@ -42,7 +42,7 @@ export default async function DiscoverPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
               { "@type": "ListItem", position: 2, name: "Discover" },
             ],
           }).replace(/</g, "\\u003c"),

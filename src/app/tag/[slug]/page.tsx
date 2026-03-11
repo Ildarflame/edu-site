@@ -22,7 +22,7 @@ export async function generateMetadata({
   return {
     title: `Free ${tag.label} Tools 2026 | StudentPerks`,
     description: tag.metaDescription,
-    alternates: { canonical: `https://studentperks.dev/tag/${slug}` },
+    alternates: { canonical: `https://www.studentperks.dev/tag/${slug}` },
   };
 }
 
@@ -53,7 +53,7 @@ export default async function TagPage({
     itemListElement: filtered.map((deal, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      url: `https://studentperks.dev/deals/${deal.slug}`,
+      url: `https://www.studentperks.dev/deals/${deal.slug}`,
       name: deal.name,
     })),
   }).replace(/</g, "\\u003c");
@@ -62,7 +62,7 @@ export default async function TagPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
       { "@type": "ListItem", position: 2, name: tag.label },
     ],
   }).replace(/</g, "\\u003c");

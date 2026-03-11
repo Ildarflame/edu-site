@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata = {
   title: "Build Your Stack — StudentPerks",
   description:
-    "Select your tech stack and discover all the free tools, credits, and perks available for your technologies.",
+    "Select your tech stack and discover all the free tools, credits, and student perks available for your technologies. Build smarter, spend nothing.",
   robots: { index: false, follow: true },
 };
 
@@ -42,7 +42,7 @@ export default async function StackPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
               { "@type": "ListItem", position: 2, name: "Stack Builder" },
             ],
           }).replace(/</g, "\\u003c"),

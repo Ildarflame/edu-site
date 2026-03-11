@@ -23,7 +23,7 @@ export async function generateMetadata({
     title: seasonal.title,
     description: seasonal.metaDescription,
     alternates: {
-      canonical: `https://studentperks.dev/seasonal/${slug}`,
+      canonical: `https://www.studentperks.dev/seasonal/${slug}`,
     },
   };
 }
@@ -54,7 +54,7 @@ export default async function SeasonalPage({
     itemListElement: filtered.map((deal, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      url: `https://studentperks.dev/deals/${deal.slug}`,
+      url: `https://www.studentperks.dev/deals/${deal.slug}`,
       name: deal.name,
     })),
   }).replace(/</g, "\\u003c");
@@ -73,7 +73,7 @@ export default async function SeasonalPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
       { "@type": "ListItem", position: 2, name: seasonal.heading },
     ],
   }).replace(/</g, "\\u003c");

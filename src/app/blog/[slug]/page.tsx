@@ -15,14 +15,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${post.title} | StudentPerks 2026`,
     description: post.description,
-    alternates: { canonical: `https://studentperks.dev/blog/${slug}` },
+    alternates: { canonical: `https://www.studentperks.dev/blog/${slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
       type: "article",
       publishedTime: post.date,
       tags: post.tags,
-      url: `https://studentperks.dev/blog/${slug}`,
+      url: `https://www.studentperks.dev/blog/${slug}`,
     },
   };
 }
@@ -72,8 +72,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             datePublished: post.date,
             dateModified: post.date,
             author: { "@type": "Organization", name: "StudentPerks" },
-            publisher: { "@type": "Organization", name: "StudentPerks", url: "https://studentperks.dev" },
-            mainEntityOfPage: `https://studentperks.dev/blog/${slug}`,
+            publisher: { "@type": "Organization", name: "StudentPerks", url: "https://www.studentperks.dev" },
+            mainEntityOfPage: `https://www.studentperks.dev/blog/${slug}`,
             keywords: post.tags,
           }).replace(/</g, "\\u003c"),
         }}

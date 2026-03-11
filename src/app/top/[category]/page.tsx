@@ -30,7 +30,7 @@ export async function generateMetadata({
     title: meta.title,
     description: meta.description,
     alternates: {
-      canonical: `https://studentperks.dev/top/${category}`,
+      canonical: `https://www.studentperks.dev/top/${category}`,
     },
   };
 }
@@ -69,7 +69,7 @@ export default async function TopCategoryPage({
     itemListElement: sorted.map((deal, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      url: `https://studentperks.dev/deals/${deal.slug}`,
+      url: `https://www.studentperks.dev/deals/${deal.slug}`,
       name: deal.name,
     })),
   }).replace(/</g, "\\u003c");
@@ -78,8 +78,8 @@ export default async function TopCategoryPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
-      { "@type": "ListItem", position: 2, name: cat.category, item: `https://studentperks.dev/category/${category}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
+      { "@type": "ListItem", position: 2, name: cat.category, item: `https://www.studentperks.dev/category/${category}` },
       { "@type": "ListItem", position: 3, name: `Top ${sorted.length}` },
     ],
   }).replace(/</g, "\\u003c");

@@ -5,7 +5,7 @@ import { getAllPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Blog — Developer Guides & Tips | StudentPerks",
   description: "Get step-by-step guides to claim free developer tools, cloud credits, and student discounts from GitHub, AWS, and more. Updated for 2026.",
-  alternates: { canonical: "https://studentperks.dev/blog" },
+  alternates: { canonical: "https://www.studentperks.dev/blog" },
 };
 
 export default function BlogPage() {
@@ -50,7 +50,7 @@ export default function BlogPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
               { "@type": "ListItem", position: 2, name: "Blog" },
             ],
           }).replace(/</g, "\\u003c"),

@@ -87,12 +87,12 @@ export const metadata: Metadata = {
     "student developer tools",
     "free student deals 2026",
   ],
-  alternates: { canonical: "https://studentperks.dev/free-tools-for-students" },
+  alternates: { canonical: "https://www.studentperks.dev/free-tools-for-students" },
   openGraph: {
     title: "100+ Free Tools for Students (2026 Edition)",
     description:
       "The ultimate list of free software, tools, and services for students. Developer tools, cloud credits, design apps, AI, and more.",
-    url: "https://studentperks.dev/free-tools-for-students",
+    url: "https://www.studentperks.dev/free-tools-for-students",
     type: "article",
   },
 };

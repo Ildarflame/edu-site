@@ -37,7 +37,7 @@ export async function generateMetadata({
     title: meta.title,
     description: meta.description,
     alternates: {
-      canonical: `https://studentperks.dev/for/${audience}/${category}`,
+      canonical: `https://www.studentperks.dev/for/${audience}/${category}`,
     },
   };
 }
@@ -73,8 +73,8 @@ export default async function CrossFilterPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
-      { "@type": "ListItem", position: 2, name: aud.heading, item: `https://studentperks.dev/for/${audience}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
+      { "@type": "ListItem", position: 2, name: aud.heading, item: `https://www.studentperks.dev/for/${audience}` },
       { "@type": "ListItem", position: 3, name: cat.category },
     ],
   }).replace(/</g, "\\u003c");

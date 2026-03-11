@@ -23,7 +23,7 @@ export async function generateMetadata({
     title: `Best Free Alternatives to ${alt.name} 2026 | StudentPerks`,
     description: `Discover free alternatives to ${alt.name} for students, startups, and open source projects. Verified deals with step-by-step claim instructions.`,
     alternates: {
-      canonical: `https://studentperks.dev/alternatives/${slug}`,
+      canonical: `https://www.studentperks.dev/alternatives/${slug}`,
     },
   };
 }
@@ -66,7 +66,7 @@ export default async function AlternativesPage({
     itemListElement: filtered.map((deal, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      url: `https://studentperks.dev/deals/${deal.slug}`,
+      url: `https://www.studentperks.dev/deals/${deal.slug}`,
       name: deal.name,
     })),
   }).replace(/</g, "\\u003c");
@@ -75,8 +75,8 @@ export default async function AlternativesPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
-      { "@type": "ListItem", position: 2, name: alt.category, item: `https://studentperks.dev/category/${catSeo?.slug || alt.category.toLowerCase()}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
+      { "@type": "ListItem", position: 2, name: alt.category, item: `https://www.studentperks.dev/category/${catSeo?.slug || alt.category.toLowerCase()}` },
       { "@type": "ListItem", position: 3, name: `Alternatives to ${alt.name}` },
     ],
   }).replace(/</g, "\\u003c");

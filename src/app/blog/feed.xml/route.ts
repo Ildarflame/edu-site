@@ -1,6 +1,6 @@
 import { getAllPosts } from "@/lib/blog";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://studentperks.dev";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.studentperks.dev";
 
 export async function GET() {
   const posts = getAllPosts();

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About StudentPerks — Free Tools for Students 2026",
   description: "Save $500K+ on developer tools, cloud credits, and pro plans. StudentPerks helps students, startups, and OSS projects claim free perks in 2026.",
-  alternates: { canonical: "https://studentperks.dev/about" },
+  alternates: { canonical: "https://www.studentperks.dev/about" },
 };
 
 export default function AboutPage() {
@@ -78,7 +78,7 @@ export default function AboutPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
               { "@type": "ListItem", position: 2, name: "About" },
             ],
           }).replace(/</g, "\\u003c"),

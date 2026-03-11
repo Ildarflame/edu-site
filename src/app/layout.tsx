@@ -7,11 +7,11 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://studentperks.dev"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.studentperks.dev"),
   title: "StudentPerks — Free Developer Tools for Students & Startups 2026",
   description:
     "Claim 150+ free developer tools, cloud credits, and pro plans for students, startups, and open source projects. Save $500K+ in 2026.",
-  alternates: { canonical: "https://studentperks.dev" },
+  alternates: { canonical: "https://www.studentperks.dev" },
   manifest: "/manifest.json",
   other: { "theme-color": "#18181b" },
   openGraph: {
@@ -19,11 +19,13 @@ export const metadata: Metadata = {
     title: "StudentPerks — Free Developer Tools for Students & Startups 2026",
     description: "Claim 150+ free developer tools, cloud credits, and pro plans for students, startups, and open source projects. Save $500K+ in 2026.",
     siteName: "StudentPerks",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "StudentPerks — Free Developer Tools for Students & Startups 2026",
     description: "Claim 150+ free developer tools, cloud credits, and pro plans for students, startups, and open source projects. Save $500K+ in 2026.",
+    images: ["/opengraph-image"],
   },
 };
 
@@ -42,7 +44,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "StudentPerks",
-              url: process.env.NEXT_PUBLIC_SITE_URL || "https://studentperks.dev",
+              url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.studentperks.dev",
               description: "Discover free tools, services, and discounts for students, startups, and open source projects.",
             }).replace(/</g, "\\u003c"),
           }}

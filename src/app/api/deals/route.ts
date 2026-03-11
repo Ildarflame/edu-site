@@ -13,14 +13,14 @@ export async function GET() {
     value: d.value,
     url: d.url,
     featured: d.featured,
-    logo: `https://studentperks.dev${d.logo}`,
-    page: `https://studentperks.dev/deals/${d.slug}`,
+    logo: `https://www.studentperks.dev${d.logo}`,
+    page: `https://www.studentperks.dev/deals/${d.slug}`,
   }));
 
   return NextResponse.json(
     {
       count: data.length,
-      source: "https://studentperks.dev",
+      source: "https://www.studentperks.dev",
       updated: new Date().toISOString(),
       deals: data,
     },

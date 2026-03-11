@@ -24,17 +24,17 @@ export async function generateMetadata({
   const deal = deals.find((d) => d.slug === tool && d.audiences.includes("students"));
   if (!deal) return { title: "Not Found" };
 
-  const title = `${deal.name} Student Discount 2026 — Get ${deal.value} Free | StudentPerks`;
+  const title = `${deal.name} Student Discount: ${deal.value} Free 2026`;
   const description = `How to get ${deal.name} free or discounted as a student in 2026. ${deal.tagline}. Step-by-step verification guide.`;
 
   return {
     title,
     description,
-    alternates: { canonical: `https://studentperks.dev/student-discount/${tool}` },
+    alternates: { canonical: `https://www.studentperks.dev/student-discount/${tool}` },
     openGraph: {
       title,
       description,
-      url: `https://studentperks.dev/student-discount/${tool}`,
+      url: `https://www.studentperks.dev/student-discount/${tool}`,
       type: "article",
     },
   };
@@ -105,8 +105,8 @@ export default async function StudentDiscountPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
-      { "@type": "ListItem", position: 2, name: "Student Discounts", item: "https://studentperks.dev/student-discount" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
+      { "@type": "ListItem", position: 2, name: "Student Discounts", item: "https://www.studentperks.dev/student-discount" },
       { "@type": "ListItem", position: 3, name: `${deal.name} Student Discount` },
     ],
   }).replace(/</g, "\\u003c");

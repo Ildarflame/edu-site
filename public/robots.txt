@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://studentperks.dev/sitemap.xml
+Sitemap: https://www.studentperks.dev/sitemap.xml

@@ -173,7 +173,7 @@ export default function SubmitPage() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://studentperks.dev" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
               { "@type": "ListItem", position: 2, name: "Submit a Deal" },
             ],
           }).replace(/</g, "\\u003c"),

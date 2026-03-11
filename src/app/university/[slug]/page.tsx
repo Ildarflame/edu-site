@@ -25,7 +25,7 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: { canonical: `https://studentperks.dev/university/${slug}` },
+    alternates: { canonical: `https://www.studentperks.dev/university/${slug}` },
     openGraph: { title, description },
   };
 }
@@ -162,7 +162,7 @@ export default async function UniversityPage({
               "@type": "ListItem",
               position: i + 1,
               name: deal.name,
-              url: `https://studentperks.dev/deals/${deal.slug}`,
+              url: `https://www.studentperks.dev/deals/${deal.slug}`,
             })),
           }).replace(/</g, "\\u003c"),
         }}

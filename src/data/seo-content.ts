@@ -507,6 +507,17 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
       { question: "What are free alternatives to Spotify?", answer: "YouTube Music (free tier), SoundCloud, and Apple Music (student discount) are popular alternatives. Amazon Music is included with Prime Student at half price." },
     ],
   },
+  {
+    slug: "microsoft-office",
+    name: "Microsoft Office",
+    category: "SaaS",
+    intro:
+      "Free alternatives to Microsoft Office for students. From Google Workspace to LibreOffice, get word processing, spreadsheets, and presentations at zero cost.",
+    faqs: [
+      { question: "Can students get Microsoft Office for free?", answer: "Yes — many universities provide Microsoft 365 Education free to students. Check your school's IT portal. Otherwise, Office Online (web apps) is free for everyone with a Microsoft account." },
+      { question: "What are the best free alternatives to Microsoft Office?", answer: "Google Docs/Sheets/Slides (free, collaborative), LibreOffice (free, offline), Notion (free for students, all-in-one), and Apple iWork (free on Mac/iPad)." },
+    ],
+  },
 ];
 
 export type ComparisonSEO = {
@@ -533,7 +544,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "supabase-vs-mongodb",
     deal1Slug: "supabase-startups",
     deal2Slug: "mongodb-students",
-    title: "Supabase vs MongoDB Atlas: Free Database Comparison 2026 | StudentPerks",
+    title: "Supabase vs MongoDB: Free Database 2026 | StudentPerks",
     metaDescription: "Compare Supabase and MongoDB Atlas free tiers. PostgreSQL vs NoSQL, real-time vs aggregation, and which is better for students and startups.",
     intro: "Supabase offers a free PostgreSQL database with real-time subscriptions and auth. MongoDB Atlas provides a free NoSQL cluster with flexible schema and powerful aggregation pipeline.",
     verdict: "Choose Supabase for relational data with real-time needs. Choose MongoDB for flexible schemas and document-oriented workloads.",
@@ -542,7 +553,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "github-copilot-vs-cursor",
     deal1Slug: "copilot-students",
     deal2Slug: "copilot-students",
-    title: "GitHub Copilot vs Cursor: Free AI Coding Tools 2026 | StudentPerks",
+    title: "Copilot vs Cursor: AI Coding Tools 2026 | StudentPerks",
     metaDescription: "Compare GitHub Copilot (free for students) and Cursor free tier. AI code completion, features, and which is better for student developers.",
     intro: "GitHub Copilot is free for verified students and offers inline AI completions in VS Code. Cursor is an AI-first editor with a generous free tier that includes chat and code generation.",
     verdict: "Students should start with Copilot (completely free). Try Cursor's free tier if you want an integrated AI-first editing experience.",
@@ -551,7 +562,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "aws-vs-google-cloud",
     deal1Slug: "aws-activate",
     deal2Slug: "aws-activate",
-    title: "AWS Activate vs Google Cloud Credits: Free Cloud Comparison 2026 | StudentPerks",
+    title: "AWS vs Google Cloud: Free Credits 2026 | StudentPerks",
     metaDescription: "Compare AWS Activate and Google Cloud free credit programs for startups and students. Credits amount, eligibility, and which cloud to choose.",
     intro: "AWS Activate offers up to $100,000 in credits for startups. Google Cloud for Startups provides up to $200,000. Both have student programs with smaller but still significant credits.",
     verdict: "AWS has a larger ecosystem. Google Cloud offers more credits. Choose based on your tech stack and which services you need most.",
@@ -587,7 +598,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "stripe-vs-lemonsqueezy",
     deal1Slug: "stripe-atlas",
     deal2Slug: "stripe-atlas",
-    title: "Stripe vs Lemon Squeezy: Free Payment Processing 2026 | StudentPerks",
+    title: "Stripe vs Lemon Squeezy: Payments 2026 | StudentPerks",
     metaDescription: "Compare Stripe and Lemon Squeezy for startups. Payment processing features, pricing, and which is easier to set up.",
     intro: "Stripe is the most popular payment platform with startup credits available. Lemon Squeezy is an all-in-one platform handling payments, taxes, and subscriptions with simpler setup.",
     verdict: "Use Stripe for maximum flexibility and ecosystem. Use Lemon Squeezy for simplicity and built-in tax handling.",
@@ -844,7 +855,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-docker-free",
     dealSlug: "docker-students",
-    title: "How to Get Docker Desktop Free for Students & OSS 2026 | StudentPerks",
+    title: "Get Docker Free: Students & OSS 2026 | StudentPerks",
     metaDescription: "Docker Desktop is free for students, education, and open source projects. Learn how to qualify and set up your free license.",
     heading: "How to Get Docker Desktop Free",
     intro: "Docker Desktop is free for personal use, education, small businesses, and open source projects. Students and open source contributors get full Docker Desktop features at no cost.",
@@ -896,7 +907,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-digitalocean-credits",
     dealSlug: "digitalocean-students",
-    title: "How to Get DigitalOcean Free Credits for Students 2026 | StudentPerks",
+    title: "DigitalOcean Free Credits: Students 2026 | StudentPerks",
     metaDescription: "Get $200 in DigitalOcean cloud credits as a student through the GitHub Student Developer Pack in 2026.",
     heading: "How to Get DigitalOcean Free Credits",
     intro: "DigitalOcean provides $200 in cloud credits to students via the GitHub Student Developer Pack. Deploy droplets, databases, and Kubernetes clusters for free.",
@@ -922,7 +933,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-azure-student-credits",
     dealSlug: "azure-students",
-    title: "How to Get Microsoft Azure Free Credits for Students 2026 | StudentPerks",
+    title: "Azure Free Credits for Students 2026 | StudentPerks",
     metaDescription: "Get $100 in Azure credits with no credit card required. Complete guide to Azure for Students in 2026.",
     heading: "How to Get Azure Free Student Credits",
     intro: "Azure for Students gives verified students $100 in cloud credits with no credit card required, plus free access to 25+ Azure services. Startups can get up to $150K through Founders Hub.",
@@ -948,7 +959,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-amazon-prime-student",
     dealSlug: "amazon-prime-student",
-    title: "How to Get Amazon Prime Student — 6 Months Free 2026 | StudentPerks",
+    title: "Amazon Prime Student: 6 Months Free 2026 | StudentPerks",
     metaDescription: "Get 6 months of Amazon Prime free, then 50% off as a student. Step-by-step guide for Prime Student in 2026.",
     heading: "How to Get Amazon Prime Student",
     intro: "Amazon Prime Student includes a 6-month free trial followed by 50% off regular Prime ($7.49/month). Get free shipping, Prime Video, Prime Music, and exclusive student deals.",
@@ -961,7 +972,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-adobe-student-discount",
     dealSlug: "adobe-creative-cloud",
-    title: "How to Get Adobe Creative Cloud Student Discount 2026 | StudentPerks",
+    title: "Adobe Creative Cloud: Student Deal 2026 | StudentPerks",
     metaDescription: "Get 60%+ off Adobe Creative Cloud as a student. Photoshop, Illustrator, Premiere Pro, and 20+ apps at student pricing in 2026.",
     heading: "How to Get Adobe Creative Cloud Student Discount",
     intro: "Adobe offers 60%+ off the entire Creative Cloud suite for students and teachers. Get Photoshop, Illustrator, Premiere Pro, After Effects, and 20+ apps at a fraction of the cost.",
@@ -987,7 +998,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-apple-developer-free",
     dealSlug: "apple-developer-student",
-    title: "How to Get Apple Developer Program Free for Students 2026 | StudentPerks",
+    title: "Apple Developer: Free for Students 2026 | StudentPerks",
     metaDescription: "Access Apple developer tools, betas, and TestFlight for free as a student. Apple Developer Academy membership guide for 2026.",
     heading: "How to Get Apple Developer Program Free",
     intro: "Students can access Xcode, development tools, beta software, and TestFlight for free. Those accepted into Apple Developer Academies get a full membership ($99 value) at no cost.",
@@ -1000,7 +1011,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-supabase-credits",
     dealSlug: "supabase-startups",
-    title: "How to Get Supabase Credits Free for Startups & OSS 2026 | StudentPerks",
+    title: "Supabase Credits: Startups & OSS 2026 | StudentPerks",
     metaDescription: "Get $2,500 in Supabase credits through startup programs. Plus free tier with managed Postgres, auth, and storage in 2026.",
     heading: "How to Get Supabase Free Credits",
     intro: "Supabase provides $2,500 in credits to startups and sponsors open source projects. The free tier includes managed Postgres, auth, storage, edge functions, and real-time subscriptions.",
@@ -1013,7 +1024,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-stripe-atlas-credits",
     dealSlug: "stripe-atlas",
-    title: "How to Get Stripe Atlas Partner Credits ($5K+) 2026 | StudentPerks",
+    title: "Stripe Atlas: $5K+ Credits 2026 | StudentPerks",
     metaDescription: "Incorporate your startup with Stripe Atlas and unlock $5,000+ in partner credits from AWS, OpenAI, and more in 2026.",
     heading: "How to Get Stripe Atlas Partner Credits",
     intro: "Stripe Atlas helps founders incorporate a US C-Corp for $500. Atlas startups unlock $5,000+ in credits from partners like AWS, OpenAI, MongoDB, and others.",
@@ -1039,7 +1050,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-railway-free",
     dealSlug: "railway-oss",
-    title: "How to Get Railway Free for Open Source & Students 2026 | StudentPerks",
+    title: "Railway Free: OSS & Students 2026 | StudentPerks",
     metaDescription: "Deploy projects on Railway for free as a student or open source contributor. Free credits and hosting guide for 2026.",
     heading: "How to Get Railway Free Hosting",
     intro: "Railway provides free deployment credits for open source projects and a trial tier for everyone. Deploy apps, databases, and cron jobs with a simple Git-based workflow.",
@@ -1052,7 +1063,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-sentry-free",
     dealSlug: "sentry-oss",
-    title: "How to Get Sentry Free for Open Source & Startups 2026 | StudentPerks",
+    title: "Sentry Free: OSS & Startups 2026 | StudentPerks",
     metaDescription: "Get Sentry's Business plan free for open source projects. Error tracking, performance monitoring, and session replay at no cost in 2026.",
     heading: "How to Get Sentry Free for OSS",
     intro: "Sentry offers its Business plan free for qualified open source projects and discounted plans for startups. Get real-time error tracking, performance monitoring, and session replay.",
@@ -1065,7 +1076,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-cloudflare-free",
     dealSlug: "cloudflare-startups",
-    title: "How to Get Cloudflare Pro Free for Startups & OSS 2026 | StudentPerks",
+    title: "Cloudflare Pro: Free for Startups 2026 | StudentPerks",
     metaDescription: "Get Cloudflare Pro plan free for open source projects and startups. CDN, DDoS protection, and Workers at no cost in 2026.",
     heading: "How to Get Cloudflare Pro Free",
     intro: "Cloudflare offers its Pro plan free for open source projects and startup program members. Get CDN, DDoS protection, WAF, Workers, R2 storage, and enhanced security at no cost.",
@@ -1101,6 +1112,20 @@ export const GUIDE_SEO: GuideSEO[] = [
       { question: "What if my accelerator isn't a partner?", answer: "You can still use Slack's free plan (90-day message history, 10 integrations). For growing teams, the Pro plan is $8.75/user/month." },
     ],
   },
+  {
+    slug: "how-to-verify-student-status",
+    dealSlug: "github-student-pack",
+    title: "How to Verify Student Status for Free Tools 2026",
+    metaDescription: "Complete guide to verifying your student status for GitHub, JetBrains, Figma, and 100+ free developer tools. All methods explained.",
+    heading: "How to Verify Your Student Status",
+    intro: "Most student deals require proof of enrollment. This guide covers every verification method — from .edu email to student ID upload — so you can unlock free tools quickly.",
+    eligibility: [".edu or university email address", "Physical or digital student ID", "Enrollment letter or transcript", "ISIC international student card", "UNiDAYS or Student Beans verification"],
+    faqs: [
+      { question: "What if I don't have a .edu email?", answer: "Many services accept alternative proof: student ID photo, enrollment letter, transcript, or ISIC card. GitHub Education also accepts school-issued email domains from non-US universities." },
+      { question: "How long does verification take?", answer: "Instant for .edu email verification. Manual review (ID upload) takes 1-7 days depending on the provider. GitHub Education typically responds within 3-5 days." },
+      { question: "Can I use these deals after I graduate?", answer: "Most student licenses expire 1-2 years after last verification. Some tools (like Figma) keep your files accessible. JetBrains offers a 25% alumni discount." },
+    ],
+  },
 ];
 
 export type SeasonalSEO = {
@@ -1117,7 +1142,7 @@ export type SeasonalSEO = {
 export const SEASONAL_SEO: SeasonalSEO[] = [
   {
     slug: "back-to-school-2026",
-    title: "Back to School 2026 — Free Developer Tools for Students | StudentPerks",
+    title: "Back to School 2026: Free Dev Tools | StudentPerks",
     metaDescription: "Get ready for the new semester with free developer tools, cloud credits, and pro plans. Verified student deals for 2026.",
     heading: "Back to School 2026 — Free Tools for Students",
     intro: "Starting a new semester? Grab these free developer tools, cloud credits, and professional software before classes begin. All verified and available for students with a .edu email.",
@@ -1144,7 +1169,7 @@ export const SEASONAL_SEO: SeasonalSEO[] = [
   },
   {
     slug: "new-year-2027",
-    title: "New Year 2027 — Start Building with Free Developer Tools | StudentPerks",
+    title: "New Year 2027: Free Developer Tools | StudentPerks",
     metaDescription: "Kick off 2027 with free developer tools and cloud credits. The best deals for students, startups, and open source projects.",
     heading: "New Year 2027 — Free Tools to Start Building",
     intro: "New year, new projects. Start 2027 with the best free developer tools, cloud credits, and pro plans. Whether you're launching a startup, starting a new course, or contributing to open source, these deals will help you ship faster.",
@@ -1221,6 +1246,13 @@ export const TAG_SEO: TagSEO[] = [
     description: "Free analytics tools for web applications. Track visitors, events, and user behavior without paying.",
     metaDescription: "Free analytics tools for developers. Privacy-friendly analytics, event tracking, and user insights at zero cost.",
     keywords: ["analytics", "tracking", "visitors", "events", "metrics", "vercel-analytics"],
+  },
+  {
+    slug: "no-credit-card",
+    label: "No Credit Card",
+    description: "Free developer tools that require no credit card to sign up. Start building immediately with zero payment friction.",
+    metaDescription: "Free developer tools with no credit card required. Sign up instantly for hosting, databases, AI tools, and more — zero payment info needed.",
+    keywords: ["no-credit-card", "free", "no-payment", "instant", "signup", "no-cc"],
   },
 ];
 

@@ -169,7 +169,7 @@ export default function FinderWizard({ deals }: { deals: Deal[] }) {
 
   const shareUrl = typeof window !== "undefined"
     ? window.location.href
-    : `https://studentperks.dev/student-freebies-finder`;
+    : `https://www.studentperks.dev/student-freebies-finder`;
 
   return (
     <div>
