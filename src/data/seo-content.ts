@@ -760,6 +760,67 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
       { question: "What's the best free hosting for a portfolio?", answer: "Vercel or Netlify for static/Next.js sites. Both offer free HTTPS, global CDN, and custom domain support." },
     ],
   },
+  {
+    slug: "best-free-tools-for-web-development",
+    title: "Best Free Tools for Web Development 2026 | StudentPerks",
+    metaDescription: "The best free web development tools for students and developers. IDEs, hosting, databases, design tools, and AI assistants — all free.",
+    heading: "Best Free Tools for Web Development",
+    intro: "Build modern web apps without spending a cent. From professional IDEs and AI pair programmers to free hosting and managed databases, these tools cover the full web development stack.",
+    filterKeywords: ["web", "deploy", "vercel", "figma", "github", "supabase", "docker", "copilot", "ide", "developer tools"],
+    faqs: [
+      { question: "What free tools do I need to start web development?", answer: "A code editor (VS Code or JetBrains free for students), version control (GitHub), hosting (Vercel), and a database (Supabase). All completely free." },
+      { question: "Can I build a full-stack web app for free?", answer: "Yes. Use Next.js with Vercel for hosting, Supabase for database and auth, GitHub for code, and Copilot for AI assistance — all at zero cost for students." },
+    ],
+  },
+  {
+    slug: "best-free-software-for-college-students",
+    title: "Best Free Software for College Students 2026 | StudentPerks",
+    metaDescription: "Essential free software every college student needs. IDEs, productivity apps, cloud storage, creative tools, and streaming — all with student discounts or free plans.",
+    heading: "Best Free Software for College Students",
+    intro: "College is expensive, but software doesn't have to be. These verified student deals give you free access to professional tools worth thousands of dollars — from coding environments to creative suites.",
+    filterKeywords: ["student", "education", "campus", "creative", "premium", "college", ".edu"],
+    faqs: [
+      { question: "How do I verify my student status for free software?", answer: "Most programs accept a .edu email address. Some use SheerID or ISIC card verification. GitHub Education is a great starting point — it unlocks 100+ tools at once." },
+      { question: "How much can students save on software?", answer: "Students can save over $2,000/year with verified deals. JetBrains ($649), Figma ($144), Notion ($96), GitHub Copilot ($100), and Adobe ($360 savings) alone add up quickly." },
+    ],
+  },
+  {
+    slug: "best-free-cloud-services-for-students",
+    title: "Best Free Cloud Services for Students 2026 | StudentPerks",
+    metaDescription: "Free cloud credits and services for students. AWS, Azure, Google Cloud, DigitalOcean, Vercel, and more with student programs.",
+    heading: "Best Free Cloud Services for Students",
+    intro: "Deploy, scale, and learn cloud computing for free. Major cloud providers offer generous credits and free tiers specifically for students — no credit card required for most.",
+    filterCategory: "Cloud",
+    filterKeywords: ["cloud", "credit", "aws", "azure", "deploy", "hosting", "server", "infrastructure"],
+    faqs: [
+      { question: "Which cloud provider is best for students?", answer: "Azure for Students is the easiest start — $100 credits with no credit card. AWS Educate offers hands-on labs. DigitalOcean gives $200 via GitHub Education." },
+      { question: "Do student cloud credits expire?", answer: "Most student credits last 12 months and can be renewed while enrolled. Azure for Students renews annually; AWS credits vary by program." },
+    ],
+  },
+  {
+    slug: "best-free-tools-for-startup-founders",
+    title: "Best Free Tools for Startup Founders 2026 | StudentPerks",
+    metaDescription: "Free tools and credits for startup founders. Cloud credits, SaaS tools, incorporation, and more — save $100K+ in your first year.",
+    heading: "Best Free Tools for Startup Founders",
+    intro: "Launch your startup without burning cash on software. These verified programs provide cloud credits, SaaS tools, and infrastructure worth over $100,000 combined — all free for early-stage founders.",
+    filterKeywords: ["startup", "founder", "credits", "startups", "team", "atlas", "activate", "incorporate"],
+    faqs: [
+      { question: "How much can startups save with free tools?", answer: "Over $100,000 in the first year. AWS Activate ($100K), Stripe Atlas ($5K+ in partner credits), OpenAI ($2,500), Supabase ($2,500), and more add up fast." },
+      { question: "Do I need funding to qualify for startup programs?", answer: "No. Most programs accept early-stage startups with or without funding. AWS Activate Founders tier, Stripe Atlas, and Linear's startup program are all open to bootstrapped founders." },
+    ],
+  },
+  {
+    slug: "best-free-tools-for-open-source",
+    title: "Best Free Tools for Open Source Projects 2026 | StudentPerks",
+    metaDescription: "Free developer tools for open source maintainers. CI/CD, hosting, error tracking, databases, and more — all free for OSS projects.",
+    heading: "Best Free Tools for Open Source Projects",
+    intro: "Open source maintainers get premium tools for free. From hosting and CI/CD to error tracking and databases, these programs support the open source community with full-featured plans at zero cost.",
+    filterKeywords: ["open source", "oss", "opensource", "maintainer", "public", "community"],
+    faqs: [
+      { question: "How do I qualify for open source programs?", answer: "Most require a public repository with active development. Some check GitHub stars or contributor count. Sentry, Docker, Railway, and Vercel all have straightforward OSS application processes." },
+      { question: "Are open source licenses different from student licenses?", answer: "Yes — OSS licenses typically don't expire as long as your project remains active, while student licenses renew annually. Many tools offer both programs." },
+    ],
+  },
 ];
 
 export type GuideSEO = {
@@ -1253,6 +1314,41 @@ export const TAG_SEO: TagSEO[] = [
     description: "Free developer tools that require no credit card to sign up. Start building immediately with zero payment friction.",
     metaDescription: "Free developer tools with no credit card required. Sign up instantly for hosting, databases, AI tools, and more — zero payment info needed.",
     keywords: ["no-credit-card", "free", "no-payment", "instant", "signup", "no-cc"],
+  },
+  {
+    slug: "cloud-credits",
+    label: "Cloud Credits",
+    description: "Free cloud credits for students and startups. AWS, Azure, DigitalOcean, and more providers offering credits to get you started.",
+    metaDescription: "Free cloud credits for students and startups. Get $100-$100K in credits from AWS, Azure, DigitalOcean, and more cloud providers.",
+    keywords: ["credit", "credits", "aws", "azure", "cloud", "activate", "digitalocean", "$100"],
+  },
+  {
+    slug: "student-discount",
+    label: "Student Discounts",
+    description: "The best student discounts on software, cloud services, and developer tools. Verify with your .edu email and save thousands.",
+    metaDescription: "Best student discounts 2026. Save on software, cloud credits, streaming, and developer tools with your .edu email. Verified deals worth $2,000+.",
+    keywords: ["student", "discount", "education", ".edu", "half", "off", "savings", "campus"],
+  },
+  {
+    slug: "startup-credits",
+    label: "Startup Credits",
+    description: "Free credits and tools for early-stage startups. Cloud infrastructure, SaaS tools, and developer resources to launch your company.",
+    metaDescription: "Free startup credits and programs. AWS Activate, Stripe Atlas, OpenAI, Supabase, and more — save $100K+ on tools for your startup.",
+    keywords: ["startup", "credits", "activate", "founder", "founders", "atlas", "early-stage", "launch"],
+  },
+  {
+    slug: "free-tier",
+    label: "Free Tiers",
+    description: "Developer tools with generous free tiers that never expire. Build and deploy projects without paying or entering a credit card.",
+    metaDescription: "Best free tier developer tools 2026. Hosting, databases, monitoring, and more with permanently free plans for developers.",
+    keywords: ["free tier", "free plan", "forever", "generous", "no-cost", "free forever", "always free"],
+  },
+  {
+    slug: "open-source",
+    label: "Open Source Programs",
+    description: "Free tools and sponsorships for open source maintainers. Premium plans, hosting, CI/CD, and error tracking at no cost for OSS projects.",
+    metaDescription: "Free tools for open source projects. Docker, Sentry, Vercel, Railway, and more offer free premium plans for OSS maintainers.",
+    keywords: ["open source", "oss", "opensource", "maintainer", "public", "community", "sponsor"],
   },
 ];
 
