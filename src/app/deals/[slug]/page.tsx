@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getDeals, getDealBySlug, getDealsByCategory } from "@/lib/deals";
-import { GUIDE_SEO } from "@/data/seo-content";
+import { GUIDE_SEO, ALTERNATIVES_SEO, VS_SEO } from "@/data/seo-content";
 import CategoryBadge from "@/components/CategoryBadge";
 import AudienceBadge from "@/components/AudienceBadge";
 import DealCard from "@/components/DealCard";
@@ -191,6 +191,22 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
             className="inline-flex items-center px-3 py-1.5 rounded-full border border-white/[0.06] bg-white/[0.02] text-[12px] text-zinc-500 hover:border-white/[0.12] hover:text-zinc-300 transition-all"
           >
             Step-by-Step Guide →
+          </Link>
+        )}
+        {ALTERNATIVES_SEO.find((a) => deal.name.toLowerCase().includes(a.name.toLowerCase())) && (
+          <Link
+            href={`/alternatives/${ALTERNATIVES_SEO.find((a) => deal.name.toLowerCase().includes(a.name.toLowerCase()))!.slug}`}
+            className="inline-flex items-center px-3 py-1.5 rounded-full border border-white/[0.06] bg-white/[0.02] text-[12px] text-zinc-500 hover:border-white/[0.12] hover:text-zinc-300 transition-all"
+          >
+            Free Alternatives →
+          </Link>
+        )}
+        {VS_SEO.find((v) => v.tool1Slug === deal.slug || v.tool2Slug === deal.slug) && (
+          <Link
+            href={`/vs/${VS_SEO.find((v) => v.tool1Slug === deal.slug || v.tool2Slug === deal.slug)!.slug}`}
+            className="inline-flex items-center px-3 py-1.5 rounded-full border border-white/[0.06] bg-white/[0.02] text-[12px] text-zinc-500 hover:border-white/[0.12] hover:text-zinc-300 transition-all"
+          >
+            Compare →
           </Link>
         )}</div>
 
