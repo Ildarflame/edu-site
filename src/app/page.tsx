@@ -15,6 +15,14 @@ export default async function Home() {
   const deals = await getDeals();
   const featured = deals.filter((d) => d.featured);
 
+  const homeFaqs = [
+    { q: "What is StudentPerks?", a: "StudentPerks is a curated directory of 150+ free tools, cloud credits, and pro plans for students, startups, and open source projects. Every deal is verified and worth over $500K combined." },
+    { q: "How do I claim a free deal?", a: "Click any deal to see step-by-step claiming instructions. Most require verification with a .edu email, startup details, or an active open source project." },
+    { q: "Are these deals really free?", a: "Yes. All listed deals are either completely free, offer free credits, or provide significant student/startup discounts through official programs from the companies themselves." },
+    { q: "Do I need a .edu email?", a: "Many student deals require a .edu email for verification. However, startups and open source deals typically use different verification methods. Check each deal for specific requirements." },
+    { q: "How often are deals updated?", a: "We verify and update deals regularly. Pages refresh every 5 minutes from our database. Subscribe to our newsletter to get notified about new deals." },
+  ];
+
   const audiences = [
     {
       title: "Students",
@@ -309,6 +317,40 @@ export default async function Home() {
         </div>
       </section>
       </ScrollReveal>
+
+      {/* ═══ FAQ ═══ */}
+      <ScrollReveal>
+      <section className="max-w-4xl mx-auto px-6 py-20">
+        <p className="section-label mb-2 text-center">FAQ</p>
+        <h2 className="text-2xl md:text-3xl font-bold text-zinc-100 text-center mb-8">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-3">
+          {homeFaqs.map((faq, i) => (
+            <div key={i} className="card p-5">
+              <h3 className="text-[14px] font-semibold text-zinc-200 mb-2">{faq.q}</h3>
+              <p className="text-[13px] text-zinc-500 leading-relaxed">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      </ScrollReveal>
+
+      {/* JSON-LD FAQ — controlled editorial content, not user input — safe for inline script */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: homeFaqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.q,
+              acceptedAnswer: { "@type": "Answer", text: faq.a },
+            })),
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
     </main>
   );
 }
