@@ -78,7 +78,7 @@ const FAQS = [
 export const metadata: Metadata = {
   title: "100+ Free Tools for Students 2026 | StudentPerks",
   description:
-    "The ultimate list of free software, tools, and services for students in 2026. Developer tools, cloud credits, design apps, AI assistants, and more — all verified and free.",
+    "The ultimate list of free software and tools for students in 2026. Developer tools, cloud credits, design apps, AI assistants — all verified and free.",
   keywords: [
     "free tools for students",
     "student free software",

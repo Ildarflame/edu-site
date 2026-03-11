@@ -8,7 +8,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.studentperks.dev"),
-  title: "StudentPerks — Free Developer Tools for Students & Startups 2026",
+  title: "StudentPerks — Free Tools for Students & Startups",
   description:
     "Claim 150+ free developer tools, cloud credits, and pro plans for students, startups, and open source projects. Save $500K+ in 2026.",
   alternates: { canonical: "https://www.studentperks.dev" },
@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   other: { "theme-color": "#18181b" },
   openGraph: {
     type: "website",
-    title: "StudentPerks — Free Developer Tools for Students & Startups 2026",
+    title: "StudentPerks — Free Tools for Students & Startups",
     description: "Claim 150+ free developer tools, cloud credits, and pro plans for students, startups, and open source projects. Save $500K+ in 2026.",
     siteName: "StudentPerks",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "StudentPerks — Free Developer Tools for Students & Startups 2026",
+    title: "StudentPerks — Free Tools for Students & Startups",
     description: "Claim 150+ free developer tools, cloud credits, and pro plans for students, startups, and open source projects. Save $500K+ in 2026.",
     images: ["/opengraph-image"],
   },

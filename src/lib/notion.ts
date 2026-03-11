@@ -1,7 +1,7 @@
 import { z } from "zod";
 import type { Deal, Category, Audience } from "@/data/deals";
 
-const databaseId = process.env.NOTION_DEALS_DATABASE_ID!;
+const databaseId = process.env.NOTION_DEALS_DATABASE_ID ?? "";
 
 const CATEGORIES: Category[] = ["Dev", "AI", "SaaS", "Learning", "Cloud", "Design", "Entertainment"];
 const AUDIENCES: Audience[] = ["students", "startups", "opensource"];

@@ -6,7 +6,7 @@ import FinderWizard from "./FinderWizard";
 export const revalidate = 300;
 
 export const metadata: Metadata = {
-  title: "Student Freebies Finder — Personalized Free Tools for Your Major | StudentPerks",
+  title: "Student Freebies Finder 2026 | StudentPerks",
   description:
     "Enter your country, university, and major to discover all free tools, credits, and discounts available to you as a student in 2026.",
   keywords: [

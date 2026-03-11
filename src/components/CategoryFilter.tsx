@@ -17,7 +17,7 @@ export default function CategoryFilter({
 
   return (
     <div className="flex flex-wrap gap-1.5">
-      <button onClick={() => onChange(null)} className={`${base} ${selected === null ? active : inactive}`}>
+      <button onClick={() => onChange(null)} className={`${base} ${selected === null ? active : inactive}`} aria-label="Show all categories" aria-pressed={selected === null}>
         All
       </button>
       {categories.map((cat) => (
@@ -25,6 +25,8 @@ export default function CategoryFilter({
           key={cat}
           onClick={() => onChange(selected === cat ? null : cat)}
           className={`${base} ${selected === cat ? active : inactive}`}
+          aria-label={`Filter by ${cat}`}
+          aria-pressed={selected === cat}
         >
           {CATEGORY_CONFIG[cat].icon} {cat}
         </button>

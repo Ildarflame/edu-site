@@ -13,6 +13,22 @@ const submitSchema = z.object({
   email: z.string().email().max(254),
 });
 
+const rateLimit = new Map<string, { count: number; resetAt: number }>();
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  for (const [key, entry] of rateLimit) {
+    if (now > entry.resetAt) rateLimit.delete(key);
+  }
+  const entry = rateLimit.get(ip);
+  if (!entry || now > entry.resetAt) {
+    rateLimit.set(ip, { count: 1, resetAt: now + 60_000 });
+    return false;
+  }
+  entry.count++;
+  return entry.count > 3;
+}
+
 function slugify(name: string): string {
   return name
     .toLowerCase()
@@ -25,6 +41,11 @@ export async function POST(req: NextRequest) {
   const origin = req.headers.get("origin");
   if (origin && !origin.includes("studentperks.dev") && !origin.includes("localhost")) {
     return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
+
+  const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+  if (isRateLimited(ip)) {
+    return NextResponse.json({ error: "Too many requests" }, { status: 429 });
   }
 
   const token = process.env.NOTION_TOKEN;

@@ -37,17 +37,29 @@ export default async function ComparePage({
 
   const deals = await getDeals();
   const deal1 = deals.find((d) => d.slug === cmp.deal1Slug);
-  const deal2 = deals.find((d) => d.slug === cmp.deal2Slug);
-  if (!deal1 || !deal2) notFound();
+  const deal2 = cmp.deal2Slug ? deals.find((d) => d.slug === cmp.deal2Slug) : null;
+  if (!deal1) notFound();
 
-  const rows = [
-    { label: "Category", v1: deal1.category, v2: deal2.category },
-    { label: "Value", v1: deal1.value, v2: deal2.value },
-    { label: "Audiences", v1: deal1.audiences.join(", "), v2: deal2.audiences.join(", ") },
-    { label: "Steps to Claim", v1: `${deal1.steps.length} steps`, v2: `${deal2.steps.length} steps` },
-  ];
+  const rows = deal2
+    ? [
+        { label: "Category", v1: deal1.category, v2: deal2.category },
+        { label: "Value", v1: deal1.value, v2: deal2.value },
+        { label: "Audiences", v1: deal1.audiences.join(", "), v2: deal2.audiences.join(", ") },
+        { label: "Steps to Claim", v1: `${deal1.steps.length} steps`, v2: `${deal2.steps.length} steps` },
+      ]
+    : [
+        { label: "Category", v1: deal1.category },
+        { label: "Value", v1: deal1.value },
+        { label: "Audiences", v1: deal1.audiences.join(", ") },
+        { label: "Steps to Claim", v1: `${deal1.steps.length} steps` },
+      ];
 
   const otherComparisons = COMPARISON_SEO.filter((c) => c.slug !== slug);
+
+  // Extract tool names from slug (e.g. "figma-vs-framer" -> ["figma", "framer"])
+  const slugParts = slug.split("-vs-");
+  const tool1Name = deal1.name;
+  const tool2Name = deal2?.name ?? slugParts[1]?.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()) ?? "Alternative";
 
   // JSON-LD — all content is controlled/hardcoded, safe for inline script
   const breadcrumbLd = JSON.stringify({
@@ -56,7 +68,7 @@ export default async function ComparePage({
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
       { "@type": "ListItem", position: 2, name: "Compare" },
-      { "@type": "ListItem", position: 3, name: `${deal1.name} vs ${deal2.name}` },
+      { "@type": "ListItem", position: 3, name: `${tool1Name} vs ${tool2Name}` },
     ],
   }).replace(/</g, "\\u003c");
 
@@ -65,12 +77,12 @@ export default async function ComparePage({
       <nav className="text-[13px] text-zinc-700 mb-8 font-medium">
         <Link href="/" className="hover:text-orange-400 transition-colors">Home</Link>
         <span className="mx-2 text-zinc-800">/</span>
-        <span className="text-zinc-400">{deal1.name} vs {deal2.name}</span>
+        <span className="text-zinc-400">{tool1Name} vs {tool2Name}</span>
       </nav>
 
       <div className="mb-10">
         <h1 className="text-3xl md:text-4xl font-bold text-zinc-100">
-          {deal1.name} vs {deal2.name}
+          {tool1Name} vs {tool2Name}
         </h1>
         <p className="mt-3 text-[15px] text-zinc-500 leading-relaxed max-w-2xl">{cmp.intro}</p>
       </div>
@@ -80,8 +92,8 @@ export default async function ComparePage({
           <thead>
             <tr className="border-b border-white/[0.06]">
               <th className="text-left py-3 text-zinc-500 font-medium">Feature</th>
-              <th className="text-left py-3 text-zinc-200 font-medium">{deal1.name}</th>
-              <th className="text-left py-3 text-zinc-200 font-medium">{deal2.name}</th>
+              <th className="text-left py-3 text-zinc-200 font-medium">{tool1Name}</th>
+              {deal2 && <th className="text-left py-3 text-zinc-200 font-medium">{tool2Name}</th>}
             </tr>
           </thead>
           <tbody>
@@ -89,7 +101,7 @@ export default async function ComparePage({
               <tr key={row.label} className="border-b border-white/[0.04]">
                 <td className="py-3 text-zinc-500">{row.label}</td>
                 <td className="py-3 text-zinc-300">{row.v1}</td>
-                <td className="py-3 text-zinc-300">{row.v2}</td>
+                {"v2" in row && <td className="py-3 text-zinc-300">{row.v2}</td>}
               </tr>
             ))}
           </tbody>
@@ -103,7 +115,7 @@ export default async function ComparePage({
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-12">
         <DealCard deal={deal1} />
-        <DealCard deal={deal2} />
+        {deal2 && <DealCard deal={deal2} />}
       </div>
 
       {otherComparisons.length > 0 && (

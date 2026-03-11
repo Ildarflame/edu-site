@@ -15,14 +15,18 @@ export default function RotatingWord() {
   const [show, setShow] = useState(true);
 
   useEffect(() => {
+    let timeoutId: NodeJS.Timeout | null = null;
     const interval = setInterval(() => {
       setShow(false);
-      setTimeout(() => {
+      timeoutId = setTimeout(() => {
         setIndex((i) => (i + 1) % words.length);
         setShow(true);
       }, 350);
     }, 2500);
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      if (timeoutId) clearTimeout(timeoutId);
+    };
   }, []);
 
   const word = words[index];

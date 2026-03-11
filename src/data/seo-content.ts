@@ -523,7 +523,7 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
 export type ComparisonSEO = {
   slug: string;
   deal1Slug: string;
-  deal2Slug: string;
+  deal2Slug: string | null;
   title: string;
   metaDescription: string;
   intro: string;
@@ -552,7 +552,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
   {
     slug: "github-copilot-vs-cursor",
     deal1Slug: "copilot-students",
-    deal2Slug: "copilot-students",
+    deal2Slug: null,
     title: "Copilot vs Cursor: AI Coding Tools 2026 | StudentPerks",
     metaDescription: "Compare GitHub Copilot (free for students) and Cursor free tier. AI code completion, features, and which is better for student developers.",
     intro: "GitHub Copilot is free for verified students and offers inline AI completions in VS Code. Cursor is an AI-first editor with a generous free tier that includes chat and code generation.",
@@ -561,7 +561,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
   {
     slug: "aws-vs-google-cloud",
     deal1Slug: "aws-activate",
-    deal2Slug: "aws-activate",
+    deal2Slug: null,
     title: "AWS vs Google Cloud: Free Credits 2026 | StudentPerks",
     metaDescription: "Compare AWS Activate and Google Cloud free credit programs for startups and students. Credits amount, eligibility, and which cloud to choose.",
     intro: "AWS Activate offers up to $100,000 in credits for startups. Google Cloud for Startups provides up to $200,000. Both have student programs with smaller but still significant credits.",
@@ -570,7 +570,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
   {
     slug: "figma-vs-framer",
     deal1Slug: "figma-education",
-    deal2Slug: "figma-education",
+    deal2Slug: null,
     title: "Figma vs Framer: Free Design Tools 2026 | StudentPerks",
     metaDescription: "Compare Figma and Framer free plans for students and startups. Design capabilities, prototyping, and which is better for your workflow.",
     intro: "Figma is the industry-standard collaborative design tool with a generous free plan. Framer combines design with code-powered interactions and can publish directly to the web.",
@@ -588,7 +588,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
   {
     slug: "sentry-vs-datadog",
     deal1Slug: "sentry-oss",
-    deal2Slug: "sentry-oss",
+    deal2Slug: null,
     title: "Sentry vs Datadog: Free Monitoring Tools 2026 | StudentPerks",
     metaDescription: "Compare Sentry and Datadog free tiers for error tracking and monitoring. Features, limits, and which is better for startups.",
     intro: "Sentry specializes in error tracking and performance monitoring with a generous free tier. Datadog offers full-stack observability with infrastructure monitoring, APM, and log management.",
@@ -597,7 +597,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
   {
     slug: "stripe-vs-lemonsqueezy",
     deal1Slug: "stripe-atlas",
-    deal2Slug: "stripe-atlas",
+    deal2Slug: null,
     title: "Stripe vs Lemon Squeezy: Payments 2026 | StudentPerks",
     metaDescription: "Compare Stripe and Lemon Squeezy for startups. Payment processing features, pricing, and which is easier to set up.",
     intro: "Stripe is the most popular payment platform with startup credits available. Lemon Squeezy is an all-in-one platform handling payments, taxes, and subscriptions with simpler setup.",
@@ -606,7 +606,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
   {
     slug: "docker-vs-podman",
     deal1Slug: "docker-students",
-    deal2Slug: "docker-students",
+    deal2Slug: null,
     title: "Docker vs Podman: Free Container Tools 2026 | StudentPerks",
     metaDescription: "Compare Docker (free for students) and Podman (always free). Container features, security, and which to choose for development.",
     intro: "Docker is the standard container platform with free access for students and open source. Podman is a daemonless, rootless container engine that's always free and compatible with Docker commands.",
@@ -615,7 +615,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
   {
     slug: "jetbrains-vs-vscode",
     deal1Slug: "jetbrains-students",
-    deal2Slug: "jetbrains-students",
+    deal2Slug: null,
     title: "JetBrains vs VS Code: Free IDE Comparison 2026 | StudentPerks",
     metaDescription: "Compare JetBrains IDEs (free for students) and VS Code (always free). Features, performance, and which IDE is better for your workflow.",
     intro: "JetBrains offers professional IDEs free for students — IntelliJ, WebStorm, PyCharm, and more. VS Code is a free, lightweight editor with a massive extension ecosystem.",

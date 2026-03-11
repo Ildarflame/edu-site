@@ -127,7 +127,7 @@ export default function Header() {
         </div>
 
         <button
-          className="md:hidden p-1.5 text-zinc-500 hover:text-zinc-200 transition-colors rounded-md hover:bg-white/[0.04]"
+          className="md:hidden p-2.5 text-zinc-500 hover:text-zinc-200 transition-colors rounded-md hover:bg-white/[0.04]"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >

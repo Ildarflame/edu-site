@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 interface RatingData {
   helpful: number;
@@ -41,6 +41,8 @@ function saveUserVote(slug: string, vote: { helpful?: boolean; star?: number }) 
 export default function DealRating({ slug }: { slug: string }) {
   const [data, setData] = useState<RatingData>({ helpful: 0, notHelpful: 0, stars: [0, 0, 0, 0, 0] });
   const [userVote, setUserVote] = useState<{ helpful?: boolean; star?: number } | null>(null);
+  const userVoteRef = useRef(userVote);
+  userVoteRef.current = userVote;
   const [hoverStar, setHoverStar] = useState(0);
 
   useEffect(() => {
@@ -57,7 +59,7 @@ export default function DealRating({ slug }: { slug: string }) {
     : 0;
 
   const handleHelpful = useCallback((isHelpful: boolean) => {
-    if (userVote?.helpful !== undefined) return;
+    if (userVoteRef.current?.helpful !== undefined) return;
     setData(prev => {
       const newData = { ...prev };
       if (isHelpful) newData.helpful++;
@@ -65,23 +67,23 @@ export default function DealRating({ slug }: { slug: string }) {
       saveRatingData(slug, newData);
       return newData;
     });
-    const vote = { ...userVote, helpful: isHelpful };
+    const vote = { ...userVoteRef.current, helpful: isHelpful };
     setUserVote(vote);
     saveUserVote(slug, vote);
-  }, [slug, userVote]);
+  }, [slug]);
 
   const handleStar = useCallback((star: number) => {
-    if (userVote?.star !== undefined) return;
+    if (userVoteRef.current?.star !== undefined) return;
     setData(prev => {
       const newData = { ...prev, stars: [...prev.stars] };
       newData.stars[star - 1]++;
       saveRatingData(slug, newData);
       return newData;
     });
-    const vote = { ...userVote, star };
+    const vote = { ...userVoteRef.current, star };
     setUserVote(vote);
     saveUserVote(slug, vote);
-  }, [slug, userVote]);
+  }, [slug]);
 
   return (
     <div className="card p-5 space-y-4">
