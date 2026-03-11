@@ -46,6 +46,14 @@ export default function RootLayout({
               name: "StudentPerks",
               url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.studentperks.dev",
               description: "Discover free tools, services, and discounts for students, startups, and open source projects.",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://www.studentperks.dev/deals?q={search_term_string}",
+                },
+                "query-input": "required name=search_term_string",
+              },
             }).replace(/</g, "\\u003c"),
           }}
         />
