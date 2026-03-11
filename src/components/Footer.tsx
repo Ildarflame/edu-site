@@ -76,12 +76,16 @@ export default function Footer() {
               </div>
             </div>
             <div>
-              <p className="section-label mb-3">Audiences</p>
+              <p className="section-label mb-3">Explore</p>
               <div className="space-y-2">
                 {[
                   { href: "/for/students", label: "Students" },
                   { href: "/for/startups", label: "Startups" },
                   { href: "/for/opensource", label: "Open Source" },
+                  { href: "/vs", label: "Comparisons" },
+                  { href: "/best", label: "Best Tools" },
+                  { href: "/guides", label: "Claim Guides" },
+                  { href: "/alternatives", label: "Alternatives" },
                 ].map((link) => (
                   <Link
                     key={link.href}

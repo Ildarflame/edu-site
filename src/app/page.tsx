@@ -238,6 +238,35 @@ export default async function Home() {
       </section>
       </ScrollReveal>
 
+      {/* ═══ DISCOVER MORE ═══ */}
+      <ScrollReveal>
+      <section className="max-w-7xl mx-auto px-6 py-16">
+        <p className="section-label mb-2 text-center">Discover more</p>
+        <h2 className="text-2xl md:text-3xl font-bold text-zinc-100 text-center mb-8">
+          Explore our resources
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto">
+          {[
+            { href: "/vs", title: "Comparisons", desc: "Side-by-side tool comparisons" },
+            { href: "/best", title: "Best Tools", desc: "Curated lists by use case" },
+            { href: "/guides", title: "Claim Guides", desc: "Step-by-step instructions" },
+            { href: "/alternatives", title: "Alternatives", desc: "Free software alternatives" },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="card group p-4 text-center"
+            >
+              <span className="block text-[14px] font-semibold text-zinc-200 group-hover:text-orange-400 transition-colors mb-1">
+                {item.title}
+              </span>
+              <span className="block text-[12px] text-zinc-600">{item.desc}</span>
+            </Link>
+          ))}
+        </div>
+      </section>
+      </ScrollReveal>
+
       {/* ═══ NEWSLETTER ═══ */}
       <ScrollReveal>
       <section className="max-w-7xl mx-auto px-6 py-20 text-center">
