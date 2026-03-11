@@ -518,6 +518,114 @@ export const ALTERNATIVES_SEO: AlternativeSEO[] = [
       { question: "What are the best free alternatives to Microsoft Office?", answer: "Google Docs/Sheets/Slides (free, collaborative), LibreOffice (free, offline), Notion (free for students, all-in-one), and Apple iWork (free on Mac/iPad)." },
     ],
   },
+  {
+    slug: "zoom",
+    name: "Zoom",
+    category: "SaaS",
+    intro:
+      "Looking for free alternatives to Zoom for video calls and online classes? These platforms offer free video conferencing, screen sharing, and collaboration tools for students and teams.",
+    faqs: [
+      { question: "Is Zoom free for students?", answer: "Zoom's free plan allows unlimited 1-on-1 meetings and group calls up to 40 minutes with up to 100 participants. Many universities provide Zoom Pro licenses to students — check your university IT portal." },
+      { question: "What are the best free alternatives to Zoom?", answer: "Google Meet (free, unlimited 1-hour meetings), Microsoft Teams (free tier, deep Office integration), Jitsi Meet (open source, no account needed), and Discord (free voice/video channels) are top Zoom alternatives." },
+      { question: "Which free video tool is best for study groups?", answer: "Google Meet is ideal for quick study groups (no app install needed). Discord is great for persistent study servers with voice channels, screen sharing, and text chat all in one place." },
+    ],
+  },
+  {
+    slug: "firebase",
+    name: "Firebase",
+    category: "Dev",
+    intro:
+      "Discover free alternatives to Firebase for app backend services. These platforms offer real-time databases, authentication, storage, and hosting with generous free tiers.",
+    faqs: [
+      { question: "Is Firebase free for students?", answer: "Firebase's Spark plan is free for everyone — includes 1 GB Firestore, 10 GB hosting bandwidth, 1 GB storage, and 10K auth users/month. No student verification needed." },
+      { question: "What are the best free alternatives to Firebase?", answer: "Supabase (open source, PostgreSQL-based, free tier), Appwrite (self-hostable, open source), PocketBase (single Go binary, self-hosted), and Neon (serverless Postgres, free tier) are top Firebase alternatives." },
+      { question: "Why would a student choose Supabase over Firebase?", answer: "Supabase uses SQL (more transferable skill), is open source (self-hostable), and has a more generous free tier. Firebase's NoSQL model and vendor lock-in are common reasons developers switch." },
+    ],
+  },
+  {
+    slug: "postman",
+    name: "Postman",
+    category: "Dev",
+    intro:
+      "Looking for free alternatives to Postman for API testing and development? These tools offer REST, GraphQL, and gRPC testing with free plans for individual developers and students.",
+    faqs: [
+      { question: "Is Postman free for students?", answer: "Yes, Postman's free tier includes unlimited API calls, collections, environments, and basic collaboration. Students can also access team features through the GitHub Student Developer Pack." },
+      { question: "What are the best free alternatives to Postman?", answer: "Hoppscotch (open source, browser-based), Insomnia (free tier), Bruno (open source, offline-first), and Thunder Client (VS Code extension) are top free Postman alternatives." },
+      { question: "Is there a completely offline Postman alternative?", answer: "Bruno is the best offline-first alternative — it stores collections as plain files in your repo (no cloud sync required) and is completely free and open source." },
+    ],
+  },
+  {
+    slug: "datadog",
+    name: "Datadog",
+    category: "Dev",
+    intro:
+      "Explore free alternatives to Datadog for infrastructure monitoring, APM, and log management. These observability platforms offer free tiers for students, startups, and open source projects.",
+    faqs: [
+      { question: "Is Datadog free for startups?", answer: "Datadog offers a free 14-day trial and a free tier with 1 host and basic metrics. Startups can apply for extended credits through partner accelerator programs." },
+      { question: "What are free alternatives to Datadog?", answer: "New Relic (free with 100 GB/month ingest), Grafana Cloud (free tier), Sentry (free for error tracking, free for OSS), and Prometheus + Grafana (self-hosted, always free) are the top alternatives." },
+      { question: "Can open source projects get Datadog for free?", answer: "Datadog has an open source program offering discounted access. For fully free monitoring, Sentry's OSS plan (Business tier free) and Grafana Cloud's free tier are better options." },
+    ],
+  },
+  {
+    slug: "jira",
+    name: "Jira",
+    category: "SaaS",
+    intro:
+      "Discover free alternatives to Jira for project management and issue tracking. These tools offer agile boards, backlogs, and sprint planning without the Jira complexity or price.",
+    faqs: [
+      { question: "Is Jira free for students?", answer: "Jira has a free plan for up to 10 users with basic Scrum and Kanban boards, backlog, and 2 GB file storage. It's a good starting point for student teams." },
+      { question: "What are the best free alternatives to Jira?", answer: "Linear (free for startups, modern and fast), GitHub Issues (free with any repo), Trello (free Kanban boards), Notion (free for students, all-in-one), and Plane (open source Jira alternative)." },
+      { question: "Why do developers prefer Linear over Jira?", answer: "Linear is significantly faster, has a cleaner interface, and is purpose-built for software teams. The free plan for startups and the overall developer experience make it a popular Jira replacement." },
+    ],
+  },
+  {
+    slug: "supabase",
+    name: "Supabase",
+    category: "Dev",
+    intro:
+      "Looking for free alternatives to Supabase for your backend? These platforms offer managed databases, authentication, storage, and real-time features for students and startups.",
+    faqs: [
+      { question: "Is Supabase free for students?", answer: "Supabase offers a generous free tier with 500 MB database, 1 GB file storage, and 50,000 monthly active users for auth. Startups can get $2,500 in credits through partner programs." },
+      { question: "What are free alternatives to Supabase?", answer: "Firebase (Google), PlanetScale (MySQL serverless), Neon (serverless Postgres), and CockroachDB all offer free tiers with managed databases and backend features." },
+      { question: "Can I self-host Supabase for free?", answer: "Yes, Supabase is open source and can be self-hosted on any server. A Docker Compose setup is available in their GitHub repo — perfect for students with free cloud credits." },
+    ],
+  },
+  {
+    slug: "linear",
+    name: "Linear",
+    category: "SaaS",
+    intro:
+      "Exploring free alternatives to Linear for project management? These tools offer issue tracking, sprints, and roadmaps for software teams with free plans.",
+    faqs: [
+      { question: "Is Linear free for startups?", answer: "Yes, Linear offers its Standard plan free for early-stage startups ($200/year value). The free plan includes unlimited issues and core features for small teams." },
+      { question: "What are the best free alternatives to Linear?", answer: "GitHub Issues (free), Jira (free for up to 10 users), Trello (free tier), and Notion (free for students, all-in-one workspace) are popular project management alternatives at no cost." },
+      { question: "Can students use Linear for free?", answer: "Yes — Linear's free plan includes unlimited members, up to 250 active issues, and all core features. It's more than enough for class projects and hackathon teams." },
+    ],
+  },
+  {
+    slug: "heroku",
+    name: "Heroku",
+    category: "Cloud",
+    intro:
+      "Since Heroku removed its free tier in 2022, developers have been searching for free alternatives to host apps and APIs. These platforms offer free full-stack hosting for student and side projects.",
+    faqs: [
+      { question: "What happened to Heroku's free tier?", answer: "Heroku discontinued all free dynos, databases, and add-ons in November 2022. The cheapest paid plan now starts at $5/month for an Eco dyno." },
+      { question: "What are the best free Heroku alternatives?", answer: "Railway ($5 free credit/month), Render (free tier for static sites and web services), Fly.io (generous free allowance), and Vercel (frontend) are the top Heroku replacements." },
+      { question: "Can students still deploy for free?", answer: "Yes! Railway, Render, and Fly.io all have free tiers. Students also get $200 in DigitalOcean credits via the GitHub Student Developer Pack, which covers hosting for over a year." },
+    ],
+  },
+  {
+    slug: "github",
+    name: "GitHub",
+    category: "Dev",
+    intro:
+      "Discover free alternatives to GitHub for code hosting and collaboration. These platforms offer version control, CI/CD, and project management features at no cost.",
+    faqs: [
+      { question: "Is GitHub free for students?", answer: "Yes — GitHub offers free Pro features through the GitHub Student Developer Pack including unlimited private repos, GitHub Copilot, and 100+ partner tool offers worth $200+/year." },
+      { question: "What are free alternatives to GitHub?", answer: "GitLab (free tier with built-in CI/CD), Bitbucket (free for 5 users), Codeberg (open source, always free), and Gitea (self-hosted) are all free GitHub alternatives." },
+      { question: "Why would a student use a GitHub alternative?", answer: "GitLab's built-in CI/CD and full DevOps platform appeal to some students. Codeberg and Gitea are preferred by privacy-conscious developers. For most students, GitHub's Student Pack is the best choice." },
+    ],
+  },
 ];
 
 export type ComparisonSEO = {
@@ -620,6 +728,33 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     metaDescription: "Compare JetBrains IDEs (free for students) and VS Code (always free). Features, performance, and which IDE is better for your workflow.",
     intro: "JetBrains offers professional IDEs free for students — IntelliJ, WebStorm, PyCharm, and more. VS Code is a free, lightweight editor with a massive extension ecosystem.",
     verdict: "Use JetBrains for deep language-specific features and refactoring. Use VS Code for lightweight editing and extension flexibility.",
+  },
+  {
+    slug: "figma-vs-sketch",
+    deal1Slug: "figma-education",
+    deal2Slug: null,
+    title: "Figma vs Sketch: Design Tools for Students 2026 | StudentPerks",
+    metaDescription: "Compare Figma (free for students) and Sketch. Features, pricing, and which design tool is better for student projects and teams.",
+    intro: "Figma is a collaborative, browser-based design tool completely free for students. Sketch is a Mac-only professional design application popular in the Apple ecosystem.",
+    verdict: "Use Figma — it's free for students, works on any OS, and has better real-time collaboration. Choose Sketch only if you're on Mac and your team is already in the Sketch ecosystem.",
+  },
+  {
+    slug: "github-actions-vs-gitlab-ci",
+    deal1Slug: "github-education",
+    deal2Slug: null,
+    title: "GitHub Actions vs GitLab CI for Students 2026 | StudentPerks",
+    metaDescription: "GitHub Actions vs GitLab CI — which CI/CD pipeline is better for students? Compare free build minutes, features, and ease of setup.",
+    intro: "GitHub Actions is tightly integrated with GitHub repos and offers 2,000 free CI/CD minutes per month for private repos. GitLab CI is built into GitLab with 400 free minutes and a full DevOps platform.",
+    verdict: "Use GitHub Actions if your code is on GitHub — zero configuration and 2,000 free minutes per month. Use GitLab CI when you want everything (code, CI/CD, registry, monitoring) in one place.",
+  },
+  {
+    slug: "sentry-vs-newrelic",
+    deal1Slug: "sentry-oss",
+    deal2Slug: null,
+    title: "Sentry vs New Relic: Free Error Monitoring 2026 | StudentPerks",
+    metaDescription: "Compare Sentry and New Relic free tiers for error tracking and observability. Which is better for students and early-stage startups?",
+    intro: "Sentry specializes in error tracking and performance monitoring with a generous free tier and OSS program. New Relic offers full-stack observability with a free plan including 100 GB/month data ingest and unlimited users.",
+    verdict: "Start with Sentry for error tracking — simpler setup, free for OSS, and integrates with GitHub. Add New Relic when you need infrastructure monitoring, distributed tracing, and APM in a single dashboard.",
   },
 ];
 
@@ -819,6 +954,71 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
     faqs: [
       { question: "How do I qualify for open source programs?", answer: "Most require a public repository with active development. Some check GitHub stars or contributor count. Sentry, Docker, Railway, and Vercel all have straightforward OSS application processes." },
       { question: "Are open source licenses different from student licenses?", answer: "Yes — OSS licenses typically don't expire as long as your project remains active, while student licenses renew annually. Many tools offer both programs." },
+    ],
+  },
+  {
+    slug: "best-free-api-testing-tools",
+    title: "Best Free API Testing Tools for Developers 2026 | StudentPerks",
+    metaDescription: "Free API testing and development tools. Postman, Insomnia, Hoppscotch, and more with free plans for students and open source developers.",
+    heading: "Best Free API Testing & Development Tools",
+    intro: "Test and document your APIs without paying. These free-tier API clients and testing platforms give you professional-grade tools — from REST and GraphQL testing to mock servers and automated test suites.",
+    filterKeywords: ["api", "testing", "postman", "rest", "graphql", "backend", "mock"],
+    faqs: [
+      { question: "Is Postman free for students?", answer: "Postman has a generous free tier with unlimited API calls, collections, and environments. Students and open source teams can get additional collaboration features through GitHub Education." },
+      { question: "What is the best free API testing tool?", answer: "Postman for full-featured API development and team collaboration. Hoppscotch is a free, open-source browser alternative. Thunder Client is a lightweight VS Code extension for quick API testing." },
+      { question: "Can I run API tests in CI/CD for free?", answer: "Yes — Postman's Newman CLI and Hoppscotch can run in GitHub Actions (free for public repos). This lets you automate API regression tests on every commit." },
+    ],
+  },
+  {
+    slug: "best-free-backend-tools",
+    title: "Best Free Backend Tools for Students 2026 | StudentPerks",
+    metaDescription: "Free backend tools and services for student developers. Databases, auth, hosting, APIs, and more with free tiers and student programs.",
+    heading: "Best Free Backend Tools for Student Developers",
+    intro: "Build your backend without paying for infrastructure. From managed databases and auth services to API hosting and serverless functions, these free-tier tools cover everything you need to ship full-stack projects.",
+    filterKeywords: ["backend", "api", "database", "auth", "server", "supabase", "railway", "vercel", "serverless"],
+    faqs: [
+      { question: "What's the fastest way to set up a free backend?", answer: "Supabase gives you a PostgreSQL database with auth, storage, and real-time in under 2 minutes. Deploy your API on Railway or Vercel Functions for a complete free backend stack." },
+      { question: "Can I run a Node.js backend for free?", answer: "Yes — Railway ($5/month free credit, always-on), Render (750 hrs/month free), and Vercel Functions (serverless, generous free tier) all support Node.js backends at no cost." },
+      { question: "Is there a free BaaS (Backend-as-a-Service) for students?", answer: "Supabase and Firebase both offer permanent free tiers with database, auth, and storage. Appwrite is self-hostable and open source — deploy it on your free Railway or Render account." },
+    ],
+  },
+  {
+    slug: "best-free-tools-for-data-science",
+    title: "Best Free Tools for Data Science Students 2026 | StudentPerks",
+    metaDescription: "Free data science tools for students. Cloud compute, Jupyter, datasets, and AI credits with student programs and free tiers.",
+    heading: "Best Free Tools for Data Science & ML Students",
+    intro: "Learn data science and machine learning with professional tools at zero cost. From cloud notebooks and GPU compute to dataset platforms and AI model APIs, these free tools give you everything needed for serious data projects.",
+    filterKeywords: ["data science", "machine learning", "jupyter", "python", "gpu", "notebook", "ai", "ml", "dataset"],
+    faqs: [
+      { question: "Can I get free GPU compute for machine learning?", answer: "Yes — Google Colab offers free GPU access (T4) with usage limits. Kaggle provides free GPU notebooks (30 hrs/week). AWS Educate and Azure for Students include ML compute credits." },
+      { question: "What free cloud tools do data science students get?", answer: "AWS Educate provides SageMaker Studio Lab free. Google Colab Pro is discounted for students. Azure for Students includes $100 in credits covering Azure ML workspaces and compute." },
+      { question: "Where can I get free datasets for projects?", answer: "Kaggle Datasets (free, 50K+ datasets), UCI ML Repository (free, academic), Google Dataset Search, Hugging Face Datasets, and government data portals (data.gov, data.europa.eu) are all free." },
+    ],
+  },
+  {
+    slug: "best-free-devops-tools",
+    title: "Best Free DevOps Tools for Students & Startups 2026 | StudentPerks",
+    metaDescription: "Free DevOps tools for CI/CD, infrastructure, monitoring, and containerization. Student and open source programs with verified free tiers.",
+    heading: "Best Free DevOps Tools for Students & Startups",
+    intro: "Build a professional DevOps pipeline at zero cost. From containerization with Docker to CI/CD with GitHub Actions, monitoring with Sentry, and cloud infrastructure — these tools cover the full DevOps lifecycle for free.",
+    filterKeywords: ["devops", "ci", "cd", "docker", "kubernetes", "pipeline", "infrastructure", "iac", "deploy"],
+    faqs: [
+      { question: "What free DevOps tools should students learn?", answer: "Start with Git + GitHub Actions (CI/CD, free for public repos), Docker (free for students), and Vercel or Railway (free deployment). These cover 80% of modern DevOps workflows." },
+      { question: "Is Kubernetes free for students?", answer: "Kubernetes itself is open source and free. For managed Kubernetes, most providers offer limited free tiers. Docker Desktop includes a local Kubernetes cluster — free for students." },
+      { question: "Can I build a complete DevOps pipeline for free?", answer: "Yes — GitHub for code, GitHub Actions for CI/CD (2,000 min/month free), Docker for containers (free for students), Vercel/Railway for deployment, and Sentry for monitoring (free OSS plan)." },
+    ],
+  },
+  {
+    slug: "best-free-tools-for-mobile-development",
+    title: "Best Free Tools for Mobile Development 2026 | StudentPerks",
+    metaDescription: "Free tools for iOS and Android development. Xcode, Firebase, Supabase, and cloud services with student programs and free tiers.",
+    heading: "Best Free Tools for Mobile Development",
+    intro: "Build iOS and Android apps without paying for infrastructure. These free tools cover the full mobile development lifecycle — from IDE and simulator to backend-as-a-service, analytics, and crash reporting.",
+    filterKeywords: ["mobile", "ios", "android", "react native", "xcode", "flutter", "expo", "swift", "kotlin"],
+    faqs: [
+      { question: "Is Xcode free for students?", answer: "Yes, Xcode is free for everyone on Mac. Students can also access Apple Developer tools and beta software for free. Publishing to the App Store requires the paid $99/year Developer Program (free via Apple Developer Academies)." },
+      { question: "What's the best free backend for a mobile app?", answer: "Supabase (free tier with auth, database, and storage) or Firebase (Google's free Spark plan) are the top choices. Both have first-class iOS and Android SDKs and support real-time data." },
+      { question: "Can I build a cross-platform mobile app for free?", answer: "Yes. React Native (free, Facebook), Flutter (free, Google), and Expo (generous free tier) let you build iOS and Android apps from one codebase. Pair with Supabase or Firebase for a completely free full-stack mobile setup." },
     ],
   },
 ];
@@ -1174,6 +1374,76 @@ export const GUIDE_SEO: GuideSEO[] = [
     ],
   },
   {
+    slug: "how-to-get-github-pages-free",
+    dealSlug: "github-education",
+    title: "How to Host a Website Free with GitHub Pages 2026 | StudentPerks",
+    metaDescription: "Deploy your portfolio or project site for free with GitHub Pages. Step-by-step guide for students in 2026 — custom domain, HTTPS, no credit card.",
+    heading: "How to Host a Website Free with GitHub Pages",
+    intro: "GitHub Pages lets you host any static website directly from a GitHub repository — completely free, forever. Get a yourname.github.io subdomain or connect a custom domain with HTTPS included.",
+    eligibility: ["GitHub account (free for everyone)", "Public repository (free) or private with GitHub Pro (free for students)", "Static HTML, CSS, JS or a static site generator (Jekyll, Next.js export, Astro)"],
+    faqs: [
+      { question: "Is GitHub Pages completely free?", answer: "Yes — GitHub Pages is free for all users with public repos. Students with GitHub Pro (free via Student Pack) also get GitHub Pages for private repos." },
+      { question: "Can I use a custom domain with GitHub Pages?", answer: "Yes, custom domains are supported and free. Add a CNAME file to your repo and configure your domain's DNS. HTTPS is automatically provisioned via Let's Encrypt." },
+      { question: "What frameworks work with GitHub Pages?", answer: "Anything that outputs static files: plain HTML/CSS/JS, Jekyll (built-in support), Next.js (static export), Astro, Hugo, Gatsby, and more." },
+    ],
+  },
+  {
+    slug: "how-to-get-1password-student",
+    dealSlug: "github-education",
+    title: "How to Get 1Password Free for Students 2026 | StudentPerks",
+    metaDescription: "Get 1Password free for students through the GitHub Student Developer Pack. Secure your passwords and secrets in 2026.",
+    heading: "How to Get 1Password Free as a Student",
+    intro: "1Password is included in the GitHub Student Developer Pack — verified students get a free individual account. Securely store passwords, API keys, SSH keys, and credentials across all devices.",
+    eligibility: ["GitHub Student Developer Pack membership", "Verified student via GitHub Education", "1Password account", "Available to students worldwide"],
+    faqs: [
+      { question: "What do students get with 1Password?", answer: "A free 1Password individual account including unlimited items, 1 GB document storage, 365-day item history, two-factor authentication, and apps for all platforms." },
+      { question: "Can I use 1Password for storing API keys and secrets?", answer: "Yes — 1Password is excellent for developer secrets. Use the 1Password CLI to inject secrets directly into terminal commands and scripts without hardcoding credentials." },
+      { question: "What happens after I graduate?", answer: "The free student plan is valid while your Student Pack is active. After graduation, 1Password Personal is $2.99/month — or you can export your data and switch to another manager." },
+    ],
+  },
+  {
+    slug: "how-to-get-microsoft-365-free",
+    dealSlug: "github-education",
+    title: "How to Get Microsoft 365 Free for Students 2026 | StudentPerks",
+    metaDescription: "Get Microsoft 365 Education free as a student. Word, Excel, PowerPoint, Teams, and 1 TB OneDrive with your university email in 2026.",
+    heading: "How to Get Microsoft 365 Free for Students",
+    intro: "Most universities provide Microsoft 365 Education free to enrolled students. You get Word, Excel, PowerPoint, OneNote, Teams, and 1 TB of OneDrive storage — no credit card required.",
+    eligibility: ["School or university email address", "Currently enrolled student", "Some programs require institutional license", "Check your university IT portal first"],
+    faqs: [
+      { question: "Is Microsoft 365 really free for all students?", answer: "If your university has a Microsoft campus license, yes — completely free. Go to microsoft.com/education and enter your school email to check eligibility instantly." },
+      { question: "What's included in Microsoft 365 Education?", answer: "Word, Excel, PowerPoint, OneNote, Teams, and 1 TB OneDrive. Some institutions provide the full desktop apps; others provide web-only versions." },
+      { question: "What if my university doesn't have a campus license?", answer: "You can get Microsoft 365 Personal for $2.99/month with a student discount, or use free alternatives like Google Docs (Sheets/Slides) which work entirely in the browser." },
+    ],
+  },
+  {
+    slug: "how-to-get-google-cloud-credits",
+    dealSlug: "aws-activate",
+    title: "How to Get Google Cloud Free Credits 2026 | StudentPerks",
+    metaDescription: "Get free Google Cloud credits through Google Cloud for Students and startups. Up to $300 in free credits with no credit card required in 2026.",
+    heading: "How to Get Google Cloud Free Credits",
+    intro: "Google Cloud offers $300 in free credits for 90 days to new users, plus an Always Free tier with 20+ products. Students and startups can access additional credits through dedicated programs.",
+    eligibility: ["Google account (free credits: anyone)", "For startups: early-stage company", "Google Cloud for Startups: apply at cloud.google.com/startup", "Student programs via campus partnerships"],
+    faqs: [
+      { question: "Do I need a credit card for Google Cloud free credits?", answer: "Yes — Google Cloud requires a credit card to start (to prevent abuse), but charges only after the free $300 credit is used. Set budget alerts to avoid unexpected charges." },
+      { question: "How much can startups get from Google Cloud?", answer: "Google Cloud for Startups offers up to $200,000 in credits over 2 years for qualifying early-stage startups, plus technical support and go-to-market resources." },
+      { question: "What's always free on Google Cloud?", answer: "Always Free includes: 1 f1-micro VM per month, 5 GB Cloud Storage, 1 GB Firestore, BigQuery (10 GB storage + 1 TB queries/month), and Cloud Functions (2M invocations/month)." },
+    ],
+  },
+  {
+    slug: "how-to-get-namecheap-domain-free",
+    dealSlug: "github-education",
+    title: "Free Domain for Students 2026: Namecheap & GitHub Pack | StudentPerks",
+    metaDescription: "Get a free .me or .tech domain as a student through the GitHub Student Developer Pack and Namecheap Education. Step-by-step guide for 2026.",
+    heading: "How to Get a Free Domain as a Student",
+    intro: "Students can get a free custom domain through the GitHub Student Developer Pack. Namecheap offers a free .me domain for 1 year and a free SSL certificate to verified students.",
+    eligibility: ["GitHub Student Developer Pack membership", "Verified student via GitHub Education", "Namecheap account", "Domain available (first-come, first-served)"],
+    faqs: [
+      { question: "What free domains can students get?", answer: "Through the GitHub Student Developer Pack: Namecheap offers a free .me domain + SSL for 1 year. Students also get a free .tech domain via get.tech and .co domain via Heroku/GitHub." },
+      { question: "What happens after the first free year?", answer: "After the free year, you can renew at standard pricing (typically $8-15/year for .me domains). You can also transfer to another registrar before renewal." },
+      { question: "Can I use the free domain with Vercel or Netlify?", answer: "Yes — custom domains work with any hosting platform. Add a CNAME or A record pointing to your Vercel/Netlify/GitHub Pages deployment for free HTTPS hosting." },
+    ],
+  },
+  {
     slug: "how-to-verify-student-status",
     dealSlug: "github-student-pack",
     title: "How to Verify Student Status for Free Tools 2026",
@@ -1349,6 +1619,48 @@ export const TAG_SEO: TagSEO[] = [
     description: "Free tools and sponsorships for open source maintainers. Premium plans, hosting, CI/CD, and error tracking at no cost for OSS projects.",
     metaDescription: "Free tools for open source projects. Docker, Sentry, Vercel, Railway, and more offer free premium plans for OSS maintainers.",
     keywords: ["open source", "oss", "opensource", "maintainer", "public", "community", "sponsor"],
+  },
+  {
+    slug: "mobile",
+    label: "Mobile Dev",
+    description: "Free tools for iOS and Android mobile development. IDEs, backend services, crash reporting, and deployment platforms for mobile developers.",
+    metaDescription: "Free mobile development tools for students. Xcode, Firebase, Supabase, and more with student programs and free tiers for iOS and Android development.",
+    keywords: ["mobile", "ios", "android", "react native", "flutter", "xcode", "expo", "swift", "kotlin", "firebase"],
+  },
+  {
+    slug: "security",
+    label: "Security",
+    description: "Free security and DevSecOps tools for developers. Dependency scanning, secrets management, and vulnerability detection at zero cost.",
+    metaDescription: "Free security tools for developers. GitHub security scanning, Snyk, and more with free tiers for open source and student projects.",
+    keywords: ["security", "vulnerability", "snyk", "secrets", "oauth", "devsecops", "scanning", "audit", "ssl", "https"],
+  },
+  {
+    slug: "devops",
+    label: "DevOps",
+    description: "Free DevOps tools for CI/CD, containerization, and infrastructure. Build professional pipelines with Docker, GitHub Actions, and more.",
+    metaDescription: "Free DevOps tools for students and startups. CI/CD, Docker, Kubernetes, and monitoring tools with free tiers and student programs.",
+    keywords: ["devops", "cicd", "docker", "kubernetes", "pipeline", "infrastructure", "deploy", "github-actions", "containers"],
+  },
+  {
+    slug: "serverless",
+    label: "Serverless",
+    description: "Free serverless platforms and edge computing tools. Deploy functions, APIs, and workers at the edge with generous free invocation limits.",
+    metaDescription: "Free serverless tools for developers. Cloudflare Workers, Vercel Edge Functions, AWS Lambda, and more with free-tier invocations.",
+    keywords: ["serverless", "functions", "lambda", "workers", "edge", "cloudflare", "vercel", "faas", "api"],
+  },
+  {
+    slug: "testing",
+    label: "Testing",
+    description: "Free testing tools for developers. Unit testing, integration testing, E2E testing, and API testing with free plans and open source frameworks.",
+    metaDescription: "Free testing tools for developers. Jest, Vitest, Playwright, Cypress, and more testing frameworks with free tiers and open source licenses.",
+    keywords: ["testing", "jest", "vitest", "playwright", "cypress", "unit test", "e2e", "integration", "qa"],
+  },
+  {
+    slug: "data-science",
+    label: "Data Science & ML",
+    description: "Free data science and machine learning tools for students. Cloud notebooks, GPU compute, datasets, and AI model APIs with student programs.",
+    metaDescription: "Free data science tools for students. Google Colab, Kaggle, AWS SageMaker, and more with free GPU access and ML compute credits.",
+    keywords: ["data science", "machine learning", "ml", "ai", "jupyter", "colab", "kaggle", "gpu", "python", "notebook"],
   },
 ];
 
@@ -1739,6 +2051,167 @@ export const VS_SEO: VsSEO[] = [
       { label: "Audio Quality", v1: "Up to 320kbps (no lossless yet)", v2: "Lossless + Spatial Audio" },
       { label: "Catalog", v1: "100M+ songs + podcasts", v2: "100M+ songs + radio" },
       { label: "Cross-Platform", v1: "All platforms (best on Android)", v2: "All platforms (best on Apple)" },
+    ],
+  },
+  {
+    slug: "slack-vs-discord",
+    tool1: "Slack",
+    tool2: "Discord",
+    tool1Slug: "slack-startups",
+    tool2Slug: "",
+    title: "Slack vs Discord for Dev Teams 2026 | StudentPerks",
+    metaDescription:
+      "Slack vs Discord for developers — which is better for student teams and startups? Compare free plans, message history, and integrations.",
+    intro:
+      "Slack is the professional team communication tool used in most tech companies. Discord started as a gaming platform but has become hugely popular for developer communities, open source projects, and student teams.",
+    forStudents:
+      "Startups can get Slack Pro credits through accelerator programs. Discord is completely free with no message history limits — making it a great choice for student project teams and study groups.",
+    winner:
+      "Use Slack if you're running a startup or working with a professional team. Use Discord for open source projects, study groups, and developer communities — it's free forever and excellent for async collaboration.",
+    rows: [
+      { label: "Startup Deal", v1: "Pro plan credits via accelerators", v2: "Always free (no paid tier needed)" },
+      { label: "Message History", v1: "90 days (free plan)", v2: "Unlimited (always)" },
+      { label: "Voice/Video", v1: "Huddles (limited on free)", v2: "Built-in voice channels (always free)" },
+      { label: "Integrations", v1: "2,400+ (Jira, GitHub, Notion…)", v2: "Webhooks + bots (more DIY)" },
+      { label: "Best For", v1: "Professional teams, startups", v2: "Communities, OSS, student teams" },
+    ],
+  },
+  {
+    slug: "railway-vs-render",
+    tool1: "Railway",
+    tool2: "Render",
+    tool1Slug: "railway-oss",
+    tool2Slug: "",
+    title: "Railway vs Render: Free Heroku Alternative 2026 | StudentPerks",
+    metaDescription:
+      "Railway vs Render for students — which is the better free Heroku alternative? Compare free tiers, databases, and deployment experience.",
+    intro:
+      "Railway and Render are the two most popular free replacements for Heroku's discontinued free tier. Both offer simple Git-based deployment with free tiers perfectly suited to student and side projects.",
+    forStudents:
+      "Railway provides $5/month in free usage credits, with additional credits for open source projects. Render offers a free tier for static sites and web services with 750 free hours per month.",
+    winner:
+      "Railway for dynamic full-stack apps — better developer experience, always-on services, and managed databases. Render for static sites and simple backends. Both beat paying for Heroku.",
+    rows: [
+      { label: "Free Credits", v1: "$5/month usage credits", v2: "750 hours/month for web services" },
+      { label: "Databases", v1: "Postgres, MySQL, Redis, MongoDB", v2: "Managed PostgreSQL (free tier)" },
+      { label: "Sleep on Inactivity", v1: "No — always on (free tier)", v2: "Yes — free services sleep after 15 min" },
+      { label: "Deployment", v1: "Git push, CLI, or template", v2: "Git push or Docker" },
+      { label: "Best For", v1: "Full-stack apps, APIs, databases", v2: "Static sites, simple web services" },
+    ],
+  },
+  {
+    slug: "github-pages-vs-vercel",
+    tool1: "GitHub Pages",
+    tool2: "Vercel",
+    tool1Slug: "github-education",
+    tool2Slug: "vercel-pro",
+    title: "GitHub Pages vs Vercel for Students 2026 | StudentPerks",
+    metaDescription:
+      "GitHub Pages vs Vercel — which is better for hosting student portfolios and projects? Compare free tiers, features, and ease of use.",
+    intro:
+      "GitHub Pages and Vercel are both free hosting options popular with students. GitHub Pages is deeply integrated with GitHub repos, while Vercel offers more powerful build pipelines and framework support.",
+    forStudents:
+      "Both are free. GitHub Pages is completely free for everyone (unlimited with public repos). Students get Vercel's generous Hobby plan, and open source contributors can apply for Vercel Pro sponsorship.",
+    winner:
+      "Use Vercel for Next.js projects and apps that need build pipelines or serverless functions. Use GitHub Pages for simple static sites, documentation, and portfolios where zero-config is the priority.",
+    rows: [
+      { label: "Free Tier", v1: "Free for everyone (public repos)", v2: "Hobby plan free (100 GB bandwidth)" },
+      { label: "Framework Support", v1: "Static only (HTML/Jekyll/exported apps)", v2: "Any framework (Next.js, Astro, SvelteKit…)" },
+      { label: "Serverless Functions", v1: "No", v2: "Yes — Vercel Functions + Edge Runtime" },
+      { label: "Build Pipeline", v1: "Jekyll only (or pre-built)", v2: "Custom build commands, env vars" },
+      { label: "Custom Domain", v1: "Yes — free HTTPS via Let's Encrypt", v2: "Yes — free HTTPS + automatic SSL" },
+    ],
+  },
+  {
+    slug: "react-vs-svelte",
+    tool1: "React",
+    tool2: "Svelte",
+    tool1Slug: "",
+    tool2Slug: "",
+    title: "React vs Svelte for Students 2026 | StudentPerks",
+    metaDescription:
+      "React vs Svelte — which frontend framework should students learn first? Compare job market, learning curve, and free learning resources.",
+    intro:
+      "React (by Meta) is the dominant JavaScript UI library with the largest ecosystem. Svelte is a compiler-based framework that generates highly optimized vanilla JS with a gentler learning curve.",
+    forStudents:
+      "Both are free and open source. React has the most tutorials, jobs, and open source projects. Svelte is increasingly popular and has excellent free learning resources at svelte.dev.",
+    winner:
+      "Learn React first — it has the largest job market, most open source projects to contribute to, and the best resources. Try Svelte for side projects after — you'll appreciate its simplicity and performance.",
+    rows: [
+      { label: "Job Market", v1: "Dominant — ~70% of React/Vue/Angular jobs", v2: "Growing — less common than React but rising" },
+      { label: "Learning Curve", v1: "Moderate — JSX, hooks, state management", v2: "Low — minimal boilerplate, clear docs" },
+      { label: "Bundle Size", v1: "Larger — ships React runtime", v2: "Tiny — compiles to vanilla JS, no runtime" },
+      { label: "Ecosystem", v1: "Massive — Next.js, Remix, thousands of libs", v2: "Smaller — SvelteKit is excellent" },
+      { label: "Free Resources", v1: "react.dev (official), countless tutorials", v2: "learn.svelte.dev (interactive, excellent)" },
+    ],
+  },
+  {
+    slug: "nextjs-vs-remix",
+    tool1: "Next.js",
+    tool2: "Remix",
+    tool1Slug: "vercel-pro",
+    tool2Slug: "",
+    title: "Next.js vs Remix for Students 2026 | StudentPerks",
+    metaDescription:
+      "Next.js vs Remix — which React framework is better for students? Compare free hosting, features, and learning curve.",
+    intro:
+      "Next.js (by Vercel) and Remix (by Shopify) are the two leading full-stack React frameworks. Both handle routing, server rendering, and data loading — but with different philosophies.",
+    forStudents:
+      "Next.js deploys for free on Vercel with zero configuration. Remix can be deployed anywhere — Vercel, Railway, Fly.io — all with free tiers. Students get GitHub Copilot free to assist with either.",
+    winner:
+      "Start with Next.js — it has a larger community, more tutorials, and zero-config Vercel deploys. Move to Remix when you need fine-grained control over data loading and want web standards-first APIs.",
+    rows: [
+      { label: "Free Hosting", v1: "Vercel (built by same team, zero-config)", v2: "Any platform — Railway, Vercel, Fly.io" },
+      { label: "Learning Curve", v1: "Moderate — well-documented", v2: "Steeper — requires understanding web APIs" },
+      { label: "Data Loading", v1: "Server Components, getServerSideProps", v2: "Loaders and actions (web-standard fetch)" },
+      { label: "Community", v1: "Huge — most popular React framework", v2: "Smaller but growing rapidly" },
+      { label: "Best For", v1: "Most projects, portfolios, startups", v2: "Performance-critical apps, web fundamentals" },
+    ],
+  },
+  {
+    slug: "supabase-vs-planetscale",
+    tool1: "Supabase",
+    tool2: "PlanetScale",
+    tool1Slug: "supabase-startups",
+    tool2Slug: "",
+    title: "Supabase vs PlanetScale for Students 2026 | StudentPerks",
+    metaDescription:
+      "Supabase vs PlanetScale — which free database is better for students? Compare PostgreSQL vs MySQL, free tiers, and developer experience.",
+    intro:
+      "Supabase is a full backend platform built on PostgreSQL with auth, storage, and real-time. PlanetScale is a serverless MySQL database platform built on Vitess, optimized for horizontal scaling.",
+    forStudents:
+      "Supabase's free tier includes 500 MB database, auth, storage, and edge functions — plus $2,500 in startup credits. PlanetScale offered a generous free tier but sunset it in 2024; hobby plans now start at $39/month.",
+    winner:
+      "Supabase is the clear choice for students and startups today — generous permanent free tier, full backend features, and excellent DX. PlanetScale is excellent at scale but no longer has a free tier.",
+    rows: [
+      { label: "Free Tier", v1: "Yes — 500 MB + full features forever", v2: "No — free tier removed in 2024" },
+      { label: "Database Engine", v1: "PostgreSQL (relational, SQL)", v2: "MySQL (serverless, via Vitess)" },
+      { label: "Auth Built-in", v1: "Yes — email, OAuth, magic links", v2: "No — separate service needed" },
+      { label: "Branching", v1: "No database branching", v2: "Yes — Git-like database branches" },
+      { label: "Best For", v1: "Students, startups, full-stack apps", v2: "Enterprise scale, MySQL workloads" },
+    ],
+  },
+  {
+    slug: "cloudflare-vs-fastly",
+    tool1: "Cloudflare",
+    tool2: "Fastly",
+    tool1Slug: "cloudflare-startups",
+    tool2Slug: "",
+    title: "Cloudflare vs Fastly for Students & Startups 2026 | StudentPerks",
+    metaDescription:
+      "Cloudflare vs Fastly — which CDN is better for students and startups? Compare free tiers, edge computing, and DDoS protection.",
+    intro:
+      "Cloudflare is the world's most popular CDN with a generous free tier and edge computing platform. Fastly is a developer-focused CDN used by high-traffic sites like GitHub and Stripe, known for real-time purging and edge logic.",
+    forStudents:
+      "Cloudflare's free plan includes unlimited CDN bandwidth, DDoS protection, SSL, and DNS. Open source projects get the Pro plan free. Fastly has a developer trial but no permanent free tier.",
+    winner:
+      "Cloudflare wins for students and startups — the free tier covers most use cases and the Pro plan is free for open source. Fastly is for enterprise-scale performance at high traffic.",
+    rows: [
+      { label: "Free Tier", v1: "Yes — unlimited CDN bandwidth", v2: "Trial only — no permanent free tier" },
+      { label: "Student/OSS Deal", v1: "Pro free for open source projects", v2: "No student/OSS program" },
+      { label: "Edge Functions", v1: "Workers (100K req/day free)", v2: "Compute@Edge (paid)" },
+      { label: "DDoS Protection", v1: "Included on all plans", v2: "Advanced protection (paid add-on)" },
+      { label: "Best For", v1: "All projects — free and feature-rich", v2: "Enterprise, high-performance apps" },
     ],
   },
 ];
