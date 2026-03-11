@@ -6,7 +6,7 @@ Getting started as a developer shouldn't cost a fortune. This list collects the 
 
 **If this list saved you money, [give it a star](https://github.com/Ildarflame/awesome-student-developer-deals) — it helps other students find it too.**
 
-**[StudentPerks.dev](https://studentperks.dev)** — the full searchable database with 150+ deals, step-by-step claim guides, and a [personalized Freebies Finder](https://studentperks.dev/student-freebies-finder).
+**[StudentPerks.dev](https://www.studentperks.dev)** — the full searchable database with 150+ deals, step-by-step claim guides, and a [personalized Freebies Finder](https://www.studentperks.dev/student-freebies-finder).
 
 ---
 
@@ -169,11 +169,11 @@ This list highlights 50+ of the best deals. For the complete searchable database
 
 | Resource | Link |
 |----------|------|
-| All 150+ deals with filters | [studentperks.dev/deals](https://studentperks.dev/deals) |
-| Student Freebies Finder (personalized) | [studentperks.dev/student-freebies-finder](https://studentperks.dev/student-freebies-finder) |
-| 100+ Free Tools for Students | [studentperks.dev/free-tools-for-students](https://studentperks.dev/free-tools-for-students) |
-| Student Discounts index | [studentperks.dev/student-discount](https://studentperks.dev/student-discount) |
-| Step-by-step claim guides | [studentperks.dev/guides/...](https://studentperks.dev/guides/how-to-get-github-student-pack) |
+| All 150+ deals with filters | [www.studentperks.dev/deals](https://www.studentperks.dev/deals) |
+| Student Freebies Finder (personalized) | [www.studentperks.dev/student-freebies-finder](https://www.studentperks.dev/student-freebies-finder) |
+| 100+ Free Tools for Students | [www.studentperks.dev/free-tools-for-students](https://www.studentperks.dev/free-tools-for-students) |
+| Student Discounts index | [www.studentperks.dev/student-discount](https://www.studentperks.dev/student-discount) |
+| Step-by-step claim guides | [www.studentperks.dev/guides/...](https://www.studentperks.dev/guides/how-to-get-github-student-pack) |
 
 ---
 

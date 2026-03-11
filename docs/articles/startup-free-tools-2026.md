@@ -2,7 +2,7 @@
 title: "Launch Your Startup for $0: The Complete Free Tools Stack"
 description: "A stage-by-stage guide to building a startup with zero tool costs. From idea to growth -- every free tool, credit, and perk mapped to each phase."
 tags: [startup, free-tools, saas, indie-hacker, founder, bootstrapping, devtools]
-canonical_url: https://studentperks.dev/blog/startup-free-tools-2026
+canonical_url: https://www.studentperks.dev/blog/startup-free-tools-2026
 published: false
 ---
 
@@ -221,7 +221,7 @@ Version Ctrl:  GitHub (free)
 
 **4. Not setting billing alerts.** When you do use cloud credits, set alerts at 50%, 75%, and 90%. Credits expiring unexpectedly is how you get a surprise $5,000 bill.
 
-**5. Using paid tools for things the free stack covers.** Before you pay for any tool, check if there's a free alternative. For a comprehensive list of free tools available to startups, check [StudentPerks.dev](https://studentperks.dev) -- it catalogs 153+ free deals with eligibility filters and claim instructions.
+**5. Using paid tools for things the free stack covers.** Before you pay for any tool, check if there's a free alternative. For a comprehensive list of free tools available to startups, check [StudentPerks.dev](https://www.studentperks.dev) -- it catalogs 153+ free deals with eligibility filters and claim instructions.
 
 ---
 
@@ -274,4 +274,4 @@ What costs money is time -- and the longer you spend setting up expensive tools,
 
 Start with the free stack. Ship your MVP. Get users. Then decide what's worth paying for based on real needs, not hypothetical ones.
 
-The complete database of 153+ free tools and credits is at [StudentPerks.dev](https://studentperks.dev). Filter by what you're building, claim what you need, and get back to the work that actually matters.
+The complete database of 153+ free tools and credits is at [StudentPerks.dev](https://www.studentperks.dev). Filter by what you're building, claim what you need, and get back to the work that actually matters.

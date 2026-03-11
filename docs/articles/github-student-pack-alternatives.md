@@ -2,7 +2,7 @@
 title: "Beyond GitHub Student Pack: 150+ Free Developer Tools You're Missing"
 description: "The GitHub Student Developer Pack is great, but it's only the beginning. Here are 150+ additional free tools, credits, and perks most students never claim."
 tags: [github, student, developer-tools, free, open-source, education]
-canonical_url: https://studentperks.dev/blog/github-student-pack-alternatives
+canonical_url: https://www.studentperks.dev/blog/github-student-pack-alternatives
 published: false
 ---
 
@@ -12,7 +12,7 @@ The GitHub Student Developer Pack is the first thing most student developers dis
 
 But here's what nobody tells you: the Pack only covers a fraction of what's actually available to you as a student, startup founder, or open source contributor. Dozens of companies offer their own independent programs that aren't part of GitHub's bundle. Some of them are worth more than the entire Pack.
 
-I cataloged every free developer tool program I could find. The result is a database of 153+ deals at [StudentPerks.dev](https://studentperks.dev). In this article, I'll walk through what you're probably missing.
+I cataloged every free developer tool program I could find. The result is a database of 153+ deals at [StudentPerks.dev](https://www.studentperks.dev). In this article, I'll walk through what you're probably missing.
 
 ---
 
@@ -219,7 +219,7 @@ Many programs have expiration dates or require annual renewal:
 
 The biggest challenge isn't finding these deals -- it's keeping track of them all. Programs change their terms, new ones launch, old ones retire.
 
-That's why I built [StudentPerks.dev](https://studentperks.dev). It's a searchable database of 153+ deals with filters for audience (student, startup, OSS), category, and value. Every deal includes eligibility details and step-by-step claim instructions.
+That's why I built [StudentPerks.dev](https://www.studentperks.dev). It's a searchable database of 153+ deals with filters for audience (student, startup, OSS), category, and value. Every deal includes eligibility details and step-by-step claim instructions.
 
 The GitHub Student Pack is your starting point. It should not be your endpoint.
 
@@ -235,7 +235,7 @@ If I were a student developer in 2026, here's my exact playbook:
 4. **Week 1:** Apply to AWS Activate Founders ($1,000) with whatever project I'm working on.
 5. **Week 1:** Apply to Microsoft Founders Hub if I have any startup ambitions.
 6. **Week 2:** Set up my dev environment with JetBrains (free), Docker Pro (free), and GitHub Copilot (free).
-7. **Ongoing:** Check [StudentPerks.dev](https://studentperks.dev) when I need a new tool -- there's probably a free option I don't know about.
+7. **Ongoing:** Check [StudentPerks.dev](https://www.studentperks.dev) when I need a new tool -- there's probably a free option I don't know about.
 
 The tools exist. The credits exist. The only thing stopping most student developers from using them is not knowing they're available.
 

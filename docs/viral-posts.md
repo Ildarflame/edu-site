@@ -40,7 +40,7 @@ Happy to answer questions about any specific deal or verification process.
 
 ### First comment (OP)
 
-> Here's the full list with claim guides: studentperks.dev/free-tools-for-students
+> Here's the full list with claim guides: www.studentperks.dev/free-tools-for-students
 >
 > It's open source, no affiliate links, no paywalls. Just the deals.
 
@@ -70,7 +70,7 @@ Hey HN,
 
 I built a directory of free tools for students after realizing how fragmented this information is. Every "student deals" list I found was either a markdown file last updated in 2023 or a blog post with affiliate links.
 
-The site: studentperks.dev
+The site: www.studentperks.dev
 
 What it does:
 - Lists 126+ verified deals (JetBrains, GitHub, AWS, Azure, Adobe, etc.)
@@ -154,7 +154,7 @@ I built a site with all 126 deals, step-by-step claim guides, and filters by cat
 
 No affiliate links. No paywall. Just the tools.
 
-studentperks.dev/free-tools-for-students
+www.studentperks.dev/free-tools-for-students
 
 If I missed one, reply and I'll add it.
 

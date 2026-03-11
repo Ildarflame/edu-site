@@ -2,7 +2,7 @@
 title: "I Found $200K+ in Free Cloud Credits -- Here's How to Claim Them"
 description: "A comprehensive guide to claiming free cloud credits from AWS, Google Cloud, Azure, DigitalOcean, Vercel, Railway, and more in 2026."
 tags: [cloud, aws, gcp, azure, startup, student, free-credits, devops]
-canonical_url: https://studentperks.dev/blog/free-cloud-credits-2026
+canonical_url: https://www.studentperks.dev/blog/free-cloud-credits-2026
 published: false
 ---
 
@@ -209,7 +209,7 @@ Here's where it gets interesting. These programs aren't mutually exclusive. A si
 
 ## Where to Find Even More
 
-This article covers the major programs, but there are dozens of smaller credit programs, free tiers, and promotions available. I maintain a searchable database of 153+ deals for students, startups, and open source maintainers at [StudentPerks.dev](https://studentperks.dev).
+This article covers the major programs, but there are dozens of smaller credit programs, free tiers, and promotions available. I maintain a searchable database of 153+ deals for students, startups, and open source maintainers at [StudentPerks.dev](https://www.studentperks.dev).
 
 Every deal includes eligibility requirements, exact value, and step-by-step instructions for claiming. It's free, updated regularly, and designed to help you build without worrying about bills.
 
@@ -223,4 +223,4 @@ The only cost is the time it takes to apply. And for most of these programs, tha
 
 Start with the program that matches your situation -- student, startup founder, or open source maintainer -- and stack from there. Your cloud bill should be the last thing holding you back from building.
 
-*Found this useful? [StudentPerks.dev](https://studentperks.dev) has the full directory of 153+ free tools and credits for developers.*
+*Found this useful? [StudentPerks.dev](https://www.studentperks.dev) has the full directory of 153+ free tools and credits for developers.*

@@ -5,6 +5,14 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  redirects: async () => [
+    {
+      source: "/:path*",
+      has: [{ type: "host", value: "studentperks.dev" }],
+      destination: "https://www.studentperks.dev/:path*",
+      permanent: true,
+    },
+  ],
   headers: async () => [
     {
       source: "/logos/:path*",
