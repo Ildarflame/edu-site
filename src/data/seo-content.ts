@@ -1626,4 +1626,119 @@ export const VS_SEO: VsSEO[] = [
       { label: "Code Context", v1: "Repo-wide context awareness", v2: "File and project context" },
     ],
   },
+  {
+    slug: "supabase-vs-firebase",
+    tool1: "Supabase",
+    tool2: "Firebase",
+    tool1Slug: "supabase-startups",
+    tool2Slug: "",
+    title: "Supabase vs Firebase for Students 2026 | StudentPerks",
+    metaDescription:
+      "Supabase vs Firebase — which backend-as-a-service is better for students? Compare free tiers, features, and developer experience.",
+    intro:
+      "Supabase is an open source Firebase alternative built on PostgreSQL with real-time, auth, and edge functions. Firebase by Google offers a NoSQL Firestore database, hosting, and cloud functions.",
+    forStudents:
+      "Supabase offers a generous free tier (500 MB database, 1 GB storage) plus $2,500 in startup credits. Firebase has a free Spark plan with 1 GB Firestore storage and 10 GB hosting bandwidth.",
+    winner:
+      "Choose Supabase if you want SQL, open source, and better pricing transparency. Choose Firebase if you're building mobile apps or already in the Google ecosystem. Both free tiers are perfect for student projects.",
+    rows: [
+      { label: "Database", v1: "PostgreSQL (relational, SQL)", v2: "Firestore (NoSQL, document-based)" },
+      { label: "Free Tier Storage", v1: "500 MB database + 1 GB files", v2: "1 GB Firestore + 5 GB hosting" },
+      { label: "Auth", v1: "Built-in (email, OAuth, magic links)", v2: "Firebase Auth (email, OAuth, phone)" },
+      { label: "Real-time", v1: "PostgreSQL real-time subscriptions", v2: "Firestore real-time listeners" },
+      { label: "Open Source", v1: "Yes — self-host available", v2: "No — Google proprietary" },
+    ],
+  },
+  {
+    slug: "cursor-vs-copilot",
+    tool1: "Cursor",
+    tool2: "GitHub Copilot",
+    tool1Slug: "",
+    tool2Slug: "copilot-students",
+    title: "Cursor vs GitHub Copilot for Students 2026 | StudentPerks",
+    metaDescription:
+      "Cursor vs GitHub Copilot — which AI coding tool is better for students? Compare features, pricing, and student access.",
+    intro:
+      "Cursor is an AI-first code editor (VS Code fork) with deep codebase understanding. GitHub Copilot is an AI coding assistant that integrates into existing editors with inline suggestions and chat.",
+    forStudents:
+      "GitHub Copilot is completely free for verified students ($100/year value). Cursor offers a free tier with limited AI queries. Students should start with Copilot since it's fully free.",
+    winner:
+      "Start with GitHub Copilot — it's free for students and works in your existing editor. Try Cursor when you want an AI-native editor experience. Using both together gives you the best of both worlds.",
+    rows: [
+      { label: "Student Price", v1: "Free tier (limited queries)", v2: "Free (verified students)" },
+      { label: "Type", v1: "Standalone AI editor (VS Code fork)", v2: "Extension for VS Code, JetBrains, etc." },
+      { label: "Codebase Awareness", v1: "Deep — indexes entire project", v2: "Good — repo-wide context" },
+      { label: "Inline Completions", v1: "Yes — AI-powered", v2: "Yes — industry-leading" },
+      { label: "AI Chat", v1: "Built-in with file references", v2: "Copilot Chat (inline + sidebar)" },
+    ],
+  },
+  {
+    slug: "linear-vs-jira",
+    tool1: "Linear",
+    tool2: "Jira",
+    tool1Slug: "linear-startups",
+    tool2Slug: "",
+    title: "Linear vs Jira for Startups 2026 | StudentPerks",
+    metaDescription:
+      "Linear vs Jira — which project management tool is better for startups? Compare free plans, features, and team workflows.",
+    intro:
+      "Linear is a modern, fast project management tool built for software teams. Jira by Atlassian is the industry-standard issue tracker with deep customization and enterprise features.",
+    forStudents:
+      "Linear offers its Standard plan free for early-stage startups ($200/year value). Jira has a free plan for up to 10 users with basic Scrum and Kanban boards.",
+    winner:
+      "Linear for startups — it's faster, more opinionated, and free for early-stage teams. Use Jira if your company or university already uses the Atlassian ecosystem.",
+    rows: [
+      { label: "Startup Deal", v1: "Free Standard plan for startups", v2: "Free for up to 10 users" },
+      { label: "Speed", v1: "Lightning fast — native app feel", v2: "Slower — heavier web interface" },
+      { label: "Setup", v1: "Opinionated — works out of the box", v2: "Highly customizable — needs configuration" },
+      { label: "Integrations", v1: "GitHub, Slack, Figma, Sentry", v2: "1,000+ integrations (Atlassian Marketplace)" },
+      { label: "Best For", v1: "Small teams, startups, speed", v2: "Large orgs, enterprise, compliance" },
+    ],
+  },
+  {
+    slug: "digitalocean-vs-aws",
+    tool1: "DigitalOcean",
+    tool2: "AWS",
+    tool1Slug: "digitalocean-students",
+    tool2Slug: "aws-activate",
+    title: "DigitalOcean vs AWS for Students 2026 | StudentPerks",
+    metaDescription:
+      "DigitalOcean vs AWS for students — which cloud platform should you learn? Compare student credits, pricing, and simplicity.",
+    intro:
+      "DigitalOcean focuses on simplicity with predictable pricing and developer-friendly infrastructure. AWS is the market leader with 200+ services for every possible cloud use case.",
+    forStudents:
+      "DigitalOcean gives $200 in credits through GitHub Education. AWS Educate provides hands-on labs and credits. Both are excellent for learning cloud infrastructure.",
+    winner:
+      "Start with DigitalOcean for simplicity — deploy a VPS in 60 seconds with predictable pricing. Learn AWS when you need specific services or your coursework requires it.",
+    rows: [
+      { label: "Student Credits", v1: "$200 via GitHub Education", v2: "$100+ via AWS Educate" },
+      { label: "Simplicity", v1: "Very simple — clean dashboard", v2: "Complex — steep learning curve" },
+      { label: "Pricing", v1: "Predictable — fixed monthly prices", v2: "Pay-per-use — can surprise you" },
+      { label: "Services", v1: "~20 core services", v2: "200+ services" },
+      { label: "Best For", v1: "Side projects, VPS, simple deploys", v2: "Enterprise, certifications, advanced use" },
+    ],
+  },
+  {
+    slug: "spotify-vs-apple-music",
+    tool1: "Spotify",
+    tool2: "Apple Music",
+    tool1Slug: "spotify-student",
+    tool2Slug: "",
+    title: "Spotify vs Apple Music Student Discount 2026 | StudentPerks",
+    metaDescription:
+      "Spotify vs Apple Music student plans — which streaming service has the better student deal? Compare prices, features, and bundled extras.",
+    intro:
+      "Spotify and Apple Music are the two largest music streaming services, both offering student discounts. Spotify bundles Hulu and SHOWTIME, while Apple Music includes Apple TV+ and lossless audio.",
+    forStudents:
+      "Spotify Student is $5.99/month and includes Hulu and SHOWTIME. Apple Music Student is $5.99/month with Apple TV+ included. Both verify via SheerID.",
+    winner:
+      "Spotify Student is the better value — you get Hulu and SHOWTIME alongside music streaming. Choose Apple Music if you're deep in the Apple ecosystem and want lossless audio.",
+    rows: [
+      { label: "Student Price", v1: "$5.99/month", v2: "$5.99/month" },
+      { label: "Bundled Extras", v1: "Hulu + SHOWTIME included", v2: "Apple TV+ included" },
+      { label: "Audio Quality", v1: "Up to 320kbps (no lossless yet)", v2: "Lossless + Spatial Audio" },
+      { label: "Catalog", v1: "100M+ songs + podcasts", v2: "100M+ songs + radio" },
+      { label: "Cross-Platform", v1: "All platforms (best on Android)", v2: "All platforms (best on Apple)" },
+    ],
+  },
 ];
