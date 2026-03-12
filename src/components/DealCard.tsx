@@ -96,6 +96,16 @@ function DealCard({
           ))}
           {deal.status && <DealStatusBadge status={deal.status} />}
         </div>
+
+        {/* Hover step reveal — shows first claim step on card hover */}
+        {deal.steps.length > 0 && (
+          <div className="absolute inset-x-0 bottom-0 px-4 py-3 rounded-b-2xl bg-gradient-to-t from-zinc-950 via-zinc-950/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+            <p className="text-[11px] text-zinc-400 leading-snug line-clamp-2">
+              <span className="text-orange-400 font-semibold">Step 1:</span>{" "}
+              {deal.steps[0]}
+            </p>
+          </div>
+        )}
       </Link>
     </div>
   );
