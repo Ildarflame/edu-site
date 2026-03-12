@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 interface VoteData {
   yes: number;
@@ -32,8 +32,6 @@ function saveUserVote(slug: string, vote: "yes" | "no") {
 export default function DealVoting({ slug }: { slug: string }) {
   const [data, setData] = useState<VoteData>({ yes: 0, no: 0 });
   const [userVote, setUserVote] = useState<"yes" | "no" | null>(null);
-  const userVoteRef = useRef(userVote);
-  userVoteRef.current = userVote;
 
   useEffect(() => {
     setData(getVoteData(slug));
@@ -44,7 +42,7 @@ export default function DealVoting({ slug }: { slug: string }) {
   const yesPercent = totalVotes > 0 ? Math.round((data.yes / totalVotes) * 100) : 0;
 
   const handleVote = useCallback((vote: "yes" | "no") => {
-    if (userVoteRef.current) return;
+    if (userVote) return;
     setData(prev => {
       const newData = { ...prev };
       if (vote === "yes") newData.yes++;
@@ -54,7 +52,7 @@ export default function DealVoting({ slug }: { slug: string }) {
     });
     setUserVote(vote);
     saveUserVote(slug, vote);
-  }, [slug]);
+  }, [slug, userVote]);
 
   return (
     <div className="card p-5">

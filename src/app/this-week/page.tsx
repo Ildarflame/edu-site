@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 
 export default async function ThisWeekPage() {
   const deals = await getDeals();
+  // eslint-disable-next-line react-hooks/purity -- server component, no re-renders
   const now = Date.now();
   const oneWeek = 7 * 24 * 60 * 60 * 1000;
   const oneMonth = 30 * 24 * 60 * 60 * 1000;

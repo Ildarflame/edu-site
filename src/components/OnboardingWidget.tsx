@@ -19,11 +19,12 @@ const CATEGORIES: { label: string; value: Category; icon: string }[] = [
 ];
 
 export default function OnboardingWidget() {
-  const { state, setAudience, setCategory, selectCategory, complete, skip } = useOnboarding();
+  const { state, setAudience, selectCategory, skip } = useOnboarding();
   // Prevent SSR flash: do not render until client-side hydration is complete.
   // Without this, returning users (completed: true in localStorage) see the widget
   // briefly on every page load because the server renders with SERVER_SNAPSHOT (completed: false).
   const [mounted, setMounted] = useState(false);
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => { setMounted(true); }, []);
 
   if (!mounted || state.completed) return null;
