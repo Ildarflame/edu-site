@@ -76,7 +76,7 @@ function DealCard({
             {onSave && (
               <SaveButton saved={!!isSaved} onToggle={() => onSave(deal.slug)} />
             )}
-            <span className="value-pill text-[11px] font-bold px-2.5 py-1 rounded-md">
+            <span className="value-pill text-[12px] font-bold px-2.5 py-1 rounded-md">
               {deal.value}
             </span>
           </div>

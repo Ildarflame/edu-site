@@ -257,13 +257,13 @@ export default function DealsGrid({
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
             </svg>
           </div>
-          <p className="text-zinc-500 text-[15px]">No deals found</p>
-          <p className="text-[13px] text-zinc-700 mt-1">Try adjusting your filters or search term</p>
+          <p className="text-zinc-400 text-[15px] font-medium">No deals match your filters</p>
+          <p className="text-[13px] text-zinc-700 mt-1">Try removing some filters to see more results</p>
           <button
             onClick={clearAllFilters}
-            className="mt-4 text-[13px] text-orange-400 hover:text-orange-300 transition-colors font-medium"
+            className="mt-5 inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-orange-500/10 border border-orange-500/20 text-[13px] text-orange-400 hover:bg-orange-500/15 transition-all font-medium"
           >
-            Clear all filters
+            Remove all filters
           </button>
         </div>
       ) : (
