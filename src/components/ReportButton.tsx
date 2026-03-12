@@ -30,8 +30,9 @@ function emitChange() {
 function getSnapshot(): Record<string, boolean> {
   return reportedCache;
 }
+const SERVER_SNAPSHOT: Record<string, boolean> = {};
 function getServerSnapshot(): Record<string, boolean> {
-  return {};
+  return SERVER_SNAPSHOT;
 }
 function markReported(key: string) {
   localStorage.setItem(key, "1");
