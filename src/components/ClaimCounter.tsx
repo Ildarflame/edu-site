@@ -5,7 +5,7 @@ export default function ClaimCounter({ count }: { count: number }) {
 
   return (
     <p className="text-[12px] text-zinc-600 mt-1.5">
-      <span className="text-zinc-500 font-medium">{count.toLocaleString()}</span> people claimed this
+      <span className="text-zinc-500 font-medium">{count.toLocaleString()}</span> students saved this
     </p>
   );
 }
