@@ -86,7 +86,7 @@ export default async function Home() {
 
           {/* Subheading */}
           <p className="mt-5 text-center text-[17px] md:text-lg text-zinc-500 max-w-md mx-auto leading-relaxed animate-in delay-2">
-            Credits, pro plans, and perks — curated for students, startups, and OSS maintainers.
+            {deals.length}+ verified deals worth $500K+ in software — free for students, startups, and open source.
           </p>
 
           {/* CTAs */}
@@ -98,6 +98,11 @@ export default async function Home() {
               How it works
             </Link>
           </div>
+
+          {/* Social proof */}
+          <p className="mt-4 text-center text-[12px] text-zinc-700 animate-in delay-4">
+            Joined by 2,400+ developers, students & founders
+          </p>
 
           {/* Quick audience pills */}
           <div className="mt-12 flex flex-wrap gap-2 justify-center animate-in delay-4">

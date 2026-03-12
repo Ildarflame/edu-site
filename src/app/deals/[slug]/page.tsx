@@ -15,6 +15,16 @@ import DealStatusBadge from "@/components/DealStatusBadge";
 import PushNotification from "@/components/PushNotification";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import CategoryTracker from "@/components/CategoryTracker";
+import DealPageTracker from "@/components/DealPageTracker";
+import ReportButton from "@/components/ReportButton";
+
+function formatDate(iso: string): string {
+  return new Date(iso).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
 
 export const revalidate = 300;
 
@@ -57,6 +67,7 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">
       <CategoryTracker category={deal.category} />
+      <DealPageTracker slug={slug} />
 
       {deal.status === "expired" && (
         <div className="mb-6 p-4 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-[13px] font-medium flex items-center gap-2">
@@ -97,6 +108,11 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
               </Link>
             ))}
           </div>
+          {deal.updatedAt && (
+            <p className="mt-2 text-[11px] text-zinc-700 font-medium">
+              Last verified: {formatDate(deal.updatedAt)}
+            </p>
+          )}
         </div>
       </div>
 
@@ -147,6 +163,11 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
       {/* Status Voting */}
       <div className="mb-4">
         <DealVoting slug={deal.slug} />
+      </div>
+
+      {/* Report broken */}
+      <div className="mb-4 flex justify-end">
+        <ReportButton slug={deal.slug} />
       </div>
 
       {/* Rating */}
@@ -236,6 +257,20 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
           Subscribe for Free →
         </Link>
       </div>
+
+      {/* Sticky mobile CTA — hidden on md+ where inline CTA is visible */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 px-4 py-3 bg-zinc-950/90 backdrop-blur-sm border-t border-white/[0.04]">
+        <a
+          href={deal.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary w-full text-center py-3 text-[14px] font-semibold block"
+        >
+          Claim this perk →
+        </a>
+      </div>
+      {/* Spacer so sticky bar doesn't cover content on mobile */}
+      <div className="md:hidden h-20" />
 
       <script
         type="application/ld+json"
