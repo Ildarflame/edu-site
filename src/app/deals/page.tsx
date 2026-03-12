@@ -1,7 +1,8 @@
 import { Suspense } from "react";
 import { Metadata } from "next";
+import Link from "next/link";
 import { getDeals } from "@/lib/deals";
-import DealsGrid from "@/components/DealsGrid";
+import DealsGridWithOnboarding from "@/components/DealsGridWithOnboarding";
 
 export const revalidate = 300;
 
@@ -28,8 +29,14 @@ export default async function DealsPage() {
           Browse our complete collection of free developer tools, cloud credits, and pro plans for students, startups, and open source projects. Every deal is verified with step-by-step claim instructions.
         </p>
       </div>
+      <div className="flex items-center justify-between mb-4">
+        <span />
+        <Link href="/saved" className="text-[12px] text-zinc-600 hover:text-orange-400 transition-colors">
+          Saved deals →
+        </Link>
+      </div>
       <Suspense fallback={null}>
-        <DealsGrid deals={deals} />
+        <DealsGridWithOnboarding deals={deals} />
       </Suspense>
       <script
         type="application/ld+json"

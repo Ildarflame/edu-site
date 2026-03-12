@@ -8,6 +8,7 @@ import LogoMarquee from "@/components/LogoMarquee";
 import ScrollReveal from "@/components/ScrollReveal";
 import NewsletterForm from "@/components/NewsletterForm";
 import RecommendedDeals from "@/components/RecommendedDeals";
+import OnboardingWidget from "@/components/OnboardingWidget";
 
 export const revalidate = 300; // revalidate every 5 min
 
@@ -103,6 +104,9 @@ export default async function Home() {
           <p className="mt-4 text-center text-[12px] text-zinc-700 animate-in delay-4">
             Joined by 2,400+ developers, students & founders
           </p>
+
+          {/* Onboarding widget — shows only on first visit, hidden after completion */}
+          <OnboardingWidget />
 
           {/* Quick audience pills */}
           <div className="mt-12 flex flex-wrap gap-2 justify-center animate-in delay-4">
