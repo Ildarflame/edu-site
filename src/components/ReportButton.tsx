@@ -1,7 +1,6 @@
 "use client";
 
-import { useCallback, useSyncExternalStore } from "react";
-import { useState } from "react";
+import { useCallback, useState, useSyncExternalStore } from "react";
 
 const REPORTED_PREFIX = "sp_reported_";
 
@@ -10,7 +9,16 @@ const REPORTED_PREFIX = "sp_reported_";
 let reportedCache: Record<string, boolean> = {};
 let listeners: (() => void)[] = [];
 
-function subscribe(listener: () => void) {
+function subscribe(key: string, listener: () => void) {
+  // Eagerly warm the cache for this key before the first snapshot read.
+  // This must happen in subscribe (not in getSnapshot) so that getSnapshot
+  // stays pure and free of side-effects.
+  if (reportedCache[key] === undefined && typeof window !== "undefined") {
+    reportedCache = {
+      ...reportedCache,
+      [key]: localStorage.getItem(key) === "1",
+    };
+  }
   listeners = [...listeners, listener];
   return () => {
     listeners = listeners.filter((l) => l !== listener);
@@ -30,19 +38,19 @@ function markReported(key: string) {
   reportedCache = { ...reportedCache, [key]: true };
   emitChange();
 }
-function readReported(key: string): boolean {
-  if (reportedCache[key] !== undefined) return reportedCache[key];
-  const val = localStorage.getItem(key) === "1";
-  reportedCache = { ...reportedCache, [key]: val };
-  return val;
-}
+// readReported is no longer needed — cache is warmed in subscribe.
 
 export default function ReportButton({ slug }: { slug: string }) {
   const reportedKey = `${REPORTED_PREFIX}${slug}`;
 
-  const store = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
-  // Derive "done" from the store snapshot (hydration-safe — SSR returns {} so always false)
-  const alreadyReported = store[reportedKey] ?? (typeof window !== "undefined" && readReported(reportedKey));
+  const store = useSyncExternalStore(
+    // Bind the key so subscribe can warm the cache before the first snapshot.
+    useCallback((listener) => subscribe(reportedKey, listener), [reportedKey]),
+    getSnapshot,
+    getServerSnapshot,
+  );
+  // Pure snapshot read — cache was warmed in subscribe before this runs.
+  const alreadyReported = store[reportedKey] ?? false;
 
   const [loading, setLoading] = useState(false);
 
@@ -50,12 +58,14 @@ export default function ReportButton({ slug }: { slug: string }) {
     if (alreadyReported || loading) return;
     setLoading(true);
     try {
-      await fetch("/api/report-deal", {
+      const res = await fetch("/api/report-deal", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ slug }),
       });
-      markReported(reportedKey);
+      if (res.ok) {
+        markReported(reportedKey);
+      }
     } catch {
       // silently ignore network errors
     } finally {
