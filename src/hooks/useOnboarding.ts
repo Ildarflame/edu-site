@@ -17,16 +17,29 @@ const DEFAULT_STATE: OnboardingState = {
   completed: false,
 };
 
+const VALID_AUDIENCES = new Set<string>(["students", "startups", "opensource"]);
+const VALID_CATEGORIES = new Set<string>(["Dev", "AI", "SaaS", "Learning", "Cloud", "Design", "Entertainment"]);
+
+function validateState(parsed: unknown): OnboardingState {
+  if (typeof parsed !== "object" || parsed === null) return DEFAULT_STATE;
+  const p = parsed as Record<string, unknown>;
+  return {
+    audience: VALID_AUDIENCES.has(p.audience as string) ? (p.audience as Audience) : null,
+    category: VALID_CATEGORIES.has(p.category as string) ? (p.category as Category) : null,
+    completed: typeof p.completed === "boolean" ? p.completed : false,
+  };
+}
+
 let cachedRaw: string | null = null;
 let cachedSnapshot: OnboardingState = DEFAULT_STATE;
 
 function getSnapshot(): OnboardingState {
+  if (typeof window === "undefined") return DEFAULT_STATE;
   const raw = localStorage.getItem(STORAGE_KEY) ?? "{}";
   if (raw !== cachedRaw) {
     cachedRaw = raw;
     try {
-      const parsed = JSON.parse(raw);
-      cachedSnapshot = { ...DEFAULT_STATE, ...parsed };
+      cachedSnapshot = validateState(JSON.parse(raw));
     } catch {
       cachedSnapshot = DEFAULT_STATE;
     }
@@ -51,9 +64,9 @@ function emitChange() {
 }
 
 function saveState(next: Partial<OnboardingState>) {
-  const updated = { ...getSnapshot(), ...next };
+  const updated = { ...cachedSnapshot, ...next };
   localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
-  cachedRaw = null;
+  cachedRaw = null; // invalidate cache so next read re-parses
   emitChange();
 }
 
