@@ -128,6 +128,32 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
         <p className="text-[14px] text-zinc-500 leading-relaxed">{deal.description}</p>
       </div>
 
+      {/* Requirements callout — shown only when populated in Notion */}
+      {deal.requirements && (
+        <div className="mb-6 p-4 rounded-xl bg-blue-500/5 border border-blue-500/10 flex gap-3">
+          <svg className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <div>
+            <p className="text-[11px] font-semibold text-blue-400 uppercase tracking-wider mb-1">Requirements</p>
+            <p className="text-[13px] text-zinc-500 leading-relaxed">{deal.requirements}</p>
+          </div>
+        </div>
+      )}
+
+      {/* Tips callout — shown only when populated in Notion */}
+      {deal.tips && (
+        <div className="mb-6 p-4 rounded-xl bg-amber-500/5 border border-amber-500/10 flex gap-3">
+          <svg className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+          </svg>
+          <div>
+            <p className="text-[11px] font-semibold text-amber-400 uppercase tracking-wider mb-1">Tips</p>
+            <p className="text-[13px] text-zinc-500 leading-relaxed">{deal.tips}</p>
+          </div>
+        </div>
+      )}
+
       {/* Steps */}
       <div className="mb-10">
         <h2 className="text-[15px] font-semibold text-zinc-200 mb-4">How to get it</h2>

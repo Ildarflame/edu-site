@@ -25,6 +25,8 @@ export type Deal = {
   status?: "verified" | "expired";
   regions?: string[];
   video?: string;
+  tips?: string;
+  requirements?: string;
 };
 
 export const CATEGORY_CONFIG: Record<
