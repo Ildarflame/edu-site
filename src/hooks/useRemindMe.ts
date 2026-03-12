@@ -25,7 +25,8 @@ export function useRemindMe(slug: string) {
     (listener: () => void) => {
       if (cache[slug] === undefined && typeof window !== "undefined") {
         const raw = localStorage.getItem(key);
-        cache[slug] = raw ? parseInt(raw, 10) : null;
+        const parsed = raw ? parseInt(raw, 10) : null;
+        cache[slug] = parsed !== null && Number.isFinite(parsed) ? parsed : null;
       }
       listeners = [...listeners, listener];
       return () => {

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useSavedDeals } from "@/hooks/useSavedDeals";
@@ -48,8 +49,14 @@ function RemindButton({ slug, name }: { slug: string; name: string }) {
 }
 
 export default function SavedDealsGrid({ allDeals }: { allDeals: Deal[] }) {
+  const [mounted, setMounted] = useState(false);
+  // Sync DOM hydration state — legitimate mount guard pattern
+  // eslint-disable-next-line react-hooks/set-state-in-effect
+  useEffect(() => { setMounted(true); }, []);
   const { savedSlugs } = useSavedDeals();
   const savedDeals = allDeals.filter((d) => savedSlugs.includes(d.slug));
+
+  if (!mounted) return null;
 
   if (savedSlugs.length === 0) {
     return (
