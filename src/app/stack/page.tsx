@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { getDeals } from "@/lib/deals";
 import StackBuilder from "@/components/StackBuilder";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -32,7 +33,9 @@ export default async function StackPage() {
 
       <ScrollReveal>
         <section className="max-w-5xl mx-auto px-6 pb-20">
-          <StackBuilder deals={deals} />
+          <Suspense fallback={null}>
+            <StackBuilder deals={deals} />
+          </Suspense>
         </section>
       </ScrollReveal>
       <script

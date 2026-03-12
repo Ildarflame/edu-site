@@ -1,8 +1,10 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams, useRouter } from "next/navigation";
+import { track } from "@vercel/analytics";
 import { type Deal, CATEGORY_CONFIG } from "@/data/deals";
 import CategoryBadge from "./CategoryBadge";
 import AudienceBadge from "./AudienceBadge";
@@ -123,7 +125,29 @@ function parseValue(value: string): number {
 }
 
 export default function StackBuilder({ deals }: { deals: Deal[] }) {
-  const [selected, setSelected] = useState<Set<string>>(new Set());
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  const [selected, setSelected] = useState<Set<string>>(() => {
+    const techParam = searchParams.get("tech");
+    if (techParam) {
+      const names = techParam.split(",").map(decodeURIComponent).filter(Boolean);
+      const validNames = new Set(
+        TECH_CATEGORIES.flatMap((c) => c.options.map((o) => o.name))
+      );
+      return new Set(names.filter((n) => validNames.has(n)));
+    }
+    return new Set();
+  });
+
+  // Sync selected tech to URL — useEffect, NOT inside toggle (Strict Mode safe)
+  useEffect(() => {
+    const techParam = [...selected].map(encodeURIComponent).join(",");
+    router.replace(
+      techParam ? `/stack?tech=${techParam}` : "/stack",
+      { scroll: false }
+    );
+  }, [selected, router]);
 
   function toggle(tech: string) {
     setSelected((prev) => {
@@ -227,16 +251,27 @@ export default function StackBuilder({ deals }: { deals: Deal[] }) {
                 {results.count} deal{results.count !== 1 ? "s" : ""} match your tech stack
               </p>
             </div>
-            {results.totalSavings > 0 && (
-              <div className="card px-5 py-3 text-center">
-                <div className="text-[11px] text-zinc-500 font-medium uppercase tracking-wider">
-                  Est. savings
+            <div className="flex items-center gap-3">
+              <button
+                onClick={() => {
+                  navigator.clipboard?.writeText(window.location.href);
+                  track("share_result", { tool: "stack-builder", method: "copy" });
+                }}
+                className="btn-ghost text-[12px] px-3 py-1.5"
+              >
+                Copy link
+              </button>
+              {results.totalSavings > 0 && (
+                <div className="card px-5 py-3 text-center">
+                  <div className="text-[11px] text-zinc-500 font-medium uppercase tracking-wider">
+                    Est. savings
+                  </div>
+                  <div className="text-xl font-bold text-orange-400 mt-0.5">
+                    ${results.totalSavings.toLocaleString()}+
+                  </div>
                 </div>
-                <div className="text-xl font-bold text-orange-400 mt-0.5">
-                  ${results.totalSavings.toLocaleString()}+
-                </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
 
           {results.count === 0 ? (
