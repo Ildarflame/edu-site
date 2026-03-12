@@ -12,10 +12,12 @@ export default function DealsGridWithOnboarding({ deals }: { deals: Deal[] }) {
   // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => { setMounted(true); }, []);
 
+  // key forces DealsGrid to remount after hydration so useState initializers
+  // run with the real localStorage values (not the SERVER_SNAPSHOT defaults)
   return (
     <DealsGrid
+      key={mounted ? "personalized" : "default"}
       deals={deals}
-      // Only apply personalization after hydration to prevent filter flash
       initialAudience={mounted && state.completed && state.audience ? state.audience : undefined}
       initialCategory={mounted && state.completed && state.category ? state.category : undefined}
     />
