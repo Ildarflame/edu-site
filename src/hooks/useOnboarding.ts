@@ -85,9 +85,13 @@ export function useOnboarding() {
     saveState({ completed: true });
   }, []);
 
+  const selectCategory = useCallback((category: Category) => {
+    saveState({ category, completed: true });
+  }, []);
+
   const skip = useCallback(() => {
     saveState({ ...DEFAULT_STATE, completed: true });
   }, []);
 
-  return { state, setAudience, setCategory, complete, skip };
+  return { state, setAudience, setCategory, selectCategory, complete, skip };
 }

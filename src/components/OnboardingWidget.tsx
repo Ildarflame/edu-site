@@ -19,7 +19,7 @@ const CATEGORIES: { label: string; value: Category; icon: string }[] = [
 ];
 
 export default function OnboardingWidget() {
-  const { state, setAudience, setCategory, complete, skip } = useOnboarding();
+  const { state, setAudience, setCategory, selectCategory, complete, skip } = useOnboarding();
   // Prevent SSR flash: do not render until client-side hydration is complete.
   // Without this, returning users (completed: true in localStorage) see the widget
   // briefly on every page load because the server renders with SERVER_SNAPSHOT (completed: false).
@@ -39,6 +39,7 @@ export default function OnboardingWidget() {
           </p>
           <button
             onClick={skip}
+            aria-label="Skip onboarding"
             className="text-[11px] text-zinc-700 hover:text-zinc-500 transition-colors"
           >
             Skip →
@@ -65,7 +66,7 @@ export default function OnboardingWidget() {
             {CATEGORIES.map((c) => (
               <button
                 key={c.value}
-                onClick={() => { setCategory(c.value); complete(); }}
+                onClick={() => selectCategory(c.value)}
                 className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-white/[0.06] bg-white/[0.02] hover:border-orange-500/30 hover:bg-orange-500/5 hover:text-orange-400 text-zinc-400 transition-all text-[12px] font-medium"
               >
                 <span>{c.icon}</span>
