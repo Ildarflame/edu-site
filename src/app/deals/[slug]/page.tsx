@@ -16,6 +16,7 @@ import PushNotification from "@/components/PushNotification";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import CategoryTracker from "@/components/CategoryTracker";
 import DealPageTracker from "@/components/DealPageTracker";
+import ReportButton from "@/components/ReportButton";
 
 function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString("en-US", {
@@ -162,6 +163,11 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
       {/* Status Voting */}
       <div className="mb-4">
         <DealVoting slug={deal.slug} />
+      </div>
+
+      {/* Report broken */}
+      <div className="mb-4 flex justify-end">
+        <ReportButton slug={deal.slug} />
       </div>
 
       {/* Rating */}
