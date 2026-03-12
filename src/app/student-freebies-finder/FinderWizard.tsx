@@ -4,6 +4,7 @@ import { useState, useMemo, useCallback } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { track } from "@vercel/analytics";
 import type { Deal, Category } from "@/data/deals";
 import { CATEGORY_CONFIG } from "@/data/deals";
 
@@ -307,6 +308,7 @@ export default function FinderWizard({ deals }: { deals: Deal[] }) {
                 <button
                   onClick={() => {
                     navigator.clipboard?.writeText(shareUrl);
+                    track("share_result", { tool: "freebies-finder", method: "copy" });
                   }}
                   className="btn-ghost text-[12px] inline-flex items-center gap-1.5"
                 >
