@@ -15,6 +15,7 @@ import DealStatusBadge from "@/components/DealStatusBadge";
 import PushNotification from "@/components/PushNotification";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import CategoryTracker from "@/components/CategoryTracker";
+import DealPageTracker from "@/components/DealPageTracker";
 
 export const revalidate = 300;
 
@@ -57,6 +58,7 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">
       <CategoryTracker category={deal.category} />
+      <DealPageTracker slug={slug} />
 
       {deal.status === "expired" && (
         <div className="mb-6 p-4 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-[13px] font-medium flex items-center gap-2">
