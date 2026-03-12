@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { getDeals, CATEGORY_CONFIG } from "@/lib/deals";
+import WeeklySignupForm from "@/components/WeeklySignupForm";
 
 export const revalidate = 300;
 
@@ -46,6 +47,19 @@ export default async function ThisWeekPage() {
         <p className="text-[15px] text-zinc-500">
           Fresh deals and updates from the past week. Bookmark this page for weekly check-ins.
         </p>
+      </div>
+
+      {/* Weekly digest signup */}
+      <div className="mb-10 p-5 rounded-2xl bg-white/[0.02] border border-white/[0.04]">
+        <div className="flex items-start justify-between gap-4 flex-wrap">
+          <div>
+            <p className="text-[13px] font-semibold text-zinc-200 mb-1">Get new deals every week</p>
+            <p className="text-[12px] text-zinc-600">
+              We&apos;ll send you the freshest deals straight to your inbox. No spam.
+            </p>
+          </div>
+          <WeeklySignupForm />
+        </div>
       </div>
 
       {recentDeals.length > 0 ? (
