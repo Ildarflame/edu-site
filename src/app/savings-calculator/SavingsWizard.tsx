@@ -1,6 +1,8 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
+import { track } from "@vercel/analytics";
 import Link from "next/link";
 import Image from "next/image";
 import type { Deal } from "@/data/deals";
@@ -13,7 +15,27 @@ function parseDollarValue(v: string): number {
 }
 
 export default function SavingsWizard({ deals }: { deals: Deal[] }) {
-  const [selected, setSelected] = useState<Set<string>>(new Set());
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  const [selected, setSelected] = useState<Set<string>>(() => {
+    const toolsParam = searchParams.get("tools");
+    if (toolsParam) {
+      const slugs = toolsParam.split(",").filter(Boolean);
+      const validSlugs = new Set(deals.map((d) => d.slug));
+      return new Set(slugs.filter((s) => validSlugs.has(s)));
+    }
+    return new Set();
+  });
+
+  // Sync selected state to URL — useEffect, NOT inside setSelected updater (Strict Mode safe)
+  useEffect(() => {
+    const toolsParam = [...selected].join(",");
+    router.replace(
+      toolsParam ? `/savings-calculator?tools=${toolsParam}` : "/savings-calculator",
+      { scroll: false }
+    );
+  }, [selected, router]);
 
   const toggle = (slug: string) => {
     setSelected((prev) => {
@@ -60,14 +82,26 @@ export default function SavingsWizard({ deals }: { deals: Deal[] }) {
         <div className="flex items-center gap-2">
           <span className="text-[12px] text-zinc-600">{selected.size} tools</span>
           {totalSavings > 0 && (
-            <a
-              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary text-[12px] px-3 py-1.5"
-            >
-              Share Result
-            </a>
+            <div className="flex gap-1.5">
+              <button
+                onClick={() => {
+                  navigator.clipboard?.writeText(window.location.href);
+                  track("share_result", { tool: "savings-calculator", method: "copy" });
+                }}
+                className="btn-ghost text-[12px] px-3 py-1.5"
+              >
+                Copy link
+              </button>
+              <a
+                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => track("share_result", { tool: "savings-calculator", method: "twitter" })}
+                className="btn-primary text-[12px] px-3 py-1.5"
+              >
+                Share →
+              </a>
+            </div>
           )}
         </div>
       </div>
@@ -128,6 +162,7 @@ export default function SavingsWizard({ deals }: { deals: Deal[] }) {
               href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => track("share_result", { tool: "savings-calculator", method: "twitter" })}
               className="btn-primary"
             >
               Share on Twitter/X

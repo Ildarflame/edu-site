@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Metadata } from "next";
 import { getDeals } from "@/lib/deals";
 import SavingsWizard from "./SavingsWizard";
@@ -18,7 +19,9 @@ export default async function SavingsCalculatorPage() {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">
-      <SavingsWizard deals={studentDeals} />
+      <Suspense fallback={null}>
+        <SavingsWizard deals={studentDeals} />
+      </Suspense>
 
       {/* JSON-LD structured data — all values are controlled editorial content (not user input).
           .replace(/</g, "\\u003c") prevents script-breaking characters per OWASP best practice. */}
