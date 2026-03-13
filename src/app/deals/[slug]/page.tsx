@@ -37,8 +37,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const deal = await getDealBySlug(slug);
   if (!deal) return { title: "Deal Not Found" };
-  const title = `${deal.name} — ${deal.tagline} | StudentPerks 2026`.slice(0, 65);
-  const description = deal.description.length > 155 ? deal.description.slice(0, 152) + "..." : deal.description;
+  // Title: lead with value (e.g. "$100 Free Credits") for higher SERP CTR
+  const titleBase = `${deal.name} — ${deal.value}`;
+  const title = titleBase.length <= 50 ? `${titleBase} | StudentPerks` : titleBase.slice(0, 60);
+  const description = `${deal.tagline}. ${deal.value} — claim free with step-by-step instructions.`.slice(0, 155);
   return {
     title,
     description,

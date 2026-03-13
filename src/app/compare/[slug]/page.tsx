@@ -67,7 +67,7 @@ export default async function ComparePage({
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
-      { "@type": "ListItem", position: 2, name: "Compare" },
+      { "@type": "ListItem", position: 2, name: "Compare", item: "https://www.studentperks.dev/deals" },
       { "@type": "ListItem", position: 3, name: `${tool1Name} vs ${tool2Name}` },
     ],
   }).replace(/</g, "\\u003c");

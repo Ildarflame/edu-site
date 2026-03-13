@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/", "/_next/"],
+      disallow: ["/api/", "/_next/", "/deals?*"],
     },
     sitemap: "https://www.studentperks.dev/sitemap.xml",
   };

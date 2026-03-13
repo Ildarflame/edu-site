@@ -57,7 +57,7 @@ export default async function GuidePage({
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://www.studentperks.dev" },
-      { "@type": "ListItem", position: 2, name: "Guides" },
+      { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.studentperks.dev/guides" },
       { "@type": "ListItem", position: 3, name: guide.heading },
     ],
   }).replace(/</g, "\\u003c");

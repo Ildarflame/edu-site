@@ -1194,14 +1194,17 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-azure-student-credits",
     dealSlug: "azure-students",
-    title: "Azure $100 Free Credits for Students — No Credit Card (2026 Guide)",
-    metaDescription: "Step-by-step: claim $100 Azure credits + 25 free services with just a school email. No credit card needed. Takes 5 minutes.",
+    title: "Azure $100 Free Student Credits — No Card Needed (2026)",
+    metaDescription: "Claim $100 Azure credits + 25 free services in 5 minutes. Just a .edu email, no credit card. Step-by-step guide with screenshots.",
     heading: "How to Get Azure Free Student Credits",
     intro: "Azure for Students gives verified students $100 in cloud credits with no credit card required, plus free access to 25+ Azure services. Startups can get up to $150K through Founders Hub.",
     eligibility: ["School email address for verification", "Currently enrolled student (age 18+)", "No credit card required", "One Azure for Students account per student"],
     faqs: [
       { question: "Do I need a credit card?", answer: "No. Azure for Students specifically does not require a credit card. You get $100 in credits with just your school email." },
       { question: "What happens when credits run out?", answer: "Free services continue working. Paid services are disabled (not charged). You can upgrade to pay-as-you-go anytime." },
+      { question: "Can I renew Azure student credits?", answer: "Yes. You can renew once per year as long as you're still a student. Each renewal gives you another $100 in credits." },
+      { question: "Which Azure services are free for students?", answer: "You get 25+ always-free services including App Service, Functions, Cosmos DB free tier, DevOps, 750 hours of B1S VMs, and 5 GB Blob storage." },
+      { question: "How long does verification take?", answer: "Verification is instant if your school email is recognized. If not, you may need to upload proof of enrollment which takes 1-2 business days." },
     ],
   },
   {
@@ -1324,8 +1327,8 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-sentry-free",
     dealSlug: "sentry-oss",
-    title: "Sentry Free: OSS & Startups 2026 | StudentPerks",
-    metaDescription: "Get Sentry's Business plan free for open source projects. Error tracking, performance monitoring, and session replay at no cost in 2026.",
+    title: "Sentry Free for Open Source — Business Plan at $0 (2026)",
+    metaDescription: "Get Sentry Business plan free: 500K events/month, performance monitoring, session replay. For OSS projects with OSI license. Apply in 5 minutes.",
     heading: "How to Get Sentry Free for OSS",
     intro: "Sentry offers its Business plan free for qualified open source projects and discounted plans for startups. Get real-time error tracking, performance monitoring, and session replay.",
     eligibility: ["For OSS: actively maintained open source project", "Project must have OSI-approved license", "Apply at sentry.io/for/open-source", "Startups: apply through partner accelerators"],
