@@ -1,0 +1,66 @@
+# StudentPerks
+
+> StudentPerks (www.studentperks.dev) is a curated directory of 150+ free tools, cloud credits, and pro plans for students, startups, and open source projects. Every deal is verified with step-by-step claim instructions. Total value: $500K+.
+
+## What We Offer
+
+- **150+ Verified Deals** across Dev, AI, SaaS, Learning, Cloud, Design, and Entertainment
+- **Step-by-step Guides** for claiming each deal (27 detailed guides)
+- **Tool Comparisons** — VS pages, alternatives, and best-of lists
+- **Interactive Tools** — Freebies Finder, Savings Calculator, Stack Builder, AI Deal Finder
+- **Blog** with guides on free tools, cloud credits, and student discounts
+
+## Audiences
+
+- **Students** — free tools with .edu email verification (JetBrains, GitHub, Azure, Figma, etc.)
+- **Startups** — cloud credits and SaaS plans (AWS $100K, Stripe Atlas, OpenAI credits, etc.)
+- **Open Source** — free pro plans for OSS maintainers (Sentry, Railway, Cloudflare, etc.)
+
+## Key Pages
+
+- Homepage: https://www.studentperks.dev
+- All Deals: https://www.studentperks.dev/deals
+- Student Discounts: https://www.studentperks.dev/student-discount
+- Guides: https://www.studentperks.dev/guides
+- Blog: https://www.studentperks.dev/blog
+- Free Tools for Students: https://www.studentperks.dev/free-tools-for-students
+- Freebies Finder: https://www.studentperks.dev/student-freebies-finder
+- VS Comparisons: https://www.studentperks.dev/vs
+
+## Top Deals by Category
+
+### Cloud
+- AWS Activate: up to $100K credits for startups
+- Azure for Students: $100 free credits, no credit card
+- Google Cloud: $300 credits + free tier
+- DigitalOcean: $200 credits for students
+- Vercel Pro: free for students and OSS
+
+### Dev Tools
+- JetBrains: all IDEs free for students ($649/year value)
+- GitHub Student Developer Pack: 100+ tools free
+- GitHub Copilot: free for students
+- Docker Pro: free for students and OSS
+- Supabase: $10/month credits for startups
+
+### AI
+- OpenAI: $2,500 API credits for startups
+- Anthropic: API credits for startups
+- GitHub Copilot: free AI coding assistant for students
+- Perplexity Pro: student discount
+
+### Design
+- Figma: Education plan free
+- Adobe Creative Cloud: 60% student discount
+- Canva Pro: free for education
+
+### Learning
+- Coursera: free courses for students
+- Codecademy Pro: student discount
+- freeCodeCamp: completely free
+
+## Documentation
+
+- Full sitemap: https://www.studentperks.dev/sitemap.xml
+- RSS Feed: https://www.studentperks.dev/blog/feed.xml
+- API (deals): https://www.studentperks.dev/api/deals

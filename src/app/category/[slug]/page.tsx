@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDeals, CATEGORY_CONFIG } from "@/lib/deals";
-import { CATEGORY_SEO } from "@/data/seo-content";
+import { CATEGORY_SEO, GUIDE_SEO, VS_SEO, ALTERNATIVES_SEO } from "@/data/seo-content";
 import DealCard from "@/components/DealCard";
 
 export const revalidate = 300;
@@ -39,6 +39,18 @@ export default async function CategoryPage({
   const filtered = deals.filter((d) => d.category === seo.category);
   const otherCategories = CATEGORY_SEO.filter((c) => c.slug !== slug);
   const config = CATEGORY_CONFIG[seo.category];
+
+  // Find guides, VS comparisons, and alternatives related to this category
+  const categoryDealSlugs = new Set(filtered.map((d) => d.slug));
+  const relatedGuides = GUIDE_SEO.filter((g) => categoryDealSlugs.has(g.dealSlug));
+  const relatedVs = VS_SEO.filter((v) => {
+    const t1 = v.tool1Slug && categoryDealSlugs.has(v.tool1Slug);
+    const t2 = v.tool2Slug && categoryDealSlugs.has(v.tool2Slug);
+    return t1 || t2;
+  });
+  const relatedAlternatives = ALTERNATIVES_SEO.filter((a) =>
+    filtered.some((d) => d.name.toLowerCase().includes(a.name.toLowerCase()))
+  );
 
   // JSON-LD structured data (safe — all content is hardcoded, not user input)
   const itemListLd = {
@@ -110,6 +122,40 @@ export default async function CategoryPage({
                 <h3 className="text-[15px] font-semibold text-zinc-200 mb-2">{faq.question}</h3>
                 <p className="text-[14px] text-zinc-500 leading-relaxed">{faq.answer}</p>
               </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Related guides */}
+      {relatedGuides.length > 0 && (
+        <section className="mb-16">
+          <h2 className="text-xl font-bold text-zinc-100 mb-4">Step-by-Step Guides</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {relatedGuides.map((g) => (
+              <Link key={g.slug} href={`/guides/${g.slug}`} className="card p-4 hover:border-white/[0.12] transition-all">
+                <h3 className="text-[14px] font-semibold text-zinc-200 mb-1">{g.heading}</h3>
+                <p className="text-[12px] text-zinc-500 line-clamp-2">{g.metaDescription}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Related comparisons */}
+      {(relatedVs.length > 0 || relatedAlternatives.length > 0) && (
+        <section className="mb-16">
+          <h2 className="text-xl font-bold text-zinc-100 mb-4">Comparisons & Alternatives</h2>
+          <div className="flex flex-wrap gap-2">
+            {relatedVs.map((v) => (
+              <Link key={v.slug} href={`/vs/${v.slug}`} className="inline-flex items-center px-4 py-2 rounded-full border border-white/[0.06] bg-white/[0.02] text-[13px] text-zinc-400 hover:border-white/[0.12] hover:text-zinc-200 transition-all">
+                {v.tool1} vs {v.tool2}
+              </Link>
+            ))}
+            {relatedAlternatives.map((a) => (
+              <Link key={a.slug} href={`/alternatives/${a.slug}`} className="inline-flex items-center px-4 py-2 rounded-full border border-white/[0.06] bg-white/[0.02] text-[13px] text-zinc-400 hover:border-white/[0.12] hover:text-zinc-200 transition-all">
+                Free {a.name} Alternatives
+              </Link>
             ))}
           </div>
         </section>

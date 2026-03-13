@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getDealBySlug, CATEGORY_CONFIG } from "@/lib/deals";
-import { GUIDE_SEO } from "@/data/seo-content";
+import { getDealBySlug, getDeals, CATEGORY_CONFIG } from "@/lib/deals";
+import { GUIDE_SEO, VS_SEO, ALTERNATIVES_SEO } from "@/data/seo-content";
 
 export const revalidate = 300;
 
@@ -74,7 +74,25 @@ export default async function GuidePage({
       }).replace(/</g, "\\u003c")
     : null;
 
-  const otherGuides = GUIDE_SEO.filter((g) => g.slug !== slug);
+  // Find related guides in the same category
+  const allDeals = await getDeals();
+  const sameCategorySlugs = new Set(
+    allDeals.filter((d) => d.category === deal.category).map((d) => d.slug)
+  );
+  const relatedGuides = GUIDE_SEO.filter(
+    (g) => g.slug !== slug && sameCategorySlugs.has(g.dealSlug)
+  );
+  const otherGuides = relatedGuides.length > 0
+    ? relatedGuides
+    : GUIDE_SEO.filter((g) => g.slug !== slug).slice(0, 6);
+
+  // Find related VS comparisons and alternatives for cross-linking
+  const relatedVs = VS_SEO.find(
+    (v) => v.tool1Slug === deal.slug || v.tool2Slug === deal.slug
+  );
+  const relatedAlt = ALTERNATIVES_SEO.find(
+    (a) => deal.name.toLowerCase().includes(a.name.toLowerCase())
+  );
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">
@@ -120,12 +138,36 @@ export default async function GuidePage({
         </ol>
       </section>
 
-      <Link
-        href={`/deals/${deal.slug}`}
-        className="btn-primary inline-flex items-center gap-2"
-      >
-        View Full Deal Details &rarr;
-      </Link>
+      <div className="flex flex-wrap items-center gap-3">
+        <Link
+          href={`/deals/${deal.slug}`}
+          className="btn-primary inline-flex items-center gap-2"
+        >
+          View Full Deal Details &rarr;
+        </Link>
+        <Link
+          href={`/category/${deal.category.toLowerCase()}`}
+          className="btn-ghost inline-flex items-center gap-2 text-[13px]"
+        >
+          {config.icon} All {deal.category} Deals
+        </Link>
+      </div>
+
+      {/* Cross-links */}
+      {(relatedVs || relatedAlt) && (
+        <div className="mt-6 flex flex-wrap gap-2">
+          {relatedVs && (
+            <Link href={`/vs/${relatedVs.slug}`} className="inline-flex items-center px-3 py-1.5 rounded-full border border-white/[0.06] bg-white/[0.02] text-[12px] text-zinc-500 hover:border-white/[0.12] hover:text-zinc-300 transition-all">
+              {relatedVs.tool1} vs {relatedVs.tool2} &rarr;
+            </Link>
+          )}
+          {relatedAlt && (
+            <Link href={`/alternatives/${relatedAlt.slug}`} className="inline-flex items-center px-3 py-1.5 rounded-full border border-white/[0.06] bg-white/[0.02] text-[12px] text-zinc-500 hover:border-white/[0.12] hover:text-zinc-300 transition-all">
+              Free {relatedAlt.name} Alternatives &rarr;
+            </Link>
+          )}
+        </div>
+      )}
 
       {guide.faqs.length > 0 && (
         <section className="mt-16 mb-12">
@@ -143,7 +185,9 @@ export default async function GuidePage({
 
       {otherGuides.length > 0 && (
         <section className="mt-12">
-          <h2 className="text-lg font-bold text-zinc-100 mb-4">More Guides</h2>
+          <h2 className="text-lg font-bold text-zinc-100 mb-4">
+            {relatedGuides.length > 0 ? `More ${deal.category} Guides` : "More Guides"}
+          </h2>
           <div className="flex flex-wrap gap-2">
             {otherGuides.map((g) => (
               <Link

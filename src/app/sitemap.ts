@@ -24,7 +24,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: "monthly",
-    priority: 0.7,
+    priority: 0.8,
   }));
 
   const categoryUrls: MetadataRoute.Sitemap = CATEGORY_SEO.map((cat) => ({
@@ -82,7 +82,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${baseUrl}/guides/${g.slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
-    priority: 0.7,
+    priority: 0.8,
   }));
 
   const seasonalUrls: MetadataRoute.Sitemap = SEASONAL_SEO.map((s) => ({
