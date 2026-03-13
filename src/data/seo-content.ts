@@ -38,9 +38,9 @@ export const CATEGORY_SEO: CategorySEO[] = [
   {
     slug: "dev",
     category: "Dev",
-    title: "Free Developer Tools for Students & Startups 2026 | StudentPerks",
+    title: "50+ Free Developer Tools Worth $10K+ for Students 2026",
     metaDescription:
-      "Get free access to JetBrains, Docker, GitHub, Supabase and more developer tools. Verified deals for students, startups, and open source projects.",
+      "JetBrains ($649), GitHub Pro, Docker, Supabase — 50+ verified free dev tools for students, startups & OSS. Claim $10,000+ in licenses today.",
     heading: "Free Developer Tools & Credits",
     intro:
       "Access premium developer tools at zero cost. From IDEs like JetBrains to databases like MongoDB Atlas and Supabase, these verified deals give students, startups, and open source maintainers the professional tools they need to build great software.",
@@ -65,9 +65,9 @@ export const CATEGORY_SEO: CategorySEO[] = [
   {
     slug: "ai",
     category: "AI",
-    title: "Free AI Tools for Students & Startups 2026 | StudentPerks",
+    title: "Free AI Tools for Students — Copilot, OpenAI Credits & More 2026",
     metaDescription:
-      "Access free AI tools including GitHub Copilot and OpenAI API credits. Verified AI deals for students, startups, and open source developers.",
+      "GitHub Copilot ($100/yr free), OpenAI $2,500 API credits, Perplexity Pro — verified free AI tools for students & startups. No credit card needed.",
     heading: "Free AI Tools & API Credits",
     intro:
       "Build with cutting-edge AI without the cost. Get free access to code assistants like GitHub Copilot and API credits from OpenAI. These deals help students and startups integrate AI into their projects from day one.",
@@ -92,9 +92,9 @@ export const CATEGORY_SEO: CategorySEO[] = [
   {
     slug: "saas",
     category: "SaaS",
-    title: "Free SaaS Tools for Students & Startups 2026 | StudentPerks",
+    title: "Free SaaS for Students & Startups — Notion, Slack, Linear 2026",
     metaDescription:
-      "Get free access to Notion, Linear, Slack, Stripe Atlas and more SaaS tools. Verified deals worth thousands for students and startups.",
+      "Notion Plus (free), Slack Pro credits, Linear, Stripe Atlas fee waived — verified free SaaS worth $5,000+ for students and early-stage startups.",
     heading: "Free SaaS Tools & Pro Plans",
     intro:
       "Run your team on professional SaaS tools without paying a cent. From project management with Notion and Linear to team communication with Slack, these verified deals unlock premium plans for students and early-stage startups.",
@@ -119,9 +119,9 @@ export const CATEGORY_SEO: CategorySEO[] = [
   {
     slug: "learning",
     category: "Learning",
-    title: "Free Learning Platforms for Students 2026 | StudentPerks",
+    title: "Free Coursera, Frontend Masters & 10+ Learning Platforms 2026",
     metaDescription:
-      "Access free online courses from Coursera and other learning platforms. Verified education deals for students and developers.",
+      "Coursera for Campus (3,800 courses free), Frontend Masters, DataCamp, Pluralsight — verified free learning platforms for students worth $2,000+/year.",
     heading: "Free Learning Platforms & Courses",
     intro:
       "Level up your skills with free access to world-class learning platforms. Get courses from top universities through Coursera for Campus and other education programs designed for students who want to learn without the financial burden.",
@@ -146,9 +146,9 @@ export const CATEGORY_SEO: CategorySEO[] = [
   {
     slug: "cloud",
     category: "Cloud",
-    title: "Free Cloud Credits for Students & Startups 2026 | StudentPerks",
+    title: "$300K+ in Free Cloud Credits — AWS, Azure, Vercel & More 2026",
     metaDescription:
-      "Get up to $150K in free cloud credits from AWS, Azure, DigitalOcean, Vercel, and more. Verified cloud deals for students and startups.",
+      "Azure $100 (no credit card), AWS $100K, DigitalOcean $200 — get free cloud credits for students & startups. 15+ verified cloud deals worth $300K+.",
     heading: "Free Cloud Credits & Hosting",
     intro:
       "Deploy your projects without worrying about infrastructure costs. Access free cloud credits from AWS Activate, Microsoft Azure, DigitalOcean, Vercel, Cloudflare, and Railway — collectively worth over $150K for eligible startups and students.",
@@ -178,9 +178,9 @@ export const CATEGORY_SEO: CategorySEO[] = [
   {
     slug: "design",
     category: "Design",
-    title: "Free Design Tools for Students 2026 | StudentPerks",
+    title: "Figma Pro Free + 60% Off Adobe CC — Student Design Deals 2026",
     metaDescription:
-      "Get free Figma Professional plan and 60% off Adobe Creative Cloud. Verified design tool deals for students and educators.",
+      "Figma Professional (free), Adobe CC 60% off ($240 saved), Canva Pro, Sketch — 15+ verified free design tools for students. Claim with .edu email.",
     heading: "Free Design Tools & Creative Software",
     intro:
       "Create stunning designs with professional tools at no cost. Students get free access to Figma's Professional plan and massive discounts on Adobe Creative Cloud, giving you the same tools used by professional designers worldwide.",
@@ -205,9 +205,9 @@ export const CATEGORY_SEO: CategorySEO[] = [
   {
     slug: "entertainment",
     category: "Entertainment",
-    title: "Free Entertainment Deals for Students 2026 | StudentPerks",
+    title: "Spotify, YouTube, Prime — Student Discounts Save $200+/Year 2026",
     metaDescription:
-      "Get student discounts on Spotify Premium, YouTube Premium, and Amazon Prime. Verified entertainment deals saving $200+/year.",
+      "Spotify 50% off, YouTube Premium student price, Amazon Prime 6 months free — save $200+/year on entertainment. Verified student deals with SheerID.",
     heading: "Student Entertainment Deals & Discounts",
     intro:
       "Enjoy premium entertainment at student prices. Get 50% off Spotify Premium, discounted YouTube Premium, and 6 months free Amazon Prime Student. These verified deals save students over $200 per year on entertainment subscriptions.",
@@ -1194,8 +1194,8 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-azure-student-credits",
     dealSlug: "azure-students",
-    title: "Azure Free Credits for Students 2026 | StudentPerks",
-    metaDescription: "Get $100 in Azure credits with no credit card required. Complete guide to Azure for Students in 2026.",
+    title: "Azure $100 Free Credits for Students — No Credit Card (2026 Guide)",
+    metaDescription: "Step-by-step: claim $100 Azure credits + 25 free services with just a school email. No credit card needed. Takes 5 minutes.",
     heading: "How to Get Azure Free Student Credits",
     intro: "Azure for Students gives verified students $100 in cloud credits with no credit card required, plus free access to 25+ Azure services. Startups can get up to $150K through Founders Hub.",
     eligibility: ["School email address for verification", "Currently enrolled student (age 18+)", "No credit card required", "One Azure for Students account per student"],

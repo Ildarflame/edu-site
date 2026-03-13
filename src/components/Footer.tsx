@@ -64,13 +64,21 @@ export default function Footer() {
             <div>
               <p className="section-label mb-3">Categories</p>
               <div className="space-y-2">
-                {["Dev", "AI", "SaaS", "Learning", "Cloud", "Design", "Entertainment"].map((cat) => (
+                {[
+                  { href: "/category/dev", label: "Dev" },
+                  { href: "/category/ai", label: "AI" },
+                  { href: "/category/saas", label: "SaaS" },
+                  { href: "/category/learning", label: "Learning" },
+                  { href: "/category/cloud", label: "Cloud" },
+                  { href: "/category/design", label: "Design" },
+                  { href: "/category/entertainment", label: "Entertainment" },
+                ].map((link) => (
                   <Link
-                    key={cat}
-                    href={`/deals?category=${cat}`}
+                    key={link.href}
+                    href={link.href}
                     className="block text-[13px] text-zinc-600 hover:text-zinc-300 transition-colors"
                   >
-                    {cat}
+                    {link.label}
                   </Link>
                 ))}
               </div>
