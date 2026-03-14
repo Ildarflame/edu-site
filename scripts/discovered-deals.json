@@ -1,0 +1,272 @@
+[
+  {
+    "slug": "codedex-students",
+    "name": "Codedex",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Learning",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Cod\u00e9dex is a brand new learn-to-code platform for Gen Z with courses in Python, HTML, CSS, JavaScript, React, Git &amp; ",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "testmail-students",
+    "name": "Testmail",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Get unlimited email addresses and mailboxes for automating email tests with our powerful APIs.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "camber-students",
+    "name": "Camber",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "AI-powered, cloud-based platform designed for scientific computing, simulations, and data analysis.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "appwrite-students",
+    "name": "Appwrite",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Appwrite is an open-source, developer infrastructure platform for building web, mobile, and AI apps. It includes both a ",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "localstack-students",
+    "name": "LocalStack",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "LocalStack emulates AWS services right on your laptop, so you can build and test cloud applications without connecting t",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "scrimba-students",
+    "name": "Scrimba",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Learning",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Scrimba is an interactive learning platform for frontend developers.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "new-relic-students",
+    "name": "New Relic",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "New Relic is an observability platform that helps fully understand how to improve your software.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "visme-students",
+    "name": "Visme",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "The all-in-one platform for creating engaging and interactive presentations, visual documents, data visualizations, shor",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "deepnote-students",
+    "name": "Deepnote",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Deepnote is a new kind of data notebook built for collaboration - Jupyter compatible, works magically in the cloud, and ",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "algoexpert-students",
+    "name": "AlgoExpert",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Learning",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "The ultimate resource to prepare for coding interviews. Everything you need, in one streamlined platform.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "doppler-students",
+    "name": "Doppler",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "A different way to manage secrets. From local development to production, we work on every stack, scaling with you as you",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "requestly-students",
+    "name": "Requestly",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Requestly is an open-source tool for developers to intercept, modify, and mock HTTP requests and responses to build, tes",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "devcycle-students",
+    "name": "DevCycle",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "DevCycle is a Feature Flag Management platform built for developers.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "zoom-education",
+    "name": "Zoom",
+    "source": "saas-education",
+    "sourceUrl": "https://www.zoom.com/en/industry/education/",
+    "category": "SaaS",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Connect your greater school, college, or university community, and alumni with one Unified Communication and Collaborati",
+    "value": "Free for students",
+    "url": "https://www.zoom.com/en/industry/education/",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "edx-students",
+    "name": "edX",
+    "source": "saas-education",
+    "sourceUrl": "https://www.edx.org/",
+    "category": "Learning",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Find the online learning path for you, delivered by world-class institutions like Harvard, Google, Amazon, and more.",
+    "value": "Free for students",
+    "url": "https://www.edx.org/",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "ibm-skillsbuild",
+    "name": "IBM SkillsBuild",
+    "source": "saas-education",
+    "sourceUrl": "https://skillsbuild.org/students",
+    "category": "Learning",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Shape your future in tech with free learning from IBM SkillsBuild - access valuable resources and unlock opportunities f",
+    "value": "Free for students",
+    "url": "https://skillsbuild.org/students",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "redhat-developer",
+    "name": "Red Hat Developer",
+    "source": "saas-education",
+    "sourceUrl": "https://developers.redhat.com/register",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Red Hat Developer for students",
+    "value": "Free for students",
+    "url": "https://developers.redhat.com/register",
+    "hasEducationSignal": false,
+    "discoveredAt": "2026-03-14"
+  },
+  {
+    "slug": "intel-developer",
+    "name": "Intel Developer",
+    "source": "saas-education",
+    "sourceUrl": "https://www.intel.com/content/www/us/en/developer/tools/oneapi/toolkits.html",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "These toolkits deliver the freedom to develop with a unified toolset and to deploy solutions across multiple architectur",
+    "value": "Free for students",
+    "url": "https://www.intel.com/content/www/us/en/developer/tools/oneapi/toolkits.html",
+    "hasEducationSignal": false,
+    "discoveredAt": "2026-03-14"
+  }
+]
