@@ -1,0 +1,68 @@
+name: Discover New Deals
+
+on:
+  schedule:
+    - cron: '0 9 * * 1' # Every Monday at 9:00 UTC
+  workflow_dispatch: {} # Manual trigger
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run deal discovery
+        id: discover
+        # discover-deals.mjs exits 0 = no new, 1 = found new, 2 = error
+        run: node scripts/discover-deals.mjs || true
+
+      - name: Check for new deals
+        id: check
+        run: |
+          if [ -f scripts/discovered-deals.json ]; then
+            COUNT=$(node -e "console.log(JSON.parse(require('fs').readFileSync('scripts/discovered-deals.json','utf8')).length)")
+            echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          else
+            echo "count=0" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate PR body
+        if: steps.check.outputs.count != '0'
+        run: |
+          node -e "
+            const deals = JSON.parse(require('fs').readFileSync('scripts/discovered-deals.json','utf8'));
+            let md = '## Discovered Deals\n\n';
+            for (const d of deals) {
+              md += '- **' + d.name + '** (' + d.category + ') — ' + d.source + '\n';
+              md += '  ' + (d.tagline || '').slice(0, 100) + '\n\n';
+            }
+            md += '---\nTo import: merge this PR, then run \`node scripts/import-discovered.mjs\`';
+            require('fs').writeFileSync('/tmp/pr-body.md', md);
+          "
+
+      - name: Create PR with new deals
+        if: steps.check.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEAL_COUNT: ${{ steps.check.outputs.count }}
+        run: |
+          BRANCH="deals/auto-discover-$(date +%Y-%m-%d)"
+          git checkout -b "$BRANCH"
+          git add scripts/discovered-deals.json
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "feat: discovered ${DEAL_COUNT} new deals"
+          git push origin "$BRANCH"
+          gh pr create \
+            --title "New deals discovered (${DEAL_COUNT})" \
+            --body-file /tmp/pr-body.md \
+            --base main \
+            --head "$BRANCH"
