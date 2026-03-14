@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     description:
       "Best student discounts on software 2026: JetBrains free, GitHub Copilot free, Azure $100, Figma Pro free. 120+ verified deals — claim with .edu email.",
     url: "https://www.studentperks.dev/student-discount",
+    images: [{ url: "/api/og?title=120%2B%20Student%20Discounts%20on%20Software", width: 1200, height: 630 }],
   },
 };
 

@@ -23,6 +23,12 @@ export async function generateMetadata({
     title: seo.title,
     description: seo.metaDescription,
     alternates: { canonical: `https://www.studentperks.dev/category/${slug}` },
+    openGraph: {
+      title: seo.title,
+      description: seo.metaDescription,
+      url: `https://www.studentperks.dev/category/${slug}`,
+      images: [{ url: `/api/og?title=${encodeURIComponent(seo.heading)}`, width: 1200, height: 630 }],
+    },
   };
 }
 

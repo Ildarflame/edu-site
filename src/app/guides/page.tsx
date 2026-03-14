@@ -3,10 +3,16 @@ import Link from "next/link";
 import { GUIDE_SEO } from "@/data/seo-content";
 
 export const metadata: Metadata = {
-  title: "How to Get Free Developer Tools — Step-by-Step Guides | StudentPerks",
+  title: "27 Free Developer Tool Guides — JetBrains, Copilot, AWS & More",
   description:
-    "Step-by-step guides to claim free developer tools. JetBrains, GitHub Copilot, AWS credits, Figma, and 20+ more — with eligibility details and FAQs.",
+    "Step-by-step guides to claim free tools: JetBrains ($649 free), GitHub Copilot, AWS $100K credits, Azure $100, Figma Pro. Eligibility + FAQs for each.",
   alternates: { canonical: "https://www.studentperks.dev/guides" },
+  openGraph: {
+    title: "27 Free Developer Tool Guides — JetBrains, Copilot, AWS & More",
+    description: "Step-by-step guides to claim free tools: JetBrains, GitHub Copilot, AWS credits, Azure $100, Figma Pro. Eligibility + FAQs for each.",
+    url: "https://www.studentperks.dev/guides",
+    images: [{ url: "/api/og?title=27%20Step-by-Step%20Guides%20to%20Free%20Dev%20Tools", width: 1200, height: 630 }],
+  },
 };
 
 export default function GuidesIndexPage() {
@@ -54,8 +60,26 @@ export default function GuidesIndexPage() {
         ))}
       </div>
 
-      {/* JSON-LD — controlled CMS data, not user input — safe for inline script */}
+      {/* JSON-LD — controlled editorial data from seo-content.ts, not user input — safe for inline script */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbLd }} />
+      <script
+        type="application/ld+json"
+        // Content is from controlled GUIDE_SEO array (hardcoded editorial data), not user input
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Free Developer Tool Guides",
+            numberOfItems: GUIDE_SEO.length,
+            itemListElement: GUIDE_SEO.map((g, i) => ({
+              "@type": "ListItem",
+              position: i + 1,
+              url: `https://www.studentperks.dev/guides/${g.slug}`,
+              name: g.heading,
+            })),
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
     </main>
   );
 }

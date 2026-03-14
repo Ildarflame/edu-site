@@ -22,6 +22,18 @@ export async function generateMetadata({
     title: guide.title,
     description: guide.metaDescription,
     alternates: { canonical: `https://www.studentperks.dev/guides/${slug}` },
+    openGraph: {
+      title: guide.title,
+      description: guide.metaDescription,
+      url: `https://www.studentperks.dev/guides/${slug}`,
+      images: [{ url: `/api/og?title=${encodeURIComponent(guide.heading)}`, width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: guide.title,
+      description: guide.metaDescription,
+      images: [`/api/og?title=${encodeURIComponent(guide.heading)}`],
+    },
   };
 }
 
