@@ -28,8 +28,8 @@ export default function ShareButtons({ title, slug }: { title: string; slug: str
         className="relative p-2 rounded-lg bg-white/[0.03] border border-white/[0.06] text-zinc-500 hover:text-orange-400 hover:border-orange-500/20 transition-colors"
         aria-label="Copy link"
       >
-        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m9.86-3.572a4.5 4.5 0 00-1.242-7.244l-4.5-4.5a4.5 4.5 0 00-6.364 6.364L4.343 8.39" />
+        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-2M16 3h5v5M10 14L20.5 3.5" />
         </svg>
         {copied && (
           <span className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-zinc-800 text-emerald-400 text-[11px] font-medium rounded-md whitespace-nowrap border border-white/[0.06]">
