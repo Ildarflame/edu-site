@@ -1080,14 +1080,16 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-vercel-pro-free",
     dealSlug: "vercel-pro",
-    title: "How to Get Vercel Pro Free for Students & OSS 2026 | StudentPerks",
-    metaDescription: "Guide to getting Vercel Pro features free through their hobby plan, student programs, and open source sponsorship.",
+    title: "Vercel Pro Free for Students — GitHub Student Pack (2026)",
+    metaDescription: "Get Vercel Pro free via GitHub Student Developer Pack. Unlimited deployments, analytics, edge functions. Step-by-step activation guide.",
     heading: "How to Get Vercel Pro Free",
     intro: "Vercel's free Hobby plan is already generous for personal projects. But students and open source maintainers can get Pro features free through Vercel's sponsorship programs.",
     eligibility: ["Vercel account", "For student: GitHub Education verified", "For OSS: active open source project", "Hobby plan: anyone (free by default)"],
     faqs: [
       { question: "What's included in Vercel's free plan?", answer: "Unlimited deployments, 100GB bandwidth, serverless functions, edge functions, and preview deployments. Perfect for most student projects." },
       { question: "Can I use a custom domain on free Vercel?", answer: "Yes, custom domains are supported on all plans including the free Hobby plan." },
+      { question: "How do students get Vercel Pro free?", answer: "Through the GitHub Student Developer Pack. Verify your student status, then activate Vercel Pro from the pack benefits page. You get Pro analytics, advanced caching, and team features." },
+      { question: "What are Vercel Pro features vs Hobby?", answer: "Pro adds: Web Analytics, Speed Insights, password protection, 1TB bandwidth, 10s serverless timeout (vs 5s), and more concurrent builds." },
     ],
   },
   {
@@ -1162,8 +1164,8 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-coursera-free",
     dealSlug: "coursera-students",
-    title: "How to Get Coursera Free for Students 2026 | StudentPerks",
-    metaDescription: "Access 3,800+ Coursera courses free through your university's Campus program. Step-by-step guide for 2026.",
+    title: "Coursera Student Discount — Free Courses via Campus (2026)",
+    metaDescription: "Get 3,800+ Coursera courses free via Campus program. Google, IBM, Yale certificates. Check if your university qualifies — step-by-step guide.",
     heading: "How to Get Coursera Free for Students",
     intro: "Coursera for Campus gives students free access to 3,800+ courses from Google, IBM, Yale, and other top institutions. Check if your university participates.",
     eligibility: ["University must be a Coursera Campus partner", ".edu email for verification", "Currently enrolled student", "Some universities limit course count"],
@@ -1347,14 +1349,16 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-cloudflare-free",
     dealSlug: "cloudflare-startups",
-    title: "Cloudflare Pro: Free for Startups 2026 | StudentPerks",
-    metaDescription: "Get Cloudflare Pro plan free for open source projects and startups. CDN, DDoS protection, and Workers at no cost in 2026.",
+    title: "Cloudflare Pro Free for Students — via GitHub Student Pack (2026)",
+    metaDescription: "Get Cloudflare Pro free via GitHub Student Developer Pack. CDN, DDoS protection, WAF, Workers — step-by-step activation guide.",
     heading: "How to Get Cloudflare Pro Free",
     intro: "Cloudflare offers its Pro plan free for open source projects and startup program members. Get CDN, DDoS protection, WAF, Workers, R2 storage, and enhanced security at no cost.",
     eligibility: ["Cloudflare account (free plan: anyone)", "For OSS: active open source project", "For startups: apply to Cloudflare Startup Program", "Free plan includes unlimited bandwidth CDN"],
     faqs: [
       { question: "What does the Cloudflare free plan include?", answer: "Unlimited bandwidth CDN, basic DDoS protection, universal SSL, 100K Workers requests/day, and DNS management. Surprisingly generous for free." },
       { question: "What extra does Pro add?", answer: "Pro adds WAF, image optimization, mobile optimization, enhanced analytics, and 20 page rules (vs 3 on free)." },
+      { question: "How do students get Cloudflare Pro free?", answer: "Through the GitHub Student Developer Pack. Verify your student status on GitHub Education, then activate the Cloudflare Pro benefit from the pack page." },
+      { question: "Does Cloudflare Pro via Student Pack expire?", answer: "The benefit lasts while your GitHub Student Developer Pack is active, typically 1-2 years while enrolled. The free plan continues forever after." },
     ],
   },
   {
