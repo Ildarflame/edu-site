@@ -72,7 +72,7 @@ function DealCard({
           <div className="w-11 h-11 rounded-[10px] bg-white/[0.03] border border-white/[0.06] flex items-center justify-center">
             <Image src={deal.logo} alt={deal.name} width={32} height={32} loading={featured ? undefined : "lazy"} />
           </div>
-          <div className="flex items-center gap-1.5">
+          <div className={`flex items-center gap-1.5 ${compareMode ? "mr-8" : ""}`}>
             {onSave && (
               <SaveButton saved={!!isSaved} onToggle={() => onSave(deal.slug)} />
             )}
