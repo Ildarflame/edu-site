@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Outfit } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "@/components/Header";
@@ -6,25 +7,32 @@ import Footer from "@/components/Footer";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import "./globals.css";
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+  variable: "--font-outfit",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.studentperks.dev"),
-  title: "StudentPerks — Free Tools for Students & Startups",
+  title: "150+ Free Developer Tools for Students & Startups (2026)",
   description:
-    "Claim 150+ free developer tools, cloud credits, and pro plans for students, startups, and open source projects. Save $500K+ in 2026.",
+    "Free JetBrains, GitHub Copilot, Azure $100, AWS $100K — 150+ verified deals for students, startups & open source projects. Claim in minutes.",
   alternates: { canonical: "https://www.studentperks.dev" },
   manifest: "/manifest.json",
   other: { "theme-color": "#18181b" },
   openGraph: {
     type: "website",
-    title: "StudentPerks — Free Tools for Students & Startups",
-    description: "Claim 150+ free developer tools, cloud credits, and pro plans for students, startups, and open source projects. Save $500K+ in 2026.",
+    title: "150+ Free Developer Tools for Students & Startups (2026)",
+    description: "Free JetBrains, GitHub Copilot, Azure $100, AWS $100K — 150+ verified deals for students, startups & open source projects. Claim in minutes.",
     siteName: "StudentPerks",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "StudentPerks — Free Tools for Students & Startups",
-    description: "Claim 150+ free developer tools, cloud credits, and pro plans for students, startups, and open source projects. Save $500K+ in 2026.",
+    title: "150+ Free Developer Tools for Students & Startups (2026)",
+    description: "Free JetBrains, GitHub Copilot, Azure $100, AWS $100K — 150+ verified deals for students, startups & open source projects. Claim in minutes.",
     images: ["/opengraph-image"],
   },
 };
@@ -35,8 +43,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className={`dark ${outfit.variable}`}>
       <head>
+        {/* WebSite schema — all values hardcoded, no user input */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -59,14 +68,7 @@ export default function RootLayout({
         />
         <link rel="alternate" type="application/rss+xml" title="StudentPerks Blog" href="/blog/feed.xml" />
         <link rel="dns-prefetch" href="https://api.notion.com" />
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://va.vercel-scripts.com" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
-        />
       </head>
       <body className="antialiased min-h-screen flex flex-col">
         <Header />

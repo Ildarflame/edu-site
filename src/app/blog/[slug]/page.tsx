@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getPostBySlug(slug);
   if (!post) return { title: "Post Not Found" };
   return {
-    title: `${post.title} | StudentPerks`,
+    title: post.title,
     description: post.description,
     alternates: { canonical: `https://www.studentperks.dev/blog/${slug}` },
     openGraph: {

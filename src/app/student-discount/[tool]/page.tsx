@@ -24,8 +24,8 @@ export async function generateMetadata({
   const deal = deals.find((d) => d.slug === tool && d.audiences.includes("students"));
   if (!deal) return { title: "Not Found" };
 
-  const title = `${deal.name} Student Discount: ${deal.value} Free 2026`;
-  const description = `How to get ${deal.name} free or discounted as a student in 2026. ${deal.tagline}. Step-by-step verification guide.`;
+  const title = `${deal.name} Student Discount 2026 — ${deal.value}`;
+  const description = `Claim ${deal.name} free as a student in 2026. ${deal.tagline}. Verified deal with step-by-step claim guide.`;
 
   return {
     title,

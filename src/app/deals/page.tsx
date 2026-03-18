@@ -7,8 +7,8 @@ import DealsGridWithOnboarding from "@/components/DealsGridWithOnboarding";
 export const revalidate = 300;
 
 export const metadata: Metadata = {
-  title: "All Deals — Free Tools 2026 | StudentPerks",
-  description: "Get 150+ verified free developer tools, cloud credits, and pro plans for students and startups. Claim deals worth $500K+ in 2026.",
+  title: "150+ Free Tools for Students & Startups — Verified Deals 2026",
+  description: "Browse 150+ free developer tools, cloud credits & pro plans. Filter by category, audience & region. Every deal verified with step-by-step instructions.",
   alternates: { canonical: "https://www.studentperks.dev/deals" },
 };
 
@@ -51,6 +51,41 @@ export default async function DealsPage() {
           }).replace(/</g, "\\u003c"),
         }}
       />
+      {/* FAQ structured data — all content is hardcoded editorial, not user input */}
+      {(() => {
+        const faqLd = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Are these deals really free for students?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Every deal is verified by our team. Most require a .edu email or student ID for verification. Some tools are completely free, others offer generous credits or pro plans at no cost during your studies.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do I need a .edu email to claim deals?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Most deals accept .edu emails, but many also work with other verification methods: SheerID, UNiDAYS, GitHub Student Developer Pack, or a valid student ID. Check each deal's requirements for details.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How often are deals updated?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "We verify all deals weekly and update pricing, terms, and availability. Expired deals are marked and new deals are added regularly. The page refreshes every 5 minutes with the latest data.",
+              },
+            },
+          ],
+        }).replace(/</g, "\\u003c");
+        // Safe: hardcoded editorial content, no user input
+        return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqLd }} />;
+      })()}
     </main>
   );
 }

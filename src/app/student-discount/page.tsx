@@ -7,14 +7,14 @@ import StudentDiscountSearch from "./StudentDiscountSearch";
 export const revalidate = 300;
 
 export const metadata: Metadata = {
-  title: "Student Discount Software 2026 — 120+ Free Dev Tools & Credits",
+  title: "Best Student Discounts on Software (2026) — 120+ Free Tools",
   description:
-    "Best student discounts on software 2026: JetBrains free, GitHub Copilot free, Azure $100, Figma Pro free. 120+ verified deals — claim with .edu email.",
+    "120+ verified student discounts: JetBrains free, GitHub Copilot, Azure $100 credit, Notion Plus. Claim with .edu email — step-by-step guides included.",
   alternates: { canonical: "https://www.studentperks.dev/student-discount" },
   openGraph: {
-    title: "Student Discount Software 2026 — 120+ Free Dev Tools & Credits",
+    title: "Best Student Discounts on Software (2026) — 120+ Free Tools",
     description:
-      "Best student discounts on software 2026: JetBrains free, GitHub Copilot free, Azure $100, Figma Pro free. 120+ verified deals — claim with .edu email.",
+      "120+ verified student discounts: JetBrains free, GitHub Copilot, Azure $100 credit, Notion Plus. Claim with .edu email — step-by-step guides included.",
     url: "https://www.studentperks.dev/student-discount",
     images: [{ url: "/api/og?title=120%2B%20Student%20Discounts%20on%20Software", width: 1200, height: 630 }],
   },

@@ -12,7 +12,7 @@ html {
 body {
   background: #050507;
   color: #a1a1aa;
-  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
 }
 
 /* Mesh gradient hero background */

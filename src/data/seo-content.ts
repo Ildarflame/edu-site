@@ -235,7 +235,7 @@ export const AUDIENCE_SEO: AudienceSEO[] = [
   {
     slug: "students",
     audience: "students",
-    title: "Free Developer Tools for Students 2026 | StudentPerks",
+    title: "Free Developer Tools for Students 2026",
     metaDescription:
       "Browse all free developer tools, cloud credits, and pro plans available for students. Verified deals worth $500K+ with .edu email.",
     heading: "Free Tools for Students",
@@ -273,7 +273,7 @@ export const AUDIENCE_SEO: AudienceSEO[] = [
   {
     slug: "startups",
     audience: "startups",
-    title: "Free Tools & Credits for Startups 2026 | StudentPerks",
+    title: "Free Tools & Credits for Startups 2026",
     metaDescription:
       "Get up to $300K in free cloud credits, SaaS tools, and startup programs. AWS, Azure, Stripe Atlas, and more verified startup deals.",
     heading: "Free Tools for Startups",
@@ -306,7 +306,7 @@ export const AUDIENCE_SEO: AudienceSEO[] = [
   {
     slug: "opensource",
     audience: "opensource",
-    title: "Free Tools for Open Source Projects 2026 | StudentPerks",
+    title: "Free Tools for Open Source Projects 2026",
     metaDescription:
       "Get free hosting, CI/CD, developer tools, and pro plans for your open source project. Verified deals from GitHub, Docker, Sentry, and more.",
     heading: "Free Tools for Open Source",
@@ -643,7 +643,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "vercel-vs-railway",
     deal1Slug: "vercel-pro",
     deal2Slug: "railway-oss",
-    title: "Vercel vs Railway: Free Hosting Comparison 2026 | StudentPerks",
+    title: "Vercel vs Railway: Free Hosting Comparison 2026",
     metaDescription: "Compare Vercel and Railway free tiers for students and startups. Side-by-side features, pricing, and which is better for your project.",
     intro: "Both Vercel and Railway offer generous free tiers for developers. Vercel excels at frontend and serverless deployment, while Railway provides full-stack hosting with databases included.",
     verdict: "Choose Vercel for frontend/Next.js projects. Choose Railway for full-stack apps that need databases and background workers.",
@@ -652,7 +652,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "supabase-vs-mongodb",
     deal1Slug: "supabase-startups",
     deal2Slug: "mongodb-students",
-    title: "Supabase vs MongoDB: Free Database 2026 | StudentPerks",
+    title: "Supabase vs MongoDB: Free Database 2026",
     metaDescription: "Compare Supabase and MongoDB Atlas free tiers. PostgreSQL vs NoSQL, real-time vs aggregation, and which is better for students and startups.",
     intro: "Supabase offers a free PostgreSQL database with real-time subscriptions and auth. MongoDB Atlas provides a free NoSQL cluster with flexible schema and powerful aggregation pipeline.",
     verdict: "Choose Supabase for relational data with real-time needs. Choose MongoDB for flexible schemas and document-oriented workloads.",
@@ -661,7 +661,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "github-copilot-vs-cursor",
     deal1Slug: "copilot-students",
     deal2Slug: null,
-    title: "Copilot vs Cursor: AI Coding Tools 2026 | StudentPerks",
+    title: "Copilot vs Cursor: AI Coding Tools 2026",
     metaDescription: "Compare GitHub Copilot (free for students) and Cursor free tier. AI code completion, features, and which is better for student developers.",
     intro: "GitHub Copilot is free for verified students and offers inline AI completions in VS Code. Cursor is an AI-first editor with a generous free tier that includes chat and code generation.",
     verdict: "Students should start with Copilot (completely free). Try Cursor's free tier if you want an integrated AI-first editing experience.",
@@ -670,7 +670,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "aws-vs-google-cloud",
     deal1Slug: "aws-activate",
     deal2Slug: null,
-    title: "AWS vs Google Cloud: Free Credits 2026 | StudentPerks",
+    title: "AWS vs Google Cloud: Free Credits 2026",
     metaDescription: "Compare AWS Activate and Google Cloud free credit programs for startups and students. Credits amount, eligibility, and which cloud to choose.",
     intro: "AWS Activate offers up to $100,000 in credits for startups. Google Cloud for Startups provides up to $200,000. Both have student programs with smaller but still significant credits.",
     verdict: "AWS has a larger ecosystem. Google Cloud offers more credits. Choose based on your tech stack and which services you need most.",
@@ -679,7 +679,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "figma-vs-framer",
     deal1Slug: "figma-education",
     deal2Slug: null,
-    title: "Figma vs Framer: Free Design Tools 2026 | StudentPerks",
+    title: "Figma vs Framer: Free Design Tools 2026",
     metaDescription: "Compare Figma and Framer free plans for students and startups. Design capabilities, prototyping, and which is better for your workflow.",
     intro: "Figma is the industry-standard collaborative design tool with a generous free plan. Framer combines design with code-powered interactions and can publish directly to the web.",
     verdict: "Use Figma for team-based UI/UX design. Use Framer when you want design-to-production website building with interactions.",
@@ -688,7 +688,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "notion-vs-linear",
     deal1Slug: "notion-education",
     deal2Slug: "linear-startups",
-    title: "Notion vs Linear: Free Project Management 2026 | StudentPerks",
+    title: "Notion vs Linear: Free Project Management 2026",
     metaDescription: "Compare Notion and Linear free plans for startups. Flexible workspace vs focused issue tracking, and which suits your team better.",
     intro: "Notion is an all-in-one workspace for docs, databases, and project management. Linear is a focused issue tracker built for speed and developer workflows.",
     verdict: "Use Notion for docs and flexible project management. Use Linear for fast, developer-centric issue tracking and sprint planning.",
@@ -697,7 +697,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "sentry-vs-datadog",
     deal1Slug: "sentry-oss",
     deal2Slug: null,
-    title: "Sentry vs Datadog: Free Monitoring Tools 2026 | StudentPerks",
+    title: "Sentry vs Datadog: Free Monitoring Tools 2026",
     metaDescription: "Compare Sentry and Datadog free tiers for error tracking and monitoring. Features, limits, and which is better for startups.",
     intro: "Sentry specializes in error tracking and performance monitoring with a generous free tier. Datadog offers full-stack observability with infrastructure monitoring, APM, and log management.",
     verdict: "Start with Sentry for error tracking. Add Datadog when you need infrastructure monitoring and APM at scale.",
@@ -706,7 +706,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "stripe-vs-lemonsqueezy",
     deal1Slug: "stripe-atlas",
     deal2Slug: null,
-    title: "Stripe vs Lemon Squeezy: Payments 2026 | StudentPerks",
+    title: "Stripe vs Lemon Squeezy: Payments 2026",
     metaDescription: "Compare Stripe and Lemon Squeezy for startups. Payment processing features, pricing, and which is easier to set up.",
     intro: "Stripe is the most popular payment platform with startup credits available. Lemon Squeezy is an all-in-one platform handling payments, taxes, and subscriptions with simpler setup.",
     verdict: "Use Stripe for maximum flexibility and ecosystem. Use Lemon Squeezy for simplicity and built-in tax handling.",
@@ -715,7 +715,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "docker-vs-podman",
     deal1Slug: "docker-students",
     deal2Slug: null,
-    title: "Docker vs Podman: Free Container Tools 2026 | StudentPerks",
+    title: "Docker vs Podman: Free Container Tools 2026",
     metaDescription: "Compare Docker (free for students) and Podman (always free). Container features, security, and which to choose for development.",
     intro: "Docker is the standard container platform with free access for students and open source. Podman is a daemonless, rootless container engine that's always free and compatible with Docker commands.",
     verdict: "Use Docker for ecosystem compatibility and Docker Desktop features. Use Podman for rootless security and no daemon requirement.",
@@ -724,7 +724,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "jetbrains-vs-vscode",
     deal1Slug: "jetbrains-students",
     deal2Slug: null,
-    title: "JetBrains vs VS Code: Free IDE Comparison 2026 | StudentPerks",
+    title: "JetBrains vs VS Code: Free IDE Comparison 2026",
     metaDescription: "Compare JetBrains IDEs (free for students) and VS Code (always free). Features, performance, and which IDE is better for your workflow.",
     intro: "JetBrains offers professional IDEs free for students — IntelliJ, WebStorm, PyCharm, and more. VS Code is a free, lightweight editor with a massive extension ecosystem.",
     verdict: "Use JetBrains for deep language-specific features and refactoring. Use VS Code for lightweight editing and extension flexibility.",
@@ -733,7 +733,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "figma-vs-sketch",
     deal1Slug: "figma-education",
     deal2Slug: null,
-    title: "Figma vs Sketch: Design Tools for Students 2026 | StudentPerks",
+    title: "Figma vs Sketch: Design Tools for Students 2026",
     metaDescription: "Compare Figma (free for students) and Sketch. Features, pricing, and which design tool is better for student projects and teams.",
     intro: "Figma is a collaborative, browser-based design tool completely free for students. Sketch is a Mac-only professional design application popular in the Apple ecosystem.",
     verdict: "Use Figma — it's free for students, works on any OS, and has better real-time collaboration. Choose Sketch only if you're on Mac and your team is already in the Sketch ecosystem.",
@@ -742,7 +742,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "github-actions-vs-gitlab-ci",
     deal1Slug: "github-education",
     deal2Slug: null,
-    title: "GitHub Actions vs GitLab CI for Students 2026 | StudentPerks",
+    title: "GitHub Actions vs GitLab CI for Students 2026",
     metaDescription: "GitHub Actions vs GitLab CI — which CI/CD pipeline is better for students? Compare free build minutes, features, and ease of setup.",
     intro: "GitHub Actions is tightly integrated with GitHub repos and offers 2,000 free CI/CD minutes per month for private repos. GitLab CI is built into GitLab with 400 free minutes and a full DevOps platform.",
     verdict: "Use GitHub Actions if your code is on GitHub — zero configuration and 2,000 free minutes per month. Use GitLab CI when you want everything (code, CI/CD, registry, monitoring) in one place.",
@@ -751,7 +751,7 @@ export const COMPARISON_SEO: ComparisonSEO[] = [
     slug: "sentry-vs-newrelic",
     deal1Slug: "sentry-oss",
     deal2Slug: null,
-    title: "Sentry vs New Relic: Free Error Monitoring 2026 | StudentPerks",
+    title: "Sentry vs New Relic: Free Error Monitoring 2026",
     metaDescription: "Compare Sentry and New Relic free tiers for error tracking and observability. Which is better for students and early-stage startups?",
     intro: "Sentry specializes in error tracking and performance monitoring with a generous free tier and OSS program. New Relic offers full-stack observability with a free plan including 100 GB/month data ingest and unlimited users.",
     verdict: "Start with Sentry for error tracking — simpler setup, free for OSS, and integrates with GitHub. Add New Relic when you need infrastructure monitoring, distributed tracing, and APM in a single dashboard.",
@@ -772,7 +772,7 @@ export type UseCaseSEO = {
 export const USE_CASE_SEO: UseCaseSEO[] = [
   {
     slug: "best-free-databases-for-side-projects",
-    title: "Best Free Databases for Side Projects 2026 | StudentPerks",
+    title: "Best Free Databases for Side Projects 2026",
     metaDescription: "Find the best free databases for your side projects. Supabase, MongoDB Atlas, PlanetScale, and more with generous free tiers.",
     heading: "Best Free Databases for Side Projects",
     intro: "Building a side project? You don't need to pay for a database. These free-tier databases give you production-ready storage for hobby and side projects.",
@@ -784,7 +784,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-hosting-for-students",
-    title: "Best Free Hosting for Students 2026 | StudentPerks",
+    title: "Best Free Hosting for Students 2026",
     metaDescription: "Free hosting platforms for student developers. Deploy your projects on Vercel, Railway, Render, and more with zero cost.",
     heading: "Best Free Hosting for Students",
     intro: "Deploy your projects for free. These hosting platforms offer generous free tiers perfect for student portfolios, class projects, and side projects.",
@@ -797,7 +797,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-design-tools-for-prototyping",
-    title: "Best Free Design Tools for Prototyping 2026 | StudentPerks",
+    title: "Best Free Design Tools for Prototyping 2026",
     metaDescription: "Free design and prototyping tools for students and startups. Figma, Framer, Canva, and more with free plans.",
     heading: "Best Free Design Tools for Prototyping",
     intro: "Create professional designs and prototypes without spending a dime. These design tools offer powerful free tiers for UI/UX design, prototyping, and graphics.",
@@ -810,7 +810,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-cicd-for-open-source",
-    title: "Best Free CI/CD for Open Source 2026 | StudentPerks",
+    title: "Best Free CI/CD for Open Source 2026",
     metaDescription: "Free CI/CD pipelines for open source projects. GitHub Actions, GitLab CI, and more with unlimited builds for public repos.",
     heading: "Best Free CI/CD for Open Source Projects",
     intro: "Open source projects get the best CI/CD deals. Most platforms offer unlimited build minutes for public repositories, making automated testing and deployment completely free.",
@@ -822,7 +822,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-ai-tools-for-developers",
-    title: "Best Free AI Tools for Developers 2026 | StudentPerks",
+    title: "Best Free AI Tools for Developers 2026",
     metaDescription: "Free AI tools for developers. GitHub Copilot, OpenAI API credits, Cursor, and more AI-powered coding tools with free access.",
     heading: "Best Free AI Tools for Developers",
     intro: "AI is transforming development. Access the best AI coding tools for free through student programs, startup credits, and open source sponsorships.",
@@ -835,7 +835,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-monitoring-for-startups",
-    title: "Best Free Monitoring Tools for Startups 2026 | StudentPerks",
+    title: "Best Free Monitoring Tools for Startups 2026",
     metaDescription: "Free monitoring and observability tools for startups. Sentry, Datadog, New Relic, and more with free startup credits.",
     heading: "Best Free Monitoring Tools for Startups",
     intro: "Don't fly blind. These monitoring tools offer free tiers and startup credits to help you track errors, performance, and infrastructure from day one.",
@@ -847,7 +847,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-learning-platforms",
-    title: "Best Free Learning Platforms for Developers 2026 | StudentPerks",
+    title: "Best Free Learning Platforms for Developers 2026",
     metaDescription: "Free learning platforms for developers. Coursera, freeCodeCamp, and more with certificates and courses at no cost.",
     heading: "Best Free Learning Platforms for Developers",
     intro: "Level up your skills for free. These learning platforms offer free courses, certifications, and hands-on projects for developer education.",
@@ -860,7 +860,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-tools-for-hackathons",
-    title: "Best Free Tools for Hackathons 2026 | StudentPerks",
+    title: "Best Free Tools for Hackathons 2026",
     metaDescription: "Essential free tools for hackathons. Deploy fast with Vercel, build with Supabase, design with Figma — all free.",
     heading: "Best Free Tools for Hackathons",
     intro: "Win your next hackathon with the right free tools. Fast deployment, instant databases, collaborative design, and AI assistance — all at zero cost.",
@@ -872,7 +872,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-saas-tools-for-mvp",
-    title: "Best Free SaaS Tools to Build Your MVP 2026 | StudentPerks",
+    title: "Best Free SaaS Tools to Build Your MVP 2026",
     metaDescription: "Free SaaS tools to build and launch your MVP. Authentication, payments, email, analytics, and more without spending money.",
     heading: "Best Free SaaS Tools to Build Your MVP",
     intro: "Build your MVP without a budget. These SaaS tools offer free tiers that cover everything from auth to payments to analytics.",
@@ -885,7 +885,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-tools-for-portfolio-websites",
-    title: "Best Free Tools for Portfolio Websites 2026 | StudentPerks",
+    title: "Best Free Tools for Portfolio Websites 2026",
     metaDescription: "Build a stunning portfolio website for free. Hosting, domains, design tools, and deployment platforms at zero cost for students.",
     heading: "Best Free Tools for Portfolio Websites",
     intro: "Your portfolio is your first impression. Build and host a professional portfolio website for free using these developer tools and hosting platforms.",
@@ -897,7 +897,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-tools-for-web-development",
-    title: "Best Free Tools for Web Development 2026 | StudentPerks",
+    title: "Best Free Tools for Web Development 2026",
     metaDescription: "The best free web development tools for students and developers. IDEs, hosting, databases, design tools, and AI assistants — all free.",
     heading: "Best Free Tools for Web Development",
     intro: "Build modern web apps without spending a cent. From professional IDEs and AI pair programmers to free hosting and managed databases, these tools cover the full web development stack.",
@@ -909,7 +909,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-software-for-college-students",
-    title: "Best Free Software for College Students 2026 | StudentPerks",
+    title: "Best Free Software for College Students 2026",
     metaDescription: "Essential free software every college student needs. IDEs, productivity apps, cloud storage, creative tools, and streaming — all with student discounts or free plans.",
     heading: "Best Free Software for College Students",
     intro: "College is expensive, but software doesn't have to be. These verified student deals give you free access to professional tools worth thousands of dollars — from coding environments to creative suites.",
@@ -921,7 +921,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-cloud-services-for-students",
-    title: "Best Free Cloud Services for Students 2026 | StudentPerks",
+    title: "Best Free Cloud Services for Students 2026",
     metaDescription: "Free cloud credits and services for students. AWS, Azure, Google Cloud, DigitalOcean, Vercel, and more with student programs.",
     heading: "Best Free Cloud Services for Students",
     intro: "Deploy, scale, and learn cloud computing for free. Major cloud providers offer generous credits and free tiers specifically for students — no credit card required for most.",
@@ -934,7 +934,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-tools-for-startup-founders",
-    title: "Best Free Tools for Startup Founders 2026 | StudentPerks",
+    title: "Best Free Tools for Startup Founders 2026",
     metaDescription: "Free tools and credits for startup founders. Cloud credits, SaaS tools, incorporation, and more — save $100K+ in your first year.",
     heading: "Best Free Tools for Startup Founders",
     intro: "Launch your startup without burning cash on software. These verified programs provide cloud credits, SaaS tools, and infrastructure worth over $100,000 combined — all free for early-stage founders.",
@@ -946,7 +946,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-tools-for-open-source",
-    title: "Best Free Tools for Open Source Projects 2026 | StudentPerks",
+    title: "Best Free Tools for Open Source Projects 2026",
     metaDescription: "Free developer tools for open source maintainers. CI/CD, hosting, error tracking, databases, and more — all free for OSS projects.",
     heading: "Best Free Tools for Open Source Projects",
     intro: "Open source maintainers get premium tools for free. From hosting and CI/CD to error tracking and databases, these programs support the open source community with full-featured plans at zero cost.",
@@ -958,7 +958,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-api-testing-tools",
-    title: "Best Free API Testing Tools for Developers 2026 | StudentPerks",
+    title: "Best Free API Testing Tools for Developers 2026",
     metaDescription: "Free API testing and development tools. Postman, Insomnia, Hoppscotch, and more with free plans for students and open source developers.",
     heading: "Best Free API Testing & Development Tools",
     intro: "Test and document your APIs without paying. These free-tier API clients and testing platforms give you professional-grade tools — from REST and GraphQL testing to mock servers and automated test suites.",
@@ -971,7 +971,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-backend-tools",
-    title: "Best Free Backend Tools for Students 2026 | StudentPerks",
+    title: "Best Free Backend Tools for Students 2026",
     metaDescription: "Free backend tools and services for student developers. Databases, auth, hosting, APIs, and more with free tiers and student programs.",
     heading: "Best Free Backend Tools for Student Developers",
     intro: "Build your backend without paying for infrastructure. From managed databases and auth services to API hosting and serverless functions, these free-tier tools cover everything you need to ship full-stack projects.",
@@ -984,7 +984,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-tools-for-data-science",
-    title: "Best Free Tools for Data Science Students 2026 | StudentPerks",
+    title: "Best Free Tools for Data Science Students 2026",
     metaDescription: "Free data science tools for students. Cloud compute, Jupyter, datasets, and AI credits with student programs and free tiers.",
     heading: "Best Free Tools for Data Science & ML Students",
     intro: "Learn data science and machine learning with professional tools at zero cost. From cloud notebooks and GPU compute to dataset platforms and AI model APIs, these free tools give you everything needed for serious data projects.",
@@ -997,7 +997,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-devops-tools",
-    title: "Best Free DevOps Tools for Students & Startups 2026 | StudentPerks",
+    title: "Best Free DevOps Tools for Students & Startups 2026",
     metaDescription: "Free DevOps tools for CI/CD, infrastructure, monitoring, and containerization. Student and open source programs with verified free tiers.",
     heading: "Best Free DevOps Tools for Students & Startups",
     intro: "Build a professional DevOps pipeline at zero cost. From containerization with Docker to CI/CD with GitHub Actions, monitoring with Sentry, and cloud infrastructure — these tools cover the full DevOps lifecycle for free.",
@@ -1010,7 +1010,7 @@ export const USE_CASE_SEO: UseCaseSEO[] = [
   },
   {
     slug: "best-free-tools-for-mobile-development",
-    title: "Best Free Tools for Mobile Development 2026 | StudentPerks",
+    title: "Best Free Tools for Mobile Development 2026",
     metaDescription: "Free tools for iOS and Android development. Xcode, Firebase, Supabase, and cloud services with student programs and free tiers.",
     heading: "Best Free Tools for Mobile Development",
     intro: "Build iOS and Android apps without paying for infrastructure. These free tools cover the full mobile development lifecycle — from IDE and simulator to backend-as-a-service, analytics, and crash reporting.",
@@ -1038,7 +1038,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-jetbrains-free",
     dealSlug: "jetbrains-students",
-    title: "How to Get JetBrains IDEs Free for Students 2026 | StudentPerks",
+    title: "How to Get JetBrains IDEs Free for Students 2026",
     metaDescription: "Step-by-step guide to getting JetBrains IntelliJ, WebStorm, PyCharm, and all IDEs free with a student license in 2026.",
     heading: "How to Get JetBrains IDEs Free",
     intro: "JetBrains offers all their professional IDEs completely free for students. This includes IntelliJ IDEA Ultimate, WebStorm, PyCharm Professional, and 10+ other tools worth $699/year.",
@@ -1067,7 +1067,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-aws-credits",
     dealSlug: "aws-activate",
-    title: "How to Get AWS Credits Free in 2026 | StudentPerks",
+    title: "How to Get AWS Credits Free in 2026",
     metaDescription: "Complete guide to getting free AWS credits through AWS Activate, AWS Educate, and the GitHub Student Developer Pack.",
     heading: "How to Get Free AWS Credits",
     intro: "AWS offers multiple free credit programs. Startups can get up to $100,000 through AWS Activate. Students get credits through AWS Educate and the GitHub Student Developer Pack.",
@@ -1125,7 +1125,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-docker-free",
     dealSlug: "docker-students",
-    title: "Get Docker Free: Students & OSS 2026 | StudentPerks",
+    title: "Get Docker Free: Students & OSS 2026",
     metaDescription: "Docker Desktop is free for students, education, and open source projects. Learn how to qualify and set up your free license.",
     heading: "How to Get Docker Desktop Free",
     intro: "Docker Desktop is free for personal use, education, small businesses, and open source projects. Students and open source contributors get full Docker Desktop features at no cost.",
@@ -1138,7 +1138,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-github-student-pack",
     dealSlug: "github-education",
-    title: "How to Get GitHub Student Developer Pack 2026 | StudentPerks",
+    title: "How to Get GitHub Student Developer Pack 2026",
     metaDescription: "Step-by-step guide to claiming the GitHub Student Developer Pack with 100+ free developer tools in 2026.",
     heading: "How to Get the GitHub Student Developer Pack",
     intro: "The GitHub Student Developer Pack bundles 100+ free tools — from cloud credits and domains to IDEs and CI/CD. It's the single most valuable student program for developers.",
@@ -1151,7 +1151,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-spotify-student-discount",
     dealSlug: "spotify-student",
-    title: "How to Get Spotify Premium Student Discount 2026 | StudentPerks",
+    title: "How to Get Spotify Premium Student Discount 2026",
     metaDescription: "Get Spotify Premium at half price as a student. Step-by-step guide to claiming the student discount via SheerID in 2026.",
     heading: "How to Get Spotify Student Discount",
     intro: "Spotify Premium Student gives you ad-free music, offline downloads, and Hulu for just $5.99/month — over 50% off the regular price. Verification is through SheerID.",
@@ -1177,7 +1177,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-digitalocean-credits",
     dealSlug: "digitalocean-students",
-    title: "DigitalOcean Free Credits: Students 2026 | StudentPerks",
+    title: "DigitalOcean Free Credits: Students 2026",
     metaDescription: "Get $200 in DigitalOcean cloud credits as a student through the GitHub Student Developer Pack in 2026.",
     heading: "How to Get DigitalOcean Free Credits",
     intro: "DigitalOcean provides $200 in cloud credits to students via the GitHub Student Developer Pack. Deploy droplets, databases, and Kubernetes clusters for free.",
@@ -1190,7 +1190,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-mongodb-free",
     dealSlug: "mongodb-students",
-    title: "How to Get MongoDB Atlas Free for Students 2026 | StudentPerks",
+    title: "How to Get MongoDB Atlas Free for Students 2026",
     metaDescription: "MongoDB Atlas free M0 cluster plus student program benefits. Step-by-step setup guide for 2026.",
     heading: "How to Get MongoDB Atlas Free",
     intro: "MongoDB Atlas offers a free M0 cluster with 512 MB storage that never expires. Students can access additional credits through the MongoDB for Academia program.",
@@ -1204,7 +1204,7 @@ export const GUIDE_SEO: GuideSEO[] = [
     slug: "how-to-get-azure-student-credits",
     dealSlug: "azure-students",
     title: "Azure $100 Free Student Credits — No Card Needed (2026)",
-    metaDescription: "Claim $100 Azure credits + 25 free services in 5 minutes. Just a .edu email, no credit card. Step-by-step guide with screenshots.",
+    metaDescription: "Get $100 Azure credits + 25 free cloud services with just a .edu email. No credit card required. Step-by-step 5-minute setup guide with screenshots.",
     heading: "How to Get Azure Free Student Credits",
     intro: "Azure for Students gives verified students $100 in cloud credits with no credit card required, plus free access to 25+ Azure services. Startups can get up to $150K through Founders Hub.",
     eligibility: ["School email address for verification", "Currently enrolled student (age 18+)", "No credit card required", "One Azure for Students account per student"],
@@ -1219,7 +1219,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-youtube-premium-student",
     dealSlug: "youtube-premium-student",
-    title: "How to Get YouTube Premium Student Discount 2026 | StudentPerks",
+    title: "How to Get YouTube Premium Student Discount 2026",
     metaDescription: "Get YouTube Premium at student pricing — ad-free videos, background play, and YouTube Music. SheerID verification guide for 2026.",
     heading: "How to Get YouTube Premium Student Discount",
     intro: "YouTube Premium Student plan gives you ad-free videos, background play, offline downloads, and YouTube Music Premium at a reduced price. Verify once through SheerID.",
@@ -1232,7 +1232,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-amazon-prime-student",
     dealSlug: "amazon-prime-student",
-    title: "Amazon Prime Student: 6 Months Free 2026 | StudentPerks",
+    title: "Amazon Prime Student: 6 Months Free 2026",
     metaDescription: "Get 6 months of Amazon Prime free, then 50% off as a student. Step-by-step guide for Prime Student in 2026.",
     heading: "How to Get Amazon Prime Student",
     intro: "Amazon Prime Student includes a 6-month free trial followed by 50% off regular Prime ($7.49/month). Get free shipping, Prime Video, Prime Music, and exclusive student deals.",
@@ -1245,7 +1245,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-adobe-student-discount",
     dealSlug: "adobe-creative-cloud",
-    title: "Adobe Creative Cloud: Student Deal 2026 | StudentPerks",
+    title: "Adobe Creative Cloud: Student Deal 2026",
     metaDescription: "Get 60%+ off Adobe Creative Cloud as a student. Photoshop, Illustrator, Premiere Pro, and 20+ apps at student pricing in 2026.",
     heading: "How to Get Adobe Creative Cloud Student Discount",
     intro: "Adobe offers 60%+ off the entire Creative Cloud suite for students and teachers. Get Photoshop, Illustrator, Premiere Pro, After Effects, and 20+ apps at a fraction of the cost.",
@@ -1258,7 +1258,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-apple-education-pricing",
     dealSlug: "apple-education-store",
-    title: "How to Get Apple Education Pricing 2026 | StudentPerks",
+    title: "How to Get Apple Education Pricing 2026",
     metaDescription: "Save up to $400 on Mac, iPad, and accessories with Apple Education Pricing. Student discount guide for 2026.",
     heading: "How to Get Apple Education Pricing",
     intro: "Apple Education Pricing gives students up to $300 off Mac, $100 off iPad, free AirPods with qualifying purchases, and 20% off AppleCare+. Available to current and incoming university students.",
@@ -1271,7 +1271,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-apple-developer-free",
     dealSlug: "apple-developer-student",
-    title: "Apple Developer: Free for Students 2026 | StudentPerks",
+    title: "Apple Developer: Free for Students 2026",
     metaDescription: "Access Apple developer tools, betas, and TestFlight for free as a student. Apple Developer Academy membership guide for 2026.",
     heading: "How to Get Apple Developer Program Free",
     intro: "Students can access Xcode, development tools, beta software, and TestFlight for free. Those accepted into Apple Developer Academies get a full membership ($99 value) at no cost.",
@@ -1284,7 +1284,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-supabase-credits",
     dealSlug: "supabase-startups",
-    title: "Supabase Credits: Startups & OSS 2026 | StudentPerks",
+    title: "Supabase Credits: Startups & OSS 2026",
     metaDescription: "Get $2,500 in Supabase credits through startup programs. Plus free tier with managed Postgres, auth, and storage in 2026.",
     heading: "How to Get Supabase Free Credits",
     intro: "Supabase provides $2,500 in credits to startups and sponsors open source projects. The free tier includes managed Postgres, auth, storage, edge functions, and real-time subscriptions.",
@@ -1297,7 +1297,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-stripe-atlas-credits",
     dealSlug: "stripe-atlas",
-    title: "Stripe Atlas: $5K+ Credits 2026 | StudentPerks",
+    title: "Stripe Atlas: $5K+ Credits 2026",
     metaDescription: "Incorporate your startup with Stripe Atlas and unlock $5,000+ in partner credits from AWS, OpenAI, and more in 2026.",
     heading: "How to Get Stripe Atlas Partner Credits",
     intro: "Stripe Atlas helps founders incorporate a US C-Corp for $500. Atlas startups unlock $5,000+ in credits from partners like AWS, OpenAI, MongoDB, and others.",
@@ -1310,7 +1310,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-openai-startup-credits",
     dealSlug: "openai-api-startups",
-    title: "How to Get OpenAI API Credits for Startups 2026 | StudentPerks",
+    title: "How to Get OpenAI API Credits for Startups 2026",
     metaDescription: "Apply for OpenAI startup program credits, technical guidance, and go-to-market support for AI startups in 2026.",
     heading: "How to Get OpenAI Startup Credits",
     intro: "OpenAI offers API credits, technical guidance, and go-to-market support for early-stage startups building with their API. Credits help offset GPT-4, DALL-E, and Whisper costs.",
@@ -1323,7 +1323,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-railway-free",
     dealSlug: "railway-oss",
-    title: "Railway Free: OSS & Students 2026 | StudentPerks",
+    title: "Railway Free: OSS & Students 2026",
     metaDescription: "Deploy projects on Railway for free as a student or open source contributor. Free credits and hosting guide for 2026.",
     heading: "How to Get Railway Free Hosting",
     intro: "Railway provides free deployment credits for open source projects and a trial tier for everyone. Deploy apps, databases, and cron jobs with a simple Git-based workflow.",
@@ -1336,9 +1336,9 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-sentry-free",
     dealSlug: "sentry-oss",
-    title: "Sentry Free for Open Source — Business Plan at $0 (2026)",
-    metaDescription: "Get Sentry Business plan free: 500K events/month, performance monitoring, session replay. For OSS projects with OSI license. Apply in 5 minutes.",
-    heading: "How to Get Sentry Free for OSS",
+    title: "How to Get Sentry Free — Student & Open Source Plans (2026)",
+    metaDescription: "Sentry Business plan free for open source + student access via GitHub Pack. 500K events/month, performance monitoring, session replay. Apply in 5 minutes.",
+    heading: "How to Get Sentry Free for Students & OSS",
     intro: "Sentry offers its Business plan free for qualified open source projects and discounted plans for startups. Get real-time error tracking, performance monitoring, and session replay.",
     eligibility: ["For OSS: actively maintained open source project", "Project must have OSI-approved license", "Apply at sentry.io/for/open-source", "Startups: apply through partner accelerators"],
     faqs: [
@@ -1364,7 +1364,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-linear-free",
     dealSlug: "linear-startups",
-    title: "How to Get Linear Free for Startups 2026 | StudentPerks",
+    title: "How to Get Linear Free for Startups 2026",
     metaDescription: "Get Linear's Standard plan free for early-stage startups. Project management with cycles, roadmaps, and integrations in 2026.",
     heading: "How to Get Linear Free for Startups",
     intro: "Linear offers its Standard plan free for early-stage startups. Get powerful project management with cycles, roadmaps, integrations, and the fastest issue tracker in the industry.",
@@ -1377,7 +1377,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-slack-startup-credits",
     dealSlug: "slack-startups",
-    title: "How to Get Slack Pro Free for Startups 2026 | StudentPerks",
+    title: "How to Get Slack Pro Free for Startups 2026",
     metaDescription: "Get Slack Pro plan credits for your startup through accelerator and VC partner programs in 2026.",
     heading: "How to Get Slack Pro for Startups",
     intro: "Slack offers Pro plan credits to startups through their partnerships with accelerators and VC firms. Get unlimited message history, integrations, and group calls for your team.",
@@ -1390,7 +1390,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-github-pages-free",
     dealSlug: "github-education",
-    title: "How to Host a Website Free with GitHub Pages 2026 | StudentPerks",
+    title: "How to Host a Website Free with GitHub Pages 2026",
     metaDescription: "Deploy your portfolio or project site for free with GitHub Pages. Step-by-step guide for students in 2026 — custom domain, HTTPS, no credit card.",
     heading: "How to Host a Website Free with GitHub Pages",
     intro: "GitHub Pages lets you host any static website directly from a GitHub repository — completely free, forever. Get a yourname.github.io subdomain or connect a custom domain with HTTPS included.",
@@ -1404,7 +1404,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-1password-student",
     dealSlug: "github-education",
-    title: "How to Get 1Password Free for Students 2026 | StudentPerks",
+    title: "How to Get 1Password Free for Students 2026",
     metaDescription: "Get 1Password free for students through the GitHub Student Developer Pack. Secure your passwords and secrets in 2026.",
     heading: "How to Get 1Password Free as a Student",
     intro: "1Password is included in the GitHub Student Developer Pack — verified students get a free individual account. Securely store passwords, API keys, SSH keys, and credentials across all devices.",
@@ -1418,7 +1418,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-microsoft-365-free",
     dealSlug: "github-education",
-    title: "How to Get Microsoft 365 Free for Students 2026 | StudentPerks",
+    title: "How to Get Microsoft 365 Free for Students 2026",
     metaDescription: "Get Microsoft 365 Education free as a student. Word, Excel, PowerPoint, Teams, and 1 TB OneDrive with your university email in 2026.",
     heading: "How to Get Microsoft 365 Free for Students",
     intro: "Most universities provide Microsoft 365 Education free to enrolled students. You get Word, Excel, PowerPoint, OneNote, Teams, and 1 TB of OneDrive storage — no credit card required.",
@@ -1432,7 +1432,7 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-google-cloud-credits",
     dealSlug: "aws-activate",
-    title: "How to Get Google Cloud Free Credits 2026 | StudentPerks",
+    title: "How to Get Google Cloud Free Credits 2026",
     metaDescription: "Get free Google Cloud credits through Google Cloud for Students and startups. Up to $300 in free credits with no credit card required in 2026.",
     heading: "How to Get Google Cloud Free Credits",
     intro: "Google Cloud offers $300 in free credits for 90 days to new users, plus an Always Free tier with 20+ products. Students and startups can access additional credits through dedicated programs.",
@@ -1446,8 +1446,8 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-namecheap-domain-free",
     dealSlug: "github-education",
-    title: "Free Domain for Students — .me, .tech & .co (2026 Guide)",
-    metaDescription: "Get a free domain with your student email: .me from Namecheap, .tech from get.tech, .co via GitHub Pack. Free SSL included. 5-minute setup.",
+    title: "Namecheap Free Domain for Students — .me, .tech & .co (2026)",
+    metaDescription: "Get a free .me domain from Namecheap via GitHub Student Pack. Plus .tech and .co domains. Free SSL & WHOIS privacy. 5-minute setup with .edu email.",
     heading: "How to Get a Free Domain as a Student",
     intro: "Students can get a free custom domain through the GitHub Student Developer Pack. Namecheap offers a free .me domain for 1 year and a free SSL certificate to verified students.",
     eligibility: ["GitHub Student Developer Pack membership", "Verified student via GitHub Education", "Namecheap account", "Domain available (first-come, first-served)"],
@@ -1489,7 +1489,7 @@ export type SeasonalSEO = {
 export const SEASONAL_SEO: SeasonalSEO[] = [
   {
     slug: "back-to-school-2026",
-    title: "Back to School 2026: Free Dev Tools | StudentPerks",
+    title: "Back to School 2026: Free Dev Tools",
     metaDescription: "Get ready for the new semester with free developer tools, cloud credits, and pro plans. Verified student deals for 2026.",
     heading: "Back to School 2026 — Free Tools for Students",
     intro: "Starting a new semester? Grab these free developer tools, cloud credits, and professional software before classes begin. All verified and available for students with a .edu email.",
@@ -1503,7 +1503,7 @@ export const SEASONAL_SEO: SeasonalSEO[] = [
   },
   {
     slug: "black-friday-2026",
-    title: "Black Friday 2026 — Best Developer Tool Deals | StudentPerks",
+    title: "Black Friday 2026 — Best Developer Tool Deals",
     metaDescription: "Black Friday 2026 developer tool deals. Extra credits, extended trials, and exclusive discounts on dev tools, cloud, and SaaS.",
     heading: "Black Friday 2026 — Developer Tool Deals",
     intro: "The best Black Friday deals on developer tools, cloud platforms, and SaaS products. Many companies offer extended free tiers, bonus credits, and exclusive discounts during the holiday season.",
@@ -1516,7 +1516,7 @@ export const SEASONAL_SEO: SeasonalSEO[] = [
   },
   {
     slug: "new-year-2027",
-    title: "New Year 2027: Free Developer Tools | StudentPerks",
+    title: "New Year 2027: Free Developer Tools",
     metaDescription: "Kick off 2027 with free developer tools and cloud credits. The best deals for students, startups, and open source projects.",
     heading: "New Year 2027 — Free Tools to Start Building",
     intro: "New year, new projects. Start 2027 with the best free developer tools, cloud credits, and pro plans. Whether you're launching a startup, starting a new course, or contributing to open source, these deals will help you ship faster.",
@@ -1730,7 +1730,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Canva",
     tool1Slug: "figma-education",
     tool2Slug: "",
-    title: "Figma vs Canva for Students 2026 | StudentPerks",
+    title: "Figma vs Canva for Students 2026",
     metaDescription:
       "Figma vs Canva — which design tool is better for students? Compare free plans, features, and student deals side by side.",
     intro:
@@ -1753,7 +1753,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Obsidian",
     tool1Slug: "notion-education",
     tool2Slug: "",
-    title: "Notion vs Obsidian for Students 2026 | StudentPerks",
+    title: "Notion vs Obsidian for Students 2026",
     metaDescription:
       "Notion vs Obsidian — which note-taking app is better for students? Compare features, pricing, and student discounts.",
     intro:
@@ -1776,7 +1776,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "GitLab",
     tool1Slug: "github-education",
     tool2Slug: "",
-    title: "GitHub vs GitLab for Students 2026 | StudentPerks",
+    title: "GitHub vs GitLab for Students 2026",
     metaDescription:
       "GitHub vs GitLab — which platform is better for students? Compare student packs, CI/CD, and free features.",
     intro:
@@ -1799,7 +1799,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Microsoft Azure",
     tool1Slug: "aws-activate",
     tool2Slug: "azure-students",
-    title: "AWS vs Azure Cloud Credits for Students 2026 | StudentPerks",
+    title: "AWS vs Azure Cloud Credits for Students 2026",
     metaDescription:
       "AWS vs Azure for students — compare cloud credits, free tiers, and student programs. Which cloud platform should students choose?",
     intro:
@@ -1822,7 +1822,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Claude",
     tool1Slug: "",
     tool2Slug: "",
-    title: "ChatGPT vs Claude for Students 2026 | StudentPerks",
+    title: "ChatGPT vs Claude for Students 2026",
     metaDescription:
       "ChatGPT vs Claude — which AI assistant is better for students? Compare free tiers, features, and academic use cases.",
     intro:
@@ -1845,7 +1845,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Netlify",
     tool1Slug: "vercel-pro",
     tool2Slug: "",
-    title: "Vercel vs Netlify for Students 2026 | StudentPerks",
+    title: "Vercel vs Netlify for Students 2026",
     metaDescription:
       "Vercel vs Netlify — which hosting platform is better for students? Compare free tiers, features, and deployment experience.",
     intro:
@@ -1868,7 +1868,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "PostgreSQL",
     tool1Slug: "mongodb-students",
     tool2Slug: "",
-    title: "MongoDB vs PostgreSQL for Students 2026 | StudentPerks",
+    title: "MongoDB vs PostgreSQL for Students 2026",
     metaDescription:
       "MongoDB vs PostgreSQL for students — which database should you learn first? Compare features, free tiers, and career value.",
     intro:
@@ -1891,7 +1891,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Kubernetes",
     tool1Slug: "docker-students",
     tool2Slug: "",
-    title: "Docker vs Kubernetes for Students 2026 | StudentPerks",
+    title: "Docker vs Kubernetes for Students 2026",
     metaDescription:
       "Docker vs Kubernetes — what should students learn first? Compare use cases, complexity, and free access for students.",
     intro:
@@ -1914,7 +1914,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "VS Code",
     tool1Slug: "jetbrains-students",
     tool2Slug: "",
-    title: "JetBrains vs VS Code for Students 2026 | StudentPerks",
+    title: "JetBrains vs VS Code for Students 2026",
     metaDescription:
       "JetBrains vs VS Code — which IDE is better for students? Compare student deals, features, and language support.",
     intro:
@@ -1937,7 +1937,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Codeium",
     tool1Slug: "copilot-students",
     tool2Slug: "",
-    title: "GitHub Copilot vs Codeium for Students 2026 | StudentPerks",
+    title: "GitHub Copilot vs Codeium for Students 2026",
     metaDescription:
       "GitHub Copilot vs Codeium — which AI coding assistant is better for students? Compare free access, features, and IDE support.",
     intro:
@@ -1960,7 +1960,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Firebase",
     tool1Slug: "supabase-startups",
     tool2Slug: "",
-    title: "Supabase vs Firebase for Students 2026 | StudentPerks",
+    title: "Supabase vs Firebase for Students 2026",
     metaDescription:
       "Supabase vs Firebase — which backend-as-a-service is better for students? Compare free tiers, features, and developer experience.",
     intro:
@@ -1983,7 +1983,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "GitHub Copilot",
     tool1Slug: "",
     tool2Slug: "copilot-students",
-    title: "Cursor vs GitHub Copilot for Students 2026 | StudentPerks",
+    title: "Cursor vs GitHub Copilot for Students 2026",
     metaDescription:
       "Cursor vs GitHub Copilot — which AI coding tool is better for students? Compare features, pricing, and student access.",
     intro:
@@ -2006,7 +2006,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Jira",
     tool1Slug: "linear-startups",
     tool2Slug: "",
-    title: "Linear vs Jira for Startups 2026 | StudentPerks",
+    title: "Linear vs Jira for Startups 2026",
     metaDescription:
       "Linear vs Jira — which project management tool is better for startups? Compare free plans, features, and team workflows.",
     intro:
@@ -2029,7 +2029,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "AWS",
     tool1Slug: "digitalocean-students",
     tool2Slug: "aws-activate",
-    title: "DigitalOcean vs AWS for Students 2026 | StudentPerks",
+    title: "DigitalOcean vs AWS for Students 2026",
     metaDescription:
       "DigitalOcean vs AWS for students — which cloud platform should you learn? Compare student credits, pricing, and simplicity.",
     intro:
@@ -2052,7 +2052,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Apple Music",
     tool1Slug: "spotify-student",
     tool2Slug: "",
-    title: "Spotify vs Apple Music Student Discount 2026 | StudentPerks",
+    title: "Spotify vs Apple Music Student Discount 2026",
     metaDescription:
       "Spotify vs Apple Music student plans — which streaming service has the better student deal? Compare prices, features, and bundled extras.",
     intro:
@@ -2075,7 +2075,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Discord",
     tool1Slug: "slack-startups",
     tool2Slug: "",
-    title: "Slack vs Discord for Dev Teams 2026 | StudentPerks",
+    title: "Slack vs Discord for Dev Teams 2026",
     metaDescription:
       "Slack vs Discord for developers — which is better for student teams and startups? Compare free plans, message history, and integrations.",
     intro:
@@ -2098,7 +2098,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Render",
     tool1Slug: "railway-oss",
     tool2Slug: "",
-    title: "Railway vs Render: Free Heroku Alternative 2026 | StudentPerks",
+    title: "Railway vs Render: Free Heroku Alternative 2026",
     metaDescription:
       "Railway vs Render for students — which is the better free Heroku alternative? Compare free tiers, databases, and deployment experience.",
     intro:
@@ -2121,7 +2121,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Vercel",
     tool1Slug: "github-education",
     tool2Slug: "vercel-pro",
-    title: "GitHub Pages vs Vercel for Students 2026 | StudentPerks",
+    title: "GitHub Pages vs Vercel for Students 2026",
     metaDescription:
       "GitHub Pages vs Vercel — which is better for hosting student portfolios and projects? Compare free tiers, features, and ease of use.",
     intro:
@@ -2144,7 +2144,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Svelte",
     tool1Slug: "",
     tool2Slug: "",
-    title: "React vs Svelte for Students 2026 | StudentPerks",
+    title: "React vs Svelte for Students 2026",
     metaDescription:
       "React vs Svelte — which frontend framework should students learn first? Compare job market, learning curve, and free learning resources.",
     intro:
@@ -2167,7 +2167,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Remix",
     tool1Slug: "vercel-pro",
     tool2Slug: "",
-    title: "Next.js vs Remix for Students 2026 | StudentPerks",
+    title: "Next.js vs Remix for Students 2026",
     metaDescription:
       "Next.js vs Remix — which React framework is better for students? Compare free hosting, features, and learning curve.",
     intro:
@@ -2190,7 +2190,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "PlanetScale",
     tool1Slug: "supabase-startups",
     tool2Slug: "",
-    title: "Supabase vs PlanetScale for Students 2026 | StudentPerks",
+    title: "Supabase vs PlanetScale for Students 2026",
     metaDescription:
       "Supabase vs PlanetScale — which free database is better for students? Compare PostgreSQL vs MySQL, free tiers, and developer experience.",
     intro:
@@ -2213,7 +2213,7 @@ export const VS_SEO: VsSEO[] = [
     tool2: "Fastly",
     tool1Slug: "cloudflare-startups",
     tool2Slug: "",
-    title: "Cloudflare vs Fastly for Students & Startups 2026 | StudentPerks",
+    title: "Cloudflare vs Fastly for Students & Startups 2026",
     metaDescription:
       "Cloudflare vs Fastly — which CDN is better for students and startups? Compare free tiers, edge computing, and DDoS protection.",
     intro:

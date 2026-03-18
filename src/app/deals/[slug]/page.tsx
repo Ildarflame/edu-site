@@ -90,7 +90,7 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
       </nav>
 
       {/* Header */}
-      <div className="flex items-start gap-4 mb-8">
+      <div className="flex items-start gap-4 mb-6">
         <div className="w-14 h-14 rounded-xl bg-white/[0.03] border border-white/[0.06] flex items-center justify-center shrink-0">
           <Image src={deal.logo} alt={deal.name} width={36} height={36} />
         </div>
@@ -118,10 +118,13 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
         </div>
       </div>
 
-      {/* Value */}
-      <div className="card p-5 mb-8 border-emerald-500/10">
-        <p className="text-[11px] font-semibold text-emerald-500/70 uppercase tracking-wider">Estimated value</p>
-        <p className="text-2xl font-bold text-emerald-400 mt-1">{deal.value}</p>
+      {/* Value + CTA — above the fold for immediate conversion */}
+      <div className="flex items-center gap-4 mb-8 flex-wrap">
+        <div className="card px-5 py-3 border-emerald-500/10 flex-shrink-0">
+          <p className="text-[10px] font-semibold text-emerald-500/70 uppercase tracking-wider">Value</p>
+          <p className="text-xl font-bold text-emerald-400">{deal.value}</p>
+        </div>
+        <DealCTA url={deal.url} slug={deal.slug} category={deal.category} audiences={deal.audiences} />
       </div>
 
       {/* Description */}
@@ -179,7 +182,7 @@ export default async function DealPage({ params }: { params: Promise<{ slug: str
         </div>
       )}
 
-      {/* CTA + Share */}
+      {/* Share + Actions */}
       <div className="flex items-center justify-between flex-wrap gap-4 mb-8">
         <DealCTA url={deal.url} slug={deal.slug} category={deal.category} audiences={deal.audiences} />
         <div className="flex items-center gap-2">

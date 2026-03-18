@@ -1,0 +1,321 @@
+# StudentPerks — Full Catalog
+> Complete directory of free tools, credits, and pro plans for students, startups, and open source projects.
+> Source: https://www.studentperks.dev
+> Last updated: 2026-03-18
+
+StudentPerks is a curated, verified directory of 150+ deals worth $500K+ in free software, cloud credits, and professional tools. Every deal includes step-by-step claim instructions. Audiences: students (verify with .edu email), startups (apply with company details), and open source maintainers (apply with public repo).
+
+---
+
+## All Deals (sorted by category)
+
+### Dev Tools
+- [GitHub Student Developer Pack](https://www.studentperks.dev/deals/github-education) — Free access to 100+ developer tools. Value: $200+/year. For: Students.
+- [JetBrains](https://www.studentperks.dev/deals/jetbrains-students) — Free access to all JetBrains IDEs. Value: $649/year. For: Students, Open Source.
+- [MongoDB Atlas](https://www.studentperks.dev/deals/mongodb-students) — Free M0 cluster forever + student credits. Value: Free tier. For: Students, Open Source.
+- [Docker](https://www.studentperks.dev/deals/docker-students) — Free Docker Pro for students & OSS. Value: $60/year. For: Students, Open Source.
+- [Supabase](https://www.studentperks.dev/deals/supabase-startups) — Credits and free tier for builders. Value: $2,500 credits. For: Startups, Open Source.
+- [Sentry](https://www.studentperks.dev/deals/sentry-oss) — Free error tracking for OSS & startups. Value: $312/year. For: Open Source, Startups.
+- [Apple Developer Program](https://www.studentperks.dev/deals/apple-developer-student) — Free membership via Apple Developer Academy. Value: $99/year. For: Students.
+
+### AI
+- [GitHub Copilot](https://www.studentperks.dev/deals/copilot-students) — Free AI pair programming for students. Value: $100/year. For: Students, Open Source.
+- [OpenAI Startup Program](https://www.studentperks.dev/deals/openai-api-startups) — API credits and support for AI startups. Value: $2,500+ credits. For: Startups.
+
+### SaaS
+- [Notion](https://www.studentperks.dev/deals/notion-education) — Free Plus plan for students & educators. Value: $96/year. For: Students.
+- [Linear](https://www.studentperks.dev/deals/linear-startups) — Free Standard plan for startups. Value: $200/year. For: Startups.
+- [Stripe Atlas](https://www.studentperks.dev/deals/stripe-atlas) — Startup incorporation with $5K in credits. Value: $5,000+ credits. For: Startups.
+- [Slack](https://www.studentperks.dev/deals/slack-startups) — Pro plan credits for startups. Value: $500/year. For: Startups.
+
+### Cloud
+- [AWS Activate](https://www.studentperks.dev/deals/aws-activate) — Up to $100K in AWS credits for startups. Value: $100,000. For: Startups.
+- [Vercel](https://www.studentperks.dev/deals/vercel-pro) — Free Pro plan for open source & startups. Value: $240/year. For: Startups, Open Source.
+- [DigitalOcean](https://www.studentperks.dev/deals/digitalocean-students) — Free cloud credits via GitHub Education. Value: $200+ credits. For: Students, Startups.
+- [Cloudflare](https://www.studentperks.dev/deals/cloudflare-startups) — Free Pro plan and startup program. Value: $240/year. For: Startups, Open Source.
+- [Railway](https://www.studentperks.dev/deals/railway-oss) — Free hosting for open source projects. Value: $60/year. For: Open Source, Students.
+- [Microsoft Azure](https://www.studentperks.dev/deals/azure-students) — Free $100 credit + services for students. Value: $100-$150,000. For: Students, Startups.
+
+### Design
+- [Figma](https://www.studentperks.dev/deals/figma-education) — Free Professional plan for students. Value: $144/year. For: Students.
+- [Adobe Creative Cloud](https://www.studentperks.dev/deals/adobe-creative-cloud) — 60%+ discount on all Creative Cloud apps. Value: $360/year savings. For: Students.
+
+### Learning
+- [Coursera for Campus](https://www.studentperks.dev/deals/coursera-students) — Free access to 3,800+ courses. Value: $400+/year. For: Students.
+
+### Entertainment
+- [Spotify Premium Student](https://www.studentperks.dev/deals/spotify-student) — Premium at half price for students. Value: $72/year savings. For: Students.
+- [YouTube Premium](https://www.studentperks.dev/deals/youtube-premium-student) — Premium at student discount — ad-free videos & music. Value: $72/year savings. For: Students.
+- [Amazon Prime Student](https://www.studentperks.dev/deals/amazon-prime-student) — 6-month free trial + 50% off Prime. Value: $75/year savings. For: Students.
+- [Apple Education Pricing](https://www.studentperks.dev/deals/apple-education-store) — Save on Mac, iPad & more with student pricing. Value: Up to $400 off. For: Students.
+
+---
+
+## Step-by-Step Guides
+
+Detailed how-to guides for claiming each deal:
+
+- [How to Get JetBrains IDEs Free for Students 2026](https://www.studentperks.dev/guides/how-to-get-jetbrains-free)
+- [GitHub Copilot Student Plan — Free AI Coding (2026)](https://www.studentperks.dev/guides/how-to-get-github-copilot-free)
+- [How to Get AWS Credits Free in 2026](https://www.studentperks.dev/guides/how-to-get-aws-credits)
+- [Vercel Pro Free for Students — GitHub Student Pack (2026)](https://www.studentperks.dev/guides/how-to-get-vercel-pro-free)
+- [Figma Free for Students — Education Plan Guide (2026)](https://www.studentperks.dev/guides/how-to-get-figma-free)
+- [Notion Student Discount — Plus Plan Free (2026)](https://www.studentperks.dev/guides/how-to-get-notion-free)
+- [Get Docker Free: Students & OSS 2026](https://www.studentperks.dev/guides/how-to-get-docker-free)
+- [How to Get GitHub Student Developer Pack 2026](https://www.studentperks.dev/guides/how-to-get-github-student-pack)
+- [How to Get Spotify Premium Student Discount 2026](https://www.studentperks.dev/guides/how-to-get-spotify-student-discount)
+- [Coursera Student Discount — Free Courses via Campus (2026)](https://www.studentperks.dev/guides/how-to-get-coursera-free)
+- [DigitalOcean Free Credits: Students 2026](https://www.studentperks.dev/guides/how-to-get-digitalocean-credits)
+- [How to Get MongoDB Atlas Free for Students 2026](https://www.studentperks.dev/guides/how-to-get-mongodb-free)
+- [Azure $100 Free Student Credits — No Card Needed (2026)](https://www.studentperks.dev/guides/how-to-get-azure-student-credits)
+- [How to Get YouTube Premium Student Discount 2026](https://www.studentperks.dev/guides/how-to-get-youtube-premium-student)
+- [Amazon Prime Student: 6 Months Free 2026](https://www.studentperks.dev/guides/how-to-get-amazon-prime-student)
+- [Adobe Creative Cloud: Student Deal 2026](https://www.studentperks.dev/guides/how-to-get-adobe-student-discount)
+- [How to Get Apple Education Pricing 2026](https://www.studentperks.dev/guides/how-to-get-apple-education-pricing)
+- [Apple Developer: Free for Students 2026](https://www.studentperks.dev/guides/how-to-get-apple-developer-free)
+- [Supabase Credits: Startups & OSS 2026](https://www.studentperks.dev/guides/how-to-get-supabase-credits)
+- [Stripe Atlas: $5K+ Credits 2026](https://www.studentperks.dev/guides/how-to-get-stripe-atlas-credits)
+- [How to Get OpenAI API Credits for Startups 2026](https://www.studentperks.dev/guides/how-to-get-openai-startup-credits)
+- [Railway Free: OSS & Students 2026](https://www.studentperks.dev/guides/how-to-get-railway-free)
+- [How to Get Sentry Free — Student & Open Source Plans (2026)](https://www.studentperks.dev/guides/how-to-get-sentry-free)
+- [Cloudflare Pro Free for Students — via GitHub Student Pack (2026)](https://www.studentperks.dev/guides/how-to-get-cloudflare-free)
+- [How to Get Linear Free for Startups 2026](https://www.studentperks.dev/guides/how-to-get-linear-free)
+- [How to Get Slack Pro Free for Startups 2026](https://www.studentperks.dev/guides/how-to-get-slack-startup-credits)
+- [How to Host a Website Free with GitHub Pages 2026](https://www.studentperks.dev/guides/how-to-get-github-pages-free)
+- [How to Get 1Password Free for Students 2026](https://www.studentperks.dev/guides/how-to-get-1password-student)
+- [How to Get Microsoft 365 Free for Students 2026](https://www.studentperks.dev/guides/how-to-get-microsoft-365-free)
+- [How to Get Google Cloud Free Credits 2026](https://www.studentperks.dev/guides/how-to-get-google-cloud-credits)
+- [Namecheap Free Domain for Students — .me, .tech & .co (2026)](https://www.studentperks.dev/guides/how-to-get-namecheap-domain-free)
+- [How to Verify Student Status for Free Tools 2026](https://www.studentperks.dev/guides/how-to-verify-student-status)
+
+---
+
+## VS Comparisons
+
+Side-by-side tool comparisons with feature tables:
+
+- [Figma vs Canva for Students 2026](https://www.studentperks.dev/vs/figma-vs-canva)
+- [Notion vs Obsidian for Students 2026](https://www.studentperks.dev/vs/notion-vs-obsidian)
+- [GitHub vs GitLab for Students 2026](https://www.studentperks.dev/vs/github-vs-gitlab)
+- [AWS vs Azure Cloud Credits for Students 2026](https://www.studentperks.dev/vs/aws-vs-azure)
+- [ChatGPT vs Claude for Students 2026](https://www.studentperks.dev/vs/chatgpt-vs-claude)
+- [Vercel vs Netlify for Students 2026](https://www.studentperks.dev/vs/vercel-vs-netlify)
+- [MongoDB vs PostgreSQL for Students 2026](https://www.studentperks.dev/vs/mongodb-vs-postgresql)
+- [Docker vs Kubernetes for Students 2026](https://www.studentperks.dev/vs/docker-vs-kubernetes)
+- [JetBrains vs VS Code for Students 2026](https://www.studentperks.dev/vs/jetbrains-vs-vscode)
+- [GitHub Copilot vs Codeium for Students 2026](https://www.studentperks.dev/vs/copilot-vs-codeium)
+- [Supabase vs Firebase for Students 2026](https://www.studentperks.dev/vs/supabase-vs-firebase)
+- [Cursor vs GitHub Copilot for Students 2026](https://www.studentperks.dev/vs/cursor-vs-copilot)
+- [Linear vs Jira for Startups 2026](https://www.studentperks.dev/vs/linear-vs-jira)
+- [DigitalOcean vs AWS for Students 2026](https://www.studentperks.dev/vs/digitalocean-vs-aws)
+- [Spotify vs Apple Music Student Discount 2026](https://www.studentperks.dev/vs/spotify-vs-apple-music)
+- [Slack vs Discord for Dev Teams 2026](https://www.studentperks.dev/vs/slack-vs-discord)
+- [Railway vs Render: Free Heroku Alternative 2026](https://www.studentperks.dev/vs/railway-vs-render)
+- [GitHub Pages vs Vercel for Students 2026](https://www.studentperks.dev/vs/github-pages-vs-vercel)
+- [React vs Svelte for Students 2026](https://www.studentperks.dev/vs/react-vs-svelte)
+- [Next.js vs Remix for Students 2026](https://www.studentperks.dev/vs/nextjs-vs-remix)
+- [Supabase vs PlanetScale for Students 2026](https://www.studentperks.dev/vs/supabase-vs-planetscale)
+- [Cloudflare vs Fastly for Students & Startups 2026](https://www.studentperks.dev/vs/cloudflare-vs-fastly)
+
+---
+
+## Tool Comparisons
+
+Feature comparisons between popular developer tools:
+
+- [Vercel vs Railway: Free Hosting Comparison 2026](https://www.studentperks.dev/compare/vercel-vs-railway)
+- [Supabase vs MongoDB: Free Database 2026](https://www.studentperks.dev/compare/supabase-vs-mongodb)
+- [Copilot vs Cursor: AI Coding Tools 2026](https://www.studentperks.dev/compare/github-copilot-vs-cursor)
+- [AWS vs Google Cloud: Free Credits 2026](https://www.studentperks.dev/compare/aws-vs-google-cloud)
+- [Figma vs Framer: Free Design Tools 2026](https://www.studentperks.dev/compare/figma-vs-framer)
+- [Notion vs Linear: Free Project Management 2026](https://www.studentperks.dev/compare/notion-vs-linear)
+- [Sentry vs Datadog: Free Monitoring Tools 2026](https://www.studentperks.dev/compare/sentry-vs-datadog)
+- [Stripe vs Lemon Squeezy: Payments 2026](https://www.studentperks.dev/compare/stripe-vs-lemonsqueezy)
+- [Docker vs Podman: Free Container Tools 2026](https://www.studentperks.dev/compare/docker-vs-podman)
+- [JetBrains vs VS Code: Free IDE Comparison 2026](https://www.studentperks.dev/compare/jetbrains-vs-vscode)
+- [Figma vs Sketch: Design Tools for Students 2026](https://www.studentperks.dev/compare/figma-vs-sketch)
+- [GitHub Actions vs GitLab CI for Students 2026](https://www.studentperks.dev/compare/github-actions-vs-gitlab-ci)
+- [Sentry vs New Relic: Free Error Monitoring 2026](https://www.studentperks.dev/compare/sentry-vs-newrelic)
+
+---
+
+## Alternatives (Free alternatives to popular tools)
+
+- [Free Alternatives to AWS](https://www.studentperks.dev/alternatives/aws)
+- [Free Alternatives to Vercel](https://www.studentperks.dev/alternatives/vercel)
+- [Free Alternatives to GitHub Copilot](https://www.studentperks.dev/alternatives/github-copilot)
+- [Free Alternatives to Figma](https://www.studentperks.dev/alternatives/figma)
+- [Free Alternatives to JetBrains](https://www.studentperks.dev/alternatives/jetbrains)
+- [Free Alternatives to Notion](https://www.studentperks.dev/alternatives/notion)
+- [Free Alternatives to Slack](https://www.studentperks.dev/alternatives/slack)
+- [Free Alternatives to Docker](https://www.studentperks.dev/alternatives/docker)
+- [Free Alternatives to MongoDB](https://www.studentperks.dev/alternatives/mongodb)
+- [Free Alternatives to Stripe](https://www.studentperks.dev/alternatives/stripe)
+- [Free Alternatives to Cloudflare](https://www.studentperks.dev/alternatives/cloudflare)
+- [Free Alternatives to Sentry](https://www.studentperks.dev/alternatives/sentry)
+- [Free Alternatives to Adobe Creative Cloud](https://www.studentperks.dev/alternatives/adobe)
+- [Free Alternatives to Coursera](https://www.studentperks.dev/alternatives/coursera)
+- [Free Alternatives to Spotify](https://www.studentperks.dev/alternatives/spotify)
+- [Free Alternatives to Microsoft Office](https://www.studentperks.dev/alternatives/microsoft-office)
+- [Free Alternatives to Zoom](https://www.studentperks.dev/alternatives/zoom)
+- [Free Alternatives to Firebase](https://www.studentperks.dev/alternatives/firebase)
+- [Free Alternatives to Postman](https://www.studentperks.dev/alternatives/postman)
+- [Free Alternatives to Datadog](https://www.studentperks.dev/alternatives/datadog)
+- [Free Alternatives to Jira](https://www.studentperks.dev/alternatives/jira)
+- [Free Alternatives to Supabase](https://www.studentperks.dev/alternatives/supabase)
+- [Free Alternatives to Linear](https://www.studentperks.dev/alternatives/linear)
+- [Free Alternatives to Heroku](https://www.studentperks.dev/alternatives/heroku)
+- [Free Alternatives to GitHub](https://www.studentperks.dev/alternatives/github)
+
+---
+
+## Best-Of Lists (curated by use case)
+
+- [Best Free Databases for Side Projects 2026](https://www.studentperks.dev/best/best-free-databases-for-side-projects)
+- [Best Free Hosting for Students 2026](https://www.studentperks.dev/best/best-free-hosting-for-students)
+- [Best Free Design Tools for Prototyping 2026](https://www.studentperks.dev/best/best-free-design-tools-for-prototyping)
+- [Best Free CI/CD for Open Source 2026](https://www.studentperks.dev/best/best-free-cicd-for-open-source)
+- [Best Free AI Tools for Developers 2026](https://www.studentperks.dev/best/best-free-ai-tools-for-developers)
+- [Best Free Monitoring Tools for Startups 2026](https://www.studentperks.dev/best/best-free-monitoring-for-startups)
+- [Best Free Learning Platforms for Developers 2026](https://www.studentperks.dev/best/best-free-learning-platforms)
+- [Best Free Tools for Hackathons 2026](https://www.studentperks.dev/best/best-free-tools-for-hackathons)
+- [Best Free SaaS Tools to Build Your MVP 2026](https://www.studentperks.dev/best/best-free-saas-tools-for-mvp)
+- [Best Free Tools for Portfolio Websites 2026](https://www.studentperks.dev/best/best-free-tools-for-portfolio-websites)
+- [Best Free Tools for Web Development 2026](https://www.studentperks.dev/best/best-free-tools-for-web-development)
+- [Best Free Software for College Students 2026](https://www.studentperks.dev/best/best-free-software-for-college-students)
+- [Best Free Cloud Services for Students 2026](https://www.studentperks.dev/best/best-free-cloud-services-for-students)
+- [Best Free Tools for Startup Founders 2026](https://www.studentperks.dev/best/best-free-tools-for-startup-founders)
+- [Best Free Tools for Open Source Projects 2026](https://www.studentperks.dev/best/best-free-tools-for-open-source)
+- [Best Free API Testing Tools for Developers 2026](https://www.studentperks.dev/best/best-free-api-testing-tools)
+- [Best Free Backend Tools for Students 2026](https://www.studentperks.dev/best/best-free-backend-tools)
+- [Best Free Tools for Data Science Students 2026](https://www.studentperks.dev/best/best-free-tools-for-data-science)
+- [Best Free DevOps Tools for Students & Startups 2026](https://www.studentperks.dev/best/best-free-devops-tools)
+- [Best Free Tools for Mobile Development 2026](https://www.studentperks.dev/best/best-free-tools-for-mobile-development)
+
+---
+
+## Seasonal Deals
+
+- [Back to School 2026: Free Dev Tools](https://www.studentperks.dev/seasonal/back-to-school-2026)
+- [Black Friday 2026 — Best Developer Tool Deals](https://www.studentperks.dev/seasonal/black-friday-2026)
+- [New Year 2027: Free Developer Tools](https://www.studentperks.dev/seasonal/new-year-2027)
+
+---
+
+## Tags (browse by topic)
+
+- [Database](https://www.studentperks.dev/tag/database)
+- [Hosting](https://www.studentperks.dev/tag/hosting)
+- [IDE & Editors](https://www.studentperks.dev/tag/ide)
+- [CI/CD](https://www.studentperks.dev/tag/ci-cd)
+- [Monitoring](https://www.studentperks.dev/tag/monitoring)
+- [APIs & Backend](https://www.studentperks.dev/tag/api)
+- [Design](https://www.studentperks.dev/tag/design)
+- [Analytics](https://www.studentperks.dev/tag/analytics)
+- [No Credit Card](https://www.studentperks.dev/tag/no-credit-card)
+- [Cloud Credits](https://www.studentperks.dev/tag/cloud-credits)
+- [Student Discounts](https://www.studentperks.dev/tag/student-discount)
+- [Startup Credits](https://www.studentperks.dev/tag/startup-credits)
+- [Free Tiers](https://www.studentperks.dev/tag/free-tier)
+- [Open Source Programs](https://www.studentperks.dev/tag/open-source)
+- [Mobile Dev](https://www.studentperks.dev/tag/mobile)
+- [Security](https://www.studentperks.dev/tag/security)
+- [DevOps](https://www.studentperks.dev/tag/devops)
+- [Serverless](https://www.studentperks.dev/tag/serverless)
+- [Testing](https://www.studentperks.dev/tag/testing)
+- [Data Science & ML](https://www.studentperks.dev/tag/data-science)
+
+---
+
+## Blog Posts
+
+- [Top 10 Free Developer Tools Every Student Needs in 2026](https://www.studentperks.dev/blog/top-10-free-developer-tools-students-2026)
+- [How to Get GitHub Student Developer Pack in 2026](https://www.studentperks.dev/blog/getting-started-github-student-pack)
+- [Best Free Cloud Credits for Startups 2026: AWS, GCP, Azure & More](https://www.studentperks.dev/blog/aws-activate-guide)
+- [I Found $200K+ in Free Cloud Credits — Here's How to Claim Them](https://www.studentperks.dev/blog/free-cloud-credits-2026)
+- [Beyond GitHub Student Pack: 150+ Free Tools You're Missing](https://www.studentperks.dev/blog/github-student-pack-alternatives)
+- [Launch Your Startup for $0: The Complete Free Tools Guide 2026](https://www.studentperks.dev/blog/startup-free-tools-2026)
+- [Best Free Databases in 2026: MongoDB, Supabase, PlanetScale & More](https://www.studentperks.dev/blog/best-free-databases-2026)
+- [Best Free Design Tools for Students in 2026](https://www.studentperks.dev/blog/best-free-design-tools-students-2026)
+- [Best Free IDEs for Students in 2026: JetBrains, VS Code & More](https://www.studentperks.dev/blog/best-free-ides-students-2026)
+- [Best Free Monitoring & Analytics Tools for Startups](https://www.studentperks.dev/blog/best-free-monitoring-analytics-startups)
+- [ChatGPT vs GitHub Copilot for Students: Which One Do You Actually Need?](https://www.studentperks.dev/blog/chatgpt-vs-copilot-students)
+- [Free Alternatives to Adobe Creative Cloud for Students](https://www.studentperks.dev/blog/free-adobe-alternatives-students)
+- [How to Get $10,000+ in Free AWS Credits for Your Startup](https://www.studentperks.dev/blog/free-aws-credits-startup-guide)
+- [Free CI/CD Tools for Developers: GitHub Actions, Railway & Beyond](https://www.studentperks.dev/blog/free-ci-cd-tools-developers)
+- [Free GPU Access for Students & Researchers 2026](https://www.studentperks.dev/blog/free-gpu-access-students-2026)
+- [How to Get JetBrains IDEs Free with a Student License](https://www.studentperks.dev/blog/jetbrains-student-license-guide)
+- [How to Launch a SaaS for $0: Complete Free Tools Stack 2026](https://www.studentperks.dev/blog/launch-saas-free-tools-2026)
+- [Notion vs Linear vs Slack: Best Free Productivity Stack for Student Teams](https://www.studentperks.dev/blog/notion-vs-linear-vs-slack-students)
+- [Stripe vs LemonSqueezy: Best Payment Platform for Indie Hackers](https://www.studentperks.dev/blog/stripe-vs-lemonsqueezy-indie-hackers)
+- [Vercel vs Railway vs Render: Best Free Hosting for Side Projects](https://www.studentperks.dev/blog/vercel-vs-railway-vs-render)
+- [Best Free API Testing Tools for Developers in 2026](https://www.studentperks.dev/blog/best-free-api-testing-tools-2026)
+- [Best Free Tools for Hackathons in 2026](https://www.studentperks.dev/blog/best-free-tools-hackathons-2026)
+- [How to Build a Developer Portfolio That Gets You Hired (2026)](https://www.studentperks.dev/blog/developer-portfolio-guide-2026)
+- [How to Get Docker Desktop Free as a Student](https://www.studentperks.dev/blog/docker-free-student-guide)
+- [How to Get a Free Domain Name as a Student](https://www.studentperks.dev/blog/free-domain-name-student-guide)
+- [Free Spotify, YouTube Premium & Amazon Prime for Students](https://www.studentperks.dev/blog/free-spotify-youtube-amazon-students)
+- [Free Tools for Open Source Maintainers in 2026](https://www.studentperks.dev/blog/free-tools-open-source-maintainers)
+- [Is the GitHub Student Developer Pack Worth It in 2026?](https://www.studentperks.dev/blog/github-student-pack-worth-it-2026)
+- [Supabase vs Firebase in 2026: Which Backend Should You Choose?](https://www.studentperks.dev/blog/supabase-vs-firebase-2026)
+- [Free Hosting for Students: Deploy Your Projects for $0](https://www.studentperks.dev/blog/free-hosting-students-2026)
+- [Figma Free for Students — Education Plan Setup Guide (2026)](https://www.studentperks.dev/blog/figma-free-student-education-plan)
+- [GitHub Copilot Student Plan — Free Setup Guide (2026)](https://www.studentperks.dev/blog/github-copilot-free-student-guide)
+- [Best Free CRM & Sales Tools for Startups (2026)](https://www.studentperks.dev/blog/free-crm-sales-tools-startups-2026)
+- [Free Design & Prototyping Tools to Build Your Startup MVP (2026)](https://www.studentperks.dev/blog/free-design-tools-startup-mvp-2026)
+- [Free AI API Credits for Startups — OpenAI, Anthropic, Google (2026)](https://www.studentperks.dev/blog/free-ai-api-credits-startups-2026)
+- [Free Security & DevOps Tools for Startups (2026)](https://www.studentperks.dev/blog/free-security-tools-startups-2026)
+- [Free Email & Communication Tools for Startups (2026)](https://www.studentperks.dev/blog/free-email-communication-tools-startups)
+- [Build Your Entire Tech Stack for $0 — First-Time Founder Guide (2026)](https://www.studentperks.dev/blog/build-tech-stack-zero-cost-founder)
+- [Best Free Startup Programs & Accelerator Perks (2026)](https://www.studentperks.dev/blog/free-accelerator-programs-startups-2026)
+- [15+ Free AI Tools for Students in 2026 — Copilot, Claude & More](https://www.studentperks.dev/blog/best-free-ai-tools-students-2026)
+- [40+ Free Startup Tools Worth $200K+ in Credits (2026)](https://www.studentperks.dev/blog/best-free-tools-for-startups-2026)
+- [10+ Free Learning Platforms for CS Students (2026 Guide)](https://www.studentperks.dev/blog/best-free-learning-platforms-students-2026)
+- [Free Cloud Credits for Students in 2026 — AWS, Azure, GCP & More](https://www.studentperks.dev/blog/free-cloud-credits-students-2026)
+- [How to Get a Free Domain as a Student in 2026](https://www.studentperks.dev/blog/free-domain-students-2026)
+- [Best Student Software Discounts in 2026 — Save $10,000+](https://www.studentperks.dev/blog/student-software-discounts-2026)
+
+---
+
+## Interactive Tools
+
+- [Student Freebies Finder](https://www.studentperks.dev/student-freebies-finder) — 3-step wizard: select country, university, and major to get personalized deal recommendations with scoring.
+- [100+ Free Tools for Students](https://www.studentperks.dev/free-tools-for-students) — Comprehensive list of free tools grouped by use case.
+- [Savings Calculator](https://www.studentperks.dev/savings-calculator) — Calculate how much you can save with student deals.
+- [This Week](https://www.studentperks.dev/this-week) — New and updated deals from the past week.
+- [AI Deal Finder](https://www.studentperks.dev/discover) — Search deals by keyword with intelligent matching.
+- [Stack Builder](https://www.studentperks.dev/stack) — Select your tech stack and get relevant free deals.
+
+---
+
+## Browse by Category
+
+- [Dev Tools](https://www.studentperks.dev/category/dev)
+- [AI](https://www.studentperks.dev/category/ai)
+- [SaaS](https://www.studentperks.dev/category/saas)
+- [Learning](https://www.studentperks.dev/category/learning)
+- [Cloud](https://www.studentperks.dev/category/cloud)
+- [Design](https://www.studentperks.dev/category/design)
+- [Entertainment](https://www.studentperks.dev/category/entertainment)
+
+## Browse by Audience
+
+- [For Students](https://www.studentperks.dev/for/students)
+- [For Startups](https://www.studentperks.dev/for/startups)
+- [For Open Source](https://www.studentperks.dev/for/opensource)
+
+---
+
+## API & Feeds
+
+- All deals as JSON: https://www.studentperks.dev/api/deals
+- Sitemap: https://www.studentperks.dev/sitemap.xml
+- RSS Feed: https://www.studentperks.dev/blog/feed.xml
+- LLMs summary: https://www.studentperks.dev/llms.txt
+- LLMs full catalog (this file): https://www.studentperks.dev/llms-full.txt
+
+---
+
+## About
+
+StudentPerks is maintained at https://www.studentperks.dev. For questions or to submit a deal, visit https://www.studentperks.dev/submit.

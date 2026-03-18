@@ -9,13 +9,17 @@ import { UNIVERSITIES } from "@/data/universities";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.studentperks.dev";
 
+// Fixed date for SEO content pages that change infrequently.
+// Update this when SEO content (seo-content.ts, universities.ts) is modified.
+const seoContentDate = new Date("2026-03-18");
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const deals = await getDeals();
   const posts = getAllPosts();
 
   const dealUrls: MetadataRoute.Sitemap = deals.map((deal) => ({
     url: `${baseUrl}/deals/${deal.slug}`,
-    lastModified: deal.updatedAt ? new Date(deal.updatedAt) : new Date(),
+    lastModified: deal.updatedAt ? new Date(deal.updatedAt) : seoContentDate,
     changeFrequency: "weekly",
     priority: 0.7,
   }));
@@ -29,14 +33,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const categoryUrls: MetadataRoute.Sitemap = CATEGORY_SEO.map((cat) => ({
     url: `${baseUrl}/category/${cat.slug}`,
-    lastModified: new Date(),
+    lastModified: seoContentDate,
     changeFrequency: "weekly",
     priority: 0.8,
   }));
 
   const audienceUrls: MetadataRoute.Sitemap = AUDIENCE_SEO.map((aud) => ({
     url: `${baseUrl}/for/${aud.slug}`,
-    lastModified: new Date(),
+    lastModified: seoContentDate,
     changeFrequency: "weekly",
     priority: 0.8,
   }));
@@ -44,7 +48,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const crossFilterUrls: MetadataRoute.Sitemap = AUDIENCE_SEO.flatMap((aud) =>
     CATEGORY_SEO.map((cat) => ({
       url: `${baseUrl}/for/${aud.slug}/${cat.slug}`,
-      lastModified: new Date(),
+      lastModified: seoContentDate,
       changeFrequency: "weekly" as const,
       priority: 0.7,
     })),
@@ -52,49 +56,49 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const topUrls: MetadataRoute.Sitemap = CATEGORY_SEO.map((cat) => ({
     url: `${baseUrl}/top/${cat.slug}`,
-    lastModified: new Date(),
+    lastModified: seoContentDate,
     changeFrequency: "weekly",
     priority: 0.7,
   }));
 
   const alternativesUrls: MetadataRoute.Sitemap = ALTERNATIVES_SEO.map((alt) => ({
     url: `${baseUrl}/alternatives/${alt.slug}`,
-    lastModified: new Date(),
+    lastModified: seoContentDate,
     changeFrequency: "weekly",
     priority: 0.7,
   }));
 
   const comparisonUrls: MetadataRoute.Sitemap = COMPARISON_SEO.map((c) => ({
     url: `${baseUrl}/compare/${c.slug}`,
-    lastModified: new Date(),
+    lastModified: seoContentDate,
     changeFrequency: "weekly",
     priority: 0.7,
   }));
 
   const useCaseUrls: MetadataRoute.Sitemap = USE_CASE_SEO.map((u) => ({
     url: `${baseUrl}/best/${u.slug}`,
-    lastModified: new Date(),
+    lastModified: seoContentDate,
     changeFrequency: "weekly",
     priority: 0.7,
   }));
 
   const guideUrls: MetadataRoute.Sitemap = GUIDE_SEO.map((g) => ({
     url: `${baseUrl}/guides/${g.slug}`,
-    lastModified: new Date(),
+    lastModified: seoContentDate,
     changeFrequency: "weekly",
     priority: 0.8,
   }));
 
   const seasonalUrls: MetadataRoute.Sitemap = SEASONAL_SEO.map((s) => ({
     url: `${baseUrl}/seasonal/${s.slug}`,
-    lastModified: new Date(),
+    lastModified: seoContentDate,
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
 
   const tagUrls: MetadataRoute.Sitemap = TAG_SEO.map((t) => ({
     url: `${baseUrl}/tag/${t.slug}`,
-    lastModified: new Date(),
+    lastModified: seoContentDate,
     changeFrequency: "weekly",
     priority: 0.6,
   }));
@@ -103,21 +107,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     .filter((d) => d.audiences.includes("students"))
     .map((deal) => ({
       url: `${baseUrl}/student-discount/${deal.slug}`,
-      lastModified: deal.updatedAt ? new Date(deal.updatedAt) : new Date(),
+      lastModified: deal.updatedAt ? new Date(deal.updatedAt) : seoContentDate,
       changeFrequency: "weekly" as const,
       priority: 0.7,
     }));
 
   const vsUrls: MetadataRoute.Sitemap = VS_SEO.map((v) => ({
     url: `${baseUrl}/vs/${v.slug}`,
-    lastModified: new Date(),
+    lastModified: seoContentDate,
     changeFrequency: "weekly" as const,
     priority: 0.7,
   }));
 
   const universityUrls: MetadataRoute.Sitemap = UNIVERSITIES.map((u) => ({
     url: `${baseUrl}/university/${u.slug}`,
-    lastModified: new Date(),
+    lastModified: seoContentDate,
     changeFrequency: "weekly" as const,
     priority: 0.7,
   }));

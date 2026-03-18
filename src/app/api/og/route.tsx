@@ -11,13 +11,16 @@ export async function GET(req: NextRequest) {
   if (!slug && title) {
     return new ImageResponse(
       (
-        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", width: "100%", height: "100%", background: "#09090b", padding: 80 }}>
-          <div style={{ fontSize: 56, fontWeight: 800, color: "#fafafa", lineHeight: 1.2, marginBottom: 24 }}>
+        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", width: "100%", height: "100%", background: "linear-gradient(135deg, #09090b 0%, #18181b 50%, #09090b 100%)", padding: 80, position: "relative" }}>
+          {/* Accent line */}
+          <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: "linear-gradient(90deg, #f97316, #fb923c, #f97316)", display: "flex" }} />
+          <div style={{ fontSize: 52, fontWeight: 800, color: "#fafafa", lineHeight: 1.2, marginBottom: 24, maxWidth: 900 }}>
             {title}
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <div style={{ fontSize: 20, color: "#f97316", fontWeight: 600 }}>StudentPerks</div>
-            <div style={{ fontSize: 18, color: "#52525b" }}>— Free Tools for Students & Startups</div>
+            <div style={{ fontSize: 22, color: "#f97316", fontWeight: 700 }}>StudentPerks</div>
+            <div style={{ width: 4, height: 4, borderRadius: 2, background: "#3f3f46", display: "flex" }} />
+            <div style={{ fontSize: 18, color: "#71717a" }}>Free Tools for Students & Startups</div>
           </div>
         </div>
       ),
@@ -52,22 +55,27 @@ export async function GET(req: NextRequest) {
 
   return new ImageResponse(
     (
-      <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", width: "100%", height: "100%", background: "#09090b", padding: 80 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 24 }}>
+      <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", width: "100%", height: "100%", background: "linear-gradient(135deg, #09090b 0%, #18181b 50%, #09090b 100%)", padding: 80, position: "relative" }}>
+        {/* Accent line */}
+        <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: "linear-gradient(90deg, #f97316, #fb923c, #f97316)", display: "flex" }} />
+        <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 20 }}>
           <span style={{ fontSize: 40 }}>{config.icon}</span>
           <span style={{ fontSize: 20, color: "#a1a1aa", fontWeight: 500 }}>{deal.category}</span>
         </div>
-        <div style={{ fontSize: 64, fontWeight: 800, color: "#fafafa", lineHeight: 1.1, marginBottom: 20 }}>
+        <div style={{ fontSize: 60, fontWeight: 800, color: "#fafafa", lineHeight: 1.1, marginBottom: 16 }}>
           {deal.name}
         </div>
-        <div style={{ fontSize: 28, color: "#71717a", marginBottom: 32 }}>
+        <div style={{ fontSize: 26, color: "#71717a", marginBottom: 32, maxWidth: 800 }}>
           {deal.tagline}
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <div style={{ background: "rgba(16, 185, 129, 0.1)", border: "1px solid rgba(16, 185, 129, 0.2)", borderRadius: 12, padding: "8px 20px", fontSize: 24, fontWeight: 700, color: "#34d399" }}>
+          <div style={{ background: "rgba(16, 185, 129, 0.15)", border: "1px solid rgba(16, 185, 129, 0.3)", borderRadius: 12, padding: "10px 24px", fontSize: 26, fontWeight: 700, color: "#34d399" }}>
             {deal.value}
           </div>
-          <span style={{ fontSize: 18, color: "#52525b" }}>studentperks.dev</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            <span style={{ fontSize: 18, color: "#f97316", fontWeight: 600 }}>StudentPerks</span>
+            <span style={{ fontSize: 16, color: "#52525b" }}>— Claim Free</span>
+          </div>
         </div>
       </div>
     ),
