@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { USE_CASE_SEO } from "@/data/seo-content";
 
+export const revalidate = 300;
+
 export const metadata: Metadata = {
   title: "Best Free Tools by Use Case 2026 | StudentPerks",
   description:

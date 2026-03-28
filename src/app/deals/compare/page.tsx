@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import { getDeals } from "@/lib/deals";
 import CompareView from "./CompareView";
 
+export const revalidate = 300;
+
 export const metadata: Metadata = {
   title: "Compare Deals — StudentPerks",
   description: "Compare student and startup deals side by side. See features, value, and eligibility for up to 3 tools at once on StudentPerks.",

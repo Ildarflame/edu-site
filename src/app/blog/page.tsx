@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 
+export const revalidate = 300;
+
 export const metadata: Metadata = {
   title: "Blog — Developer Guides & Tips | StudentPerks",
   description: "Get step-by-step guides to claim free developer tools, cloud credits, and student discounts from GitHub, AWS, and more. Updated for 2026.",

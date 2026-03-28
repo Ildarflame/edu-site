@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "About StudentPerks — Free Tools for Students 2026",
   description: "Save $500K+ on developer tools, cloud credits, and pro plans. StudentPerks helps students, startups, and OSS projects claim free perks in 2026.",

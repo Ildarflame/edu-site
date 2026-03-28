@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { VS_SEO } from "@/data/seo-content";
 
+export const revalidate = 300;
+
 export const metadata: Metadata = {
   title: "Student Tool Comparisons 2026 — Side-by-Side | StudentPerks",
   description:

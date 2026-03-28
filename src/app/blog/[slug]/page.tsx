@@ -3,6 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
+import { GUIDE_SEO, ALTERNATIVES_SEO, VS_SEO } from "@/data/seo-content";
+
+export const revalidate = 300;
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
@@ -99,6 +102,46 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
         </section>
       )}
+
+      {(() => {
+        const tags = post.tags.map((t) => t.toLowerCase());
+        const matchedGuides = GUIDE_SEO.filter((g) =>
+          tags.some((t) => g.dealSlug.includes(t) || g.slug.includes(t))
+        ).slice(0, 3);
+        const matchedAlts = ALTERNATIVES_SEO.filter((a) =>
+          tags.some((t) => a.slug === t)
+        ).slice(0, 3);
+        const matchedVs = VS_SEO.filter((v) =>
+          tags.some((t) => v.slug.includes(t))
+        ).slice(0, 3);
+        const hasResources = matchedGuides.length + matchedAlts.length + matchedVs.length > 0;
+        if (!hasResources) return null;
+        return (
+          <section className="mt-12 pt-8 border-t border-white/[0.06]">
+            <h2 className="text-lg font-bold text-zinc-100 mb-4">Related Resources</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+              {matchedGuides.map((g) => (
+                <Link key={g.slug} href={`/guides/${g.slug}`} className="card p-4 hover:border-white/[0.12] transition-all">
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-orange-400/80 mb-1">Guide</p>
+                  <h3 className="text-sm font-semibold text-zinc-200 line-clamp-2">{g.heading}</h3>
+                </Link>
+              ))}
+              {matchedAlts.map((a) => (
+                <Link key={a.slug} href={`/alternatives/${a.slug}`} className="card p-4 hover:border-white/[0.12] transition-all">
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-sky-400/80 mb-1">Alternatives</p>
+                  <h3 className="text-sm font-semibold text-zinc-200 line-clamp-2">Free {a.name} Alternatives</h3>
+                </Link>
+              ))}
+              {matchedVs.map((v) => (
+                <Link key={v.slug} href={`/vs/${v.slug}`} className="card p-4 hover:border-white/[0.12] transition-all">
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-purple-400/80 mb-1">Comparison</p>
+                  <h3 className="text-sm font-semibold text-zinc-200 line-clamp-2">{v.tool1} vs {v.tool2}</h3>
+                </Link>
+              ))}
+            </div>
+          </section>
+        );
+      })()}
 
       <div className="mt-10 pt-6 border-t border-white/[0.04]">
         <Link href="/blog" className="inline-flex items-center gap-1.5 text-[13px] font-medium text-zinc-600 hover:text-orange-400 transition-colors">

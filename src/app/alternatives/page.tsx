@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ALTERNATIVES_SEO } from "@/data/seo-content";
 
+export const revalidate = 300;
+
 export const metadata: Metadata = {
   title: "Free Alternatives to Popular Software 2026 | StudentPerks",
   description:
