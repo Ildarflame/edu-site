@@ -1203,8 +1203,8 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-azure-student-credits",
     dealSlug: "azure-students",
-    title: "Azure $100 Free Student Credits — No Card Needed (2026)",
-    metaDescription: "Get $100 Azure credits + 25 free cloud services with just a .edu email. No credit card required. Step-by-step 5-minute setup guide with screenshots.",
+    title: "How to Get $100 Azure Student Credits Free — No Credit Card (2026)",
+    metaDescription: "Step-by-step: get $100 Azure credits + 25 free cloud services with your .edu email. No credit card needed. Renew yearly. Takes 5 minutes.",
     heading: "How to Get Azure Free Student Credits",
     intro: "Azure for Students gives verified students $100 in cloud credits with no credit card required, plus free access to 25+ Azure services. Startups can get up to $150K through Founders Hub.",
     eligibility: ["School email address for verification", "Currently enrolled student (age 18+)", "No credit card required", "One Azure for Students account per student"],
@@ -1336,8 +1336,8 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-sentry-free",
     dealSlug: "sentry-oss",
-    title: "How to Get Sentry Free — Student & Open Source Plans (2026)",
-    metaDescription: "Sentry Business plan free for open source + student access via GitHub Pack. 500K events/month, performance monitoring, session replay. Apply in 5 minutes.",
+    title: "Is Sentry Free? Student & Open Source Plans Explained (2026)",
+    metaDescription: "Yes — Sentry Developer plan is free forever. Open source gets Business plan: 500K events/month. Students access via GitHub Pack. Setup in 5 minutes.",
     heading: "How to Get Sentry Free for Students & OSS",
     intro: "Sentry offers its Business plan free for qualified open source projects and discounted plans for startups. Get real-time error tracking, performance monitoring, and session replay.",
     eligibility: ["For OSS: actively maintained open source project", "Project must have OSI-approved license", "Apply at sentry.io/for/open-source", "Startups: apply through partner accelerators"],
@@ -1446,8 +1446,8 @@ export const GUIDE_SEO: GuideSEO[] = [
   {
     slug: "how-to-get-namecheap-domain-free",
     dealSlug: "github-education",
-    title: "Namecheap Free Domain for Students — .me, .tech & .co (2026)",
-    metaDescription: "Get a free .me domain from Namecheap via GitHub Student Pack. Plus .tech and .co domains. Free SSL & WHOIS privacy. 5-minute setup with .edu email.",
+    title: "Namecheap Free .me Domain for Students via GitHub Pack (2026)",
+    metaDescription: "Get a free .me domain + SSL from Namecheap via GitHub Student Developer Pack. Plus free .tech domain. 5-minute setup with .edu email.",
     heading: "How to Get a Free Domain as a Student",
     intro: "Students can get a free custom domain through the GitHub Student Developer Pack. Namecheap offers a free .me domain for 1 year and a free SSL certificate to verified students.",
     eligibility: ["GitHub Student Developer Pack membership", "Verified student via GitHub Education", "Namecheap account", "Domain available (first-come, first-served)"],

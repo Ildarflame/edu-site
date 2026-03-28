@@ -4,10 +4,17 @@ import StackBuilder from "@/components/StackBuilder";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
-  title: "Build Your Stack — StudentPerks",
+  title: "Stack Builder — Find Free Tools for Your Tech Stack | StudentPerks",
   description:
-    "Select your tech stack and discover all the free tools, credits, and student perks available for your technologies. Build smarter, spend nothing.",
-  robots: { index: false, follow: true },
+    "Select React, Node, Python or any tech — see every free tool, credit & student perk available for your stack. Build smarter, spend nothing.",
+  keywords: ["tech stack builder", "free developer tools", "student stack", "technology deals"],
+  alternates: { canonical: "https://www.studentperks.dev/stack" },
+  openGraph: {
+    title: "Stack Builder — Find Free Tools for Your Tech Stack",
+    description: "Select your technologies and see every free tool, credit & student perk available for your stack.",
+    url: "https://www.studentperks.dev/stack",
+    images: [{ url: "/api/og?title=Stack%20Builder%20%E2%80%94%20StudentPerks", width: 1200, height: 630 }],
+  },
 };
 
 export const revalidate = 300;

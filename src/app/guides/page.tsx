@@ -3,15 +3,15 @@ import Link from "next/link";
 import { GUIDE_SEO } from "@/data/seo-content";
 
 export const metadata: Metadata = {
-  title: "Free Developer Tool Guides 2026 — JetBrains, Copilot, Azure & More",
+  title: "Student Developer Tool Discounts — Step-by-Step Claim Guides (2026)",
   description:
-    "Step-by-step guides to claim free developer tools: JetBrains ($649 value), GitHub Copilot, Azure $100, AWS $100K. Eligibility + FAQ for each.",
+    "How to claim JetBrains ($649 value), GitHub Copilot, Azure $100, AWS $100K credits free as a student. Step-by-step guides with eligibility & FAQ.",
   alternates: { canonical: "https://www.studentperks.dev/guides" },
   openGraph: {
-    title: "Free Developer Tool Guides 2026 — JetBrains, Copilot, Azure & More",
-    description: "Step-by-step guides to claim free developer tools: JetBrains, GitHub Copilot, Azure $100, AWS $100K. Eligibility + FAQ for each.",
+    title: "Student Developer Tool Discounts — Step-by-Step Claim Guides (2026)",
+    description: "How to claim JetBrains, GitHub Copilot, Azure $100, AWS $100K credits free as a student. Step-by-step guides with eligibility & FAQ.",
     url: "https://www.studentperks.dev/guides",
-    images: [{ url: "/api/og?title=Step-by-Step%20Guides%20to%20Free%20Dev%20Tools%202026", width: 1200, height: 630 }],
+    images: [{ url: "/api/og?title=Student%20Developer%20Tool%20Guides%202026", width: 1200, height: 630 }],
   },
 };
 

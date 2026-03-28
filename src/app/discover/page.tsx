@@ -3,10 +3,17 @@ import DealFinder from "@/components/DealFinder";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
-  title: "Discover Deals — StudentPerks",
+  title: "AI Deal Finder — Match Free Tools to Your Project | StudentPerks",
   description:
-    "Describe what you're building and find the best free tools, credits, and student perks matched to your needs. AI-powered deal recommendations.",
-  robots: { index: false, follow: true },
+    "Describe what you're building and get personalized recommendations from 150+ free student tools, credits & perks. AI-powered matching in seconds.",
+  keywords: ["ai deal finder", "student tools finder", "free developer tools", "personalized recommendations"],
+  alternates: { canonical: "https://www.studentperks.dev/discover" },
+  openGraph: {
+    title: "AI Deal Finder — Match Free Tools to Your Project",
+    description: "Describe what you're building and get personalized recommendations from 150+ free student tools & credits.",
+    url: "https://www.studentperks.dev/discover",
+    images: [{ url: "/api/og?title=AI%20Deal%20Finder%20%E2%80%94%20StudentPerks", width: 1200, height: 630 }],
+  },
 };
 
 export const revalidate = 300;

@@ -11,7 +11,7 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.studentperks.de
 
 // Fixed date for SEO content pages that change infrequently.
 // Update this when SEO content (seo-content.ts, universities.ts) is modified.
-const seoContentDate = new Date("2026-03-18");
+const seoContentDate = new Date("2026-03-28");
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const deals = await getDeals();
@@ -136,6 +136,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/this-week`, lastModified: new Date(), changeFrequency: "daily", priority: 0.8 },
     { url: `${baseUrl}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
     { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.6 },
+    { url: `${baseUrl}/discover`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/stack`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/submit`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.3 },
     { url: `${baseUrl}/vs`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/best`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },

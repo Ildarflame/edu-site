@@ -45,25 +45,38 @@ export default function RootLayout({
   return (
     <html lang="en" className={`dark ${outfit.variable}`}>
       <head>
-        {/* WebSite schema — all values hardcoded, no user input */}
+        {/* WebSite + Organization schema — all values hardcoded, no user input — safe for inline script */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "StudentPerks",
-              url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.studentperks.dev",
-              description: "Discover free tools, services, and discounts for students, startups, and open source projects.",
-              potentialAction: {
-                "@type": "SearchAction",
-                target: {
-                  "@type": "EntryPoint",
-                  urlTemplate: "https://www.studentperks.dev/deals?q={search_term_string}",
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "StudentPerks",
+                url: "https://www.studentperks.dev",
+                description: "Discover free tools, services, and discounts for students, startups, and open source projects.",
+                potentialAction: {
+                  "@type": "SearchAction",
+                  target: {
+                    "@type": "EntryPoint",
+                    urlTemplate: "https://www.studentperks.dev/deals?q={search_term_string}",
+                  },
+                  "query-input": "required name=search_term_string",
                 },
-                "query-input": "required name=search_term_string",
               },
-            }).replace(/</g, "\\u003c"),
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "StudentPerks",
+                url: "https://www.studentperks.dev",
+                logo: "https://www.studentperks.dev/logos/icon-512.png",
+                description: "150+ free tools, credits, and discounts for students, startups, and open source projects.",
+                sameAs: [
+                  "https://github.com/Ildarflame/awesome-student-developer-deals",
+                ],
+              },
+            ]).replace(/</g, "\\u003c"),
           }}
         />
         <link rel="alternate" type="application/rss+xml" title="StudentPerks Blog" href="/blog/feed.xml" />

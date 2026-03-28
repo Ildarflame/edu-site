@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     "Calculate how much you could save with student discounts and free tools. Select the tools you use and see your total annual savings instantly. Worth $500K+.",
   keywords: ["student savings calculator", "student discount calculator", "how much students save", "free tools savings"],
   alternates: { canonical: "https://www.studentperks.dev/savings-calculator" },
+  openGraph: {
+    title: "Student Savings Calculator 2026 — See How Much You Save",
+    description: "Calculate how much you could save with student discounts and free tools. Select the tools you use and see your total annual savings instantly.",
+    url: "https://www.studentperks.dev/savings-calculator",
+    images: [{ url: "/api/og?title=Student%20Savings%20Calculator%202026", width: 1200, height: 630 }],
+  },
 };
 
 export default async function SavingsCalculatorPage() {

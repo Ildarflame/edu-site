@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 - `npm run dev` — start dev server (Next.js 16 with Turbopack)
-- `npm run build` — production build (SSG, 515+ pages prerendered)
+- `npm run build` — production build (SSG, 642 pages prerendered)
 - `npm run lint` — ESLint
 - `npm start` — serve production build
 - `node scripts/<name>.mjs` — run Notion bulk scripts (no dotenv; scripts read `.env.local` manually via `fs.readFileSync`)
@@ -31,14 +31,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Defined in `src/data/deals.ts`:
 - `Category`: `"Dev" | "AI" | "SaaS" | "Learning" | "Cloud" | "Design" | "Entertainment"`
 - `Audience`: `"students" | "startups" | "opensource"` (lowercase)
-- `Deal`: `{ slug, name, logo, category, audiences, tagline, description, value, steps, url, featured, updatedAt?, status?, regions?, video? }`
+- `Deal`: `{ slug, name, logo, category, audiences, tagline, description, value, steps, url, featured, updatedAt?, status?, regions?, video?, tips?, requirements? }`
 - `CATEGORY_CONFIG`: maps Category to `{ color, gradient, icon }`
 
 SEO types in `src/data/seo-content.ts`:
-- `GuideSEO`: `{ slug, dealSlug, title, metaDescription, heading, intro, eligibility, faqs }` — 27 entries
+- `GuideSEO`: `{ slug, dealSlug, title, metaDescription, heading, intro, eligibility, faqs }` — 32 entries
 - `SeasonalSEO`: `{ slug, title, metaDescription, heading, intro, categories, audiences, faqs }` — 3 entries
-- `AlternativeSEO` — 16 entries, `ComparisonSEO` — 10 entries, `UseCaseSEO` — 10 entries, `TagSEO` — 9 entries
-- `VsSEO`: `{ slug, tool1, tool2, tool1Slug, tool2Slug, title, metaDescription, intro, forStudents, winner, rows }` — 10 entries
+- `AlternativeSEO` — 25 entries, `ComparisonSEO` — 13 entries, `UseCaseSEO` — 20 entries, `TagSEO` — 20 entries
+- `VsSEO`: `{ slug, tool1, tool2, tool1Slug, tool2Slug, title, metaDescription, intro, forStudents, winner, rows }` — 12 entries
 
 ### Key patterns
 
@@ -94,7 +94,7 @@ Static pages:
 
 - `/student-discount` — index: all student deals grouped by category
 - `/student-discount/[tool]` — per-deal student discount page with FAQ, HowTo JSON-LD (~126 pages)
-- `/guides/[slug]` — step-by-step claim guides (27 entries)
+- `/guides/[slug]` — step-by-step claim guides (32 entries)
 - `/category/[slug]` — category landing (e.g. `/category/dev`, `/category/ai`)
 - `/for/[audience]` — audience landing (e.g. `/for/students`, `/for/startups`)
 - `/for/[audience]/[category]` — cross-filter (e.g. `/for/students/cloud`)
@@ -104,7 +104,7 @@ Static pages:
 - `/best/[slug]` — use-case curated lists
 - `/seasonal/[slug]` — seasonal landing pages (back-to-school, black-friday, new-year)
 - `/tag/[slug]` — topic tag pages
-- `/vs/[slug]` — student-focused tool VS comparisons with feature tables (10 entries)
+- `/vs/[slug]` — student-focused tool VS comparisons with feature tables (12 entries)
 - `/university/[slug]` — university-specific deal pages (50 universities)
 
 ### Header navigation
@@ -119,6 +119,7 @@ Desktop: `Deals | Student Discounts | Tools (dropdown) | Blog | Submit | [Get De
 - `POST /api/subscribe` — newsletter signup with frequency and interests (validated)
 - `POST /api/search-log` — search analytics logging (query + results count, max 200 chars)
 - `POST /api/push-subscribe` — push notification subscription (placeholder)
+- `POST /api/report-deal` — increment Reports counter for a deal in Notion (by slug)
 - `POST /api/revalidate` — ISR revalidation trigger
 - `GET /api/deals` — fetch all deals as JSON
 - `GET /api/badge/[slug]` — dynamic SVG badge for a deal
@@ -134,6 +135,8 @@ Desktop: `Deals | Student Discounts | Tools (dropdown) | Blog | Submit | [Get De
 - **Push notifications** (`PushNotification.tsx`) — subscription prompt, service worker
 - **Compare mode** — select up to 3 deals for side-by-side comparison
 - **Deal voting** (`DealVoting.tsx`) — "Is this deal still working?" Yes/No, localStorage, percentage display
+- **Onboarding** (`useOnboarding.ts`, `OnboardingWidget.tsx`) — first-visit guided walkthrough
+- **Remind Me** (`useRemindMe.ts`) — schedule deal reminders, localStorage
 
 ### Canonical domain
 
