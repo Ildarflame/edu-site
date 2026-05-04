@@ -1,272 +1,887 @@
 [
   {
-    "slug": "codedex-students",
-    "name": "Codedex",
-    "source": "github-pack",
-    "sourceUrl": "https://education.github.com/pack/offers",
-    "category": "Learning",
-    "audiences": [
-      "Students"
-    ],
-    "tagline": "Cod\u00e9dex is a brand new learn-to-code platform for Gen Z with courses in Python, HTML, CSS, JavaScript, React, Git &amp; ",
-    "value": "Free via GitHub Pack",
-    "url": "https://education.github.com/pack/offers",
-    "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
-  },
-  {
-    "slug": "testmail-students",
-    "name": "Testmail",
-    "source": "github-pack",
-    "sourceUrl": "https://education.github.com/pack/offers",
-    "category": "Dev",
-    "audiences": [
-      "Students"
-    ],
-    "tagline": "Get unlimited email addresses and mailboxes for automating email tests with our powerful APIs.",
-    "value": "Free via GitHub Pack",
-    "url": "https://education.github.com/pack/offers",
-    "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
-  },
-  {
-    "slug": "camber-students",
-    "name": "Camber",
-    "source": "github-pack",
-    "sourceUrl": "https://education.github.com/pack/offers",
-    "category": "Dev",
-    "audiences": [
-      "Students"
-    ],
-    "tagline": "AI-powered, cloud-based platform designed for scientific computing, simulations, and data analysis.",
-    "value": "Free via GitHub Pack",
-    "url": "https://education.github.com/pack/offers",
-    "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
-  },
-  {
-    "slug": "appwrite-students",
-    "name": "Appwrite",
-    "source": "github-pack",
-    "sourceUrl": "https://education.github.com/pack/offers",
-    "category": "Cloud",
-    "audiences": [
-      "Students"
-    ],
-    "tagline": "Appwrite is an open-source, developer infrastructure platform for building web, mobile, and AI apps. It includes both a ",
-    "value": "Free via GitHub Pack",
-    "url": "https://education.github.com/pack/offers",
-    "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
-  },
-  {
-    "slug": "localstack-students",
-    "name": "LocalStack",
-    "source": "github-pack",
-    "sourceUrl": "https://education.github.com/pack/offers",
-    "category": "Cloud",
-    "audiences": [
-      "Students"
-    ],
-    "tagline": "LocalStack emulates AWS services right on your laptop, so you can build and test cloud applications without connecting t",
-    "value": "Free via GitHub Pack",
-    "url": "https://education.github.com/pack/offers",
-    "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
-  },
-  {
-    "slug": "scrimba-students",
-    "name": "Scrimba",
-    "source": "github-pack",
-    "sourceUrl": "https://education.github.com/pack/offers",
-    "category": "Learning",
-    "audiences": [
-      "Students"
-    ],
-    "tagline": "Scrimba is an interactive learning platform for frontend developers.",
-    "value": "Free via GitHub Pack",
-    "url": "https://education.github.com/pack/offers",
-    "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
-  },
-  {
-    "slug": "new-relic-students",
-    "name": "New Relic",
-    "source": "github-pack",
-    "sourceUrl": "https://education.github.com/pack/offers",
-    "category": "Dev",
-    "audiences": [
-      "Students"
-    ],
-    "tagline": "New Relic is an observability platform that helps fully understand how to improve your software.",
-    "value": "Free via GitHub Pack",
-    "url": "https://education.github.com/pack/offers",
-    "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
-  },
-  {
-    "slug": "visme-students",
-    "name": "Visme",
+    "slug": "intro-to-copilot-students",
+    "name": "Intro to Copilot",
     "source": "github-pack",
     "sourceUrl": "https://education.github.com/pack/offers",
     "category": "Design",
     "audiences": [
       "Students"
     ],
-    "tagline": "The all-in-one platform for creating engaging and interactive presentations, visual documents, data visualizations, shor",
+    "tagline": "What is Copilot and how do you get started using it? Use this Experience as a Primer on Copilot. We share tutorials, gui",
     "value": "Free via GitHub Pack",
     "url": "https://education.github.com/pack/offers",
     "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
+    "discoveredAt": "2026-05-04"
   },
   {
-    "slug": "deepnote-students",
-    "name": "Deepnote",
+    "slug": "understanding-markdown-students",
+    "name": "Understanding Markdown",
     "source": "github-pack",
     "sourceUrl": "https://education.github.com/pack/offers",
-    "category": "Dev",
+    "category": "AI",
     "audiences": [
       "Students"
     ],
-    "tagline": "Deepnote is a new kind of data notebook built for collaboration - Jupyter compatible, works magically in the cloud, and ",
+    "tagline": "Markdown is a lightweight markup language for creating formatted text using a plain-text editor. More simply put, Markdo",
     "value": "Free via GitHub Pack",
     "url": "https://education.github.com/pack/offers",
     "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
+    "discoveredAt": "2026-05-04"
   },
   {
-    "slug": "algoexpert-students",
-    "name": "AlgoExpert",
+    "slug": "intro-to-github-students",
+    "name": "Intro to GitHub",
     "source": "github-pack",
     "sourceUrl": "https://education.github.com/pack/offers",
     "category": "Learning",
     "audiences": [
       "Students"
     ],
-    "tagline": "The ultimate resource to prepare for coding interviews. Everything you need, in one streamlined platform.",
+    "tagline": "GitHub flow is a lightweight, branch-based workflow. In this Experience you&#39;ll learn the basics of the GitHub Flow i",
     "value": "Free via GitHub Pack",
     "url": "https://education.github.com/pack/offers",
     "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
+    "discoveredAt": "2026-05-04"
   },
   {
-    "slug": "doppler-students",
-    "name": "Doppler",
+    "slug": "github-foundations-certification-students",
+    "name": "GitHub Foundations Certification",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Everything you need to get started preparing for and taking the GitHub Foundations Certification exam including FAQs, gu",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "intro-to-open-source-students",
+    "name": "Intro to Open Source",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Everything you need to know to understand the origins of open source work, how to become a contributor, a maintainer or ",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "ai-prompting-amp-technical-writing-students",
+    "name": "AI Prompting &amp; Technical Writing",
     "source": "github-pack",
     "sourceUrl": "https://education.github.com/pack/offers",
     "category": "Dev",
     "audiences": [
       "Students"
     ],
-    "tagline": "A different way to manage secrets. From local development to production, we work on every stack, scaling with you as you",
+    "tagline": "This Experience offers the tools, top tips and resources you&#39;ll need to get started becoming a technical wizard with",
     "value": "Free via GitHub Pack",
     "url": "https://education.github.com/pack/offers",
     "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
+    "discoveredAt": "2026-05-04"
   },
   {
-    "slug": "requestly-students",
-    "name": "Requestly",
+    "slug": "security-and-monitoring-students",
+    "name": "Security and Monitoring",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Explore industry standard tools that keep your code safe, your permissions secure and your infrastructure monitored so t",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "career-readiness-students",
+    "name": "Career Readiness",
     "source": "github-pack",
     "sourceUrl": "https://education.github.com/pack/offers",
     "category": "Dev",
     "audiences": [
       "Students"
     ],
-    "tagline": "Requestly is an open-source tool for developers to intercept, modify, and mock HTTP requests and responses to build, tes",
+    "tagline": "Whether you’re approaching graduation or just want to get a head start, it’s never too early to prepare for your future ",
     "value": "Free via GitHub Pack",
     "url": "https://education.github.com/pack/offers",
     "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
+    "discoveredAt": "2026-05-04"
   },
   {
-    "slug": "devcycle-students",
-    "name": "DevCycle",
+    "slug": "intro-to-web-dev-students",
+    "name": "Intro to Web Dev",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Everything you need to build your next website. Learn how to design and build your own website as you learn the basics o",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "hackathon-in-the-cloud-students",
+    "name": "Hackathon in the Cloud",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Learn how to organize, promote, and communicate your next codefest or hackday. Whether you&#39;re hosting your first or ",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "aspiring-creatives-students",
+    "name": "Aspiring Creatives",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Working on a creative project? Develop your design and collaboration skills to get your clever intentions off the ground",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "data-science-amp-machine-learning-students",
+    "name": "Data Science &amp; Machine Learning",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Flex your skills in data collection, cleaning, analysis, visualization, programming, and machine learning. The Data Scie",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "mobile-app-development-students",
+    "name": "Mobile App Development",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Have an idea for a mobile app you&#39;d like to bring to life? This Mobile App Development Experience gives you the tool",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "developer-operations-students",
+    "name": "Developer Operations",
     "source": "github-pack",
     "sourceUrl": "https://education.github.com/pack/offers",
     "category": "Dev",
     "audiences": [
       "Students"
     ],
-    "tagline": "DevCycle is a Feature Flag Management platform built for developers.",
+    "tagline": "Developer Operations (DevOps) is the symbiotic relationship between teams, culture and development that allows for colla",
     "value": "Free via GitHub Pack",
     "url": "https://education.github.com/pack/offers",
     "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
+    "discoveredAt": "2026-05-04"
   },
   {
-    "slug": "zoom-education",
-    "name": "Zoom",
-    "source": "saas-education",
-    "sourceUrl": "https://www.zoom.com/en/industry/education/",
+    "slug": "virtual-event-kit-students",
+    "name": "Virtual Event Kit",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Everything you need for your virtual event. Design for engagement and we&#39;ll take care of the tools. The Virtual Even",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "explore-github-students",
+    "name": "Explore GitHub",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "This Primer makes it easy by giving you the guidance and resources you need to start exploring the platform, begin follo",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "profile-readme-students",
+    "name": "Profile README",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Say ‘Hello world’ with a profile README that lets you introduce yourself to the GitHub community. You decide what inform",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "primer-codespaces-students",
+    "name": "Primer: Codespaces",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Wondering how to get started with Codespaces? This Primer makes it easy by giving you the templates, videos and step-by-",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "launchpad-intro-to-javascript-students",
+    "name": "Launchpad: Intro to Javascript",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "This launchpad uses Scrimba’s uniquely interactive approach to let you simultaneously watch a simple javascript tutorial",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "microsoft-azure-students",
+    "name": "Microsoft Azure",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Access to Microsoft Azure cloud services and learning resources – no credit card required",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "boot-dev-students",
+    "name": "Boot.dev",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Learning",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "The game-like learning platform for backend developers and devops engineers",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "visual-studio-code-students",
+    "name": "Visual Studio Code",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Learning",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Microsoft&#39;s goal is to empower all students with the best resources and tools as they learn to code.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "clerk-students",
+    "name": "Clerk",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Clerk provides authentication, user management, billing, and much more. Flexible APIs and prebuilt components allow you ",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "github-codespaces-students",
+    "name": "GitHub Codespaces",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Create a codespace to start developing in a secure, configurable, and dedicated development environment that works how a",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "microsoft-azure-for-ages-13-17-students",
+    "name": "Microsoft Azure (for ages 13-17)",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Access to Microsoft Azure cloud services and learning resources for students aged 13-17 – no credit card required",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "microsoft-visual-studio-dev-essentials-students",
+    "name": "Microsoft Visual Studio Dev Essentials",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Free developer tools, cloud services and training from Microsoft.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "github-pages-students",
+    "name": "GitHub Pages",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
     "category": "SaaS",
     "audiences": [
       "Students"
     ],
-    "tagline": "Connect your greater school, college, or university community, and alumni with one Unified Communication and Collaborati",
-    "value": "Free for students",
-    "url": "https://www.zoom.com/en/industry/education/",
+    "tagline": "Websites for you and your projects. Hosted directly from your GitHub repository. Just edit, push, and your changes are l",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
     "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
+    "discoveredAt": "2026-05-04"
   },
   {
-    "slug": "edx-students",
-    "name": "edX",
-    "source": "saas-education",
-    "sourceUrl": "https://www.edx.org/",
-    "category": "Learning",
+    "slug": "github-campus-experts-students",
+    "name": "Github Campus Experts",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
     "audiences": [
       "Students"
     ],
-    "tagline": "Find the online learning path for you, delivered by world-class institutions like Harvard, Google, Amazon, and more.",
-    "value": "Free for students",
-    "url": "https://www.edx.org/",
+    "tagline": "GitHub Campus Experts are students who build technical communities on campus, with training and support from GitHub.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
     "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
+    "discoveredAt": "2026-05-04"
   },
   {
-    "slug": "ibm-skillsbuild",
-    "name": "IBM SkillsBuild",
-    "source": "saas-education",
-    "sourceUrl": "https://skillsbuild.org/students",
-    "category": "Learning",
+    "slug": "gitlens-students",
+    "name": "GitLens",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "SaaS",
     "audiences": [
       "Students"
     ],
-    "tagline": "Shape your future in tech with free learning from IBM SkillsBuild - access valuable resources and unlock opportunities f",
-    "value": "Free for students",
-    "url": "https://skillsbuild.org/students",
+    "tagline": "GitLens is the #1 Git extension for VS Code; enriching your IDE with Git visualizations such as inline blame annotations",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
     "hasEducationSignal": true,
-    "discoveredAt": "2026-03-14"
+    "discoveredAt": "2026-05-04"
   },
   {
-    "slug": "redhat-developer",
-    "name": "Red Hat Developer",
-    "source": "saas-education",
-    "sourceUrl": "https://developers.redhat.com/register",
+    "slug": "blackfire-students",
+    "name": "Blackfire",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "SaaS",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Code performance measurement tool. Find &amp; fix bottlenecks.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "todiagram-students",
+    "name": "ToDiagram",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "SaaS",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "ToDiagram is a browser-based interactive data editor that turns any JSON, YAML, CSV and XML into editable diagrams with ",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "hazeover-students",
+    "name": "HazeOver",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "SaaS",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Get focused while working on your projects or studying with HazeOver for Mac.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "zyte-students",
+    "name": "Zyte",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Zyte&#39;s Scrapy Cloud is a battle-tested cloud platform for running web crawlers. Manage and automate your web spiders",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "slidecoach-students",
+    "name": "SlideCoach",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "AI",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Slide Coach is an AI presentation coach. Practice your presentations in private with your personal AI coach. Get instant",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "imgbot-students",
+    "name": "Imgbot",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
     "category": "Dev",
     "audiences": [
       "Students"
     ],
-    "tagline": "Red Hat Developer for students",
-    "value": "Free for students",
-    "url": "https://developers.redhat.com/register",
-    "hasEducationSignal": false,
-    "discoveredAt": "2026-03-14"
+    "tagline": "Imgbot is a GitHub App that automatically optimizes your images.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
   },
   {
-    "slug": "intel-developer",
-    "name": "Intel Developer",
-    "source": "saas-education",
-    "sourceUrl": "https://www.intel.com/content/www/us/en/developer/tools/oneapi/toolkits.html",
+    "slug": "pageclip-students",
+    "name": "Pageclip",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "A server for your static websites and HTML forms.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "octicons-students",
+    "name": "Octicons",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Octicons is an open source library created specifically for GitHub&#39;s UI.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "github-desktop-students",
+    "name": "GitHub Desktop",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
     "category": "Dev",
     "audiences": [
       "Students"
     ],
-    "tagline": "These toolkits deliver the freedom to develop with a unified toolset and to deploy solutions across multiple architectur",
+    "tagline": "Reduces frustration and makes Git and GitHub workflows more approachable.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "github-community-exchange-students",
+    "name": "GitHub Community Exchange",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "AI",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "A student community within the GitHub Global Campus portal. As a student, it&#39;s a place where you can get exposure fo",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "sqlgate-students",
+    "name": "SQLGate",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Simple but powerful IDE for multiple SQL databases.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "carto-students",
+    "name": "CARTO",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "SaaS",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "An open and powerful platform for spatial data analysis, visualization, and application creation.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "blockchair-students",
+    "name": "Blockchair",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "AI",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Connect to the world of blockchains through Blockchair’s professional APIs — supports most major cryptocurrencies.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "themeisle-students",
+    "name": "Themeisle",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Neve’s mobile-first approach, compatibility with AMP and popular page-builders makes website building accessible for eve",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "appfigures-students",
+    "name": "Appfigures",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "App Store analytics, optimization, and intelligence.",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "github-certification-voucher-students",
+    "name": "GitHub Certification Voucher",
+    "source": "github-pack",
+    "sourceUrl": "https://education.github.com/pack/offers",
+    "category": "AI",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Getting a GitHub credential is a resounding endorsement that validates your skills, credibility, and knowledge of the wo",
+    "value": "Free via GitHub Pack",
+    "url": "https://education.github.com/pack/offers",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "render-students",
+    "name": "Render",
+    "source": "saas-education",
+    "sourceUrl": "https://render.com/pricing",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Render&#x27;s Pricing",
     "value": "Free for students",
-    "url": "https://www.intel.com/content/www/us/en/developer/tools/oneapi/toolkits.html",
+    "url": "https://render.com/pricing",
     "hasEducationSignal": false,
-    "discoveredAt": "2026-03-14"
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "flyio-students",
+    "name": "Fly.io",
+    "source": "saas-education",
+    "sourceUrl": "https://fly.io/docs/about/pricing/",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Documentation and guides from the team at Fly.io.",
+    "value": "Free for students",
+    "url": "https://fly.io/docs/about/pricing/",
+    "hasEducationSignal": false,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "planetscale-students",
+    "name": "PlanetScale",
+    "source": "saas-education",
+    "sourceUrl": "https://planetscale.com/pricing",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Discover PlanetScale database platform plans tailored for projects of all sizes.",
+    "value": "Free for students",
+    "url": "https://planetscale.com/pricing",
+    "hasEducationSignal": false,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "warp-students",
+    "name": "Warp",
+    "source": "saas-education",
+    "sourceUrl": "https://www.warp.dev/pricing",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Pricing for Warp terminal and Oz agents. Free to get started.",
+    "value": "Free for students",
+    "url": "https://www.warp.dev/pricing",
+    "hasEducationSignal": false,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "raycast-students",
+    "name": "Raycast",
+    "source": "saas-education",
+    "sourceUrl": "https://www.raycast.com/pricing",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Raycast is free forever. Upgrade to Pro for AI, Cloud Sync, and custom themes. Choose flexible plans for individuals or ",
+    "value": "Free for students",
+    "url": "https://www.raycast.com/pricing",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "excalidraw-plus",
+    "name": "Excalidraw",
+    "source": "saas-education",
+    "sourceUrl": "https://plus.excalidraw.com/pricing",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "We like to have things simple, including pricing. $6 per user/month paid yearly · $7 per user/month paid monthly. Step u",
+    "value": "Free for students",
+    "url": "https://plus.excalidraw.com/pricing",
+    "hasEducationSignal": false,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "framer-education",
+    "name": "Framer",
+    "source": "saas-education",
+    "sourceUrl": "https://www.framer.com/pricing",
+    "category": "Design",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Find a plan for your site",
+    "value": "Free for students",
+    "url": "https://www.framer.com/pricing",
+    "hasEducationSignal": false,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "deno-students",
+    "name": "Deno",
+    "source": "saas-education",
+    "sourceUrl": "https://deno.com/deploy/pricing",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Transparent pricing that scales with your needs. Get started for free and grow to any scale with Deno Deploy.",
+    "value": "Free for students",
+    "url": "https://deno.com/deploy/pricing",
+    "hasEducationSignal": false,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "cloudinary-students",
+    "name": "Cloudinary",
+    "source": "saas-education",
+    "sourceUrl": "https://cloudinary.com/pricing",
+    "category": "Cloud",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Select a plan that best suits your needs. A Free plan with generous usage limits is available without any time limit. Ac",
+    "value": "Free for students",
+    "url": "https://cloudinary.com/pricing",
+    "hasEducationSignal": false,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "twitch-students",
+    "name": "Twitch",
+    "source": "saas-education",
+    "sourceUrl": "https://www.twitch.tv/turbo",
+    "category": "Entertainment",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Twitch is the world&#39;s leading video platform and community for gamers.",
+    "value": "Free for students",
+    "url": "https://www.twitch.tv/turbo",
+    "hasEducationSignal": false,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "lovable-students",
+    "name": "Lovable",
+    "source": "saas-education",
+    "sourceUrl": "https://lovable.dev/pricing",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Compare Lovable&#x27;s transparent pricing plans for individuals and teams. Choose the right option to build apps, inter",
+    "value": "Free for students",
+    "url": "https://lovable.dev/pricing",
+    "hasEducationSignal": false,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "bolt-students",
+    "name": "Bolt",
+    "source": "saas-education",
+    "sourceUrl": "https://bolt.new/pricing",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Start for free. Unlock advanced features as you grow. Build websites, apps, and prototypes faster with Bolt.",
+    "value": "Free for students",
+    "url": "https://bolt.new/pricing",
+    "hasEducationSignal": false,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "windsurf-students",
+    "name": "Windsurf",
+    "source": "saas-education",
+    "sourceUrl": "https://windsurf.com/pricing",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Windsurf is free forever for individuals. Teams can level up with our enterprise offering for enhanced personalization a",
+    "value": "Free for students",
+    "url": "https://windsurf.com/pricing",
+    "hasEducationSignal": true,
+    "discoveredAt": "2026-05-04"
+  },
+  {
+    "slug": "v0-students",
+    "name": "v0",
+    "source": "saas-education",
+    "sourceUrl": "https://v0.app/pricing",
+    "category": "Dev",
+    "audiences": [
+      "Students"
+    ],
+    "tagline": "Your collaborative AI assistant to design, iterate, and scale full-stack applications for the web.",
+    "value": "Free for students",
+    "url": "https://v0.app/pricing",
+    "hasEducationSignal": false,
+    "discoveredAt": "2026-05-04"
   }
 ]
